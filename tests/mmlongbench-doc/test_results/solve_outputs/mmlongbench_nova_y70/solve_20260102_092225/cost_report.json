@@ -1,0 +1,185 @@
+{
+  "summary": {
+    "total_prompt_tokens": 10111,
+    "total_completion_tokens": 1293,
+    "total_tokens": 11404,
+    "total_cost_usd": 0.0022924499999999997,
+    "total_calls": 10,
+    "by_agent": {
+      "investigate_agent": {
+        "prompt_tokens": 3514,
+        "completion_tokens": 343,
+        "total_tokens": 3857,
+        "cost_usd": 0.0007328999999999999,
+        "calls": 3
+      },
+      "note_agent": {
+        "prompt_tokens": 1681,
+        "completion_tokens": 314,
+        "total_tokens": 1995,
+        "cost_usd": 0.00044054999999999995,
+        "calls": 2
+      },
+      "manager_agent": {
+        "prompt_tokens": 1019,
+        "completion_tokens": 75,
+        "total_tokens": 1094,
+        "cost_usd": 0.00019784999999999996,
+        "calls": 1
+      },
+      "solve_agent": {
+        "prompt_tokens": 1226,
+        "completion_tokens": 151,
+        "total_tokens": 1377,
+        "cost_usd": 0.00027449999999999995,
+        "calls": 1
+      },
+      "response_agent": {
+        "prompt_tokens": 1507,
+        "completion_tokens": 401,
+        "total_tokens": 1908,
+        "cost_usd": 0.00046665,
+        "calls": 1
+      },
+      "precision_answer_agent": {
+        "prompt_tokens": 1164,
+        "completion_tokens": 9,
+        "total_tokens": 1173,
+        "cost_usd": 0.00017999999999999998,
+        "calls": 2
+      }
+    },
+    "by_model": {
+      "qwen3-next-80b-a3b-instruct": {
+        "prompt_tokens": 10111,
+        "completion_tokens": 1293,
+        "total_tokens": 11404,
+        "cost_usd": 0.0022924499999999997,
+        "calls": 10
+      }
+    },
+    "by_method": {
+      "api": {
+        "prompt_tokens": 10111,
+        "completion_tokens": 1293,
+        "total_tokens": 11404,
+        "cost_usd": 0.0022924499999999997,
+        "calls": 10
+      }
+    },
+    "tiktoken_available": true,
+    "litellm_available": false
+  },
+  "records": [
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 1097,
+      "completion_tokens": 105,
+      "total_tokens": 1202,
+      "cost_usd": 0.00022754999999999997,
+      "timestamp": "2026-01-02T09:22:27.588888",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "note_agent",
+      "stage": "note_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 934,
+      "completion_tokens": 175,
+      "total_tokens": 1109,
+      "cost_usd": 0.0002451,
+      "timestamp": "2026-01-02T09:22:39.989737",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 1178,
+      "completion_tokens": 130,
+      "total_tokens": 1308,
+      "cost_usd": 0.00025469999999999996,
+      "timestamp": "2026-01-02T09:22:41.720484",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "note_agent",
+      "stage": "note_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 747,
+      "completion_tokens": 139,
+      "total_tokens": 886,
+      "cost_usd": 0.00019544999999999998,
+      "timestamp": "2026-01-02T09:22:53.390174",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 1239,
+      "completion_tokens": 108,
+      "total_tokens": 1347,
+      "cost_usd": 0.00025065,
+      "timestamp": "2026-01-02T09:22:54.931360",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "manager_agent",
+      "stage": "Plan",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 1019,
+      "completion_tokens": 75,
+      "total_tokens": 1094,
+      "cost_usd": 0.00019784999999999996,
+      "timestamp": "2026-01-02T09:22:56.150480",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "solve_agent",
+      "stage": "solve_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 1226,
+      "completion_tokens": 151,
+      "total_tokens": 1377,
+      "cost_usd": 0.00027449999999999995,
+      "timestamp": "2026-01-02T09:22:58.207013",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "response_agent",
+      "stage": "response_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 1507,
+      "completion_tokens": 401,
+      "total_tokens": 1908,
+      "cost_usd": 0.00046665,
+      "timestamp": "2026-01-02T09:23:02.056502",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "precision_answer_agent",
+      "stage": "precision_answer_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 206,
+      "completion_tokens": 1,
+      "total_tokens": 207,
+      "cost_usd": 3.15e-05,
+      "timestamp": "2026-01-02T09:23:03.016522",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "precision_answer_agent",
+      "stage": "precision_answer_agent",
+      "model": "qwen3-next-80b-a3b-instruct",
+      "prompt_tokens": 958,
+      "completion_tokens": 8,
+      "total_tokens": 966,
+      "cost_usd": 0.00014849999999999998,
+      "timestamp": "2026-01-02T09:23:03.731791",
+      "calculation_method": "api"
+    }
+  ]
+}

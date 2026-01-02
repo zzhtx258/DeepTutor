@@ -1,0 +1,71 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T09:19:47.963609",
+  "updated_at": "2026-01-02T09:20:42.750795",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "pro mode icon right of focus mode selection function",
+      "raw_result": "In Pro Mode on the Huawei Nova Y70, users can adjust the focus mode by touching the “AF·” indicator on the screen, which opens a menu to select from three focus modes: AF-S (single), AF-C (continuous), and MF (manual). The interface displays these options directly within the Pro Mode camera UI, and the focus mode selection is presented as a toggleable setting, not as a separate physical or persistent icon to the right of the selection.\n\nThe focus mode selection is accessed by interacting with the “AF·” label in the Pro Mode settings panel, which is typically positioned among other exposure controls such as ISO, shutter speed (S), EV, and white balance (WB). There is no indication in the provided context that a dedicated icon appears to the right of the focus mode selection field. Instead, selecting a focus mode (e.g., AF-S, AF-C, or MF) updates the displayed label inline, and the change is confirmed visually within the same control area.\n\nFor example, the table in the context explicitly maps the focus modes to their usage scenarios, confirming that the selection is made via touch interaction with the “AF·” option, and the selected mode is reflected directly in the UI, not via a separate icon. Additionally, the visual analysis of the Pro Mode interface (Image Path: /.../e73dd8127ec207b054dbf4e87104858ec91929116bfda4cddcb9b3c609b0cb52.jpg) shows the focus mode labeled as “AF” (Auto Focus) in the vertical settings panel, with no additional icon to its right.\n\nThus, the focus mode selection function does not feature a dedicated icon to its right; it is an interactive text-based control within the Pro Mode settings panel.\n\n### References\n\n- [1] nova_y70.pdf",
+      "source": "nova_y70.pdf",
+      "content": "In Pro Mode on the Huawei Nova Y70, the focus mode is selected by tapping the 'AF·' text label in the camera UI, which opens a menu to choose between AF-S, AF-C, or MF modes. There is no dedicated icon to the right of the focus mode selection; the control is text-based and updates inline when a mode is selected.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "nova_y70.pdf",
+            "content": "Users can adjust the focus mode by touching the 'AF·' indicator on the screen, which opens a menu to select from three focus modes: AF-S (single), AF-C (continuous), and MF (manual). There is no indication in the provided context that a dedicated icon appears to the right of the focus mode selection field."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T09:20:02.045561",
+      "updated_at": "2026-01-02T09:20:04.024463"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "Huawei Pro Mode camera UI icon right of focus mode selection",
+      "raw_result": "In the Huawei Nova Y70’s Pro Mode camera interface, the icon located to the right of the focus mode selection is labeled **\"WB\"**, which stands for **White Balance**. This icon allows users to adjust the color temperature of the image to match different lighting conditions. According to the visual analysis of the Pro Mode interface, when the focus mode is set to \"AF\" (Auto Focus), the adjacent \"WB\" setting is displayed and can be tapped to select modes such as \"Cloudy\" or to manually adjust color temperature.\n\nThis control is part of the suite of manual exposure settings in Pro Mode, which also includes ISO, shutter speed (S), and EV exposure compensation. The \"WB\" icon is positioned within the vertical panel on the right side of the screen, alongside other adjustable parameters, and is consistently represented in the UI as a text label rather than a symbolic icon, aligning with Huawei’s design language for granular camera controls.\n\n### References\n\n- [1] nova_y70.pdf",
+      "source": "nova_y70.pdf",
+      "content": "In Huawei Pro Mode camera interface, the icon to the right of the focus mode selection is labeled 'WB' for White Balance, allowing users to adjust color temperature settings such as 'Cloudy' or manual temperature values to suit different lighting conditions.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "nova_y70.pdf",
+            "content": "In the Huawei Nova Y70’s Pro Mode camera interface, the icon located to the right of the focus mode selection is labeled 'WB', which stands for White Balance. This icon allows users to adjust the color temperature of the image to match different lighting conditions."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T09:20:15.703155",
+      "updated_at": "2026-01-02T09:20:17.386558"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "What is the function of the icon located to the right of the focus mode selection icon in Pro Mode on the Huawei Nova Y70 camera interface?",
+      "raw_result": "In the Pro Mode camera interface of the Huawei Nova Y70, the icon located to the right of the focus mode selection icon (labeled \"AF\") is the **white balance (WB)** icon. This icon allows users to adjust the color temperature of the captured image to compensate for different lighting conditions.\n\nAccording to the context, users can touch the WB icon to select a white balance mode such as \"Cloudy\" or \"Daylight,\" or manually adjust the color temperature for more precise control. This adjustment helps ensure accurate color reproduction under varying ambient light conditions—for example, selecting \"Cloudy\" in low-light or overcast environments to counteract the blue tint often present in such settings.\n\nThe WB setting is one of several manual controls available in Pro Mode, alongside ISO, shutter speed, EV exposure compensation, and metering mode, all designed to give users professional-level control over exposure and color rendering.\n\n### References\n\n- [1] nova_y70.pdf",
+      "source": "",
+      "content": "The icon to the right of the focus mode (AF) icon in Pro Mode on the Huawei Nova Y70 camera interface is the white balance (WB) control, enabling users to select preset modes (e.g., Cloudy, Daylight) or manually adjust color temperature for accurate color reproduction under varying lighting. No image was generated or referenced in the result; the summary is based solely on textual documentation from the source file nova_y70.pdf.",
+      "stage": "solve",
+      "step_id": "S1",
+      "metadata": {
+        "source": "",
+        "auto_sources": [],
+        "mode": "naive"
+      },
+      "created_at": "2026-01-02T09:20:23.992433",
+      "updated_at": "2026-01-02T09:20:35.468354"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

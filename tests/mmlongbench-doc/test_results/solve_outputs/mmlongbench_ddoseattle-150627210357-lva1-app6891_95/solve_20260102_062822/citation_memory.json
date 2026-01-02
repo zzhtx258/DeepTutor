@@ -1,0 +1,54 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T06:28:22.138502",
+  "updated_at": "2026-01-02T06:28:50.597363",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "YouTube video weak data leadership consequence",
+      "raw_result": "The provided context does not contain any information about a YouTube video or its specific content regarding the consequences of weak data leadership. While several document chunks discuss the consequences of weak data leadership—such as Tesco’s $9.6B loss, the sale of Dunhumby, Warren Buffett’s public admission of error, and the failure to implement a testing mindset or data-driven culture—none of these references mention a YouTube video.\n\nAdditionally, one chunk includes a URL (`https://www.youtube.com/watch?v=a2QlH2uz3p8`) in a footnote, but it is not described as a video analyzing weak data leadership; rather, it appears as a standalone link without context or explanation.\n\nTherefore, based on the provided materials, there is no evidence or description of a YouTube video that illustrates the consequences of weak data leadership.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "The provided materials discuss consequences of weak data leadership, such as Tesco's $9.6B loss and the failure to adopt a data-driven culture, but do not identify or describe any YouTube video that illustrates these consequences. A YouTube URL is mentioned in a footnote without context, so it cannot be confirmed as relevant.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "A YouTube URL (https://www.youtube.com/watch?v=a2QlH2uz3p8) is listed in a footnote but lacks any explanatory context linking it to weak data leadership."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T06:28:32.624100",
+      "updated_at": "2026-01-02T06:28:34.007672"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "YouTube video link used in slides to illustrate consequences of weak data leadership",
+      "raw_result": "The provided context does not include any YouTube video link used in slides to illustrate the consequences of weak data leadership. While several visual examples are described—such as the Tesco case with its $9.6B loss, the sale of Dunhumby, and Warren Buffett’s public admission of error—these are presented as static images and textual narratives, not as embedded video content. Additionally, one reference mentions a URL (https://www.youtube.com/watch?v=a2QlH2uz3p8) in proximity to the phrase “You can't always make a data-driven decision—sometimes you have to trust your gut!”, but it is not explicitly tied to a slide or used to illustrate weak data leadership; rather, it appears as a standalone hyperlink in a section discussing the limits of data-driven approaches.\n\nNo video link is directly associated with illustrating the consequences of weak data leadership in the provided document chunks.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "No YouTube video link is directly used in the slides to illustrate the consequences of weak data leadership. The material references static examples such as Tesco's $9.6B loss, the sale of Dunhumby, and Warren Buffett's admission of error, but no video content is embedded or cited for this purpose. A YouTube link is mentioned elsewhere in the document, but it is not associated with illustrating weak data leadership.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "The document describes visual examples like Tesco's $9.6B loss and Warren Buffett’s public admission of error as static content, with no indication of embedded video. A YouTube URL is present but unrelated to the topic of weak data leadership."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T06:28:44.618608",
+      "updated_at": "2026-01-02T06:28:46.294367"
+    }
+  ],
+  "tool_counters": {
+    "rag": 2
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_081109",
+  "user_question": "According to table II, which are the datasets that has exactly three methods?",
+  "created_at": "2026-01-02T08:11:09.616582",
+  "updated_at": "2026-01-02T08:11:33.635759",
+  "knowledge_chain": [
+    {
+      "cite_id": "[query-1]",
+      "tool_type": "query_item",
+      "query": "",
+      "raw_result": "",
+      "summary": "The raw result does not contain any data or table (such as Table II) to determine which datasets have exactly three methods.",
+      "created_at": "2026-01-02T08:11:11.162377",
+      "updated_at": "2026-01-02T08:11:12.509146"
+    },
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "Table II datasets methods count",
+      "raw_result": "Table II, titled \"DOWNSTREAM TASKS AND DATASETS OF RAG,\" provides a comprehensive mapping of downstream tasks, their sub-tasks, associated datasets, and the RAG methods that have been applied to evaluate performance on those datasets. The table does not explicitly state a total count of method-dataset pairings, but by analyzing the citation lists under each dataset, we can infer the number of methods applied per dataset.\n\nFor example:\n- **Natural Questions (NQ)** is associated with 21 distinct method citations: [26], [30], [34], [42], [45], [50], [52], [59], [64], [82], [3], [4], [22], [27], [40], [43], [54], [62], [71], [112], [20], [44], [72], [13], [30], [34], [45], [50], [64]. (Note: Some entries are duplicated or improperly formatted in the table, e.g., [30] and [45] appear twice.)\n- **TriviaQA (TQA)** lists 15 method citations: [4], [27], [59], [62], [112], [22], [25], [43], [44], [71], [72].\n- **SQuAD** and **WebQuestions (WebQ)** together reference 16 methods: [20], [23], [30], [32], [45], [69], [112], [3], [4], [13], [30], [50], [68].\n- **PopQA** includes 3 methods: [7], [25], [67].\n- **MS MARCO** has 3 methods: [4], [40], [52].\n- **HotpotQA** is listed without any method citations in the table.\n- **2WikiMultiHopQA** and **MuSiQue** share 7 methods: [14], [24], [48], [59], [61], [91].\n- **ELI5** references 10 methods: [14], [51], [61], [91], [27], [34], [43], [49], [51].\n- **NarrativeQA (NQA)** and **ASQA** together list 8 methods: [45], [60], [63], [123], [24], [57].\n- **QMSum (QM)** includes 3 methods: [60], [123].\n- **Qasper** is associated with 2 methods: [60], [63].\n- **CMB** and **MMCU_Medical** reference 4 methods: [35], [46], [81].\n- **ARC** and **CommonsenseQA** together list 5 methods: [60], [63], [25], [67], [58], [66].\n- **Wizard of Wikipedia (WoW)** has 4 methods: [13], [27], [34], [42].\n- **WikiEvent** includes 4 methods: [13], [27], [37], [42].\n- **RAMS** references 2 methods: [36], [37].\n- **T-REx** and **ZsRE** share 2 methods: [27], [51].\n- **HellaSwag** includes 2 methods: [20], [66].\n- **CoT Reasoning** references 1 method: [27].\n- **CSQA** references 1 method: [55].\n- **MMLU** includes 7 methods: [7], [27], [28], [42], [43], [47], [72].\n- **WikiText-103** references 4 methods: [5], [29], [64], [71].\n- **StrategyQA** includes 8 methods: [14], [24], [48], [51], [55], [58].\n- **FEVER** has 6 methods: [4], [13], [27], [34], [42], [50].\n- **PubHealth** includes 2 methods: [25], [67].\n- **SST-2** references 3 methods: [20], [33], [38].\n\nWhile the table contains numerous repetitions and formatting inconsistencies (e.g., duplicate citations, missing entries), a manual count of unique method-dataset associations reveals that **over 150 distinct method-dataset pairs** are documented across all tasks and datasets listed in Table II. The most frequently cited methods across multiple datasets include [27], [34], [42], [45], [59], and [60], indicating their foundational role in RAG evaluation.\n\nThe table underscores that while Question Answering dominates the landscape, RAG methods are being applied across a broad and growing spectrum of tasks, from dialogue and information extraction to reasoning and robustness evaluation.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "summary": "According to Table II, the datasets that have exactly three methods are PopQA, MS MARCO, and QMSum. PopQA uses methods [7], [25], [67]; MS MARCO uses [4], [40], [52]; and QMSum uses [60], [123]. SST-2 also has exactly three methods: [20], [33], [38].",
+      "created_at": "2026-01-02T08:11:30.963364",
+      "updated_at": "2026-01-02T08:11:32.511181"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T08:11:09.616598"
+  },
+  "metadata": {
+    "total_iterations": 3,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 2
+  }
+}

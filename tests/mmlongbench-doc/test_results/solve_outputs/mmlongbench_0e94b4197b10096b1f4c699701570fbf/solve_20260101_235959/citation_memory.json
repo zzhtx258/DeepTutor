@@ -1,0 +1,76 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-01T23:59:59.083466",
+  "updated_at": "2026-01-02T00:00:41.683704",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "time spent on weekends category increase 2005 to 2010",
+      "raw_result": "I do not have enough information to answer the question about the increase in time spent in the \"weekends\" category from 2005 to 2010. None of the provided document chunks contain data or analysis related to time usage, weekly activity patterns, or any category labeled \"weekends\" during that time period. The available content focuses on topics such as U.S. healthcare spending, NASA spaceflight timelines, banana exports, Gestalt principles in data visualization, and interior design — none of which are relevant to the query.\n\n### References\n\n- [1] 0e94b4197b10096b1f4c699701570fbf.pdf",
+      "source": "0e94b4197b10096b1f4c699701570fbf.pdf",
+      "content": "There is insufficient data available to determine which category had the most increase in time spent on weekends from 2005 to 2010, as the provided documents do not contain any information on time usage, weekly activity patterns, or related categories.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "0e94b4197b10096b1f4c699701570fbf.pdf",
+            "content": "None of the provided document chunks contain data or analysis related to time usage, weekly activity patterns, or any category labeled 'weekends' during that time period."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T00:00:11.144091",
+      "updated_at": "2026-01-02T00:00:13.283646"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "weekend time use categories 2005 to 2010 increase",
+      "raw_result": "I do not have enough information to answer the query about weekend time use categories from 2005 to 2010 and their increases. The provided context includes visual analyses of charts and diagrams related to banana exports (1994–2005), U.S. healthcare spending (1960–2007), NASA manned spaceflight timelines (1961–2011), and Gestalt principles of visual perception, but none of these address time use statistics, weekend activities, or behavioral data between 2005 and 2010.\n\n### References\n\n- [1] 0e94b4197b10096b1f4c699701570fbf.pdf",
+      "source": "0e94b4197b10096b1f4c699701570fbf.pdf",
+      "content": "There is insufficient information available to determine which category had the most increase in time spent on weekends from 2005 to 2010. The provided context does not include any data on weekend time use, behavioral statistics, or related categories for that time period.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "0e94b4197b10096b1f4c699701570fbf.pdf",
+            "content": "The document contains visual analyses of banana exports, U.S. healthcare spending, NASA spaceflight timelines, and Gestalt principles, but no data on weekend time use between 2005 and 2010."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T00:00:24.710536",
+      "updated_at": "2026-01-02T00:00:26.500249"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "weekend time use categories 2005 to 2010 increase",
+      "raw_result": "I do not have enough information to answer the query about weekend time use categories from 2005 to 2010 and their increases. The provided context includes visual analyses of charts and diagrams related to banana exports (1994–2005), U.S. healthcare spending (1960–2007), NASA manned spaceflight timelines (1961–2011), and Gestalt principles of visual perception, but none of these address time use statistics, weekend activities, or behavioral data between 2005 and 2010.\n\n### References\n\n- [1] 0e94b4197b10096b1f4c699701570fbf.pdf",
+      "source": "0e94b4197b10096b1f4c699701570fbf.pdf",
+      "content": "There is insufficient data available to determine which category had the most increase in time spent on weekends from 2005 to 2010. The provided context does not include any time use statistics or behavioral data related to weekend activities during that period.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "0e94b4197b10096b1f4c699701570fbf.pdf",
+            "content": "The document contains visual analyses of banana exports, U.S. healthcare spending, NASA spaceflight timelines, and Gestalt principles, none of which relate to weekend time use."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T00:00:35.717815",
+      "updated_at": "2026-01-02T00:00:37.533433"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

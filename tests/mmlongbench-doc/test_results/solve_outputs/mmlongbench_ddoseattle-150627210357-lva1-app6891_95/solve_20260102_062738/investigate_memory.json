@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_062738",
+  "user_question": "What are the examples the slides show \"what does not make you data-driven\"",
+  "created_at": "2026-01-02T06:27:38.094349",
+  "updated_at": "2026-01-02T06:27:52.842283",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "examples of what does not make you data-driven slides",
+      "raw_result": "Having numerous reports, dashboards, or alerts does not make an organization data-driven. Visual examples from the context illustrate this misconception clearly. One image depicts a cluttered office desk covered in stacks of printed reports labeled “Sales KPIs,” “Customer Retention,” and “Website Traffic,” alongside multiple monitors displaying complex dashboards filled with charts and real-time data points. A sticky note on the desk reads, “More reports = better?” — directly challenging the assumption that volume equates to insight. The harsh fluorescent lighting and disorganized layout emphasize inefficiency and cognitive overload, reinforcing that data accumulation without analysis or action leads to paralysis, not progress.\n\nAnother visual shows a manager seated at a desk surrounded by dozens of dashboards and printed KPIs, arms crossed, looking unimpressed, while a whiteboard behind them boldly states, “Data-Driven? No. Data-Obsessed.” This satirical scene critiques the illusion of productivity created by surface-level data visibility. Similarly, an alerts dashboard interface displays 147 active alerts across various system metrics — such as CPU usage and network latency — yet contains no root-cause analysis, interpretation, or decision pathways. These visuals collectively argue that raw data outputs, even when numerous or visually sophisticated, remain meaningless without context, interpretation, and action.\n\nA third example highlights the over-reliance on tools: a bar chart titled “Number of Tools Used” reveals that while analysts and data engineers use up to 11 tools, executives use only two — suggesting a disconnect between technical capability and strategic adoption. This imbalance implies that tool proliferation alone does not cultivate a data-driven culture. Additionally, the presence of a Hadoop cluster or advanced analytics infrastructure is explicitly noted as insufficient; as one slide states, “Having a Hadoop cluster does not make you data-driven.” The underlying message across these visuals is consistent: data-driven maturity is defined not by quantity of outputs, but by the quality of insights, the rigor of experimentation, and the alignment of actions with outcomes.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "summary": "Having numerous reports, dashboards, alerts, or advanced tools like Hadoop clusters does not make an organization data-driven. Examples include a cluttered desk covered in printed KPIs and multiple monitors showing complex dashboards with no action or interpretation, a manager surrounded by dashboards labeled 'Data-Obsessed,' and an alerts dashboard with 147 active alerts lacking root-cause analysis. These visuals emphasize that data accumulation without insight, context, or decision-making leads to paralysis, not progress. Tool proliferation and technical infrastructure alone are insufficient without cultural alignment and action-oriented use of data.",
+      "created_at": "2026-01-02T06:27:49.850366",
+      "updated_at": "2026-01-02T06:27:51.717121"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T06:27:38.094359"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T04:57:42.951015",
+  "updated_at": "2026-01-02T04:58:23.802163",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "average exit cap comparison US Europe China same value USD million",
+      "raw_result": "The provided context includes detailed comparisons of average exit capital between the United States and Europe, but it does not contain any data regarding China’s average exit cap or any direct comparison involving China. \n\nThe available data shows that the average exit value for companies with exits above $100M is approximately $350 million in both the United States and Europe, as illustrated in the bar chart titled “Average Exit Cap ($100M+ Exits) US$M” (reference_id: 1). This indicates that, despite differing levels of capital investment, Europe has matched the U.S. in exit valuations.\n\nHowever, there is no mention of China in any of the document chunks, nor are there any charts, figures, or textual references comparing exit values in China to those in the U.S. or Europe. Therefore, it is not possible to determine whether China’s average exit cap is the same, higher, or lower than that of the U.S. and Europe based on the provided information.\n\n### References\n\n- [1] earlybird-110722143746-phpapp02_95.pdf",
+      "source": "earlybird-110722143746-phpapp02_95.pdf",
+      "content": "The available data shows that the average exit cap for companies with exits above $100 million is approximately $350 million in both the United States and Europe, but there is no information provided about China's average exit cap, so it cannot be confirmed whether all three regions share the same value.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "earlybird-110722143746-phpapp02_95.pdf",
+            "content": "The average exit value for companies with exits above $100M is approximately $350 million in both the United States and Europe."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T04:57:54.804050",
+      "updated_at": "2026-01-02T04:57:56.379679"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "average exit cap China USD million",
+      "raw_result": "The provided context contains detailed information about venture capital exit valuations in the United States and Europe, including metrics such as average exit cap for $100M+ exits, capital invested prior to exits, median multiples, and entry valuations. However, there is no mention of China or any data related to average exit capital in China in USD millions within the provided document chunks.\n\nTherefore, based on the available information, it is not possible to determine the average exit cap in China in USD millions.\n\n### References\n\n- [1] earlybird-110722143746-phpapp02_95.pdf",
+      "source": "earlybird-110722143746-phpapp02_95.pdf",
+      "content": "The provided context contains no data on China's average exit cap in USD millions, and therefore cannot determine the value where the US, Europe, and China have the same average exit cap.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "earlybird-110722143746-phpapp02_95.pdf",
+            "content": "The provided context contains detailed information about venture capital exit valuations in the United States and Europe, including metrics such as average exit cap for $100M+ exits, capital invested prior to exits, median multiples, and entry valuations. However, there is no mention of China or any data related to average exit capital in China in USD millions within the provided document chunks."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T04:58:07.065167",
+      "updated_at": "2026-01-02T04:58:08.522996"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "China average exit cap USD million",
+      "raw_result": "The provided context does not contain any information regarding the average exit capital (in USD million) for China. All referenced data pertains exclusively to venture capital exit performance comparisons between the United States and Europe, with specific details on countries such as Germany, the UK, and France. There is no mention of China’s exit valuations, venture capital investment levels, or related metrics in any of the document chunks or reference materials.\n\n### References\n\n- [1] earlybird-110722143746-phpapp02_95.pdf",
+      "source": "earlybird-110722143746-phpapp02_95.pdf",
+      "content": "The provided context does not contain any information about the average exit capital for China, the United States, or Europe, and therefore cannot identify a shared average exit cap value in USD million.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "earlybird-110722143746-phpapp02_95.pdf",
+            "content": "All referenced data pertains exclusively to venture capital exit performance comparisons between the United States and Europe, with specific details on countries such as Germany, the UK, and France. There is no mention of China’s exit valuations, venture capital investment levels, or related metrics in any of the document chunks or reference materials."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T04:58:19.467550",
+      "updated_at": "2026-01-02T04:58:20.933387"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

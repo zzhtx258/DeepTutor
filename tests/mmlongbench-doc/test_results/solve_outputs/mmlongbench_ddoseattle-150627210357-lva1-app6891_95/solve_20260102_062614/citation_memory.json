@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T06:26:14.611632",
+  "updated_at": "2026-01-02T06:26:33.276326",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "Levels of Analytics chart four business analytics activities",
+      "raw_result": "The Levels of Analytics framework, as depicted in the provided context, organizes business analytics into a hierarchical pyramid of seven distinct capabilities, progressing from foundational reporting to strategic decision-making. While the framework includes seven levels, four key business analytics activities can be identified as central components of this progression:\n\n1. **Standard Reports** – This foundational level answers the question, “What happened?” It involves routine, historical data presentation through reports, dashboards, and alerts. This stage is descriptive and backward-looking, summarizing past events without providing deeper insight or context.\n\n2. **Statistical Analysis** – At the third level, analytics evolve to address “Why is this happening?” This stage moves beyond simple description to uncover patterns, correlations, and root causes using statistical methods. It transforms raw data into meaningful information, enabling organizations to understand underlying drivers of performance.\n\n3. **Predictive Modelling** – Positioned as the fifth level, this activity seeks to answer, “What will happen next?” It leverages advanced statistical models and machine learning techniques to forecast future outcomes based on historical trends and patterns. This represents a shift from understanding the past to anticipating the future.\n\n4. **Optimisation** – The sixth level focuses on identifying the best possible outcomes by answering, “What’s the best that can happen?” This prescriptive stage uses simulation, scenario analysis, and optimization algorithms to recommend specific actions that maximize desired results, such as revenue, efficiency, or customer satisfaction.\n\nThese four activities represent a critical progression in the analytics maturity continuum—from observing what occurred, to understanding why it occurred, predicting what may occur, and finally determining the optimal course of action.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "The four key business analytics activities according to the Levels of Analytics framework are: Standard Reports, which describe what happened; Statistical Analysis, which explains why it happened; Predictive Modelling, which forecasts what will happen; and Optimisation, which recommends the best course of action to achieve desired outcomes.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "The Levels of Analytics framework... organizes business analytics into a hierarchical pyramid... four key business analytics activities can be identified as central components: Standard Reports, Statistical Analysis, Predictive Modelling, and Optimisation."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T06:26:28.327283",
+      "updated_at": "2026-01-02T06:26:29.856054"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

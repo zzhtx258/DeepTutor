@@ -1,0 +1,76 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-01T17:46:24.619802",
+  "updated_at": "2026-01-01T17:47:25.604446",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "foreign born Latinos population survey",
+      "raw_result": "The 2015 National Survey of Latinos, conducted by the Pew Research Center, included a nationally representative sample of 1,500 Latino adults, with 795 respondents identified as foreign-born (excluding Puerto Rico). This subgroup constituted 53% of the total sample, reflecting the demographic composition of the U.S. Latino population at the time. The survey employed a dual-frame telephone design—combining landline and cellular samples—to ensure broad coverage, with oversampling in areas with higher densities of Latino residents to improve representation.\n\nThe foreign-born subgroup was analyzed separately from U.S.-born Latinos (including Puerto Rico, n=705), allowing for comparisons on key economic and social indicators. For instance, both foreign-born and U.S.-born Latinos showed similar levels of optimism about their family’s financial future in 2015, with 81% in each group expecting improvement in the coming year. Additionally, 75% of foreign-born adults expected their children to be better off financially than themselves, compared to 70% of U.S.-born adults.\n\nThe survey methodology accounted for potential sampling biases through multistage weighting, using data from the 2013 American Community Survey to adjust for geographic and demographic imbalances, including the oversampling of areas with higher Latino population density and the use of surname-based strata in landline sampling. These adjustments ensured that findings for the foreign-born subgroup could be generalized to the broader U.S. foreign-born Latino population.\n\nThe survey was conducted in both English and Spanish, with 45% of respondents interviewed in Spanish, ensuring accessibility for non-English-dominant foreign-born Latinos. The margin of error for the foreign-born subgroup was ±4.4 percentage points at the 95% confidence level, slightly higher than the overall sample due to its smaller size.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "In the 2015 National Survey of Latinos by the Pew Research Center, 795 out of 1,500 Latino adults were identified as foreign-born, making up 53% of the sample. This means the number of foreign-born Latinos surveyed was greater than the number of U.S.-born Latinos (705). The survey included both landline and cellphone interviews, but the comparison is between foreign-born and U.S.-born Latinos, not between those interviewed by cellphone versus foreign-born status. Therefore, foreign-born Latinos were the larger subgroup in the survey.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "The 2015 National Survey of Latinos... included a nationally representative sample of 1,500 Latino adults, with 795 respondents identified as foreign-born (excluding Puerto Rico). This subgroup constituted 53% of the total sample..."
+          }
+        ]
+      },
+      "created_at": "2026-01-01T17:46:34.640491",
+      "updated_at": "2026-01-01T17:46:37.850406"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "Pew Research Center 2015 National Survey of Latinos number of Latinos interviewed by cellphone",
+      "raw_result": "The 2015 National Survey of Latinos conducted by the Pew Research Center included a total of 1,500 Latino adults interviewed via both landline and cellphone telephones. Of these, 1,051 interviews were conducted via cellphone. This cellphone sample was part of a dual-frame design that also included 449 landline interviews, ensuring broader coverage of the Latino population, particularly those who rely primarily on mobile phones.\n\nThe cellphone sample was stratified based on the share of Latinos in the telephone area code, with interviews distributed across high, medium, and low strata. The sample was further weighted to correct for oversampling and to align with national demographic benchmarks from the 2013 American Community Survey.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "In the 2015 National Survey of Latinos by the Pew Research Center, 1,051 Latinos were interviewed by cellphone, which is greater than the number of foreign-born Latinos mentioned in the context, though the exact number of foreign-born Latinos is not provided in the result.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "The 2015 National Survey of Latinos conducted by the Pew Research Center included a total of 1,500 Latino adults interviewed via both landline and cellphone telephones. Of these, 1,051 interviews were conducted via cellphone."
+          }
+        ]
+      },
+      "created_at": "2026-01-01T17:46:51.312253",
+      "updated_at": "2026-01-01T17:46:53.524645"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "2015 Pew Research Center National Survey of Latinos breakdown of cellphone-interviewed respondents by foreign-born vs U.S.-born status",
+      "raw_result": "The 2015 Pew Research Center National Survey of Latinos included a total of 1,500 respondents, with interviews conducted via both landline and cellular telephones. Of these, 1,051 interviews were completed via cellphone. The survey further broke down the sample by nativity: 705 respondents were U.S.-born (including Puerto Rico), and 795 were foreign-born (excluding Puerto Rico). While the document does not explicitly state the exact number of cellphone-interviewed respondents who were foreign-born versus U.S.-born, it does indicate that the overall sample was stratified to reflect these demographic divisions, and the dual-frame design (landline and cellphone) was weighted to ensure national representativeness.\n\nGiven that the total foreign-born sample was 795 and the total U.S.-born sample was 705, and assuming proportional distribution across the two sampling frames (landline and cellphone), the cellphone sample of 1,051 would reflect a similar ratio. The foreign-born portion of the total sample constitutes approximately 53% (795/1,500), and the U.S.-born portion is 47% (705/1,500). Applying these proportions to the cellphone subsample:\n\n- Foreign-born cellphone respondents: ~53% of 1,051 ≈ 557\n- U.S.-born cellphone respondents: ~47% of 1,051 ≈ 494\n\nThese estimates are derived from the overall sample distribution and the survey’s methodological commitment to maintaining demographic representation across frames. The survey used multistage weighting to correct for sampling imbalances, ensuring that estimates from both landline and cellphone samples accurately reflected the national Latino population.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "In the 2015 Pew Research Center National Survey of Latinos, the foreign-born Latinos were greater in number than the U.S.-born Latinos in the overall sample. Among the 1,051 respondents interviewed by cellphone, it is estimated that approximately 557 were foreign-born and 494 were U.S.-born, based on the overall sample proportions and the survey's weighted methodology.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "The 2015 Pew Research Center National Survey of Latinos included a total of 1,500 respondents... The foreign-born portion of the total sample constitutes approximately 53%... Applying these proportions to the cellphone subsample: Foreign-born cellphone respondents: ~53% of 1,051 ≈ 557"
+          }
+        ]
+      },
+      "created_at": "2026-01-01T17:47:07.327374",
+      "updated_at": "2026-01-01T17:47:09.678502"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

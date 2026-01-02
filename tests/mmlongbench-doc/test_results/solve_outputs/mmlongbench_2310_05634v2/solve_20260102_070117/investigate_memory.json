@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_070117",
+  "user_question": "For dataset construction, which step takes the most word to describe than the others. ",
+  "created_at": "2026-01-02T07:01:17.017150",
+  "updated_at": "2026-01-02T07:01:34.928338",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "dataset construction steps description length comparison",
+      "raw_result": "The dataset construction process for BioKaLMA, as described in the provided context, consists of three clearly defined and sequentially executed steps: **Person Selection**, **Name Disambiguation**, and **Evolutionary Question Generation**. Each step is detailed with specific algorithms and criteria, indicating a highly structured and methodical pipeline.\n\nThe **Person Selection** phase focuses on selecting high-quality name pairs and associated biographical paragraphs from a curated human-annotated database, ensuring that only complete names (with both family and given names) are retained to avoid ambiguity. This step is concise in description but foundational, as it determines the input quality for subsequent stages.\n\nThe **Name Disambiguation** step is more technically involved, requiring the mapping of ambiguous names to unique entities in WikiData using SPARQL queries and QIDs. This process includes retrieving one-hop sub-graphs to form a “knowledge pool” for each individual, ensuring that each entity is uniquely identified and enriched with relevant properties such as occupation, birth date, and relationships. This phase is substantially more detailed than Person Selection, reflecting its critical role in resolving real-world naming conflicts and enabling precise knowledge grounding.\n\nThe **Evolutionary Question Generation** step is the most elaborate, involving iterative knowledge injection over five rounds. It employs a composite scoring function that balances specificity (derived from IDF-like metrics) and coherence (measured via perplexity) to select the most informative knowledge triples for incremental paragraph expansion. The use of LLMs (e.g., text-davinci-003) with in-context learning, paired with distinct prompts for general and specific question generation, adds significant depth to this phase. The mathematical formulation of the scoring function and the explicit design of the iterative process (including templates, thresholds, and evaluation criteria) make this step the longest and most complex in description.\n\nIn terms of description length, the order is:  \n**Evolutionary Question Generation > Name Disambiguation > Person Selection**\n\nThis progression reflects the increasing technical sophistication and computational complexity required to generate high-quality, knowledge-intensive questions. The initial step is brief and preparatory, the middle step is moderately detailed and essential for entity resolution, while the final step is extensively documented due to its algorithmic innovation and central role in controlling question difficulty and knowledge coverage.\n\n### References\n\n- [1] 2310.05634v2.pdf",
+      "summary": "In the dataset construction process for BioKaLMA, the Evolutionary Question Generation step is the most extensively described, followed by Name Disambiguation, and then Person Selection. This is due to its iterative, algorithmically complex design involving LLMs, a composite scoring function based on specificity and coherence metrics, and detailed templates for question generation, making it the longest and most technically detailed phase.",
+      "created_at": "2026-01-02T07:01:32.246655",
+      "updated_at": "2026-01-02T07:01:33.705603"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T07:01:17.017162"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

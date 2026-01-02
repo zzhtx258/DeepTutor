@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_001654",
+  "user_question": "How many exterior photos of organisations does this report provide?",
+  "created_at": "2026-01-02T00:16:54.496915",
+  "updated_at": "2026-01-02T00:17:12.088907",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "exterior photos of organisations in report",
+      "raw_result": "The report includes several exterior photographs of key organizations and facilities within India’s space program, each capturing the architectural and operational character of these institutions. These images serve as visual documentation of the infrastructure supporting ISRO’s missions and technological capabilities.\n\nExterior views include the main building of the Indian Institute of Remote Sensing (IIRS) in Dehradun, a modern, symmetrical structure with large rectangular windows and a prominent sign displaying “IIRS” in both Devanagari script and English, set against a landscaped campus with a paved forecourt and lawn. Another exterior image depicts the Liquid Propulsion Systems Centre (LPSC) in Bengaluru, a single-story industrial facility with a minimalist white facade, large grid-patterned windows, and a clearly visible sign reading “LPSC BENGALURU” in Sanskrit font, accompanied by the Indian national flag near the entrance. The ISRO Satellite Integration and Test Establishment (ISITE) building in Bengaluru is also shown, featuring expansive glass facades, a flat roof, and a large “ISITE” sign above the entrance, surrounded by a clean, open campus with trimmed hedges and a partially visible service vehicle indicating active operations.\n\nThe Semi-Conductor Laboratory (SCL) in Chandigarh is presented in two views: one of its modern exterior with glass panels and concrete framing, set within a well-maintained green campus, and another showing an interior cleanroom where personnel in full protective gear operate semiconductor fabrication equipment. The Integrated Test Complex (ITC) at the ISRO Inertial Systems Unit (IISU) in Thiruvananthapuram is captured as a single-story industrial building with white walls, grid windows, and a clear “ITC” sign, with a service vehicle parked nearby, indicating operational readiness.\n\nAdditionally, the Infrared Observatory at Mt. Abu, Rajasthan, is photographed as a low-profile dome-shaped structure on rocky, arid terrain, with its dome partially open to reveal the telescope housing, reflecting its role in solar and stellar astronomy. The MST Radar facility at the National Atmospheric Research Laboratory (NARL) in Gadanki is shown as a large, tall lattice tower supporting a grid of square metallic radar antennas, surrounded by a safety fence and rural landscape, emphasizing its function in atmospheric profiling. The Semi-cryogenic Cold Flow Test facility (SCFT) at IPRC, Mahendragiri, is depicted as an industrial-scale test stand surrounded by high-pressure piping, cylindrical storage tanks, and instrumentation towers, illustrating its role in propulsion system testing.\n\nThese exterior photographs collectively reinforce the institutional scale, technological sophistication, and geographic distribution of India’s space infrastructure, aligning with the textual descriptions of each center’s mission and function.\n\n### References\n\n- [1] fdac8d1e9ef56519371df7e6532df27d.pdf",
+      "summary": "The report provides eight exterior photographs of organizations within India’s space program, including the Indian Institute of Remote Sensing (IIRS), Liquid Propulsion Systems Centre (LPSC), ISRO Satellite Integration and Test Establishment (ISITE), Semi-Conductor Laboratory (SCL) in two views, Integrated Test Complex (ITC), Infrared Observatory at Mt. Abu, MST Radar facility at NARL, and the Semi-cryogenic Cold Flow Test facility (SCFT) at IPRC.",
+      "created_at": "2026-01-02T00:17:08.823556",
+      "updated_at": "2026-01-02T00:17:10.792298"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T00:16:54.496932"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

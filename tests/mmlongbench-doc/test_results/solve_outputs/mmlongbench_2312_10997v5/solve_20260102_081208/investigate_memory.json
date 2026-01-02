@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_081208",
+  "user_question": "Which method integrates knowledge into white-box models via directive fine-tuning?",
+  "created_at": "2026-01-02T08:12:08.867169",
+  "updated_at": "2026-01-02T08:12:24.324994",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "directive fine-tuning white-box models knowledge integration method",
+      "raw_result": "Directive fine-tuning is an innovative method for integrating knowledge into white-box models, as introduced by PKG [75]. In this approach, the traditional retriever module is directly substituted to generate relevant documents according to a given query. This method addresses challenges encountered during conventional fine-tuning processes, particularly when integrating external knowledge into models with transparent, interpretable architectures. By enabling the model to generate contextually relevant documents on-demand, directive fine-tuning enhances performance without requiring separate retrieval components or external knowledge bases during inference. This technique facilitates a more seamless and efficient alignment between the model’s internal parameters and the external knowledge it needs to access, improving accuracy and adaptability in knowledge-intensive tasks.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "summary": "Directive fine-tuning is a method for integrating knowledge into white-box models by replacing the traditional retriever module to generate relevant documents on-demand according to a given query. This approach enhances model performance by aligning internal parameters with external knowledge without requiring separate retrieval components or external knowledge bases during inference, improving accuracy and adaptability in knowledge-intensive tasks.",
+      "created_at": "2026-01-02T08:12:21.479711",
+      "updated_at": "2026-01-02T08:12:23.088900"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T08:12:08.867183"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

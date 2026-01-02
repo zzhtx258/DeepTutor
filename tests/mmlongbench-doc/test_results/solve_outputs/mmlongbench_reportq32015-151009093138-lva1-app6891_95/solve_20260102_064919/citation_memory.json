@@ -1,0 +1,54 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T06:49:19.912125",
+  "updated_at": "2026-01-02T06:49:56.719468",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "Vietnam mobile news articles or content",
+      "raw_result": "Vietnam’s mobile ecosystem in Q3 2015 was marked by rapid growth in smartphone adoption, evolving advertising models, and a booming mobile app market. Instagram emerged as a key platform for advertising, having officially opened its doors to all advertisers in Vietnam, with projections that it would become a powerful mobile advertising platform due to its high user engagement—despite being more expensive than other platforms. With approximately 7 million active users in Vietnam at the time, Instagram’s visual and social nature made it particularly effective for brand promotion, as evidenced by influencer-style content featuring local Vietnamese users and cultural cues such as Vietnamese-language comments and Hanoi-themed imagery.\n\nMobile advertising in Vietnam was dominated by in-app and incentive-based models, with 84% of all ad impressions occurring within mobile apps rather than mobile websites. Non-incentive ad networks such as AdMob, Mobvista, and ADSOTA led the market, while incentive reward platforms experienced a boom, with each major player delivering between 5,000 and 20,000 installs per day. These platforms often used reward-based mechanics—such as offering in-game coins or currency—to drive user acquisition, as visually demonstrated in screenshots showing full-screen “CLAIM NOW” ads on Samsung devices, the market-leading smartphone brand in Vietnam.\n\nThe mobile app market saw significant activity in app ranking services, such as Appota’s “Boost Top Service,” which helped developers rapidly climb rankings on platforms like the Apple App Store. This was reflected in the top-free charts, where Vietnamese-language apps like *Tieu Ngao Giang* and *Zing MP3-Dinh 2 Cao Am* dominated, likely due to such promotional services. Additionally, the Bluebird Award, a major competition for indie mobile game developers, gained prominence as a platform to showcase talent and gain visibility.\n\nUser behavior on smartphones revealed that social networking was the most frequent daily activity, followed closely by watching videos and messaging. Peak download times occurred in the evening, especially at 8 PM, aligning with after-work and leisure hours. Gaming was also highly popular, with titles like *Đột Kích* (Counter-Strike), *Liên Quân Mobile* (Arena of Valor), and *Candy Crush Saga* leading in download volumes. Mobile video ads saw rapid adoption due to the millions of daily video views on smartphones, while user motivations for engaging with ads centered on discovering deals (46%), learning about brands (44%), and downloading content (54.9% CTR).\n\nThe broader mobile landscape was shaped by Android’s dominance (82.8% global market share), with Lollipop gaining traction in Vietnam, while iOS adoption surged with iOS 9’s record-fast uptake. Samsung maintained its leadership among device manufacturers, and the market was supported by a young, tech-savvy population—57% of people under 44 used smartphones, with an average of 1.4 devices per person.\n\n### References\n\n- [1] reportq32015-151009093138-lva1-app6891_95.pdf",
+      "source": "reportq32015-151009093138-lva1-app6891_95.pdf",
+      "content": "The raw result describes Vietnam's mobile ecosystem in Q3 2015, highlighting trends in smartphone adoption, mobile advertising, and app market dynamics. It mentions Appota’s 'Boost Top Service' as a key ranking promotion tool for mobile apps on platforms like the Apple App Store, but does not mention 'Vietnam mobile news' as a distinct source or publication. There is no evidence of overlapping content between 'Vietnam mobile news' and 'APPOTA news' because 'Vietnam mobile news' is not identified as a specific news source in the provided text.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "reportq32015-151009093138-lva1-app6891_95.pdf",
+            "content": "The mobile app market saw significant activity in app ranking services, such as Appota’s 'Boost Top Service,' which helped developers rapidly climb rankings on platforms like the Apple App Store."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T06:49:33.090268",
+      "updated_at": "2026-01-02T06:49:34.858640"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "What is APPOTA news and is it a recognized news publication in Vietnam?",
+      "raw_result": "Appota is not a news publication in Vietnam; it is Vietnam’s number-one mobile content distribution platform. Its primary function is to enable developers and game publishers to effectively distribute their mobile content—such as apps and games—to the largest smartphone communities in Southeast Asia, with Vietnam accounting for 18 million users as of Q3 2015. Appota provides market insights through quarterly mobile market reports, which analyze trends in the Vietnamese mobile ecosystem, including advertising, user behavior, and app performance.\n\nWhile Appota publishes reports and updates about the mobile industry—such as trends in Instagram advertising, the rise of incentive reward platforms, and the performance of top mobile games—it does so as a market research and distribution company, not as a journalistic news outlet. Its content is data-driven and targeted at developers, publishers, and advertisers rather than the general public seeking news.\n\nAppota’s fanpage “Android Store Viet Nam” has become the biggest Vietnamese tech community on Facebook, further reinforcing its role as an industry hub rather than a news organization. The term “Appota news” in the context of the provided document refers to updates and insights released by Appota about the mobile market, not to a recognized news publication.\n\n### References\n\n- [1] reportq32015-151009093138-lva1-app6891_95.pdf",
+      "source": "reportq32015-151009093138-lva1-app6891_95.pdf",
+      "content": "Appota is not a news publication in Vietnam; it is the country's leading mobile content distribution platform that provides market research and industry insights, particularly on mobile apps, games, and advertising trends. While Appota releases data-driven reports and updates—such as through its Facebook page 'Android Store Viet Nam'—it does not function as a journalistic news outlet. Therefore, there is no such thing as 'Appota news' in the traditional sense, and it does not overlap with Vietnam mobile news as a news source.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "reportq32015-151009093138-lva1-app6891_95.pdf",
+            "content": "Appota is Vietnam’s number-one mobile content distribution platform... It provides market insights through quarterly mobile market reports..."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T06:49:46.393891",
+      "updated_at": "2026-01-02T06:49:48.479019"
+    }
+  ],
+  "tool_counters": {
+    "rag": 2
+  }
+}

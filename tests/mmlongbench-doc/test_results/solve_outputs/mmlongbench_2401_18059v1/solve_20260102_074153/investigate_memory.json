@@ -1,0 +1,46 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_074153",
+  "user_question": "In figure 4, which nodes are retrieved by RAPTOR for both questions?",
+  "created_at": "2026-01-02T07:41:53.677280",
+  "updated_at": "2026-01-02T07:42:13.960720",
+  "knowledge_chain": [
+    {
+      "cite_id": "[query-1]",
+      "tool_type": "query_item",
+      "query": "Figure 4",
+      "raw_result": "",
+      "summary": "No information about Figure 4 or RAPTOR's retrieved nodes is available in the provided result.",
+      "created_at": "2026-01-02T07:41:55.031003",
+      "updated_at": "2026-01-02T07:41:55.931363"
+    },
+    {
+      "cite_id": "[query-2]",
+      "tool_type": "query_item",
+      "query": "Figure 4",
+      "raw_result": "",
+      "summary": "No information about Figure 4 or RAPTOR's retrieved nodes is available in the provided result.",
+      "created_at": "2026-01-02T07:41:57.494055",
+      "updated_at": "2026-01-02T07:41:58.285862"
+    },
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "RAPTOR retrieved nodes Figure 4",
+      "raw_result": "Figure 4 illustrates RAPTOR’s tree-based retrieval process compared to Dense Passage Retrieval (DPR) for two thematic questions about the Cinderella fairytale: “What is the central theme of the story?” and “How did Cinderella find a happy ending?”. In this diagram, RAPTOR’s selected nodes are highlighted in bright yellow and primarily originate from the intermediate and root layers of the hierarchical tree structure, demonstrating its ability to aggregate information across abstraction levels. These higher-layer nodes contain synthesized summaries—such as “courage, resilience, transformation”—that capture broad narrative themes and causal relationships.\n\nIn contrast, DPR’s retrieved nodes are shown as isolated, unhighlighted leaf nodes at the bottom layer, marked by small red arrows, indicating their granular, low-level nature. These fragments include specific plot details like “glass slipper fits” or “fairy godmother appears,” but lack contextual integration. The visual design emphasizes that RAPTOR’s retrieved context often encompasses the information retrieved by DPR, either directly or embedded within higher-layer summaries, enabling more coherent and comprehensive answers for complex, multi-hop questions.\n\nThis comparison directly supports the claim that RAPTOR’s hierarchical structure outperforms DPR by retrieving semantically rich, multi-level summaries rather than fragmented text snippets, thereby improving downstream question-answering performance through better contextual synthesis.\n\n### References\n\n- [1] 2401.18059v1.pdf",
+      "summary": "In Figure 4, RAPTOR retrieves nodes from the intermediate and root layers of its hierarchical tree structure, which are highlighted in bright yellow. These nodes contain synthesized summaries such as 'courage, resilience, transformation' that capture broad narrative themes and causal relationships for both questions: 'What is the central theme of the story?' and 'How did Cinderella find a happy ending?'. These higher-layer nodes encompass the information retrieved by DPR, which consists of isolated leaf nodes with granular plot details like 'glass slipper fits' or 'fairy godmother appears'.",
+      "created_at": "2026-01-02T07:42:12.197206",
+      "updated_at": "2026-01-02T07:42:13.959114"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T07:41:53.677285"
+  },
+  "metadata": {
+    "total_iterations": 3,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.6,
+    "total_knowledge_items": 3
+  }
+}

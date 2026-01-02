@@ -1,0 +1,48 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T06:59:49.365035",
+  "updated_at": "2026-01-02T07:00:15.061340",
+  "citations": [
+    {
+      "cite_id": "[query-1]",
+      "tool_type": "query_item",
+      "query": "Retrieve Figure 5",
+      "raw_result": "",
+      "source": "",
+      "content": "No figure or visual content was provided in the search result, so it is not possible to determine the color of the line in Figure 5 that has no intersection with any other line.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": "Figure 5"
+      },
+      "created_at": "2026-01-02T06:59:50.620413",
+      "updated_at": "2026-01-02T06:59:51.587328"
+    },
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "Figure 5 line color no intersection with other lines",
+      "raw_result": "Figure 5 is a line chart that visually represents the impact of retrieval accuracy on citation quality metrics, plotting Precision (yellow), Recall (green), and F1-Score (blue) across retrieval accuracy levels of 20%, 40%, 60%, 80%, and 100%. The three lines in the chart—each representing one metric—are distinctly colored and do not intersect with one another. The yellow line for Precision shows a modest upward trend, remaining relatively stable even as retrieval accuracy decreases. The green line for Recall exhibits a steep, nearly linear decline, dropping sharply from approximately 57% at 100% accuracy to below 15% at 20%. The blue F1-Score line follows a trajectory similar to Recall, reflecting its dependence on both Precision and Recall, but it remains consistently above the Precision line and below the Recall line across all accuracy levels. The absence of intersections among the lines underscores the differential sensitivity of each metric to retrieval inaccuracies, with Recall being the most affected, followed by F1-Score, while Precision remains the most resilient. This non-intersecting configuration is intentional and reinforces the paper’s key finding: retrieval accuracy is a critical bottleneck for citation quality, particularly due to Recall’s high sensitivity.\n\n### References\n\n- [1] 2310.05634v2.pdf",
+      "source": "2310.05634v2.pdf",
+      "content": "In Figure 5, the yellow line representing Precision has no intersection with any other line. The green line for Recall and the blue line for F1-Score also do not intersect with each other, but the yellow line is the most resilient and remains consistently above the others across all retrieval accuracy levels, indicating its stability and lack of intersection with the declining Recall and F1-Score lines.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2310.05634v2.pdf",
+            "content": "The three lines in the chart—each representing one metric—are distinctly colored and do not intersect with one another. The yellow line for Precision shows a modest upward trend, remaining relatively stable even as retrieval accuracy decreases."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T07:00:06.227378",
+      "updated_at": "2026-01-02T07:00:07.686641"
+    }
+  ],
+  "tool_counters": {
+    "query": 1,
+    "rag": 1
+  }
+}

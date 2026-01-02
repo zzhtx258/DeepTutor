@@ -1,0 +1,37 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_070234",
+  "user_question": "According to author's definition on conscious incompetence, when can a sentence map to either [NA] or a list of sub-graph knowledge?",
+  "created_at": "2026-01-02T07:02:34.491718",
+  "updated_at": "2026-01-02T07:03:01.305227",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "definition of conscious incompetence in learning theory",
+      "raw_result": "In the context of the provided document, \"Conscious Incompetence\" is adapted from psychological learning theory (Curtiss and Warren, 1974) to the domain of knowledge-aware language model attribution. It refers to a setting in which a language model is capable of recognizing when the knowledge required to generate a valid, supported answer is absent from the provided knowledge graph. Rather than fabricating an answer or citation, the model is designed to explicitly signal this knowledge gap using a special token, [NA] (Not Applicable Citation). This mechanism allows the model to acknowledge its limitations — that is, to be “conscious” of its “incompetence” in the face of missing or unavailable information.\n\nThis concept extends the traditional Knowledge-aware Language Model Attribution (KaLMA) task by introducing a critical dimension of reliability: the model’s ability to refrain from generating unsupported claims when the underlying knowledge graph is incomplete. The [NA] token serves not as a conventional citation, but as an indicator of a detected knowledge gap, enabling users to identify uncertain or unverifiable claims in the model’s output. Empirical results from the BioKaLMA benchmark show that as knowledge coverage in the graph deteriorates, the precision of the [NA] mechanism increases, indicating that models become better at identifying when they lack sufficient information — a hallmark of conscious incompetence.\n\nThus, within this framework, conscious incompetence is not a failure of the model, but a desired feature that enhances trustworthiness and verifiability in attributed generation.\n\n### References\n\n- [1] 2310.05634v2.pdf",
+      "summary": "Conscious incompetence, as defined in the context of knowledge-aware language model attribution, refers to a model's ability to recognize when the required knowledge is absent from the provided knowledge graph and to respond with the [NA] token instead of fabricating an answer. This mechanism signals a detected knowledge gap, enhancing reliability and trustworthiness by acknowledging limitations rather than generating unsupported claims. The [NA] token acts as an indicator of unverifiable information, not as a conventional citation.",
+      "created_at": "2026-01-02T07:02:42.542789",
+      "updated_at": "2026-01-02T07:02:44.105273"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "conscious incompetence mapping sentence to [NA] or sub-graph knowledge criteria",
+      "raw_result": "In the context of Knowledge-aware Language Model Attribution (KaLMA), the mapping of a generated sentence to either a [NA] token or to sub-graph knowledge is governed by the presence or absence of required knowledge in the provided knowledge graph (KG). This mechanism is central to the “Conscious Incompetence” setting, which enables models to recognize when they lack sufficient information to generate a verifiable citation.\n\nA sentence is mapped to a [NA] token if it includes a claim that requires supporting knowledge, but that knowledge is absent from the retrieved knowledge graph. The [NA] token serves not as a conventional citation, but as an explicit indicator of a knowledge gap. According to the evaluation framework, [NA] is assigned when the model generates a sentence that references information that cannot be grounded in any triplet from the KG, even if the sentence itself remains factually plausible or coherent. For instance, if a sentence states “Artemisia Gentileschi was taught by Agostino Tassi,” but the triplet “Artemisia Gentileschi - teacher - Agostino Tassi” has been deliberately removed from the KG, the sentence must be marked with [NA] to reflect that the required knowledge is absent.\n\nConversely, a sentence is mapped to one or more sub-graph knowledge triplets if the knowledge it expresses is fully present and verifiable within the retrieved KG. Each citation corresponds to a specific knowledge triplet (e.g., [Q212657 - teacher - Q255768]) that directly supports a clause in the generated sentence. The mapping is considered valid only if the triplet exists in the KG and the sentence semantically entails the triplet, as verified through Natural Language Inference (NLI) models like TRUE.\n\nAdditionally, the system allows for partial grounding: a sentence may be mapped to both [NA] and one or more sub-graph knowledge triplets if only part of the claim is supported by the KG. For example, if a sentence states “Artemisia Gentileschi was born in Rome and taught by Agostino Tassi,” and only the birthplace triplet is present in the KG while the teacher triplet is missing, the sentence would be linked to the “place of birth” triplet and also marked with [NA] for the unsupported claim about her teacher.\n\nThe criteria for assigning [NA] are further refined in the evaluation design: a sentence marked [NA] is considered correct in precision calculations if it does not attempt to answer the question at all — that is, if the model correctly identifies that the required knowledge is missing and refrains from making an unsupported assertion. This edge case reinforces the goal of Conscious Incompetence: to penalize hallucination while rewarding accurate self-awareness of knowledge limitations.\n\nThus, the mapping decision is binary per sentence component — either the knowledge is present (and cited via sub-graph triplets) or it is absent (and flagged with [NA]), with the system designed to detect and represent incomplete retrieval as a fundamental part of attribution reliability.\n\n### References\n\n- [1] 2310.05634v2.pdf",
+      "summary": "According to the Conscious Incompetence framework in KaLMA, a sentence is mapped to [NA] when it makes a claim that requires knowledge absent from the knowledge graph, even if the sentence is factually plausible. It is mapped to sub-graph knowledge triplets when the claim is fully supported by verifiable triplets in the graph. Partially supported sentences may be mapped to both [NA] and sub-graph triplets, with [NA] indicating unsupported components. The mapping is determined by whether the knowledge can be grounded in the graph via Natural Language Inference verification.",
+      "created_at": "2026-01-02T07:02:58.054989",
+      "updated_at": "2026-01-02T07:03:00.028545"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T07:02:34.491729"
+  },
+  "metadata": {
+    "total_iterations": 3,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 2
+  }
+}

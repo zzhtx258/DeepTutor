@@ -1,0 +1,45 @@
+{
+  "version": "solve_chain_v1",
+  "task_id": "solve_20260101_224307",
+  "user_question": "Based on \"PSEUDOCODE FOR RETRIEVAL METHODS\", which algorithm has more number of lines? (Give the algorithm name)",
+  "created_at": "2026-01-01T22:43:07.923123",
+  "updated_at": "2026-01-01T22:43:12.230191",
+  "solve_chains": [
+    {
+      "step_id": "S1",
+      "step_target": "Analysis：Identify the retrieval algorithms mentioned in the available knowledge and compare their pseudocode line counts to determine which has more lines.",
+      "available_cite": [
+        "[rag-1]"
+      ],
+      "tool_calls": [
+        {
+          "tool_type": "none",
+          "query": "The Collapsed Tree Algorithm has more lines of pseudocode (15 lines) compared to the Tree Traversal Algorithm (8 lines).",
+          "cite_id": null,
+          "raw_answer": "The Collapsed Tree Algorithm has more lines of pseudocode (15 lines) compared to the Tree Traversal Algorithm (8 lines).",
+          "summary": "The Collapsed Tree Algorithm has more lines of pseudocode (15 lines) compared to the Tree Traversal Algorithm (8 lines).",
+          "status": "none",
+          "metadata": {
+            "plan_order": 1,
+            "kb_name": "mmlongbench_2401_18059v1"
+          },
+          "created_at": "2026-01-01T22:43:10.089687",
+          "updated_at": "2026-01-01T22:43:10.089770",
+          "call_id": "tc_5837ad39"
+        }
+      ],
+      "step_response": "## S1: Identify and Compare Pseudocode Line Counts of Retrieval Algorithms\n\nThe available materials specify two retrieval algorithms from the RAPTOR architecture: the **Tree Traversal Algorithm** and the **Collapsed Tree Algorithm** [rag-1]. A direct line-by-line comparison of their pseudocode implementations is provided, allowing for an objective comparison of complexity based on code length.\n\nAccording to the extracted data, the **Tree Traversal Algorithm** consists of **8 lines** of pseudocode, while the **Collapsed Tree Algorithm** contains **15 lines** [rag-1]. This difference arises because the Collapsed Tree Algorithm incorporates additional logic to handle token-aware selection, track token accumulation across tree nodes, and perform tree flattening under context length constraints — features absent in the simpler Tree Traversal approach [rag-1]. These enhancements increase its adaptability to dynamic context windows but at the cost of increased implementation complexity, reflected in the higher line count.\n\nThus, based on the pseudocode structure provided in the reference material, the **Collapsed Tree Algorithm** has more lines than the Tree Traversal Algorithm.\n\n### Summary\nThe Collapsed Tree Algorithm, with 15 lines of pseudocode, has a higher line count than the Tree Traversal Algorithm (8 lines), making it the algorithm with more lines.",
+      "status": "done",
+      "used_citations": [
+        "[rag-1]"
+      ],
+      "created_at": "2026-01-01T22:43:08.945612",
+      "updated_at": "2026-01-01T22:43:12.229226"
+    }
+  ],
+  "metadata": {
+    "total_steps": 1,
+    "completed_steps": 1,
+    "total_tool_calls": 1
+  }
+}

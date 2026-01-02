@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T09:35:24.809060",
+  "updated_at": "2026-01-02T09:35:43.646586",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "steps to customize function of Down Button",
+      "raw_result": "To customize the function of the Down button on the HUAWEI Watch D, follow these steps:\n\n1. Press the Up button to open the app list on the watch.  \n2. Navigate to **Settings** > **Down button**.  \n3. Select the desired app or function you wish to assign to the Down button.  \n4. After customizing, return to the home screen.  \n5. Press the Down button to confirm and launch the newly assigned app or feature.\n\nThis customization allows users to tailor the Down button’s default behavior, which originally launches the Blood Pressure app, to better suit individual preferences or usage patterns. Note that during active modes such as calls or workouts, the default behavior may be overridden to ensure uninterrupted functionality.\n\n### References\n\n- [1] watch_d.pdf",
+      "source": "watch_d.pdf",
+      "content": "To customize the function of the Down Button on the HUAWEI Watch D, five steps are required: press the Up button to open the app list, navigate to Settings > Down button, select the desired app or function, return to the home screen, and press the Down button to confirm the new assignment. This overrides the default behavior of launching the Blood Pressure app.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "watch_d.pdf",
+            "content": "To customize the function of the Down button on the HUAWEI Watch D, follow these steps: 1. Press the Up button to open the app list on the watch. 2. Navigate to Settings > Down button. 3. Select the desired app or function you wish to assign to the Down button. 4. After customizing, return to the home screen. 5. Press the Down button to confirm and launch the newly assigned app or feature."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T09:35:35.917570",
+      "updated_at": "2026-01-02T09:35:37.707743"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

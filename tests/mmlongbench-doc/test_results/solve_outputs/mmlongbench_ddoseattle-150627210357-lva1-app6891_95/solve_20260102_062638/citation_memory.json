@@ -1,0 +1,76 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T06:26:38.157615",
+  "updated_at": "2026-01-02T06:27:11.477314",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "Levels of Analytics chart four business cooperation activities",
+      "raw_result": "The provided context does not describe a “Levels of Analytics” chart that specifically outlines four business cooperation activities. Instead, the “Levels of Analytics” diagram referenced in the materials (reference_id: 1) presents a seven-layer pyramid organizing analytical capabilities from foundational to strategic: Standard Reports, Ad-hoc Reports and Query Drilldown (OLAP), Statistical Analysis, Forecasting, Predictive Modelling, Optimisation, and Business Intelligence. This framework focuses on analytical maturity and decision-making progression, not on business cooperation activities.\n\nAdditionally, other visualizations such as the Analytics Value Chain (reference_id: 1) depict sequential stages like Data Collection, Data Processing, Analysis & Modeling, Insight Generation, and Decision & Action — again emphasizing process flow rather than inter-departmental collaboration or cooperation activities.\n\nWhile some documents highlight collaboration (e.g., cross-functional data integration via Sankey diagrams, team-based dashboards, or mutual mentoring in office scenes), none explicitly map four business cooperation activities within a “Levels of Analytics” chart.\n\nTherefore, based on the provided context, there is no evidence of a “Levels of Analytics” chart that identifies or describes four business cooperation activities.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "There is no evidence in the provided context of a 'Levels of Analytics' chart that identifies four business cooperation activities. The referenced chart outlines seven analytical capabilities in a maturity pyramid, and other related models focus on analytical process stages, not business collaboration activities.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "The 'Levels of Analytics' diagram presents a seven-layer pyramid organizing analytical capabilities from foundational to strategic: Standard Reports, Ad-hoc Reports and Query Drilldown (OLAP), Statistical Analysis, Forecasting, Predictive Modelling, Optimisation, and Business Intelligence."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T06:26:48.805099",
+      "updated_at": "2026-01-02T06:26:50.086383"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "Levels of Analytics chart four business cooperation activities",
+      "raw_result": "The provided context does not describe a “Levels of Analytics” chart that specifically outlines four business cooperation activities. Instead, the “Levels of Analytics” diagram referenced in the materials (reference_id: 1) presents a seven-layer pyramid organizing analytical capabilities from foundational to strategic: Standard Reports, Ad-hoc Reports and Query Drilldown (OLAP), Statistical Analysis, Forecasting, Predictive Modelling, Optimisation, and Business Intelligence. This framework focuses on analytical maturity and decision-making progression, not on business cooperation activities.\n\nAdditionally, other visualizations such as the Analytics Value Chain (reference_id: 1) depict sequential stages like Data Collection, Data Processing, Analysis & Modeling, Insight Generation, and Decision & Action — again emphasizing process flow rather than inter-departmental collaboration or cooperation activities.\n\nWhile some documents highlight collaboration (e.g., cross-functional data integration via Sankey diagrams, team-based dashboards, or mutual mentoring in office scenes), none explicitly map four business cooperation activities within a “Levels of Analytics” chart.\n\nTherefore, based on the provided context, there is no evidence of a “Levels of Analytics” chart that identifies or describes four business cooperation activities.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "There is no evidence in the provided context of a 'Levels of Analytics' chart that identifies four business cooperation activities. The referenced chart outlines seven analytical capabilities in a maturity pyramid, and other related models focus on analytical process stages, not business collaboration activities.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "The 'Levels of Analytics' diagram presents a seven-layer pyramid organizing analytical capabilities from foundational to strategic: Standard Reports, Ad-hoc Reports and Query Drilldown (OLAP), Statistical Analysis, Forecasting, Predictive Modelling, Optimisation, and Business Intelligence."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T06:26:58.172526",
+      "updated_at": "2026-01-02T06:26:59.498014"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "Levels of Analytics chart four business cooperation activities",
+      "raw_result": "The provided context does not describe a “Levels of Analytics” chart that specifically outlines four business cooperation activities. Instead, the “Levels of Analytics” diagram referenced in the materials (reference_id: 1) presents a seven-layer pyramid organizing analytical capabilities from foundational to strategic: Standard Reports, Ad-hoc Reports and Query Drilldown (OLAP), Statistical Analysis, Forecasting, Predictive Modelling, Optimisation, and Business Intelligence. This framework focuses on analytical maturity and decision-making progression, not on business cooperation activities.\n\nAdditionally, other visualizations such as the Analytics Value Chain (reference_id: 1) depict sequential stages like Data Collection, Data Processing, Analysis & Modeling, Insight Generation, and Decision & Action — again emphasizing process flow rather than inter-departmental collaboration or cooperation activities.\n\nWhile some documents highlight collaboration (e.g., cross-functional data integration via Sankey diagrams, team-based dashboards, or mutual mentoring in office scenes), none explicitly map four business cooperation activities within a “Levels of Analytics” chart.\n\nTherefore, based on the provided context, there is no evidence of a “Levels of Analytics” chart that identifies or describes four business cooperation activities.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "There is no evidence in the provided context of a 'Levels of Analytics' chart that identifies four business cooperation activities. The referenced chart outlines seven analytical capabilities in a maturity pyramid, and other related models focus on analytical processes rather than inter-departmental collaboration activities.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "The 'Levels of Analytics' diagram presents a seven-layer pyramid organizing analytical capabilities from foundational to strategic: Standard Reports, Ad-hoc Reports and Query Drilldown (OLAP), Statistical Analysis, Forecasting, Predictive Modelling, Optimisation, and Business Intelligence."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T06:27:07.339008",
+      "updated_at": "2026-01-02T06:27:08.830517"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

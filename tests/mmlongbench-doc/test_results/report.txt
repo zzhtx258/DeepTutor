@@ -1,0 +1,13 @@
+Overall Acc: 0.14285714285714285 | Question Number: 7
+Overall F1-score: 0.15384615384615383 | Question Number: 7
+-----------------------
+Single-page | Accuracy: 0.0 | Question Number: 4
+Cross-page | Accuracy: 0.3333333333333333 | Question Number: 3
+Unanswerable | Accuracy: 0.0 | Question Number: 0
+-----------------------
+Evidence Sources: Chart | Accuracy: 0.0 | Question Number: 5
+Evidence Sources: Table | Accuracy: 1.0 | Question Number: 1
+Evidence Sources: Pure-text (Plain-text) | Accuracy: 0.0 | Question Number: 1
+Evidence Sources: Generalized-text (Layout) | Accuracy: 0.0 | Question Number: 1
+-----------------------
+Document Type: Research report / Introduction | Accuracy: 0.14285714285714285 | Question Number: 7

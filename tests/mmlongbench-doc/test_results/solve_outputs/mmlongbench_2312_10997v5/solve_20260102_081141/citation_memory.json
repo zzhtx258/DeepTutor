@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T08:11:41.829905",
+  "updated_at": "2026-01-02T08:12:03.026920",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "AUGMENTATION PROCESS IN RAG subsections",
+      "raw_result": "The augmentation process in Retrieval-Augmented Generation (RAG) addresses the limitations of single-pass retrieval by introducing dynamic, multi-step, and adaptive strategies to enhance the quality and relevance of generated responses. These methods are categorized into three primary types: Iterative Retrieval, Recursive Retrieval, and Adaptive Retrieval.\n\n**Iterative Retrieval** involves alternating between retrieval and generation in a feedback loop, allowing the system to refine its context with each iteration. This approach leverages the output of the generation phase to inform subsequent retrieval queries, thereby gathering richer and more targeted information from the knowledge base. For example, ITERRETGEN [14] employs a synergistic mechanism where generation enhances retrieval and vice versa, enabling the model to reproduce specific information more accurately by iteratively updating its contextual basis. While effective, this method may suffer from semantic discontinuity or the accumulation of irrelevant content over multiple cycles.\n\n**Recursive Retrieval** focuses on decomposing complex queries into a hierarchy of sub-problems, solving them step-by-step through repeated retrieval and generation. This technique is particularly useful when the initial query is ambiguous or requires multi-hop reasoning. Methods like IRCoT [61] use chain-of-thought reasoning to guide retrieval, refining the reasoning path with each retrieved result. Similarly, ToC [57] constructs a clarification tree that systematically resolves ambiguities in the user’s question by breaking it into nested sub-queries. Recursive retrieval often integrates with hierarchical document structures or summarization steps, enabling deeper exploration of information sources before synthesizing a final answer.\n\n**Adaptive Retrieval** enables the RAG system to autonomously determine when retrieval is necessary, based on the confidence or quality of the generated output. This paradigm shifts control from a fixed pipeline to an intelligent, decision-driven process. FLARE [24] monitors the probability distribution of generated tokens; when confidence falls below a threshold, it triggers a retrieval to supplement missing or uncertain information. Self-RAG [25] extends this by introducing special “reflection tokens” — “retrieve” and “critic” — that allow the language model to self-assess its output and decide whether to retrieve new context or critique its current generation. This eliminates the need for external classifiers or NLI models, streamlining the process and improving autonomy. These methods reflect a broader trend toward LLMs acting as agents that proactively use tools, as seen in systems like WebGPT and GraphToolformer.\n\nTogether, these augmentation techniques represent a significant evolution beyond the static “Retrieve-Read” paradigm of Naive RAG, enabling more robust, context-aware, and efficient generation in complex, knowledge-intensive tasks.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "source": "2312.10997v5.pdf",
+      "content": "The section 'AUGMENTATION PROCESS IN RAG' includes three subsections: Iterative Retrieval, Recursive Retrieval, and Adaptive Retrieval. Iterative Retrieval uses a feedback loop between retrieval and generation to refine context. Recursive Retrieval breaks complex queries into hierarchical sub-problems using step-by-step reasoning. Adaptive Retrieval enables the system to autonomously decide when to retrieve new information based on generation confidence, using mechanisms like reflection tokens.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2312.10997v5.pdf",
+            "content": "The augmentation process in Retrieval-Augmented Generation (RAG) addresses the limitations of single-pass retrieval by introducing dynamic, multi-step, and adaptive strategies to enhance the quality and relevance of generated responses. These methods are categorized into three primary types: Iterative Retrieval, Recursive Retrieval, and Adaptive Retrieval."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T08:11:57.382959",
+      "updated_at": "2026-01-02T08:11:59.219776"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

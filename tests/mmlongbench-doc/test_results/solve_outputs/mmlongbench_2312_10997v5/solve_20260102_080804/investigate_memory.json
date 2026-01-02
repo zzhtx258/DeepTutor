@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_080804",
+  "user_question": "In the figure that has a tree shape, what is the name of the branch that has the least leafs?",
+  "created_at": "2026-01-02T08:08:04.365657",
+  "updated_at": "2026-01-02T08:08:20.863295",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "tree diagram branch with least leaves terminology",
+      "raw_result": "The provided context does not explicitly define or name a specific terminology for the tree diagram branch with the least leaves in the context of RAG research. While Figure 1 (\"Technology tree of RAG research\") illustrates a hierarchical tree structure with three main branches—Pre-training, Fine-tuning, and Inference—each containing varying numbers of sub-techniques, the documents do not assign a formal term to the branch with the fewest nodes or leaves.\n\nThe visual analysis of Figure 1 indicates that the Pre-training branch has only one sub-node (“Retrieval-augmented Pre-training”), while Fine-tuning has two (“Retrieval-augmented Fine-tuning,” “Adapter-based RAG”) and Inference has seven (e.g., Retrieval, Prompt Engineering, Re-ranking, etc.). Thus, Pre-training is the branch with the least leaves. However, no specific terminology such as “minimal branch,” “sparse branch,” or similar is used in the text to describe this characteristic.\n\nTherefore, based on the provided context, there is no established terminology for the tree diagram branch with the least leaves.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "summary": "In the tree diagram of RAG research shown in Figure 1, the Pre-training branch has the fewest leaves, with only one sub-node (Retrieval-augmented Pre-training), compared to Fine-tuning with two and Inference with seven. However, no specific terminology is established in the literature to name the branch with the least leaves.",
+      "created_at": "2026-01-02T08:08:17.935717",
+      "updated_at": "2026-01-02T08:08:19.476464"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T08:08:04.365662"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

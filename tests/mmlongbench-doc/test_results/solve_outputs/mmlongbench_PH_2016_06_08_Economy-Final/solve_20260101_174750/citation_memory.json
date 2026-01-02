@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-01T17:47:50.339407",
+  "updated_at": "2026-01-01T17:48:13.044364",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "Hispanic subgroups confidence levels 2008 to 2015 survey data",
+      "raw_result": "Between 2008 and 2015, Hispanic subgroups demonstrated significant increases in confidence regarding their personal finances and future economic prospects, according to Pew Research Center’s National Survey of Latinos. The overall share of Latinos who rated their personal financial situation as “excellent” or “good” rose from 23% in 2008 to 40% in 2015, reflecting a 17-percentage-point increase. This rebound was observed across nearly all demographic subgroups, though the magnitude of improvement varied.\n\nYounger Latinos showed the most dramatic gains: among those aged 18 to 29, the percentage reporting excellent or good financial conditions increased from 21% in 2008 to 48% in 2015 — a 27-point rise. Similarly, optimism about future finances surged, with 90% of Latinos under age 30 expecting their family’s financial situation to improve “a lot” or “some” in the coming year in 2015, up from 77% in 2008. For Latinos aged 30–49 and 50–64, the increase in financial optimism was 16 percentage points each, reaching 85% and 84% respectively by 2015.\n\nAmong older adults, gains were more modest. Those aged 65 and older saw an increase from 30% to 37% in positive ratings of current finances, and from 52% to 59% in expectations of future improvement. Educational attainment also correlated with higher confidence: 85% of Latinos with some college experience expected financial improvement in 2015, compared to 80% of high school graduates and 77% of those with less than a high school diploma. Notably, the growth in optimism since 2008 was greatest among college-educated Latinos (+20 percentage points), outpacing those with lower education levels.\n\nBoth U.S.-born and foreign-born Hispanics recorded nearly identical increases in financial optimism — rising by 14 percentage points to 81% in both groups. Gender differences were minimal, with Latino men showing a +18-point gain and Latina women a +11-point gain. These trends reflect a broad-based recovery in economic confidence following the Great Recession, even as income stagnation and wealth declines persisted across the community.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "From 2008 to 2015, the Hispanic subgroup that gained the most confidence in their financial situation was Latinos aged 18 to 29, whose percentage reporting excellent or good personal finances rose by 27 percentage points—from 21% to 48%. This was the largest increase among all age, education, and birth-status subgroups surveyed.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "Among those aged 18 to 29, the percentage reporting excellent or good financial conditions increased from 21% in 2008 to 48% in 2015 — a 27-point rise."
+          }
+        ]
+      },
+      "created_at": "2026-01-01T17:48:06.149306",
+      "updated_at": "2026-01-01T17:48:08.276528"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

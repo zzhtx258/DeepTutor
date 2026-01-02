@@ -1,0 +1,76 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T07:44:44.910612",
+  "updated_at": "2026-01-02T07:45:33.844188",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "pseudo code appendix step 5 tree traversal method",
+      "raw_result": "The pseudocode for the tree traversal method in RAPTOR is outlined in the provided context, specifically in the section describing the querying mechanisms. Step 5 of the tree traversal algorithm involves recursively continuing the process across multiple layers of the tree until the leaf nodes are reached.\n\nAccording to the textual description in the document:\n\n> \"5. Continue this process recursively for $d$ layers, producing sets $S _ { 1 } , S _ { 2 } , \\\\ldots , S _ { d }$ .\"\n\nThis step follows the iterative selection of the top-$k$ nodes at each layer, starting from the root. At each layer $i$, the algorithm computes cosine similarity between the query embedding and all child nodes of the previously selected set $S_{i-1}$, then selects the top-$k$ nodes to form $S_i$. This recursion continues for a predefined depth $d$, ensuring that the retrieval spans from the root down to the leaf layer.\n\nThe full pseudocode for Algorithm 1 (Tree Traversal Algorithm) is also provided in table form, which aligns with this step:\n\n- Start at the root layer (Layer 0).\n- For each layer from 0 to $d-1$:\n  - Compute cosine similarity (dot product) between the query and all nodes in the current layer.\n  - Select the top-$k$ nodes based on similarity scores.\n  - Move to the child nodes of the selected nodes for the next iteration.\n- Repeat until $d$ layers have been traversed.\n\nThus, **Step 5** of the tree traversal method is the recursive continuation of selecting top-$k$ child nodes across successive layers, building sets $S_1$ through $S_d$, until the leaf layer is reached.\n\n### References\n\n- [1] 2401.18059v1.pdf",
+      "source": "2401.18059v1.pdf",
+      "content": "Step 5 of the tree traversal method involves recursively selecting the top-k child nodes at each layer, starting from the root. For each of d layers, the algorithm computes similarity between the query and all child nodes of the previously selected set, picks the top-k nodes to form the next set, and continues until the leaf layer is reached, producing sets S1 through Sd.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2401.18059v1.pdf",
+            "content": "Continue this process recursively for d layers, producing sets S1, S2, ..., Sd."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T07:44:56.923552",
+      "updated_at": "2026-01-02T07:44:58.328987"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "pseudo code for step 5 of tree traversal method appendix",
+      "raw_result": "The pseudocode for Step 5 of the tree traversal method, as described in the provided context, is part of Algorithm 1: Tree Traversal Algorithm. Step 5 corresponds to the recursive continuation of the traversal process across multiple layers, producing sets $ S_1, S_2, \\ldots, S_d $, where each set contains the top-$ k $ most relevant nodes at each layer.\n\nBased on the pseudocode provided in the document chunks, specifically from the table analyzing Algorithm 1, Step 5 is embedded within the iterative loop that processes each layer of the tree:\n\n```plaintext\n1. Start at the root layer of the RAPTOR tree. Compute the cosine similarity between the query embedding and the embeddings of all nodes present at this initial layer. \n2. Choose the top-k nodes based on the highest cosine similarity scores, forming the set S₁. \n3. Proceed to the child nodes of the elements in set S₁. Compute the cosine similarity between the query vector and the vector embeddings of these child nodes.  \n4. Select the top k child nodes with the highest cosine similarity scores to the query, forming the set S₂.  \n5. Continue this process recursively for d layers, producing sets S₁, S₂, …, S_d.  \n6. Concatenate sets S₁ through S_d to assemble the relevant context to the query. \n```\n\nThe corresponding pseudocode from Appendix F (as cited in the context) for Step 5 is captured in the iterative loop of the `TRAVERSETREE` function:\n\n```plaintext\nfunction TRAVERSETREE(tree, query, k)\n    Scurrent ← tree.layer[0]\n    for layer in range(tree.num_layers) do\n        top_k ← []\n        for node in Scurrent do\n            score ← dot_product(query, node)\n            top_k.append((node, score))\n        end for\n        Slayer ← sorted(top_k)[:k].nodes\n        Scurrent ← Slayer\n    end for\n    return Scurrent\n```\n\nIn this pseudocode, Step 5 is implicitly implemented in the `for layer in range(tree.num_layers) do` loop, which recursively applies the top-$ k $ selection process across each layer $ d $, updating $ S_{\\text{current}} $ to the selected nodes at each level, thereby generating the sequence of sets $ S_1, S_2, \\ldots, S_d $.\n\nThus, the pseudocode for Step 5 is the loop body that repeatedly computes cosine similarities, selects the top-$ k $ nodes, and propagates them to the next layer until $ d $ layers are processed.\n\n### References\n\n- [1] 2401.18059v1.pdf",
+      "source": "2401.18059v1.pdf",
+      "content": "The pseudocode for Step 5 of the tree traversal method is implemented in the loop of the TRAVERSETREE function, which iteratively processes each layer of the tree. For each layer, it computes the dot product between the query and each node's embedding, selects the top-k nodes with the highest scores, and updates the current set of nodes to be used in the next layer. This process repeats for d layers, producing a sequence of top-k node sets S1 through Sd.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2401.18059v1.pdf",
+            "content": "function TRAVERSETREE(tree, query, k)\n    Scurrent ← tree.layer[0]\n    for layer in range(tree.num_layers) do\n        top_k ← []\n        for node in Scurrent do\n            score ← dot_product(query, node)\n            top_k.append((node, score))\n        end for\n        Slayer ← sorted(top_k)[:k].nodes\n        Scurrent ← Slayer\n    end for\n    return Scurrent"
+          }
+        ]
+      },
+      "created_at": "2026-01-02T07:45:12.012711",
+      "updated_at": "2026-01-02T07:45:13.789352"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "pseudocode for Step 5 of tree traversal method appendix",
+      "raw_result": "Step 5 of the tree traversal method in the RAPTOR system involves recursively continuing the selection of top-k nodes at each subsequent layer until the leaf nodes are reached. Based on the pseudocode provided in the context, this step is part of an iterative process that propagates the query through the hierarchical tree structure.\n\nThe pseudocode for Step 5 can be derived from Algorithm 1 (Tree Traversal Algorithm) described in the context. After selecting the top-k nodes at the current layer (Step 4), the algorithm proceeds to the next layer by treating the children of the currently selected nodes as the new pool for scoring and selection. This recursion continues until the final (leaf) layer is reached.\n\nThe relevant pseudocode for Step 5 is embedded in the iterative loop of Algorithm 1:\n\n```\nfor layer in range(tree.num_layers) do\n    top_k ← []\n    for node in Scurrent do\n        score ← dot_product(query, node)\n        top_k.append((node, score))\n    end for\n    Slayer ← sorted(top_k)[:k].nodes\n    Scurrent ← Slayer\nend for\n```\n\nIn this loop:\n- `Scurrent` represents the set of selected nodes at the current layer.\n- For each layer, the algorithm computes the cosine similarity (via `dot_product`) between the query and all child nodes of `Scurrent`.\n- It then selects the top-k most similar nodes to form `Slayer`, which becomes the new `Scurrent` for the next iteration.\n- The loop continues for the total number of layers (`tree.num_layers`), implicitly including Step 5 as the recursive continuation of the traversal down to the leaf layer.\n\nThis process ensures that at each depth level, only the most relevant nodes based on query similarity are carried forward, maintaining a focused and hierarchical retrieval path.\n\n### References\n\n- [1] 2401.18059v1.pdf",
+      "source": "2401.18059v1.pdf",
+      "content": "Step 5 of the tree traversal method involves iteratively selecting the top-k most relevant child nodes at each layer by computing the dot product between the query and each node's representation, then propagating these selected nodes to the next layer until the leaf layer is reached. This is implemented in a loop that runs for the total number of tree layers, updating the current node set (Scurrent) with the top-k nodes (Slayer) from each layer.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2401.18059v1.pdf",
+            "content": "The pseudocode for Step 5 is embedded in the iterative loop of Algorithm 1: for layer in range(tree.num_layers) do top_k ← [] for node in Scurrent do score ← dot_product(query, node) top_k.append((node, score)) end for Slayer ← sorted(top_k)[:k].nodes Scurrent ← Slayer end for"
+          }
+        ]
+      },
+      "created_at": "2026-01-02T07:45:26.466431",
+      "updated_at": "2026-01-02T07:45:28.211259"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

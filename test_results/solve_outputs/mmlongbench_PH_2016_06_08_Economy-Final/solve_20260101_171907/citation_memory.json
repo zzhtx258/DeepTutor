@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-01T17:19:07.428615",
+  "updated_at": "2026-01-01T17:19:35.456758",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "Hispanic subgroup confidence trends 2008 to 2015",
+      "raw_result": "Between 2008 and 2015, Hispanic subgroups across multiple demographic categories demonstrated significant increases in financial optimism, reflecting a broad-based rebound in economic confidence following the Great Recession. Overall, the share of Latinos who expected their family’s financial situation to improve “a lot” or “some” in the next year rose by 14 percentage points—from 67% in 2008 to 81% in 2015. This upward trend was observed across nearly all major subgroups, though the magnitude of improvement varied.\n\nAmong age groups, younger Latinos exhibited the most pronounced gains. Those under age 30 saw a 13-point increase in optimism, with 90% expressing confidence in improved finances by 2015. Latinos aged 30–49 and 50–64 each recorded a 16-point rise, reaching 85% and 84% optimism, respectively. In contrast, older Latinos (65 and older) showed a more modest 7-point increase, with 59% expressing optimism in 2015—still the lowest among all age groups.\n\nEducational attainment also correlated with levels of optimism. Latinos with some college education were the most optimistic, with 85% expecting financial improvement, up by 20 percentage points since 2008. High school graduates saw a 9-point increase to 80%, while those with less than a high school diploma experienced an 11-point gain to 77%. This indicates that economic optimism grew fastest among the more educated subgroup.\n\nGender differences were also notable: Latino men experienced an 18-point increase in optimism, while Latina women saw an 11-point rise. Both U.S.-born and foreign-born Hispanics recorded identical 14-point increases, reaching 81% optimism in each group by 2015, highlighting that immigrant and native-born Latinos converged in their economic outlooks.\n\nDespite these gains, perceptions of current financial well-being remained more mixed. While 40% of Latinos rated their personal finances as “excellent” or “good” in 2015—a 17-point increase since 2008—nearly 60% still described their situation as “only fair” or “poor.” Younger adults (18–29) showed the largest improvement in self-rated finances, rising from 21% in 2008 to 48% in 2015, while those aged 65+ increased from 20% to 37%.\n\nThese trends suggest a strong, widespread recovery in future-oriented financial expectations among Hispanic subgroups, particularly among the young and educated, even as current economic conditions—such as stagnant income and declining net worth—lagged behind this optimism.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "From 2008 to 2015, the Hispanic subgroup that gained the most confidence in future financial prospects was those with some college education, who saw a 20-percentage-point increase in optimism, reaching 85% by 2015. Younger Latinos (under age 30) also showed strong gains with a 13-point increase, and Latino men experienced an 18-point rise, but the largest absolute increase was among the more educated subgroup.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "Latino adults with some college education were the most optimistic, with 85% expecting financial improvement, up by 20 percentage points since 2008."
+          }
+        ]
+      },
+      "created_at": "2026-01-01T17:19:24.332591",
+      "updated_at": "2026-01-01T17:19:26.810268"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

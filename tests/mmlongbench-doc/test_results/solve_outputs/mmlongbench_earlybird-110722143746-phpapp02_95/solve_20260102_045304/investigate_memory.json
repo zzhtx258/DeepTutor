@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_045304",
+  "user_question": "How many more millions of dollars was the median exit valuation in the USA compared to Europe at the time of the presentation?",
+  "created_at": "2026-01-02T04:53:04.643846",
+  "updated_at": "2026-01-02T04:53:20.450447",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "median exit valuation USA Europe millions of dollars comparison",
+      "raw_result": "The median exit valuation for venture capital-backed companies in the United States and Europe is approximately $350 million, with both regions showing comparable exit values for companies achieving exits above $100 million. This equivalence is visually confirmed by a bar chart titled \"Average Exit Cap ($100M+ Exits) US$M,\" which displays two vertical bars of equal height—one for the U.S. and one for Europe—both reaching approximately $350 million on the y-axis. This finding aligns with the broader context that, despite investing only about half the capital of the U.S., Europe has matched American exit valuations due to superior capital efficiency, lower entry valuations, and tighter cash management.\n\nAlthough the average exit value in Europe is noted to be about 25% smaller than in the U.S. in some contexts, the data for exits exceeding $100 million specifically show parity. This suggests that while the U.S. may have a higher volume of large exits (596 vs. 131 for Europe), the median value of those high-value exits is nearly identical between the two regions. The convergence in exit values underscores the efficiency of the European venture ecosystem, where startups achieve similar exit outcomes using significantly less capital input.\n\n### References\n\n- [1] earlybird-110722143746-phpapp02_95.pdf",
+      "summary": "The median exit valuation for venture capital-backed companies in the United States and Europe was approximately $350 million, showing no significant difference between the two regions for exits above $100 million. Despite the U.S. having more large exits, the median value of those high-value exits was nearly identical in both regions.",
+      "created_at": "2026-01-02T04:53:17.870415",
+      "updated_at": "2026-01-02T04:53:19.197917"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T04:53:04.643850"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

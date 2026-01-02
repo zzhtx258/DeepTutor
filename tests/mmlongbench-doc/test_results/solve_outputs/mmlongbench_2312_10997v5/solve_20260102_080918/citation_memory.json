@@ -1,0 +1,98 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-02T08:09:18.467166",
+  "updated_at": "2026-01-02T08:10:20.115064",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "paper proposing method with phrase-level retrieval granularity",
+      "raw_result": "The paper references DenseX [30] as a method that proposes the use of propositions as retrieval units, which are defined as atomic, self-contained factual expressions in natural language. While propositions represent a fine-grained unit beyond phrases, the table summarizing RAG methods (Table I) in the same document identifies CoG [29] as a method that explicitly employs **phrase-level** retrieval granularity. CoG [29] utilizes Wikipedia as its retrieval source and operates on text data with phrase-level granularity, leveraging pre-training as its augmentation strategy.\n\nThus, CoG [29] is the method in the provided context that proposes retrieval at the phrase-level granularity.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "source": "2312.10997v5.pdf",
+      "content": "The paper identifies CoG [29] as the method that proposes phrase-level retrieval granularity, using Wikipedia as its retrieval source and leveraging pre-training as its augmentation strategy.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[29]",
+            "source": "2312.10997v5.pdf",
+            "content": "CoG [29] utilizes Wikipedia as its retrieval source and operates on text data with phrase-level granularity, leveraging pre-training as its augmentation strategy."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T08:09:31.276690",
+      "updated_at": "2026-01-02T08:09:32.466901"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "full paper title of CoG method with phrase-level retrieval granularity",
+      "raw_result": "The provided context does not include the full paper title of the CoG method with phrase-level retrieval granularity. While Table I in the document chunk with reference_id \"1\" lists \"CoG [29]\" as a RAG method with retrieval granularity of \"Phrase,\" it does not supply the full title of the associated paper. The citation \"[29]\" is referenced, but the corresponding entry in the reference list (e.g., [29] Lan, T., et al., “Copy is all you need,” in The Eleventh International Conference on Learning Representations, 2022) does not explicitly confirm that this is the full paper title for CoG, nor is there any additional context linking the method name \"CoG\" directly to the paper title beyond the citation number.\n\nTherefore, based solely on the provided context, the full paper title of the CoG method cannot be determined.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "source": "2312.10997v5.pdf, Lan, T., et al., 'Copy is all you need,' in The Eleventh International Conference on Learning Representations, 2022",
+      "content": "The provided context mentions that the CoG method has phrase-level retrieval granularity and is cited as [29], but it does not confirm the full paper title of CoG. The reference [29] points to a paper titled 'Copy is all you need' by Lan, T., et al., however, it is not explicitly verified that this is the correct paper for CoG.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2312.10997v5.pdf",
+            "content": "Table I lists 'CoG [29]' as a RAG method with retrieval granularity of 'Phrase'."
+          },
+          {
+            "reference_id": "[29]",
+            "source": "Lan, T., et al., 'Copy is all you need,' in The Eleventh International Conference on Learning Representations, 2022",
+            "content": "Cited as the source for CoG, but direct linkage to CoG method is not confirmed in the provided context."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T08:09:45.589915",
+      "updated_at": "2026-01-02T08:09:47.240650"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "CoG method paper title author Lan T. phrase-level retrieval granularity",
+      "raw_result": "The provided context does not contain the full paper title or author details for the CoG method beyond the citation \"[29]\" and the mention of \"T. Lan\" as one of the authors in the reference list. While the context confirms that CoG [29] uses phrase-level retrieval granularity and is associated with T. Lan, it does not explicitly state the full paper title or provide complete bibliographic details for the CoG method.\n\nTherefore, based on the given information, the paper title for CoG by T. Lan cannot be determined.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "source": "2312.10997v5.pdf",
+      "content": "The paper proposing the CoG method with phrase-level retrieval granularity is associated with T. Lan, but the full title cannot be determined from the provided context.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2312.10997v5.pdf",
+            "content": "The context confirms CoG [29] uses phrase-level retrieval granularity and is associated with T. Lan, but does not provide the full paper title."
+          }
+        ]
+      },
+      "created_at": "2026-01-02T08:09:59.702049",
+      "updated_at": "2026-01-02T08:10:00.756112"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_naive",
+      "query": "What is the full title of the paper that proposes a method with phrase-level retrieval granularity?",
+      "raw_result": "The paper that proposes a method with phrase-level retrieval granularity is titled \"Copy is all you need,\" as indicated by the entry for CoG [29] in Table I of the provided context, which lists CoG as using \"Phrase\" as its retrieval granularity. The full citation for this work is:\n\n* [29] T. Lan, D. Cai, Y. Wang, H. Huang, and X.-L. Mao, “Copy is all you need,” in The Eleventh International Conference on Learning Representations, 2022.\n\n### References\n\n- [29] Copy is all you need",
+      "source": "",
+      "content": "The paper proposing phrase-level retrieval granularity is titled “Copy is all you need,” as cited in Table I of the provided context under reference [29], authored by Lan et al. and presented at ICLR 2022. No image was generated or provided in the tool output.",
+      "stage": "solve",
+      "step_id": "S3",
+      "metadata": {
+        "source": "",
+        "auto_sources": [],
+        "mode": "naive"
+      },
+      "created_at": "2026-01-02T08:10:06.792884",
+      "updated_at": "2026-01-02T08:10:18.569540"
+    }
+  ],
+  "tool_counters": {
+    "rag": 4
+  }
+}

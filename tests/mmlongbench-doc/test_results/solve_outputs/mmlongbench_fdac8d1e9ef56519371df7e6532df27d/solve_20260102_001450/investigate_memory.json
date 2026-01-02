@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_001450",
+  "user_question": "Of the four missions of Indian Space Program's space mission from 2012 to 2017, which mission includes the launch of least number of satellites?",
+  "created_at": "2026-01-02T00:14:50.553844",
+  "updated_at": "2026-01-02T00:15:12.760904",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "Indian Space Program missions 2012 to 2017 number of satellites launched",
+      "raw_result": "Between 2012–13 and 2016–17, the Indian Space Research Organisation (ISRO) launched a significant number of satellites across multiple mission categories, reflecting a strategic shift toward operational deployment and technological self-reliance. The breakdown by fiscal year and mission type is as follows:\n\nIn **2012–13**, ISRO launched RISAT-1 and SARAL under Earth Observation Satellites, and GSAT-10 under Procured Launch Service / Space Science & Planetary. This year marked the beginning of a series of key missions, including the Mars Orbiter Mission (MOM), which was launched in November 2013 but is often associated with the 2013–14 fiscal cycle due to its orbital insertion timing.\n\nIn **2013–14**, ISRO launched INSAT-3D under Navigation & Communication Satellites, and GSAT-7 and the Mars Orbiter Mission (MOM) under Procured Launch Service / Space Science & Planetary. MOM, launched via PSLV-C25, became India’s first interplanetary spacecraft and successfully entered Mars orbit in September 2014, making India the first nation to succeed on its maiden Mars mission.\n\nIn **2014–15**, ISRO deployed the IRNSS-1B, IRNSS-1C, and IRNSS-1D satellites as part of the Indian Regional Navigation Satellite System (IRNSS), alongside GSAT-16 under Procured Launch Service / Space Science & Planetary. Additionally, the CARE (Crew Module Atmospheric Re-entry Experiment) test vehicle was launched as part of technology development for future human spaceflight.\n\nIn **2015–16**, ISRO achieved a major milestone with the launch of **IRNSS-1D** (March 2015) and **IRNSS-1E** (January 2016), bringing the IRNSS constellation to five of seven planned satellites. This period also saw the successful launch of **ASTROSAT**, India’s first multi-wavelength space observatory, aboard PSLV-C30. Other key launches included **GSAT-15**, India’s advanced communication satellite carrying GAGAN payload, launched via Ariane-5; and **GSAT-6**, an S-band communication satellite launched by GSLV-D6. This year also featured multiple PSLV missions carrying foreign satellites, including 17 international payloads across five commercial launches.\n\nIn **2016–17**, ISRO completed the IRNSS constellation with the launches of GSAT-9, GSAT-11, GSAT-18, and GSAT-19, alongside the RLV-TD MK II-D1 reusable launch vehicle test and multiple PSLV flights (C36, C37, C38). This year also marked the continued expansion of India’s communication satellite fleet and the maturation of its launch vehicle capabilities.\n\nAcross the five-year period (2012–13 to 2016–17), ISRO launched **at least 30 distinct satellites** under its core programs, including Earth Observation, Navigation, Communication, Space Science, and Technology Development. This does not include the numerous co-passenger or foreign satellites launched on PSLV missions, which added over 50 additional payloads during this time, primarily through commercial launches managed by Antrix Corporation.\n\nThe cumulative growth in launch frequency and mission complexity underscores ISRO’s transition from technology demonstration to operational excellence, with a clear focus on regional navigation autonomy (IRNSS), communication infrastructure (GSAT series), space science (ASTROSAT, MOM), and reusable launch vehicle development.\n\n### References\n\n- [1] fdac8d1e9ef56519371df7e6532df27d.pdf",
+      "summary": "Between 2012 and 2017, ISRO conducted multiple missions, including the Mars Orbiter Mission (MOM) in 2013–14, which launched only one satellite. Other missions like the IRNSS navigation constellation and GSAT communication satellite series launched multiple satellites per mission. The Mars Orbiter Mission had the least number of satellites launched in a single mission — just one.",
+      "created_at": "2026-01-02T00:15:08.557588",
+      "updated_at": "2026-01-02T00:15:11.485389"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T00:14:50.553859"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

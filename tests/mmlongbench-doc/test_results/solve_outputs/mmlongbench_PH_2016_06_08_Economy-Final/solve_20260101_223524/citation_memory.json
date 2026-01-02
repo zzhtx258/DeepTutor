@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-01T22:35:24.075541",
+  "updated_at": "2026-01-01T22:35:44.688112",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "income falling behind cost of living household percentage drop 2014 to 2015 by demographic group",
+      "raw_result": "Between 2014 and 2015, the percentage of Latinos who said their family income was not keeping up with the cost of living remained unchanged at 53%. This stability was consistent across the Latino population as a whole during this one-year period, with no significant shifts reported in the data for any specific demographic subgroup. The same proportion—53%—was recorded in both years, indicating that the economic pressure of rising living costs relative to income persisted at a steady level among U.S. Hispanics during this time.\n\nThis trend was not unique to Latinos; similar proportions were reported by Black and White adults in 2015, meaning the three racial and ethnic groups aligned closely on this measure by that year. While some improvement was observed among White adults between 2014 and 2015, no such change occurred among Latinos, suggesting that the financial strain experienced by Latino families remained constant despite broader national economic recovery signals.\n\nThe data do not provide subgroup breakdowns (e.g., by age, education, or nativity) for the specific change between 2014 and 2015 regarding income versus cost of living. However, the overall consistency in the 53% figure implies that the pattern held broadly across demographic lines during this period, even as other economic indicators such as personal financial optimism and unemployment rates showed improvement.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "The report indicates that the percentage of Latinos whose family income was not keeping up with the cost of living remained unchanged at 53% from 2014 to 2015, with no significant drop observed. No other demographic group is reported to have experienced a decline in this percentage during the same period, and no group is identified as having the most significant drop.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "Between 2014 and 2015, the percentage of Latinos who said their family income was not keeping up with the cost of living remained unchanged at 53%."
+          }
+        ]
+      },
+      "created_at": "2026-01-01T22:35:35.514018",
+      "updated_at": "2026-01-01T22:35:37.804385"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

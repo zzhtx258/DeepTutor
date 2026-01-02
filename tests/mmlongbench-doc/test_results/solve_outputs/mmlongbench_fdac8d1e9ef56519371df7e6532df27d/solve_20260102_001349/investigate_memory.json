@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260102_001349",
+  "user_question": "What are the uses of Indian remote sensing satellite constellation?",
+  "created_at": "2026-01-02T00:13:49.627157",
+  "updated_at": "2026-01-02T00:14:10.566966",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "uses of Indian remote sensing satellite constellation",
+      "raw_result": "The Indian Remote Sensing (IRS) satellite constellation plays a vital role in supporting a wide array of societal, environmental, and national development applications. Operated and managed by the National Remote Sensing Centre (NRSC) in Hyderabad, in coordination with Regional Remote Sensing Centres (RRSCs), the constellation provides critical data for monitoring and managing natural resources and disaster events.\n\nThe constellation supports agricultural applications such as crop inventory, drought monitoring, and sericulture development. It aids in groundwater prospect mapping and helps assess the health of forests through fire detection and monitoring. In the domain of water resources, it is used to monitor glacial lakes and other water bodies, contributing to sustainable water management. The satellites also support geological surveys and environmental monitoring, enabling the assessment of land use changes and ecosystem dynamics.\n\nIn disaster management, the IRS satellites provide timely space-based information for flood mapping, landslide detection, and earthquake impact assessment. During 2015, for instance, satellite data was used to monitor flood events across 10 states in India, generating over 105 flood maps disseminated to state and central agencies via portals like Bhuvan and NDEM. LIDAR-based experimental flood depth maps were also produced for severely affected regions such as Lakhimpur district in Assam. The constellation also supported international disaster response efforts, providing data for floods, oil spills, landslides, and typhoons in countries including Vietnam, Pakistan, Indonesia, Bangladesh, Nepal, and Taiwan.\n\nAdditionally, the IRS satellites contribute to urban planning, infrastructure development, and topographic mapping through high-resolution imagery. The Aerial Services & Digital Mapping (ASDM) unit of NRSC leverages this data for large-scale applications including aerial photography, cadastral mapping, and scanner surveys. The constellation’s data is also integrated into decision support systems for climate modeling and atmospheric studies, enhancing India’s capacity for evidence-based policy-making in environmental and resource management domains.\n\n### References\n\n- [1] fdac8d1e9ef56519371df7e6532df27d.pdf",
+      "summary": "The Indian Remote Sensing (IRS) satellite constellation supports a wide range of applications including agricultural monitoring (crop inventory, drought assessment, sericulture), groundwater prospect mapping, forest health monitoring through fire detection, water resource management (glacial and surface water monitoring), geological surveys, and environmental change analysis. It plays a critical role in disaster management by providing flood mapping, landslide detection, and earthquake impact assessment, with data used during the 2015 floods across 10 Indian states and internationally for events like oil spills and typhoons in countries such as Vietnam, Pakistan, and Bangladesh. The constellation also aids urban planning, infrastructure development, topographic mapping, and climate modeling through high-resolution imagery and integration with decision support systems like Bhuvan and NDEM.",
+      "created_at": "2026-01-02T00:14:06.285549",
+      "updated_at": "2026-01-02T00:14:08.963742"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-02T00:13:49.627173"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}
