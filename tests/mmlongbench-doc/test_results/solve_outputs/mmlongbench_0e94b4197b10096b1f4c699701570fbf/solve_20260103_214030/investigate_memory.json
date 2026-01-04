@@ -1,0 +1,46 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260103_214030",
+  "user_question": "Which category has the most increase from 2005 to 2010 for time spent on weedends?",
+  "created_at": "2026-01-03T21:40:30.114359",
+  "updated_at": "2026-01-03T21:41:09.505539",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "increase in time spent on weekends from 2005 to 2010 by category",
+      "raw_result": "I'm sorry, but I do not have enough information to answer your query about the increase in time spent on weekends from 2005 to 2010 by category.",
+      "summary": "There is insufficient information available to determine which category experienced the most increase in time spent on weekends from 2005 to 2010.",
+      "created_at": "2026-01-03T21:40:42.142934",
+      "updated_at": "2026-01-03T21:40:43.920662"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "increase in time spent on weekends by category from 2005 to 2010",
+      "raw_result": "I do not have enough information to answer that question.",
+      "summary": "There is insufficient information available to determine which category had the most increase in time spent on weekends from 2005 to 2010.",
+      "created_at": "2026-01-03T21:40:54.443910",
+      "updated_at": "2026-01-03T21:40:56.000566"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "time spent on weekends increase by category from 2005 to 2010",
+      "raw_result": "I do not have enough information to answer your query about the increase in time spent on weekends by category from 2005 to 2010.",
+      "summary": "There is insufficient information available to determine which category experienced the most increase in time spent on weekends from 2005 to 2010.",
+      "created_at": "2026-01-03T21:41:08.115795",
+      "updated_at": "2026-01-03T21:41:09.504743"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-03T21:40:30.114368"
+  },
+  "metadata": {
+    "total_iterations": 3,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.6,
+    "total_knowledge_items": 3
+  }
+}

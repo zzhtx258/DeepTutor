@@ -57,10 +57,11 @@ solve:
   save_intermediate_results: true
   agents:
     investigate_agent:
-      max_actions_per_round: 1
-      max_iterations: 3
+      max_actions_per_round: 2  # 每轮可执行多个查询
+      max_iterations: 5  # 增加迭代次数以提高检索质量
     precision_answer_agent:
       enabled: true
+      always_generate: true  # 总是生成简短答案，跳过决策步骤
 research:
   planning:
     rephrase:

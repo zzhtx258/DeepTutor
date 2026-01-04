@@ -1,0 +1,76 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T22:16:22.397185",
+  "updated_at": "2026-01-03T22:17:47.997315",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "examples of what does not make you data-driven",
+      "raw_result": "Being \"data-driven\" is often misunderstood, and there are several common misconceptions regarding what qualifies an organization as data-driven. Here are examples that illustrate what **does not** make an organization truly data-driven:\n\n1. **Accumulating Reports and Dashboards**: \n   - Simply having a large number of reports, dashboards, or alerts does not equate to being data-driven. An organization can possess a multitude of these tools while failing to generate actionable insights or strategic decisions based on them. Merely collecting data without analysis or interpretation leads to inefficiency and cognitive overload. \n\n2. **Data Obsession without Insight**: \n   - Being \"data-obsessed\" without the ability to derive meaningful insights or context from the data is another indicator that an organization is not truly data-driven. An excessive focus on metrics alone, without the ability to interpret or act upon them, does not foster a data-driven culture.\n\n3. **Checking Gut Feelings Over Data**: \n   - Organizations that ignore data insights in favor of \"gut feelings\" when making decisions are not practicing true data-driven decision-making. While intuition can play a role in decision-making, failing to support it with data undermines the concept of being data-driven.\n\n4. **Data Hoarding and Silos**: \n   - Creating data silos, where different departments hoard their data instead of sharing it across the organization, inhibits the creation of a comprehensive view of the business. A lack of collaboration and open access to data prevents leveraging data as a strategic asset.\n\n5. **Lack of Strong Data Leadership**: \n   - Organizations that do not have strong data leadership or a clear vision to integrate data into decision-making processes will struggle to achieve a data-driven culture. Without an advocate for data across the organization, data initiatives often fail or do not receive the necessary support.\n\nThese elements reflect a common misunderstanding of what it means to be data-driven. A true data-driven organization prioritizes meaningful analysis, encourages open data sharing, and integrates data insights into all levels of decision-making.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "Being data-driven is often misunderstood. Examples of what does not make an organization truly data-driven include: accumulating reports and dashboards without actionable insights, being data-obsessed without deriving meaningful insights, prioritizing gut feelings over data in decision-making, creating data silos that inhibit collaboration, and lacking strong data leadership to integrate data into decision-making processes. A true data-driven organization focuses on meaningful analysis and open data sharing.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "These elements reflect a common misunderstanding of what it means to be data-driven."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T22:16:43.907189",
+      "updated_at": "2026-01-03T22:16:47.122909"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "examples of what does not make you data-driven",
+      "raw_result": "Being \"data-driven\" is often misunderstood, and there are several common misconceptions regarding what qualifies an organization as data-driven. Here are examples that illustrate what **does not** make an organization truly data-driven:\n\n1. **Accumulating Reports and Dashboards**: \n   - Simply having a large number of reports, dashboards, or alerts does not equate to being data-driven. An organization can possess a multitude of these tools while failing to generate actionable insights or strategic decisions based on them. Merely collecting data without analysis or interpretation leads to inefficiency and cognitive overload. \n\n2. **Data Obsession without Insight**: \n   - Being \"data-obsessed\" without the ability to derive meaningful insights or context from the data is another indicator that an organization is not truly data-driven. An excessive focus on metrics alone, without the ability to interpret or act upon them, does not foster a data-driven culture.\n\n3. **Checking Gut Feelings Over Data**: \n   - Organizations that ignore data insights in favor of \"gut feelings\" when making decisions are not practicing true data-driven decision-making. While intuition can play a role in decision-making, failing to support it with data undermines the concept of being data-driven.\n\n4. **Data Hoarding and Silos**: \n   - Creating data silos, where different departments hoard their data instead of sharing it across the organization, inhibits the creation of a comprehensive view of the business. A lack of collaboration and open access to data prevents leveraging data as a strategic asset.\n\n5. **Lack of Strong Data Leadership**: \n   - Organizations that do not have strong data leadership or a clear vision to integrate data into decision-making processes will struggle to achieve a data-driven culture. Without an advocate for data across the organization, data initiatives often fail or do not receive the necessary support.\n\nThese elements reflect a common misunderstanding of what it means to be data-driven. A true data-driven organization prioritizes meaningful analysis, encourages open data sharing, and integrates data insights into all levels of decision-making.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "Being data-driven is often misunderstood. Examples of what does not make an organization truly data-driven include: accumulating reports and dashboards without actionable insights, being data-obsessed without deriving meaningful insights, relying on gut feelings instead of data for decision-making, creating data silos that inhibit collaboration, and lacking strong data leadership to integrate data into decision-making processes. These misconceptions highlight that true data-driven organizations prioritize meaningful analysis and open data sharing.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "These elements reflect a common misunderstanding of what it means to be data-driven."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T22:17:04.526537",
+      "updated_at": "2026-01-03T22:17:07.513584"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "examples of what does not make an organization data-driven",
+      "raw_result": "In understanding what does not make an organization data-driven, it’s crucial to recognize common misconceptions and pitfalls that many organizations face. Here are several examples:\n\n1. **Quantity Over Quality**: \n   - Simply having a large number of reports, dashboards, and alerts does not equate to being data-driven. Organizations may accumulate vast amounts of data and visualizations without deriving actionable insights or implementing changes based on that data. As noted, \"Having lots of reports does not make you data-driven\" (Reference [1]).\n\n2. **Data Hoarding**: \n   - Cultivating a culture of data hoarding or creating silos where data is not shared or utilized across different departments can hinder the potential of data-driven decision-making. The emphasis should be on an open and sharing culture instead of isolating data within departments.\n\n3. **Lack of Context**: \n   - Without a contextual understanding of data, being data-driven becomes a challenge. Organizations that fail to connect data to strategic insights or overlook the importance of context in data analysis are not truly leveraging their data to its fullest potential (Reference [1]).\n\n4. **Absence of Analytics**: \n   - Organizations that do not employ analytics or fail to engage in predictive modeling, statistical analysis, or other advanced techniques might only participate in reporting rather than true data analysis. This limited approach keeps them from becoming data-driven.\n\n5. **Ignoring Data Quality**:\n   - Making decisions based on data that is not trusted or of poor quality indicates a lack of a data-driven mindset. Business leaders often make decisions with data they cannot trust, which undermines the effectiveness of a data-driven organization (Reference [1]).\n\n6. **Top-Down Decision Making Without Data**: \n   - Organizations that rely solely on executive decisions without integrating data or empirical evidence within their decision-making processes do not embody a data-driven culture. Decisions should be informed by data rather than relying on the opinions of the highest-paid persons (HiPPO).\n\nThese examples illustrate that true data-driven organizations go beyond just utilizing data; they integrate data deeply into their culture, processes, and decision-making frameworks.\n\n### References\n\n- [1] ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+      "content": "To understand what does not make an organization data-driven, several common misconceptions can be identified. First, having a large quantity of reports and dashboards does not equate to being data-driven if actionable insights are not derived. Data hoarding and creating silos that prevent data sharing across departments also hinder data-driven decision-making. Additionally, lacking context in data analysis, ignoring data quality, and relying on top-down decision-making without integrating data further illustrate the pitfalls of not being data-driven. True data-driven organizations integrate data into their culture and decision-making processes.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ddoseattle-150627210357-lva1-app6891_95.pdf",
+            "content": "Having lots of reports does not make you data-driven."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T22:17:31.852477",
+      "updated_at": "2026-01-03T22:17:37.302251"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

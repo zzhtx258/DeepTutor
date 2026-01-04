@@ -1,0 +1,69 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T21:23:11.507343",
+  "updated_at": "2026-01-03T21:24:24.723225",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "percentage drop of households income falling behind cost of living 2014 to 2015",
+      "raw_result": "In 2015, about half (53%) of Latinos said their family income was not keeping up with the cost of living, which was unchanged from 2014. This indicates that there was no percentage drop in the proportion of Latino households reporting that their income was falling behind the cost of living between 2014 and 2015. \n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "From 2014 to 2015, there was no percentage drop in the proportion of Latino households claiming their income was falling behind the cost of living, as it remained at 53%.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "In 2015, about half (53%) of Latinos said their family income was not keeping up with the cost of living, which was unchanged from 2014."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T21:23:30.543115",
+      "updated_at": "2026-01-03T21:23:33.695900"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "percentage drop of households claiming income was falling behind cost of living from 2014 to 2015 by group",
+      "raw_result": "The percentages of Latinos who reported their family income was falling behind the cost of living remained constant at about 53% from 2014 to 2015. This indicates that there was no percentage drop in that claim for this particular group during the specified period. \n\nData for other racial or ethnic groups, such as whites and blacks, show similar trends in views regarding their income relative to the cost of living, but specific percentage changes for those groups from 2014 to 2015 are not provided in the context. \n\nIf you're looking for further details or information on a different aspect, please let me know!\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "The report indicates that there was no percentage drop for Latinos claiming their income was falling behind the cost of living, as their percentage remained constant at about 53% from 2014 to 2015. Data for other racial or ethnic groups, such as whites and blacks, is mentioned but specific percentage changes are not provided.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "The percentages of Latinos who reported their family income was falling behind the cost of living remained constant at about 53% from 2014 to 2015."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T21:23:50.719737",
+      "updated_at": "2026-01-03T21:23:54.829404"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "percentage drop of households claiming their income was falling behind cost of living from 2014 to 2015 by racial or ethnic group",
+      "raw_result": "The information regarding the percentage of households claiming their income was falling behind the cost of living by racial or ethnic group from 2014 to 2015 is not available in the provided context. I do not have enough data to answer your query accurately.",
+      "source": "",
+      "content": "The information regarding the percentage of households claiming their income was falling behind the cost of living by racial or ethnic group from 2014 to 2015 is not available.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T21:24:11.533535",
+      "updated_at": "2026-01-03T21:24:13.852919"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

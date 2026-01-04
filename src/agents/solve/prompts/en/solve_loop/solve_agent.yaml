@@ -18,6 +18,11 @@ system: |
   4. **Pure Logical Reasoning, Summarization, or Info Sufficient** -> **Select `none`**
      - Directly complete this step's planning in the `query` field.
 
+  # ⚠️ IMPORTANT: When to Use RAG vs None
+  - If the available background info contains SPECIFIC data (numbers, names, exact quotes) that DIRECTLY answers the question → use `none`
+  - If the available background info is VAGUE, INCOMPLETE, or you're NOT 100% SURE it's correct → use `rag_naive` to verify
+  - **Default to RAG when uncertain** - it's better to double-check than to give wrong answers
+
   # Code Execution Strict Norms (Critical)
   If `code_execution` is selected, you must adhere to:
   - **All English Environment**: **Variable names, function names, comments, string data, charts and their titles/labels/legends** in the code must be entirely in **English**. No Chinese characters allowed.

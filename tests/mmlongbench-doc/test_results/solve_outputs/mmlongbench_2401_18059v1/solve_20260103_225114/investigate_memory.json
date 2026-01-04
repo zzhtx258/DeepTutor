@@ -1,0 +1,64 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260103_225114",
+  "user_question": "In figure 4, which nodes are retrieved by RAPTOR for both questions?",
+  "created_at": "2026-01-03T22:51:14.559903",
+  "updated_at": "2026-01-03T22:51:36.694615",
+  "knowledge_chain": [
+    {
+      "cite_id": "[query-1]",
+      "tool_type": "query_item",
+      "query": "Figure 4 nodes retrieved by RAPTOR for both questions",
+      "raw_result": "",
+      "summary": "No relevant information found for this query.",
+      "created_at": "2026-01-03T22:51:17.439825",
+      "updated_at": "2026-01-03T22:51:19.225660"
+    },
+    {
+      "cite_id": "[query-2]",
+      "tool_type": "query_item",
+      "query": "Figure 4 nodes retrieved by RAPTOR for both questions",
+      "raw_result": "",
+      "summary": "No relevant information found for this query.",
+      "created_at": "2026-01-03T22:51:22.170175",
+      "updated_at": "2026-01-03T22:51:23.475581"
+    },
+    {
+      "cite_id": "[query-3]",
+      "tool_type": "query_item",
+      "query": "Figure 4 nodes retrieved by RAPTOR for both questions",
+      "raw_result": "",
+      "summary": "No relevant information found for this query.",
+      "created_at": "2026-01-03T22:51:26.279892",
+      "updated_at": "2026-01-03T22:51:27.652537"
+    },
+    {
+      "cite_id": "[query-4]",
+      "tool_type": "query_item",
+      "query": "Figure 4 nodes retrieved by RAPTOR for both questions",
+      "raw_result": "",
+      "summary": "No relevant information found for this query.",
+      "created_at": "2026-01-03T22:51:30.556620",
+      "updated_at": "2026-01-03T22:51:31.750400"
+    },
+    {
+      "cite_id": "[query-5]",
+      "tool_type": "query_item",
+      "query": "Figure 4 nodes retrieved by RAPTOR for both questions",
+      "raw_result": "",
+      "summary": "No relevant information found for this query.",
+      "created_at": "2026-01-03T22:51:34.367898",
+      "updated_at": "2026-01-03T22:51:36.691211"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-03T22:51:14.559908"
+  },
+  "metadata": {
+    "total_iterations": 5,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.6,
+    "total_knowledge_items": 5
+  }
+}

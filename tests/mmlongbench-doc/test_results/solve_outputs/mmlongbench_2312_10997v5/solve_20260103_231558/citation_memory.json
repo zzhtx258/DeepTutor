@@ -1,0 +1,71 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T23:15:58.044744",
+  "updated_at": "2026-01-03T23:17:15.191398",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "method integrates knowledge into white-box models via directive fine-tuning",
+      "raw_result": "The method you are referring to is described in the context of Retrieval-Augmented Generation (RAG). Specifically, it involves integrating knowledge into white-box models through a technique known as directive fine-tuning. This approach substitutes the retriever module in RAG to generate relevant documents according to a specific query. This method addresses difficulties encountered during the fine-tuning process, enhancing the overall performance of the model. \n\nDirective fine-tuning not only aims to improve retrieval outcomes but also facilitates the generation of information in a manner that is contextually relevant and aligned with the query requirements.\n\n### References\n\n- [1] Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "source": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "content": "The method that integrates knowledge into white-box models via directive fine-tuning is part of Retrieval-Augmented Generation (RAG). This approach replaces the retriever module to generate relevant documents based on specific queries, addressing challenges in the fine-tuning process and enhancing model performance. Directive fine-tuning improves retrieval outcomes and ensures the generated information is contextually relevant to the query.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+            "content": ""
+          }
+        ]
+      },
+      "created_at": "2026-01-03T23:16:14.056661",
+      "updated_at": "2026-01-03T23:16:16.502512"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "method that integrates knowledge into white-box models via directive fine-tuning",
+      "raw_result": "The method that integrates knowledge into white-box models via directive fine-tuning is known as PKG (Prompt-Knowledge Generation). This approach aims to directly generate relevant documents according to a query by substituting the retriever module. By employing directive fine-tuning, PKG enhances model performance, addressing challenges often encountered during the fine-tuning process and effectively embedding knowledge into the models.\n\n### References\n\n- [1] Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "source": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "content": "The method that integrates knowledge into white-box models via directive fine-tuning is known as PKG (Prompt-Knowledge Generation). This approach generates relevant documents according to a query by substituting the retriever module and enhances model performance through directive fine-tuning, effectively embedding knowledge into the models.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+            "content": ""
+          }
+        ]
+      },
+      "created_at": "2026-01-03T23:16:32.889427",
+      "updated_at": "2026-01-03T23:16:35.823896"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "What method integrates knowledge into white-box models via directive fine-tuning, and what are its implications for model performance?",
+      "raw_result": "The method that integrates knowledge into white-box models via directive fine-tuning is referred to as PKG (Parametric Knowledge Guidance). This approach involves substituting the retriever module directly to generate relevant documents according to a query. The implications for model performance include:\n\n- **Improved Model Accuracy**: By providing direct and context-specific knowledge, PKG can enhance the overall accuracy of the model's responses.\n- **Streamlined Retrieval Process**: The integration of knowledge directly into the model reduces reliance on external sources during the generation process, optimizing the efficiency of knowledge retrieval.\n- **Addressing Fine-Tuning Challenges**: PKG helps tackle difficulties encountered during traditional fine-tuning processes, leading to more effective performance when adapting models to specific tasks.\n\nThis approach is valuable as it not only aims to enhance model performance through targeted knowledge integration but also simplifies the fine-tuning procedure, leading to potentially better outcomes in various downstream applications.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "source": "",
+      "content": "The method integrating knowledge into white-box models via directive fine-tuning is known as Parametric Knowledge Guidance (PKG). This technique substitutes the retriever module to generate relevant documents based on a query, leading to improved model accuracy by providing context-specific knowledge. Additionally, it streamlines the retrieval process by reducing dependency on external sources, enhancing efficiency. PKG also addresses challenges associated with traditional fine-tuning, resulting in better performance for specific tasks. This approach is significant for enhancing model performance and simplifying the fine-tuning process for various applications. \n\nNo image was generated during this execution.",
+      "stage": "solve",
+      "step_id": "S2",
+      "metadata": {
+        "source": "",
+        "auto_sources": [],
+        "mode": "naive"
+      },
+      "created_at": "2026-01-03T23:16:46.721145",
+      "updated_at": "2026-01-03T23:17:10.594650"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

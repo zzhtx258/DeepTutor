@@ -1,0 +1,269 @@
+{
+  "summary": {
+    "total_prompt_tokens": 19485,
+    "total_completion_tokens": 2320,
+    "total_tokens": 21805,
+    "total_cost_usd": 0.00431475,
+    "total_calls": 17,
+    "by_agent": {
+      "investigate_agent": {
+        "prompt_tokens": 5373,
+        "completion_tokens": 382,
+        "total_tokens": 5755,
+        "cost_usd": 0.0010351499999999999,
+        "calls": 4
+      },
+      "note_agent": {
+        "prompt_tokens": 2647,
+        "completion_tokens": 441,
+        "total_tokens": 3088,
+        "cost_usd": 0.00066165,
+        "calls": 3
+      },
+      "manager_agent": {
+        "prompt_tokens": 1149,
+        "completion_tokens": 144,
+        "total_tokens": 1293,
+        "cost_usd": 0.00025875,
+        "calls": 1
+      },
+      "solve_agent": {
+        "prompt_tokens": 4872,
+        "completion_tokens": 611,
+        "total_tokens": 5483,
+        "cost_usd": 0.0010974,
+        "calls": 4
+      },
+      "tool_agent": {
+        "prompt_tokens": 1171,
+        "completion_tokens": 202,
+        "total_tokens": 1373,
+        "cost_usd": 0.00029685,
+        "calls": 2
+      },
+      "response_agent": {
+        "prompt_tokens": 4086,
+        "completion_tokens": 539,
+        "total_tokens": 4625,
+        "cost_usd": 0.0009362999999999998,
+        "calls": 2
+      },
+      "precision_answer_agent": {
+        "prompt_tokens": 187,
+        "completion_tokens": 1,
+        "total_tokens": 188,
+        "cost_usd": 2.865e-05,
+        "calls": 1
+      }
+    },
+    "by_model": {
+      "gpt-4o-mini": {
+        "prompt_tokens": 19485,
+        "completion_tokens": 2320,
+        "total_tokens": 21805,
+        "cost_usd": 0.00431475,
+        "calls": 17
+      }
+    },
+    "by_method": {
+      "api": {
+        "prompt_tokens": 19485,
+        "completion_tokens": 2320,
+        "total_tokens": 21805,
+        "cost_usd": 0.00431475,
+        "calls": 17
+      }
+    },
+    "tiktoken_available": true,
+    "litellm_available": false
+  },
+  "records": [
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1217,
+      "completion_tokens": 86,
+      "total_tokens": 1303,
+      "cost_usd": 0.00023414999999999997,
+      "timestamp": "2026-01-03T23:42:02.211230",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "note_agent",
+      "stage": "note_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 869,
+      "completion_tokens": 145,
+      "total_tokens": 1014,
+      "cost_usd": 0.00021735,
+      "timestamp": "2026-01-03T23:42:18.715522",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1300,
+      "completion_tokens": 111,
+      "total_tokens": 1411,
+      "cost_usd": 0.00026159999999999996,
+      "timestamp": "2026-01-03T23:42:21.696232",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "note_agent",
+      "stage": "note_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 916,
+      "completion_tokens": 141,
+      "total_tokens": 1057,
+      "cost_usd": 0.00022199999999999998,
+      "timestamp": "2026-01-03T23:42:38.808276",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1381,
+      "completion_tokens": 126,
+      "total_tokens": 1507,
+      "cost_usd": 0.00028275,
+      "timestamp": "2026-01-03T23:42:42.580939",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "note_agent",
+      "stage": "note_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 862,
+      "completion_tokens": 155,
+      "total_tokens": 1017,
+      "cost_usd": 0.00022229999999999998,
+      "timestamp": "2026-01-03T23:43:09.214896",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1475,
+      "completion_tokens": 59,
+      "total_tokens": 1534,
+      "cost_usd": 0.00025665,
+      "timestamp": "2026-01-03T23:43:14.757973",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "manager_agent",
+      "stage": "Plan",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1149,
+      "completion_tokens": 144,
+      "total_tokens": 1293,
+      "cost_usd": 0.00025875,
+      "timestamp": "2026-01-03T23:43:19.201758",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "solve_agent",
+      "stage": "solve_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1548,
+      "completion_tokens": 191,
+      "total_tokens": 1739,
+      "cost_usd": 0.00034679999999999997,
+      "timestamp": "2026-01-03T23:43:23.973963",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "solve_agent",
+      "stage": "solve_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1030,
+      "completion_tokens": 115,
+      "total_tokens": 1145,
+      "cost_usd": 0.00022349999999999998,
+      "timestamp": "2026-01-03T23:43:27.643262",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "tool_agent",
+      "stage": "tool_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 485,
+      "completion_tokens": 90,
+      "total_tokens": 575,
+      "cost_usd": 0.00012675,
+      "timestamp": "2026-01-03T23:43:48.426192",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "solve_agent",
+      "stage": "solve_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1104,
+      "completion_tokens": 151,
+      "total_tokens": 1255,
+      "cost_usd": 0.0002562,
+      "timestamp": "2026-01-03T23:43:51.257585",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "tool_agent",
+      "stage": "tool_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 686,
+      "completion_tokens": 112,
+      "total_tokens": 798,
+      "cost_usd": 0.0001701,
+      "timestamp": "2026-01-03T23:44:13.940899",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "solve_agent",
+      "stage": "solve_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1190,
+      "completion_tokens": 154,
+      "total_tokens": 1344,
+      "cost_usd": 0.00027089999999999997,
+      "timestamp": "2026-01-03T23:44:17.398237",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "response_agent",
+      "stage": "response_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 1980,
+      "completion_tokens": 216,
+      "total_tokens": 2196,
+      "cost_usd": 0.00042659999999999996,
+      "timestamp": "2026-01-03T23:44:24.316669",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "response_agent",
+      "stage": "response_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 2106,
+      "completion_tokens": 323,
+      "total_tokens": 2429,
+      "cost_usd": 0.0005096999999999999,
+      "timestamp": "2026-01-03T23:44:30.775809",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "precision_answer_agent",
+      "stage": "precision_answer_agent",
+      "model": "gpt-4o-mini",
+      "prompt_tokens": 187,
+      "completion_tokens": 1,
+      "total_tokens": 188,
+      "cost_usd": 2.865e-05,
+      "timestamp": "2026-01-03T23:44:31.868949",
+      "calculation_method": "api"
+    }
+  ]
+}

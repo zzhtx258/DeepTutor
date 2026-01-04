@@ -1,0 +1,55 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T22:07:25.855130",
+  "updated_at": "2026-01-03T22:08:10.839894",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "two magazines opinions German venture capital",
+      "raw_result": "I do not have enough information to answer that.",
+      "source": "",
+      "content": "There is insufficient information available to identify which two magazines' opinions illustrate the situation of German venture capital.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T22:07:37.981109",
+      "updated_at": "2026-01-03T22:07:40.045648"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "magazines opinions German venture capital",
+      "raw_result": "I do not have enough information to answer.",
+      "source": "",
+      "content": "There is insufficient information available to identify which two magazines' opinions illustrate the situation of German venture capital.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T22:07:51.668374",
+      "updated_at": "2026-01-03T22:07:53.411413"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "magazines opinions German venture capital",
+      "raw_result": "I do not have enough information to answer.",
+      "source": "",
+      "content": "There is insufficient information available to identify which two magazines' opinions illustrate the situation of German venture capital.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T22:08:03.363989",
+      "updated_at": "2026-01-03T22:08:04.872189"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T21:48:27.152272",
+  "updated_at": "2026-01-03T21:48:53.999135",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "What does NARL stand for?",
+      "raw_result": "NARL stands for **National Atmospheric Research Laboratory**. It is located at Gadanki near Tirupati and is an autonomous society supported by the Department of Space (DOS) in India, focusing on atmospheric research through observations and modeling. \n\n### References\n- [1] fdac8d1e9ef56519371df7e6532df27d.pdf",
+      "source": "fdac8d1e9ef56519371df7e6532df27d.pdf",
+      "content": "NARL stands for National Atmospheric Research Laboratory. It is located at Gadanki near Tirupati and is an autonomous society supported by the Department of Space in India, focusing on atmospheric research through observations and modeling.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "fdac8d1e9ef56519371df7e6532df27d.pdf",
+            "content": "NARL stands for National Atmospheric Research Laboratory."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T21:48:45.117493",
+      "updated_at": "2026-01-03T21:48:47.946485"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

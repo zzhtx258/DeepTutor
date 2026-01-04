@@ -1,0 +1,37 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260103_230842",
+  "user_question": "What is the paper's full title that proposes the method that has a retrieval granularity of phrase?",
+  "created_at": "2026-01-03T23:08:42.640491",
+  "updated_at": "2026-01-03T23:09:39.004256",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "paper full title method retrieval granularity of phrase",
+      "raw_result": "The document does not provide a specific full title for a paper that is solely focused on the method of retrieval granularity of phrase. However, it discusses retrieval granularity in the context of various retrieval methods, including mentioning a concept introduced by DenseX which uses propositions as retrieval units. \n\nRetrieval granularity is defined as the level of detail that retrieval units can have, ranging from fine to coarse (e.g., Token, Phrase, Sentence, Proposition, Chunks, Document). The emphasis is that choosing the appropriate retrieval granularity is crucial for enhancing the performance of retrieval systems. Coarse-grained units can provide relevant information but may also introduce redundancy, whereas fine-grained units increase the retrieval burden without ensuring semantic integrity.\n\nFor exact citations or references, please provide further details or queries on specific aspects or methods related to retrieval granularity.\n\n### References\n\n- [1] 2312.10997v5.pdf",
+      "summary": "The document does not provide a specific full title for a paper focused solely on the method of retrieval granularity of phrase. It discusses retrieval granularity in the context of various methods, mentioning a concept introduced by DenseX that uses propositions as retrieval units. The importance of choosing the appropriate retrieval granularity is highlighted for enhancing retrieval system performance.",
+      "created_at": "2026-01-03T23:09:06.714706",
+      "updated_at": "2026-01-03T23:09:09.545209"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "full title of the paper proposing retrieval granularity of phrase",
+      "raw_result": "The full title of the paper proposing retrieval granularity of phrase is: **\"Dense X Retrieval: What retrieval granularity should we use?\"** [30].",
+      "summary": "The full title of the paper proposing retrieval granularity of phrase is 'Dense X Retrieval: What retrieval granularity should we use?'",
+      "created_at": "2026-01-03T23:09:34.252588",
+      "updated_at": "2026-01-03T23:09:37.026725"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-03T23:08:42.640509"
+  },
+  "metadata": {
+    "total_iterations": 3,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 2
+  }
+}

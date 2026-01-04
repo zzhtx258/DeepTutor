@@ -1,0 +1,137 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T23:46:37.345991",
+  "updated_at": "2026-01-03T23:49:35.543138",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "end of application period for groups of applicants",
+      "raw_result": "The end of the application periods for various groups of applicants at Nanyang Technological University (NTU) is summarized as follows:\n\n1. **Singapore-Cambridge GCE 'A' Level Applicants**:\n   - Application period ends on **19 March 2024**.\n\n2. **Polytechnic and Equivalent Diploma Holders (including NAFA, LASALLE, ITE, etc.)**:\n   - Application period ends on **21 February 2024**.\n\n3. **NUS High School Diploma Applicants**:\n   - Application period starts on **1 December 2023** and ends on **21 February 2024**.\n\n4. **International Baccalaureate (IB) Diploma Applicants**:\n   - Application period starts on **1 December 2023** and ends on **20 January 2024**.\n\n5. **Part-Time B.Eng and B.Tech in Computing Applicants**:\n   - Application period starts on **3 November 2023** and ends on **15 January 2024**.\n\nThese periods accommodate various academic qualifications and ensure a structured application process for the different groups of applicants seeking admission to NTU. \n\n### References\n\n- [1] 2024.ug.eprospectus.pdf",
+      "source": "2024.ug.eprospectus.pdf",
+      "content": "The latest end of application period is for Singapore-Cambridge GCE 'A' Level Applicants, which ends on 19 March 2024.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2024.ug.eprospectus.pdf",
+            "content": "The end of the application periods for various groups of applicants at Nanyang Technological University (NTU) is summarized as follows..."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T23:47:06.268905",
+      "updated_at": "2026-01-03T23:47:09.445126"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "latest end of application period for all groups of applicants",
+      "raw_result": "The latest end of application period for all groups of applicants to Nanyang Technological University (NTU) for 2024 is 19 March 2024. This applies specifically to:\n\n- Singapore-Cambridge GCE 'A' Level applicants, whose application period ends on this date.\n- Part-Time B.Eng and B.Tech in Computing applicants have an application window ending on 15 January 2024, while the polytechnic diploma holders must apply by 21 February 2024.\n\nHere is a summary of application end dates by group:\n\n- **Singapore-Cambridge GCE 'A' Level**: Ends on 19 March 2024.\n- **Polytechnic Diploma Holders**: Ends on 21 February 2024.\n- **Part-Time B.Eng/B.Tech**: Ends on 15 January 2024.\n- **NUS High School Diploma and International Baccalaureate (IB) Diploma**: Both have overlapping deadlines ending on 20 January 2024.\n\nEach group has its respective application period, indicating a structured approach to admissions accommodating diverse educational paths.\n\n### References\n\n- [1] 2024.ug.eprospectus.pdf",
+      "source": "2024.ug.eprospectus.pdf",
+      "content": "The latest end of application period for all groups of applicants to Nanyang Technological University (NTU) for 2024 is 19 March 2024, specifically for Singapore-Cambridge GCE 'A' Level applicants. Other groups have earlier deadlines: Polytechnic Diploma Holders must apply by 21 February 2024, and Part-Time B.Eng/B.Tech applicants have a deadline of 15 January 2024. NUS High School Diploma and International Baccalaureate (IB) Diploma applicants have a deadline of 20 January 2024.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2024.ug.eprospectus.pdf",
+            "content": "The latest end of application period for all groups of applicants to Nanyang Technological University (NTU) for 2024 is 19 March 2024."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T23:47:29.255828",
+      "updated_at": "2026-01-03T23:47:33.740268"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "end of application period for all groups of applicants for Nanyang Technological University (NTU) 2024",
+      "raw_result": "The end of application periods for various groups of applicants for Nanyang Technological University (NTU) in 2024 are outlined as follows:\n\n1. **Singapore-Cambridge GCE 'A' Level Applicants**:\n   - End: 19 March 2024\n\n2. **Polytechnic and Equivalent Diploma Holders**:\n   - End: 21 February 2024\n\n3. **NUS High School Diploma Applicants**:\n   - End: Date unspecified; they have a start date of 1 December 2023.\n\n4. **International Baccalaureate (IB) Diploma Applicants**:\n   - End: 20 January 2024\n\n5. **Part-Time B.Eng and B.Tech in Computing Applicants**:\n   - End: 15 January 2024\n\nThese deadlines reflect the various academic qualifications and pathways available for undergraduate admissions at NTU, facilitating a diverse array of applicants. \n\n### References\n\n- [1] 2024.ug.eprospectus.pdf",
+      "source": "2024.ug.eprospectus.pdf",
+      "content": "The latest end of application period for Nanyang Technological University (NTU) in 2024 is for Singapore-Cambridge GCE 'A' Level Applicants, which is on 19 March 2024.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2024.ug.eprospectus.pdf",
+            "content": "The end of application periods for various groups of applicants for Nanyang Technological University (NTU) in 2024 are outlined as follows."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T23:48:00.248489",
+      "updated_at": "2026-01-03T23:48:04.056981"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_naive",
+      "query": "groups of applicants and their end of application periods for Nanyang Technological University 2024",
+      "raw_result": "Nanyang Technological University (NTU) has outlined specific application periods for various groups of applicants for the academic year 2024. Here's a structured overview based on the qualifications of the applicants:\n\n### Groups of Applicants and Their End Application Periods:\n\n1. **Singapore-Cambridge GCE 'A' Level Applicants:**\n   - **End of Application Period:** 19 March 2024\n\n2. **Polytechnic Diploma Holders and Equivalent Institutions:**\n   - **End of Application Period:** 21 February 2024\n\n3. **NUS High School Diploma Holders:**\n   - **End of Application Period:** 19 March 2024\n\n4. **International Baccalaureate (IB) Diploma Holders:**\n   - **End of Application Period:** 20 January 2024\n\n5. **Part-Time Bachelor of Engineering and Bachelor of Technology Applicants:**\n   - **End of Application Period:** 15 January 2024\n\nEach category has distinct application windows and varies in terms of required credentials and fees. This structured approach reflects NTU's commitment to inclusivity in accommodating diverse educational backgrounds.\n\n### References\n- [1] 2024.ug.eprospectus.pdf",
+      "source": "2024.ug.eprospectus.pdf",
+      "content": "The groups of applicants with the latest end of application periods for Nanyang Technological University in 2024 are the Singapore-Cambridge GCE 'A' Level Applicants and NUS High School Diploma Holders, both with an end date of 19 March 2024.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2024.ug.eprospectus.pdf",
+            "content": "Nanyang Technological University (NTU) has outlined specific application periods for various groups of applicants for the academic year 2024."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T23:48:31.465738",
+      "updated_at": "2026-01-03T23:48:35.070010"
+    },
+    {
+      "cite_id": "[rag-5]",
+      "tool_type": "rag_naive",
+      "query": "groups of applicants with the latest end of application period for Nanyang Technological University 2024",
+      "raw_result": "The latest end of application period for Nanyang Technological University (NTU) for various groups of applicants in 2024 is as follows:\n\n### Applicant Groups and Application Periods:\n\n1. **Singapore-Cambridge GCE 'A' Level Applicants**:\n   - End: 19 March 2024\n\n2. **Applicants from Polytechnics or equivalent institutions**:\n   - End: 21 February 2024\n\n3. **NUS High School Diploma Applicants**:\n   - End: 19 March 2024\n\n4. **International Baccalaureate (IB) Diploma Applicants**:\n   - End: 20 January 2024\n\n5. **Part-Time B.Eng and B.Tech in Computing Applicants**:\n   - End: 15 January 2024\n\nThe **latest end date** for any application group is **19 March 2024** for both the Singapore-Cambridge GCE 'A' Level and NUS High School Diploma applicants, indicating significant opportunities for those qualifying through these educational pathways.\n\n### References\n\n- [1] 2024.ug.eprospectus.pdf",
+      "source": "2024.ug.eprospectus.pdf",
+      "content": "The latest end of application period for Nanyang Technological University (NTU) in 2024 is 19 March 2024, applicable to both Singapore-Cambridge GCE 'A' Level Applicants and NUS High School Diploma Applicants.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2024.ug.eprospectus.pdf",
+            "content": "The latest end date for any application group is 19 March 2024 for both the Singapore-Cambridge GCE 'A' Level and NUS High School Diploma applicants."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T23:48:59.975421",
+      "updated_at": "2026-01-03T23:49:03.301041"
+    },
+    {
+      "cite_id": "[rag-6]",
+      "tool_type": "rag_naive",
+      "query": "What are the latest end of application periods for different groups of applicants according to the brochure?",
+      "raw_result": "The latest end dates for application periods for different groups of applicants, as per the NTU brochure, are structured as follows:\n\n1. **Singapore-Cambridge GCE 'A' Level Applicants**:\n   - End Date: **19 March 2024**\n\n2. **Polytechnic and Equivalent Diploma Holders**:\n   - End Date: **21 February 2024**\n\n3. **NUS High School Diploma Applicants**:\n   - End Date: **20 January 2024**\n\n4. **International Baccalaureate (IB) Diploma Applicants**:\n   - End Date: **20 January 2024**\n\n5. **Part-Time B.Eng and B.Tech in Computing Applicants**:\n   - End Date: **15 January 2024**\n\nThese application periods accommodate various educational pathways, reflecting NTU's commitment to inclusivity and diverse applicant profiles. \n\n### References\n\n- [1] 2024.ug.eprospectus.pdf",
+      "source": "",
+      "content": "The tool execution retrieved the latest application end dates for various applicant groups according to the NTU brochure. The key dates are as follows: Singapore-Cambridge GCE 'A' Level Applicants - 19 March 2024; Polytechnic and Equivalent Diploma Holders - 21 February 2024; NUS High School Diploma Applicants - 20 January 2024; International Baccalaureate Diploma Applicants - 20 January 2024; and Part-Time B.Eng and B.Tech in Computing Applicants - 15 January 2024. This information highlights NTU's inclusivity in accommodating diverse educational backgrounds. No image was generated during this execution.",
+      "stage": "solve",
+      "step_id": "S2",
+      "metadata": {
+        "source": "",
+        "auto_sources": [],
+        "mode": "naive"
+      },
+      "created_at": "2026-01-03T23:49:13.016348",
+      "updated_at": "2026-01-03T23:49:31.907461"
+    }
+  ],
+  "tool_counters": {
+    "rag": 6
+  }
+}

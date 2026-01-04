@@ -1,0 +1,85 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T23:08:10.458258",
+  "updated_at": "2026-01-03T23:08:37.838124",
+  "citations": [
+    {
+      "cite_id": "[query-1]",
+      "tool_type": "query_item",
+      "query": "Figure 3",
+      "raw_result": "",
+      "source": "",
+      "content": "No relevant information found for this query.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T23:08:13.182739",
+      "updated_at": "2026-01-03T23:08:14.756479"
+    },
+    {
+      "cite_id": "[query-2]",
+      "tool_type": "query_item",
+      "query": "Figure 3",
+      "raw_result": "",
+      "source": "",
+      "content": "No relevant information found for this query.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T23:08:17.571101",
+      "updated_at": "2026-01-03T23:08:18.560903"
+    },
+    {
+      "cite_id": "[query-3]",
+      "tool_type": "query_item",
+      "query": "Figure 3 distinct icons",
+      "raw_result": "",
+      "source": "",
+      "content": "No relevant information found for this query.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T23:08:21.768455",
+      "updated_at": "2026-01-03T23:08:23.040903"
+    },
+    {
+      "cite_id": "[query-4]",
+      "tool_type": "query_item",
+      "query": "Figure 3 distinct icons used",
+      "raw_result": "",
+      "source": "",
+      "content": "No relevant information found for this query.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": "Figure 3"
+      },
+      "created_at": "2026-01-03T23:08:26.482015",
+      "updated_at": "2026-01-03T23:08:27.789207"
+    },
+    {
+      "cite_id": "[query-5]",
+      "tool_type": "query_item",
+      "query": "Figure 3 distinct icons",
+      "raw_result": "",
+      "source": "",
+      "content": "No relevant information found for this query.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T23:08:30.896763",
+      "updated_at": "2026-01-03T23:08:32.432739"
+    }
+  ],
+  "tool_counters": {
+    "query": 5
+  }
+}

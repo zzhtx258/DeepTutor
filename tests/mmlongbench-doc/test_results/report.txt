@@ -1,18 +1,18 @@
-Overall Acc: 0.21757259001161441 | Question Number: 100
-Overall F1-score: 0.15653078529032444 | Question Number: 100
+Overall Acc: 0.1654794520547945 | Question Number: 100
+Overall F1-score: 0.13913186994553559 | Question Number: 100
 -----------------------
-Single-page | Accuracy: 0.12093495934959349 | Question Number: 48
-Cross-page | Accuracy: 0.1829573934837093 | Question Number: 38
-Unanswerable | Accuracy: 0.6428571428571429 | Question Number: 14
+Single-page | Accuracy: 0.0947488584474886 | Question Number: 48
+Cross-page | Accuracy: 0.18421052631578946 | Question Number: 38
+Unanswerable | Accuracy: 0.35714285714285715 | Question Number: 14
 -----------------------
-Evidence Sources: Chart | Accuracy: 0.038461538461538464 | Question Number: 26
-Evidence Sources: Table | Accuracy: 0.3398042143686743 | Question Number: 14
-Evidence Sources: Pure-text (Plain-text) | Accuracy: 0.23582766439909297 | Question Number: 21
-Evidence Sources: Generalized-text (Layout) | Accuracy: 0.13333333333333333 | Question Number: 15
-Evidence Sources: Figure | Accuracy: 0.06896551724137931 | Question Number: 29
+Evidence Sources: Chart | Accuracy: 0.07692307692307693 | Question Number: 26
+Evidence Sources: Table | Accuracy: 0.21428571428571427 | Question Number: 14
+Evidence Sources: Pure-text (Plain-text) | Accuracy: 0.21656881930854535 | Question Number: 21
+Evidence Sources: Generalized-text (Layout) | Accuracy: 0.2 | Question Number: 15
+Evidence Sources: Figure | Accuracy: 0.034482758620689655 | Question Number: 29
 -----------------------
 Document Type: Research report / Introduction | Accuracy: 0.20512820512820512 | Question Number: 39
-Document Type: Tutorial/Workshop | Accuracy: 0.21739130434782608 | Question Number: 23
-Document Type: Academic paper | Accuracy: 0.2834467120181406 | Question Number: 21
-Document Type: Guidebook | Accuracy: 0.125 | Question Number: 16
-Document Type: Brochure | Accuracy: 0.8048780487804879 | Question Number: 1
+Document Type: Tutorial/Workshop | Accuracy: 0.1542584871947588 | Question Number: 23
+Document Type: Academic paper | Accuracy: 0.19047619047619047 | Question Number: 21
+Document Type: Guidebook | Accuracy: 0.0625 | Question Number: 16
+Document Type: Brochure | Accuracy: 0.0 | Question Number: 1

@@ -1,0 +1,76 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T21:12:51.874163",
+  "updated_at": "2026-01-03T21:14:10.345312",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "5% of Latinos economic upward mobility for their children",
+      "raw_result": "According to the Pew Research Center, a significant majority of Latino adults, specifically **72%**, believe that their children will be financially better off than they are. Conversely, **about 16%** expect their children's financial situation to be similar to their own, while only a small percentage (approximately **4%**) believe their children will be less financially well off. This report underscores the optimism within the Latino community regarding economic upward mobility for future generations.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "According to the Pew Research Center, about 72% of Latino adults believe their children will be financially better off than they are, while approximately 16% expect their children's financial situation to be similar to their own, and only about 4% think their children will be worse off. This indicates a general optimism regarding economic upward mobility among Latinos for their children.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "According to the Pew Research Center, a significant majority of Latino adults, specifically 72%, believe that their children will be financially better off than they are."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T21:13:20.837402",
+      "updated_at": "2026-01-03T21:13:24.988064"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "5% of Latinos economic upward mobility for their children",
+      "raw_result": "According to the Pew Research Center, a significant majority of Latino adults, specifically **72%**, believe that their children will be financially better off than they are. Conversely, **about 16%** expect their children's financial situation to be similar to their own, while only a small percentage (approximately **4%**) believe their children will be less financially well off. This report underscores the optimism within the Latino community regarding economic upward mobility for future generations.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "According to the Pew Research Center, a significant majority of Latino adults, specifically 72%, believe that their children will be financially better off than they are. Conversely, about 16% expect their children's financial situation to be similar to their own, while only approximately 4% believe their children will be less financially well off. This indicates a strong optimism within the Latino community regarding economic upward mobility for future generations.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "According to the Pew Research Center, a significant majority of Latino adults, specifically 72%, believe that their children will be financially better off than they are."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T21:13:41.059935",
+      "updated_at": "2026-01-03T21:13:44.975392"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "5% of Latinos economic upward mobility for their children",
+      "raw_result": "According to the Pew Research Center, a significant majority of Latino adults, specifically **72%**, believe that their children will be financially better off than they are. Conversely, **about 16%** expect their children's financial situation to be similar to their own, while only a small percentage (approximately **4%**) believe their children will be less financially well off. This report underscores the optimism within the Latino community regarding economic upward mobility for future generations.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "According to the Pew Research Center, 72% of Latino adults believe their children will be financially better off than they are. About 16% expect their children's financial situation to be similar to their own, while approximately 4% believe their children will be less financially well off. This indicates a general optimism within the Latino community regarding economic upward mobility for future generations.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "According to the Pew Research Center, a significant majority of Latino adults, specifically 72%, believe that their children will be financially better off than they are."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T21:13:56.365422",
+      "updated_at": "2026-01-03T21:13:58.950281"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}

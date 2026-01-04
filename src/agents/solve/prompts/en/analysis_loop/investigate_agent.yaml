@@ -29,6 +29,12 @@ system: |
   6. **Judge Termination**: If retrieved information is sufficient to answer the question, return `none`.
   7. **Know When to Cut Losses**: If previous queries returned no useful results, try different query terms or proceed to the next phase. Do not repeatedly query the same topic with the same terms.
 
+  # ⚠️ Query Construction Best Practices
+  - **Be Specific**: Include exact terms from the question (e.g., "highest alignment score temperature" not just "alignment score")
+  - **Include Context**: Add context like "in 2015" or "for ChatGPT" when the question specifies these
+  - **Query for Exact Values**: If the question asks for a specific number, color, name, etc., include "exact [value type]" in the query (e.g., "exact temperature value for highest score")
+  - **Multiple Angles**: If the first query doesn't return the answer, try rephrasing with synonyms or related terms
+
   # Output Format
   Directly output a JSON object (no Markdown formatting):
   {

@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260103_215025",
+  "user_question": "How many organisations does this report introduce in detail (at least one paragraph) ?",
+  "created_at": "2026-01-03T21:50:25.883255",
+  "updated_at": "2026-01-03T21:50:54.647054",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "number of organizations introduced in detail in the report",
+      "raw_result": "The report introduces several organizations involved in India's space program, detailing their roles and functions. Here are the organizations mentioned:\n\n1. **Indian Space Research Organisation (ISRO)**: Established in August 1969, it is the primary agency responsible for the country's space program.\n  \n2. **Department of Space (DOS)**: Formed in June 1972, it oversees the implementation of ISRO's programs and promotes the development of space science and technology.\n\n3. **Physical Research Laboratory (PRL)**: Engages in space science research and development, contributing to India's space missions.\n\n4. **National Atmospheric Research Laboratory (NARL)**: Focused on atmospheric research, contributing to weather and climate modeling.\n\n5. **North Eastern Space Applications Centre (NE-SAC)**: Facilitates the use of space technology for regional development in the northeastern states of India.\n\n6. **Vikram Sarabhai Space Centre (VSSC)**: The lead center for developing launch vehicle technology.\n\n7. **ISRO Satellite Centre (ISAC)**: Responsible for the design and development of communication, navigation, and remote sensing satellites.\n\n8. **Liquid Propulsion Systems Centre (LPSC)**: Develops and tests propulsion systems for launch vehicles and spacecraft.\n\n9. **Indian Institute of Space Science and Technology (IIST)**: Established to produce skilled manpower for the ISRO.\n\n10. **National Remote Sensing Centre (NRSC)**: Focuses on remote sensing satellite data processing and applications.\n\n11. **Indian Institute of Remote Sensing (IIRS)**: A premier institute for capacity building in remote sensing and geo-informatics.\n\nThese organizations work collaboratively within the framework established by the Indian Space Commission to facilitate the country's advancements in space technology and applications.\n\n### References\n\n- [1] fdac8d1e9ef56519371df7e6532df27d.pdf",
+      "summary": "The report introduces eleven organizations involved in India's space program, detailing their roles and functions. These include the Indian Space Research Organisation (ISRO), Department of Space (DOS), Physical Research Laboratory (PRL), National Atmospheric Research Laboratory (NARL), North Eastern Space Applications Centre (NE-SAC), Vikram Sarabhai Space Centre (VSSC), ISRO Satellite Centre (ISAC), Liquid Propulsion Systems Centre (LPSC), Indian Institute of Space Science and Technology (IIST), National Remote Sensing Centre (NRSC), and Indian Institute of Remote Sensing (IIRS). Each organization plays a crucial role in advancing space technology and applications in India.",
+      "created_at": "2026-01-03T21:50:45.326273",
+      "updated_at": "2026-01-03T21:50:52.989830"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-03T21:50:25.883270"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

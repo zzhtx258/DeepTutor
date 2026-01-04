@@ -27,12 +27,24 @@ class PrecisionAnswerAgent(BaseAgent):
             use_prompt_loader=True,
             token_tracker=token_tracker,
         )
+        # Read always_generate config - if True, skip decision step and always generate precision answer
+        self.always_generate = (
+            config.get("agents", {})
+            .get("precision_answer_agent", {})
+            .get("always_generate", False)
+        )
 
     async def process(
         self, question: str, detailed_answer: str, verbose: bool = True
     ) -> Dict[str, Any]:
-        decision = await self._should_generate(question, verbose)
-        if not decision["needs_precision"]:
+        # If always_generate is True, skip decision step
+        if self.always_generate:
+            needs_precision = True
+        else:
+            decision = await self._should_generate(question, verbose)
+            needs_precision = decision["needs_precision"]
+        
+        if not needs_precision:
             return {
                 "needs_precision": False,
                 "precision_answer": "",

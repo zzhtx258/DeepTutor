@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T22:44:02.754037",
+  "updated_at": "2026-01-03T22:44:42.602850",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "steps in dataset construction and their descriptions",
+      "raw_result": "The dataset construction process outlined in the context includes several detailed steps aimed at creating a high-quality dataset suitable for the evaluation of large language models (LLMs). Here are the key steps along with their descriptions:\n\n### A.1 Person Selection\n- **Objective**: This step aims to improve the complexity of the questions generated for LLMs by involving multiple people in each question.\n- **Process**: High-quality paragraphs are required for subsequent dataset generation. To achieve this, name pairs and paragraphs from a biographical database specifically designed for the relation extraction task are utilized. The database contains two types of data:\n  - An automatically extracted set\n  - A human-annotated set, which is chosen to ensure high-quality name pairs.\n- **Filtering**: Data is filtered to exclude ambiguities, requiring each name in a relation triple to be complete (i.e., at least a family name and a surname).\n\n### A.2 Name Disambiguation\n- **Objective**: To resolve ambiguities associated with duplicate names (e.g., distinguishing between Anne Hathaway, the actress, and Anne Hathaway, William Shakespeare's wife).\n- **Process**: Name disambiguation is performed using WikiData as the knowledge base. SPARQL queries retrieve all entities associated with a name, and unique QIDs (identifiers) are assigned to distinguish entities with the same name.\n- **Output**: A “knowledge pool” is created by extracting one-hop sub-graphs from WikiData that provide various properties related to the selected person, such as gender, birth date, and occupation.\n\n### A.3 Evolutionary Question Generation\n- **Objective**: This step focuses on incrementally increasing the complexity of questions generated for the LLMs.\n- **Process**: An \"evolutionary question generation\" approach is employed in which LLMs extend a paragraph using additional knowledge iteratively. \n  - LLMs annotate the original paragraph with knowledge from the “knowledge pool.”\n  - For each iteration, appropriate knowledge is selected based on the existing paragraph and is added to enhance coherence and specificity.\n  - After multiple iterations (typically five), LLMs generate two questions: a general version and a specific version, targeting the same set of knowledge. \n\n### B Experiment Details\n- **Objective**: To verify the effectiveness of the constructed dataset.\n- **Process**: Main experiments are conducted using various models with different random seeds. Resource utilization is optimized for running these models, with cost estimates provided for experiments with specific architectures (e.g., ChatGPT and GPT-4).\n\nThis structured approach to dataset construction enables the generation of high-quality attributed answers, facilitating the evaluation of LLMs through a comprehensive understanding of the knowledge required for question generation.\n\n### References\n- [1] 2310.05634v2.pdf",
+      "source": "2310.05634v2.pdf",
+      "content": "The step that takes the most words to describe in the dataset construction process is 'Evolutionary Question Generation'. This step involves incrementally increasing the complexity of questions generated for large language models (LLMs) by employing an evolutionary approach. LLMs extend a paragraph using additional knowledge iteratively, annotating the original paragraph with knowledge from a knowledge pool. After multiple iterations, LLMs generate both general and specific versions of questions targeting the same set of knowledge.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "2310.05634v2.pdf",
+            "content": "This structured approach to dataset construction enables the generation of high-quality attributed answers, facilitating the evaluation of LLMs through a comprehensive understanding of the knowledge required for question generation."
+          }
+        ]
+      },
+      "created_at": "2026-01-03T22:44:25.505483",
+      "updated_at": "2026-01-03T22:44:29.703765"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

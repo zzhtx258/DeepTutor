@@ -1,0 +1,55 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-03T21:41:38.367456",
+  "updated_at": "2026-01-03T21:42:22.157980",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_naive",
+      "query": "number of registered participants for advanced science course in CTBTO by continent",
+      "raw_result": "I do not have enough information to answer your query about the number of registered participants for the advanced science course in CTBTO by continent.",
+      "source": "",
+      "content": "There is insufficient information available to determine the number of registered participants for the advanced science course in CTBTO by continent.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T21:41:49.727599",
+      "updated_at": "2026-01-03T21:41:51.398798"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_naive",
+      "query": "number of registered participants for advanced science course in CTBTO by continent",
+      "raw_result": "I do not have enough information to answer your query about the number of registered participants for the advanced science course in CTBTO by continent.",
+      "source": "",
+      "content": "There is insufficient information available to determine which continent has the most registered participants for the advanced science course in CTBTO.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T21:42:01.067779",
+      "updated_at": "2026-01-03T21:42:02.656702"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_naive",
+      "query": "number of registered participants for advanced science course in CTBTO by continent",
+      "raw_result": "I do not have enough information to answer your query about the number of registered participants for the advanced science course in CTBTO by continent.",
+      "source": "",
+      "content": "There is insufficient information available to determine which continent has the most registered participants for the advanced science course in CTBTO.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-03T21:42:12.213935",
+      "updated_at": "2026-01-03T21:42:13.772975"
+    }
+  ],
+  "tool_counters": {
+    "rag": 3
+  }
+}
