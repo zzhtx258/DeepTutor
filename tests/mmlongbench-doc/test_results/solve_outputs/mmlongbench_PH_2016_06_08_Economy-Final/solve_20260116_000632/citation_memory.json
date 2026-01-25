@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T00:06:32.969276",
+  "updated_at": "2026-01-16T00:07:46.870754",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the 12 references listed in this report, and which ones are from its own research center?",
+      "raw_result": "The provided context and document chunks do not list 12 distinct references. Instead, they reference a single source — **[1] PH_2016.06.08_Economy-Final.pdf** — which contains all the content analyzed, including charts, tables, methodology, and citations to external sources.\n\nWithin this single document, several **external references** are cited in the text and footnotes (primarily in Appendix A), but these are not “12 references” from the report itself — rather, they are sources that the Pew Research Center used to support its analysis. Below is a summary of what can be identified:\n\n---\n\n### ✅ **References Cited in the Report (External Sources)**\n\nThese are the external publications or data sources referenced within the document:\n\n1. **Blumberg, Stephen J. and Julian V. Luke.** (2016). *Wireless Substitution: Early Release of Estimates From the National Health Interview Survey, July-December 2015.* National Center for Health Statistics.\n2. **DeNavas-Walt, Carmen and Bernadette D. Proctor.** (2015). *Income and Poverty in the United States: 2014.* U.S. Census Bureau.\n3. **Kochhar, Rakesh.** (2014). *Latino Jobs Growth Driven by U.S. Born: Immigrants No Longer the Majority of Hispanic Workers.* Pew Research Center.\n4. **Kochhar, Rakesh and Richard Fry.** (2014). *Wealth inequality has widened along racial, ethnic lines since end of the Great Recession.* Pew Research Center.\n5. **Kochhar, Rakesh, Richard Fry and Paul Taylor.** (2011). *Wealth Gaps Rise to Record Highs Between Whites, Blacks, Hispanics.* Pew Research Center.\n6. **Lopez, Mark Hugo, Ana Gonzalez-Barrera and Jens Manuel Krogstad.** (2014). *Latino Support for Democrats Falls, but Democratic Advantage Remains.* Pew Research Center.\n7. **National Bureau of Economic Research.** (2010). *US Business Cycle Expansions and Contractions.*\n8. **Pew Research Center.** (2015). *As Election Year Nears, Public Sees Mixed Economic Picture.*\n9. **Pew Research Center.** (2014). *Most See Inequality Growing, but Partisans Differ Over Solutions.*\n10. **Pew Research Center.** (2009). *Between Two Worlds: How Young Latinos Come of Age in America.*\n11. **Stepler, Renee and Anna Brown.** (2016). *Statistical Portrait of Hispanics in the United States.* Pew Research Center.\n12. **Weeks, Matt.** (2014). *Minorities energize U.S. consumer market, according to UGA Multicultural Economy report.* Selig Center for Economic Growth.\n\n> Note: Some of these (like #3, #4, #5, #6, #8, #9, #10, #11) are authored or published by **Pew Research Center** itself.\n\n---\n\n### 🏢 **References from Pew Research Center’s Own Research**\n\nThe following references listed above are **produced by Pew Research Center**:\n\n- **#3**: Kochhar, Rakesh. (2014). *Latino Jobs Growth Driven by U.S. Born...*\n- **#4**: Kochhar & Fry. (2014). *Wealth inequality has widened...*\n- **#5**: Kochhar, Fry & Taylor. (2011). *Wealth Gaps Rise to Record Highs...*\n- **#6**: Lopez, Gonzalez-Barrera & Krogstad. (2014). *Latino Support for Democrats Falls...*\n- **#8**: Pew Research Center. (2015). *As Election Year Nears...*\n- **#9**: Pew Research Center. (2014). *Most See Inequality Growing...*\n- **#10**: Pew Research Center. (2009). *Between Two Worlds...*\n- **#11**: Stepler & Brown. (2016). *Statistical Portrait of Hispanics...*\n\n> These 8 references are internal publications from Pew Research Center.\n\n---\n\n### 📌 Summary\n\n- The document does **not contain 12 unique references** — it is one report ([1]) that cites multiple external and internal sources.\n- Of the cited works, **8 are from Pew Research Center** (including co-authored reports by its staff).\n- The remaining 4 are from external institutions:\n  - National Center for Health Statistics\n  - U.S. Census Bureau\n  - National Bureau of Economic Research\n  - University of Georgia’s Selig Center for Economic Growth\n\n---\n\n### ❗ Clarification\n\nIf you are asking about “12 references” as if they were footnoted entries within the report, the context only provides **one reference ID [1]**, which encompasses the entire document. All other “references” are either embedded citations or part of the report’s own bibliography (Appendix A).\n\n---\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "The report cites 12 external or internal sources in its bibliography. Of these, 8 are publications authored or produced by Pew Research Center itself, including works by Kochhar, Fry, Taylor, Lopez, Stepler, Brown, and institutional reports from 2009, 2014, and 2015. The remaining 4 references are from external institutions: National Center for Health Statistics, U.S. Census Bureau, National Bureau of Economic Research, and University of Georgia’s Selig Center. Note: The entire analysis is contained within a single document [1], and the '12 references' refer to cited works, not separate documents.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "The document contains all cited references in Appendix A, including 8 internal Pew Research Center publications and 4 external sources."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T00:07:29.296122",
+      "updated_at": "2026-01-16T00:07:36.563382"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

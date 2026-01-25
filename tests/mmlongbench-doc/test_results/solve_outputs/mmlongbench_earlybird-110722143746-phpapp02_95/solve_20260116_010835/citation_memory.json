@@ -1,0 +1,146 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T01:08:35.204909",
+  "updated_at": "2026-01-16T01:12:06.395454",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact numbers/values shown in the chart about average exit cap for US, Europe, and China?",
+      "raw_result": "Based on the provided context, here are the exact values and trends for average exit capitalization (for companies with $100M+ exits) for the USA, Europe, and China from 2004 to 2010:\n\n*   **USA:** The USA's average exit capitalization is shown as relatively stable between $250 million and $370 million over the period. It ended near **$370 million** in 2010.\n*   **Europe:** Europe's average exit capitalization approached or exceeded the USA’s in several years, notably in 2008. While a specific single end-value isn't given for 2010, its performance was comparable to the USA's despite lower investment. Its average exit valuation metric is listed as **$304 million**.\n*   **China:** China exhibited dramatic volatility. Its average exit capitalization peaked at approximately **$650 million** in 2007 and recovered to approximately **$420 million** by 2010.\n\nThese figures are derived from the \"Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)\" and related descriptions within the knowledge graph data.\n\n### References\n\n- [1] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)\n- [2] Average Exit Cap(S100M+Exits) US$M\n- [3] USA\n- [4] Europe\n- [5] China",
+      "source": "Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image), Average Exit Cap(S100M+Exits) US$M, USA, Europe, China",
+      "content": "The provided data does not indicate any point where the average exit cap values for the US, Europe, and China are exactly equal. The US ended near $370 million in 2010, Europe’s average is listed as $304 million, and China recovered to approximately $420 million by 2010 — none of these values match. No specific intersection point or shared value among all three regions is mentioned.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)",
+            "content": "Chart showing trends from 2004 to 2010 for average exit capitalization in USD million for companies with $100M+ exits."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Average Exit Cap(S100M+Exits) US$M",
+            "content": "Metric used for comparison across regions."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "USA",
+            "content": "USA's average exit capitalization stable between $250M and $370M, ending near $370M in 2010."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Europe",
+            "content": "Europe’s average exit valuation metric is listed as $304 million; approached or exceeded USA in some years like 2008."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "China",
+            "content": "China peaked at ~$650M in 2007 and recovered to ~$420M by 2010, showing high volatility."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T01:09:03.430317",
+      "updated_at": "2026-01-16T01:09:19.592951"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact numerical values shown in the chart for average exit cap for US, Europe, and China across all years? Specifically, check if there is any year or data point where all three regions have identical values.",
+      "raw_result": "Based on the provided context, there is no document chunk or explicit numerical data table that lists the exact year-by-year average exit capitalization values for the USA, Europe, and China from 2004 to 2010. The information available describes trends and relative comparisons rather than providing a complete dataset of precise figures.\n\n### Key Observations from the Context:\n\n- **USA**: Represented by a red line on the chart, maintaining relative stability between $250M and $370M over the period, ending near $370M in 2010.\n- **Europe**: Represented by a blue line, showing that its average exit capitalization approached or exceeded the USA’s in several years, notably 2008.\n- **China**: Represented by an orange line, exhibiting dramatic volatility — peaking at ~$650M in 2007 and recovering to ~$420M by 2010.\n\nWhile these descriptions suggest approximate ranges and peak values, they do not provide the exact numerical values for each year for all three regions.\n\n### Regarding Identical Values:\n\nThere is no mention in the context of any specific year or data point where the average exit capitalization values for the USA, Europe, and China were identical. In fact, the descriptions emphasize divergence — with China showing high volatility, Europe achieving comparable exit values to the USA with less investment, and the USA maintaining relatively stable levels.\n\n---\n\n### Conclusion:\n\nThe requested exact numerical values across all years for all three regions are not available in the provided context. Additionally, there is no evidence in the context to suggest that any year had identical average exit capitalization values across the USA, Europe, and China.\n\n### References\n\n- [1] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)\n- [2] Average Exit Cap(S100M+Exits) US$M\n- [3] Europe\n- [4] USA\n- [5] China",
+      "source": "",
+      "content": "No relevant information found for this query. The question may be Not answerable based on available documents. The context describes trends and approximate ranges for average exit cap values (e.g., USA: $250M–$370M, China peaked at ~$650M in 2007), but does not provide exact yearly numerical data or confirm any year where US, Europe, and China had identical values.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-16T01:09:51.281342",
+      "updated_at": "2026-01-16T01:09:54.477960"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the EXACT numbers/values/labels shown in the chart about average exit cap for US, Europe, and China?",
+      "raw_result": "Based on the provided context, here are the exact numbers and labels associated with the **Average Exit Capitalization ($M) for companies achieving $100M+ exits** across the USA, Europe, and China from 2004 to 2010:\n\n### United States (USA)\n- Represented by a **red line**.\n- Maintains **relative stability** between **$250M and $370M** over the period.\n- Ends near **$370M in 2010**.\n\n### Europe\n- Represented by a **blue line**.\n- Shows **comparable exit capitalization** to the USA in several years, notably **approaching or exceeding** the USA’s levels in **2008**.\n- The yellow callout box notes that **European valuations are approximately 1.5 to 2.5 times lower than those in the USA**, though this refers to entry valuations — not explicitly exit cap.\n\n### China\n- Represented by an **orange line**.\n- Exhibits **dramatic volatility**.\n- Peaks at **~$650M in 2007**.\n- Recovers to **~$420M by 2010**.\n\n---\n\nThese values are derived from the **Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)**, which is described as a line chart displaying trends over time with yearly markers from 2004 to 2010.\n\n### References\n\n- [1] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)\n- [2] Line Chart\n- [3] USA\n- [4] Europe\n- [5] China",
+      "source": "Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010), USA, Europe, China",
+      "content": "The chart shows average exit capitalization trends for the US (red line, $250M–$370M), Europe (blue line, comparable to US in some years), and China (orange line, volatile, peaked at ~$650M in 2007, recovered to ~$420M by 2010). However, no specific point is mentioned where all three regions have the exact same average exit cap value. The document does not provide a single integer value where US, Europe, and China converge on the same exit cap.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)",
+            "content": "Line chart displaying trends over time with yearly markers from 2004 to 2010."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "USA",
+            "content": "Red line, maintains relative stability between $250M and $370M, ends near $370M in 2010."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Europe",
+            "content": "Blue line, comparable to USA in several years, notably approaching or exceeding USA levels in 2008."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "China",
+            "content": "Orange line, dramatic volatility, peaks at ~$650M in 2007, recovers to ~$420M by 2010."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T01:10:23.245325",
+      "updated_at": "2026-01-16T01:10:33.902832"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact numerical values (in USD million) shown on the chart for average exit cap for US, Europe, and China at every year or data point where their lines intersect or appear to converge?",
+      "raw_result": "Based on the provided context, there is no document chunk or explicit numerical data listing the exact USD million values for average exit capitalization for the USA, Europe, and China at every annual data point (2004–2010) where their lines intersect or appear to converge on the chart.\n\nThe context describes the **Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)** as a line chart that visually compares trends, but it does not provide a table or list of specific yearly figures. While some general observations are made — such as:\n\n- The **USA** line remains relatively stable between $250M and $370M, ending near $370M in 2010.\n- **Europe**’s line shows values approaching or exceeding the USA’s in certain years (notably 2008).\n- **China**’s line is volatile, peaking at ~$650M in 2007 and recovering to ~$420M by 2010.\n\n— these are qualitative or approximate descriptions, not precise numerical values at each intersection or convergence point.\n\nFurthermore, no document chunks contain tabular or granular year-by-year breakdowns of these metrics.\n\nTherefore, based strictly on the available context, I cannot provide the exact numerical values at every intersection or convergence point.\n\n### References\n\n- [1] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)\n- [2] Average Exit Cap(S100M+Exits) US$M\n- [3] USA\n- [4] Europe\n- [5] China",
+      "source": "",
+      "content": "No relevant information found for this query. The question may be Not answerable based on available documents. The chart mentions approximate ranges (e.g., USA: $250M–$370M, China peak ~$650M in 2007), but no exact USD million value is provided where US, Europe, and China lines intersect or converge.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-16T01:11:03.997671",
+      "updated_at": "2026-01-16T01:11:07.225806"
+    },
+    {
+      "cite_id": "[rag-5]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the EXACT numerical values (in USD million) shown on the chart for average exit cap for US, Europe, and China across all years? Specifically, identify if there is any year or data point where all three regions have identical values.",
+      "raw_result": "Based on the provided context, there is no document chunk or explicit numerical data listing the **exact yearly values** (in USD million) for the average exit capitalization for the USA, Europe, and China from 2004 to 2010.\n\nThe knowledge graph describes the *Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)* as a line chart that visually compares trends, noting:\n\n- The **USA** (red line) shows relative stability between $250M and $370M, ending near $370M in 2010.\n- **Europe** (blue line) approaches or exceeds the USA’s exit cap in some years, notably 2008.\n- **China** (orange line) exhibits dramatic volatility, peaking at ~$650M in 2007 and recovering to ~$420M by 2010.\n\nHowever, **no specific annual numerical values** (e.g., “In 2005, USA = $310M, Europe = $290M, China = $180M”) are provided in the context. Furthermore, while the chart visually suggests convergence or crossover points (like Europe matching the USA in 2008), **there is no explicit statement or data point indicating any year where all three regions had identical average exit capitalization values**.\n\nTherefore, based strictly on the available information:\n\n> ❗ I do not have enough information to provide the exact numerical values for average exit capitalization across all years for the USA, Europe, and China, nor can I confirm if any year showed identical values for all three regions.\n\n### References\n\n- [1] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)\n- [2] Average Exit Cap(S100M+Exits) US$M\n- [3] Europe\n- [4] USA\n- [5] China",
+      "source": "Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image), Average Exit Cap(S100M+Exits) US$M",
+      "content": "No exact numerical values in USD million are provided for the average exit capitalization of US, Europe, and China across all years. The chart visually shows trends but does not specify any year where all three regions have identical values. The document mentions a chart (image) covering 2004–2010 with approximate ranges: USA ($250M–$370M), Europe approaching USA levels (e.g., 2008), and China peaking at ~$650M in 2007 and recovering to ~$420M by 2010. No point of exact equality among all three is confirmed.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)",
+            "content": "Describes a line chart comparing trends from 2004 to 2010, noting USA stability between $250M and $370M, Europe approaching or exceeding USA in some years (notably 2008), and China’s volatility with peak at ~$650M in 2007 and recovery to ~$420M by 2010."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Average Exit Cap(S100M+Exits) US$M",
+            "content": "General label indicating the metric measured on the chart is average exit capitalization in USD million for exits over $100M."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T01:11:41.911213",
+      "updated_at": "2026-01-16T01:11:51.966011"
+    }
+  ],
+  "tool_counters": {
+    "rag": 5
+  }
+}

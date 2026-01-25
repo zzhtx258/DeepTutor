@@ -142,5 +142,11 @@ echo "运行测试..."
 echo "命令: $PYTHON_CMD"
 echo ""
 
-eval $PYTHON_CMD
+# 运行测试并过滤日志（保留退出码）
+# 过滤: Solver/Agent日志、KnowledgeInit、INFO/DEBUG/WARNING、httpx、时间戳行
+set +e
+eval $PYTHON_CMD 2>&1 | grep -v -E "\[Solver\]|\[.*_agent\]|\[.*Agent\]|\[KnowledgeInit\]|INFO|DEBUG|WARNING|Warning:|HTTP Request:|httpx|^[0-9]{4}-[0-9]{2}-[0-9]{2}"
+EXIT_CODE=${PIPESTATUS[0]}
+set -e
+exit $EXIT_CODE
 

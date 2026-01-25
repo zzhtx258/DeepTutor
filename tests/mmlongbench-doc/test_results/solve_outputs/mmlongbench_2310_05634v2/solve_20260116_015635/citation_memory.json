@@ -1,0 +1,47 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T01:56:35.304888",
+  "updated_at": "2026-01-16T01:57:24.886793",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact alignment scores for ChatGPT at different temperature settings as shown in any chart or table in the paper?",
+      "raw_result": "Based on the provided context, there is no explicit chart or table that lists **exact alignment scores for ChatGPT at different temperature settings (0.1, 0.5, 0.9)** as discrete values per setting.\n\nHowever, the following relevant information is available:\n\n- ChatGPT was evaluated across temperature settings of **0.1, 0.5, and 0.9**, but evaluations consistently show **minimal performance variation** across these settings — particularly in metrics such as **F1 Score** and **text-citation alignment**.\n  \n- In automated evaluation, ChatGPT achieved a **text-citation alignment score of 84.5** (with temperature 0.5 being the standard setting used in retrieval analysis experiments).\n  \n- Human evaluation of ChatGPT’s text-citation alignment yielded a score of **82.0**, with the difference attributed to methodological variance rather than instability in model performance.\n\n- The relationship between temperature and performance is described as having **negligible impact** on citation quality or alignment scores — meaning that while temperature settings were tested, **no significant differences in alignment scores were observed** across them.\n\nIn summary:  \nWhile **ChatGPT’s alignment score is reported as 84.5 (automated) and 82.0 (human)**, these scores are not broken down by individual temperature settings (0.1, 0.5, 0.9), because **no meaningful variation was found** across those settings. Therefore, no exact per-temperature alignment scores are presented in any table or chart.\n\n### References\n\n- [1] ChatGPT\n- [2] Temperature Setting\n- [3] Text-Citation Alignment\n- [4] Human Evaluation of Text-Citation Alignment (Table 6) (table)\n- [5] Citation Quality Evaluation Across LLMs (Table 3) (table)",
+      "source": "ChatGPT, Text-Citation Alignment, Human Evaluation of Text-Citation Alignment (Table 6), Citation Quality Evaluation Across LLMs (Table 3)",
+      "content": "The paper does not provide exact alignment scores for ChatGPT at individual temperature settings (0.1, 0.5, 0.9) because no meaningful variation was observed across them. ChatGPT’s text-citation alignment score is reported as 84.5 in automated evaluation (using temperature 0.5 as standard) and 82.0 in human evaluation, but these are not broken down by temperature. The impact of temperature on alignment scores is described as negligible.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "ChatGPT",
+            "content": "ChatGPT was evaluated across temperature settings of 0.1, 0.5, and 0.9, with minimal performance variation observed."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Text-Citation Alignment",
+            "content": "Automated evaluation showed a text-citation alignment score of 84.5 for ChatGPT at temperature 0.5; human evaluation yielded 82.0."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Human Evaluation of Text-Citation Alignment (Table 6)",
+            "content": "Human evaluation results are presented in Table 6, showing alignment score of 82.0 for ChatGPT."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Citation Quality Evaluation Across LLMs (Table 3)",
+            "content": "Table 3 includes citation quality metrics across LLMs, including ChatGPT, but does not break down scores by temperature."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T01:57:04.431113",
+      "updated_at": "2026-01-16T01:57:13.217084"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

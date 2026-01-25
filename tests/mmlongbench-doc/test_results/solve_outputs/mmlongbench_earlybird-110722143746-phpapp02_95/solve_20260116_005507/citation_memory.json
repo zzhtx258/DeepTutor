@@ -1,0 +1,47 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T00:55:07.066819",
+  "updated_at": "2026-01-16T00:56:01.951781",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact numbers or values shown in the chart or table comparing median exit valuations for the USA and Europe?",
+      "raw_result": "Based on the provided context, the exact values for median exit valuations for the USA and Europe are as follows:\n\n- **USA**: The average (median) exit valuation is **$388 million**.\n- **Europe**: The average (median) exit valuation is **$304 million**.\n\nThese figures are derived from venture capital performance metrics comparing the two regions between 2004 and 2010. While Europe’s exit valuations are lower than those of the USA, they are achieved with significantly less capital invested — $44 million in Europe versus $79 million in the USA — highlighting Europe’s greater capital efficiency.\n\n### References\n\n- [1] Average Exit Valuation\n- [2] European vs US VC Performance Metrics Bar Chart 2004-2010 (image)\n- [3] Average Capital Invested Prior to Exit\n- [4] Capital Efficiency\n- [5] USA",
+      "source": "Average Exit Valuation, European vs US VC Performance Metrics Bar Chart 2004-2010 (image), Average Capital Invested Prior to Exit, Capital Efficiency",
+      "content": "The median exit valuation in the USA was $388 million, compared to $304 million in Europe, making the USA's median exit valuation $84 million higher than Europe's during the 2004–2010 period. Europe achieved these valuations with less capital invested ($44 million vs. $79 million in the USA), indicating greater capital efficiency.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Average Exit Valuation",
+            "content": "USA: $388 million; Europe: $304 million"
+          },
+          {
+            "reference_id": "[2]",
+            "source": "European vs US VC Performance Metrics Bar Chart 2004-2010 (image)",
+            "content": "Visual comparison of median exit valuations between USA and Europe for 2004–2010"
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Average Capital Invested Prior to Exit",
+            "content": "Europe: $44 million; USA: $79 million"
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Capital Efficiency",
+            "content": "Europe’s lower capital investment relative to exit valuation indicates greater capital efficiency"
+          }
+        ]
+      },
+      "created_at": "2026-01-16T00:55:36.045688",
+      "updated_at": "2026-01-16T00:55:50.258994"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

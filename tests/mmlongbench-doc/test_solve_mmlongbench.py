@@ -3,10 +3,15 @@
 测试脚本：使用 DeepTutor solve 模块测试 MMLongBench-Doc 基准
 
 该脚本会：
-1. 读取 MMLongBench-Doc 的 samples.json
+1. 读取 MMLongBench-Doc 的 samples.json（仅用于提供问题和正确答案数据）
 2. 对于每个问题，使用 MainSolver 来解决
-3. 从答案中提取结果并评估
+3. 使用 LLM-as-a-Judge (GPT-4o-mini) 评估答案准确性
 4. 生成评估报告
+
+评估方式：
+- 使用 LLMAnswerEvaluator 进行 LLM-as-a-Judge 评估
+- 不再依赖 MMLongBench-Doc 的规则评估（ANLS/编辑距离）
+- LLM 评估更准确地判断答案语义正确性
 
 注意：
 - 所有操作必须在 deeptutor conda 环境中进行
@@ -16,23 +21,51 @@
 
 import argparse
 import asyncio
+import atexit
 import json
 import os
 import re
 import shutil
 import sys
+import warnings
 from pathlib import Path
 from typing import Any, Dict, List
 from datetime import datetime
+
+# 抑制常见的异步相关警告
+warnings.filterwarnings("ignore", message=".*no current event loop.*")
+warnings.filterwarnings("ignore", category=DeprecationWarning, module="asyncio")
+
+# 设置日志级别为 WARNING，关闭 INFO 日志
+import logging
+logging.getLogger().setLevel(logging.WARNING)
+# 关闭常见模块的 INFO 日志
+for logger_name in ["httpx", "httpcore", "openai", "urllib3", "asyncio", "lightrag", "Solver", "InvestigateAgent", "NoteAgent", "ManagerAgent", "SolveAgent", "ToolAgent", "ResponseAgent", "PrecisionAnswerAgent"]:
+    logging.getLogger(logger_name).setLevel(logging.WARNING)
+
+# 存储需要在退出时清理的 RAGAnything 实例
+_raganything_instances = []
+
+def _cleanup_raganything():
+    """在程序退出前清理 RAGAnything 实例，避免警告"""
+    for instance in _raganything_instances:
+        try:
+            # 尝试同步清理
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            loop.run_until_complete(instance.finalize_storages())
+            loop.close()
+        except Exception:
+            pass  # 静默忽略清理错误
+
+atexit.register(_cleanup_raganything)
 
 # 添加项目根目录到路径
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-# 添加 MMLongBench-Doc 评估模块到路径
+# MMLongBench-Doc 数据路径（只用于读取样本数据）
 mmlongbench_root = project_root.parent / "MMLongBench-Doc"
-if mmlongbench_root.exists():
-    sys.path.insert(0, str(mmlongbench_root))
 
 from dotenv import load_dotenv
 from tqdm import tqdm
@@ -45,94 +78,18 @@ from src.agents.solve.main_solver import MainSolver
 from src.knowledge.initializer import KnowledgeBaseInitializer
 from src.knowledge.add_documents import DocumentAdder
 
-# 导入 MMLongBench-Doc 评估模块（延迟导入，避免 OpenAI 客户端初始化问题）
-def _import_eval_modules():
-    """延迟导入评估模块"""
-    try:
-        # 先导入 eval_score（不依赖 OpenAI）
-        from eval.eval_score import eval_score, eval_acc_and_f1, show_results
-        
-        # 延迟导入 extract_answer（需要 OpenAI API key）
-        def extract_answer_lazy(question, output, prompt, model_name="gpt-4o"):
-            """延迟导入 extract_answer"""
-            from eval.extract_answer import extract_answer
-            return extract_answer(question, output, prompt, model_name)
-        
-        return {
-            "eval_score": eval_score,
-            "eval_acc_and_f1": eval_acc_and_f1,
-            "show_results": show_results,
-            "extract_answer": extract_answer_lazy,
-        }
-    except ImportError as e:
-        print(f"警告: 无法导入 MMLongBench-Doc 评估模块: {e}")
-        print(f"预期路径: {mmlongbench_root}")
-        return None
+# 导入 LLM 评估模块
+from llm_answer_evaluator import LLMAnswerEvaluator
 
 
-def _create_extract_answer_function(api_key: str, base_url: str, model_name: str = None):
-    """
-    创建支持自定义 base_url 的 extract_answer 函数
-    
-    Args:
-        api_key: API 密钥
-        base_url: API 端点地址
-        model_name: 模型名称（如果为 None，会从环境变量或默认值获取）
-    
-    Returns:
-        包装后的 extract_answer 函数
-    """
-    from openai import OpenAI
-    
-    # 创建支持自定义 base_url 的客户端
-    client = OpenAI(api_key=api_key, base_url=base_url)
-    
-    # 如果未指定模型，使用环境变量或默认值
-    if model_name is None:
-        import os
-        model_name = os.getenv("LLM_MODEL", "gpt-4o")
-    
-    def extract_answer(question, output, prompt, model_name_override=None):
-        """
-        从响应中提取答案（支持自定义 base_url）
-        
-        Args:
-            question: 问题
-            output: 模型输出
-            prompt: 提取提示
-            model_name_override: 模型名称覆盖（可选）
-        
-        Returns:
-            提取的答案
-        """
-        try:
-            use_model = model_name_override or model_name
-            response = client.chat.completions.create(
-                model=use_model,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt,
-                    },
-                    {
-                        "role": "assistant",
-                        "content": "\n\nQuestion:{}\nAnalysis:{}\n".format(question, output)
-                    }
-                ],
-                temperature=0.0,
-                max_tokens=256,
-                top_p=1,
-                frequency_penalty=0,
-                presence_penalty=0
-            )
-            response = response.choices[0].message.content
-        except Exception as e:
-            print(f"答案提取 API 调用失败: {e}")
-            response = "Failed"
-        
-        return response
-    
-    return extract_answer
+class LLMEvaluatorConfig:
+    """LLM评估器配置"""
+    def __init__(self, output_dir: str, api_key: str, base_url: str, model: str = "gpt-4o", quiet: bool = False):
+        self.output_dir = output_dir
+        self.api_key = api_key
+        self.base_url = base_url
+        self.model = model  # 评估模型名称
+        self.quiet = quiet  # 静默模式，不输出到控制台
 
 
 class MMLongBenchTester:
@@ -144,20 +101,18 @@ class MMLongBenchTester:
         document_path: str,
         output_dir: str,
         kb_name: str = None,  # 已弃用，现在每个文档使用独立知识库
-        extractor_prompt_path: str = None,
         max_samples: int = None,
         start_index: int = 0,
         force_rerun: bool = False,
     ):
         """
-        初始化测试器
+        初始化测试器（使用 LLM-as-a-Judge 评估）
 
         Args:
             samples_path: samples.json 文件路径
             document_path: PDF 文档目录路径
             output_dir: 输出目录
             kb_name: 知识库名称（已弃用，现在每个文档使用独立知识库）
-            extractor_prompt_path: 答案提取提示文件路径
             max_samples: 最大测试样本数（None 表示全部）
             start_index: 起始索引（用于断点续传）
         """
@@ -180,49 +135,30 @@ class MMLongBenchTester:
             print(f"强制重新运行：删除旧的结果文件 {self.results_file}")
             self.results_file.unlink()
 
-        # 加载答案提取提示
-        if extractor_prompt_path:
-            self.extractor_prompt_path = Path(extractor_prompt_path)
-        else:
-            # 默认使用 MMLongBench-Doc 的提示文件
-            default_prompt = mmlongbench_root / "eval" / "prompt_for_answer_extraction.md"
-            if default_prompt.exists():
-                self.extractor_prompt_path = default_prompt
-            else:
-                raise FileNotFoundError(
-                    f"找不到答案提取提示文件: {default_prompt}"
-                )
-
-        with open(self.extractor_prompt_path, "r", encoding="utf-8") as f:
-            self.extractor_prompt = f.read()
-
-        # 导入评估模块
-        self.eval_modules = _import_eval_modules()
-        if self.eval_modules is None:
-            raise ImportError("无法导入 MMLongBench-Doc 评估模块")
-        
-        # 创建支持自定义 base_url 的 extract_answer 函数
+        # 获取 LLM 配置
         import os
         from dotenv import load_dotenv
         project_root = Path(__file__).parent.parent.parent
         load_dotenv(project_root / ".env", override=False)
         
-        # 获取 LLM 配置
-        api_key = os.getenv("LLM_BINDING_API_KEY")
-        base_url = os.getenv("LLM_BINDING_HOST")
-        model_name = os.getenv("LLM_MODEL", "gpt-4o")
+        self.api_key = os.getenv("LLM_BINDING_API_KEY")
+        self.base_url = os.getenv("LLM_BINDING_HOST")
+        self.model_name = os.getenv("LLM_MODEL", "gpt-4o")
         
-        if not api_key or not base_url:
+        if not self.api_key or not self.base_url:
             raise ValueError(
-                "LLM_BINDING_API_KEY 和 LLM_BINDING_HOST 必须设置才能进行答案提取"
+                "LLM_BINDING_API_KEY 和 LLM_BINDING_HOST 必须设置才能进行 LLM 评估"
             )
         
-        # 创建支持自定义供应商的 extract_answer 函数
-        self.extract_answer_func = _create_extract_answer_function(
-            api_key=api_key,
-            base_url=base_url,
-            model_name=model_name
+        # 创建 LLM 评估器
+        evaluator_config = LLMEvaluatorConfig(
+            output_dir=str(self.output_dir),
+            api_key=self.api_key,
+            base_url=self.base_url,
+            model=self.model_name,  # 使用与 solver 相同的模型
+            quiet=True  # 静默模式
         )
+        self.llm_evaluator = LLMAnswerEvaluator(evaluator_config)
 
         # 加载样本
         self.samples = self._load_samples()
@@ -236,15 +172,9 @@ class MMLongBenchTester:
 
     def _load_samples(self) -> List[Dict[str, Any]]:
         """加载测试样本"""
-        if self.results_file.exists():
-            # 如果结果文件存在，从中加载（支持断点续传）
-            print(f"从现有结果文件加载: {self.results_file}")
-            with open(self.results_file, "r", encoding="utf-8") as f:
-                samples = json.load(f)
-        else:
-            # 从原始 samples.json 加载
-            with open(self.samples_path, "r", encoding="utf-8") as f:
-                samples = json.load(f)
+        # 始终从原始 samples.json 加载
+        with open(self.samples_path, "r", encoding="utf-8") as f:
+            samples = json.load(f)
 
         # 限制样本数量
         if self.max_samples:
@@ -253,6 +183,32 @@ class MMLongBenchTester:
         # 从指定索引开始
         if self.start_index > 0:
             samples = samples[self.start_index:]
+
+        # 如果结果文件存在，合并已完成的结果（支持断点续传）
+        if self.results_file.exists() and not self.force_rerun:
+            print(f"从现有结果文件加载已完成的结果: {self.results_file}")
+            with open(self.results_file, "r", encoding="utf-8") as f:
+                existing_results = json.load(f)
+            
+            # 创建已完成结果的查找字典（基于 question + doc_id）
+            results_dict = {}
+            for r in existing_results:
+                key = (r.get("question", ""), r.get("doc_id", ""))
+                if key:
+                    results_dict[key] = r
+            
+            # 合并已完成的结果到样本中
+            merged_count = 0
+            for sample in samples:
+                key = (sample.get("question", ""), sample.get("doc_id", ""))
+                if key in results_dict:
+                    # 用已完成的结果更新样本
+                    existing = results_dict[key]
+                    sample.update(existing)
+                    merged_count += 1
+            
+            if merged_count > 0:
+                print(f"  合并了 {merged_count} 个已完成的结果")
 
         print(f"加载了 {len(samples)} 个测试样本")
         return samples
@@ -388,36 +344,39 @@ class MMLongBenchTester:
 
         return self.solver_cache[kb_name]
 
-    def _extract_answer_from_response(
-        self, question: str, response: str
-    ) -> tuple[str, str]:
+    def _extract_concise_answer(self, response: str) -> str:
         """
-        从响应中提取答案（支持自定义供应商和 base_url）
-
+        从响应中提取 Concise Answer
+        
+        查找 "## Concise Answer" 或类似标记后的内容
+        
         Returns:
-            (predicted_answer, extracted_result)
+            提取的简洁答案，如果未找到则返回空字符串
         """
-        try:
-            # 使用支持自定义 base_url 的 extract_answer 函数
-            extracted_res = self.extract_answer_func(
-                question, response, self.extractor_prompt
-            )
-            # 尝试从提取结果中解析答案
-            if "Extracted answer:" in extracted_res:
-                pred_ans = (
-                    extracted_res.split("Answer format:")[0]
-                    .split("Extracted answer:")[1]
-                    .strip()
-                )
-            else:
-                # 如果提取失败，尝试直接从响应中提取
-                pred_ans = response.strip()[:200]  # 截取前200字符作为备选
-                extracted_res = f"Failed to extract properly. Raw response: {response[:500]}"
-
-            return pred_ans, extracted_res
-        except Exception as e:
-            print(f"答案提取失败: {e}")
-            return "Failed to extract", f"Extraction error: {str(e)}"
+        import re
+        
+        # 尝试多种模式提取 Concise Answer
+        patterns = [
+            # ## Concise Answer\n\nXXX\n\n---
+            r"## Concise Answer\s*\n\n(.+?)\n\n---",
+            # ## Concise Answer\n\nXXX (到文件末尾)
+            r"## Concise Answer\s*\n\n(.+?)(?:\n\n|$)",
+            # **Concise Answer:** XXX
+            r"\*\*Concise Answer[:\*]*\s*(.+?)(?:\n|$)",
+            # Concise Answer: XXX
+            r"Concise Answer[:\s]+(.+?)(?:\n|$)",
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, response, re.DOTALL | re.IGNORECASE)
+            if match:
+                answer = match.group(1).strip()
+                # 清理答案：移除多余的空白和换行
+                answer = re.sub(r'\s+', ' ', answer).strip()
+                if answer:
+                    return answer
+        
+        return ""
 
     async def test_sample(self, sample: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -436,7 +395,7 @@ class MMLongBenchTester:
         question = sample["question"]
         doc_id = sample["doc_id"]
 
-        print(f"\n处理问题: {question[:80]}...")
+        print(f"\n处理问题: {question}...")
         print(f"文档: {doc_id}")
 
         try:
@@ -456,55 +415,73 @@ class MMLongBenchTester:
                 # 如果没有 final_answer，尝试从其他字段获取
                 final_answer = result.get("formatted_solution", "")
 
-            # 提取答案
-            pred_ans, extracted_res = self._extract_answer_from_response(
-                question, final_answer
-            )
+            # 提取 Concise Answer（如果存在）
+            concise_answer = self._extract_concise_answer(final_answer)
+            # 用于评估的答案：优先使用 concise_answer
+            eval_answer = concise_answer if concise_answer else final_answer
 
-            # 评估答案
+            # 使用 LLM-as-a-Judge 评估答案
             try:
-                score = self.eval_modules["eval_score"](
-                    sample["answer"], pred_ans, sample["answer_format"]
+                eval_result = await self.llm_evaluator.evaluate_single_answer(
+                    question=question,
+                    expected_answer=str(sample["answer"]),
+                    generated_answer=eval_answer,
+                    evidence_pages=str(sample.get("evidence_pages", "")),
+                    evidence_sources=str(sample.get("evidence_sources", "")),
+                    doc_id=sample["doc_id"],
+                    evaluation_type="accuracy_only"  # 只评估准确性，速度更快
                 )
+                
+                # 提取评估结果
+                score = float(eval_result.get("accuracy", 0))
+                reasoning = eval_result.get("reasoning", "")
+                
             except Exception as e:
-                print(f"评估失败: {e}")
+                print(f"LLM评估失败: {e}")
                 score = 0.0
+                reasoning = f"Evaluation error: {str(e)}"
 
             # 更新样本
             sample["response"] = final_answer
-            sample["extracted_res"] = extracted_res
-            sample["pred"] = pred_ans
+            sample["concise_answer"] = concise_answer  # 记录提取的简洁答案
+            sample["eval_answer"] = eval_answer  # 用于评估的答案
             sample["score"] = score
-            sample["output_dir"] = result.get("output_dir", "")
+            sample["llm_reasoning"] = reasoning
+            output_dir = result.get("output_dir", "")
+            sample["output_dir"] = output_dir
             sample["kb_name"] = kb_name  # 记录使用的知识库
 
-            print(f"预测答案: {pred_ans}")
-            print(f"正确答案: {sample['answer']}")
-            print(f"得分: {score}")
+            # 简洁输出：原题、答案、得分、日志位置
+            score_icon = "✅" if score >= 0.5 else "❌"
+            # 截断过长的内容
+            q_short = question 
+            ans_short = eval_answer[:100] + "..." if len(eval_answer) > 100 else eval_answer
+            print(f"\n📝 问题: {q_short}")
+            print(f"💬 输出: {ans_short}")
+            print(f"✓  正确: {sample['answer']}")
+            print(f"{score_icon} 得分: {score} | 日志: {output_dir}")
 
         except Exception as e:
-            print(f"处理失败: {e}")
-            import traceback
-
-            traceback.print_exc()
             sample["response"] = f"Error: {str(e)}"
             sample["pred"] = "Failed"
             sample["score"] = 0.0
             sample["error"] = str(e)
+            print(f"\n❌ 处理失败: {e}")
 
         return sample
 
     async def run_tests(self):
         """运行所有测试"""
-        print(f"\n开始测试，共 {len(self.samples)} 个样本")
-        print(f"输出目录: {self.output_dir}")
-
         # 计算已完成的样本数
         completed = sum(1 for s in self.samples if "score" in s)
-        print(f"已完成: {completed}/{len(self.samples)}")
+        print(f"\n🚀 开始测试 | 总样本: {len(self.samples)} | 已完成: {completed} | 输出: {self.output_dir}")
 
         # 运行测试
         for i, sample in enumerate(tqdm(self.samples, desc="测试进度")):
+            # 跳过已完成的样本（除非强制重新运行）
+            if not self.force_rerun and "score" in sample:
+                continue
+            
             try:
                 sample = await self.test_sample(sample)
                 self.samples[i] = sample
@@ -521,57 +498,92 @@ class MMLongBenchTester:
                     print(f"📊 累计准确率: {current_acc:.2%} ({int(total_score)}/{len(completed_samples)})")
 
             except KeyboardInterrupt:
-                print("\n\n测试被用户中断")
-                print("已保存当前进度，可以使用 --start_index 参数继续")
+                print("\n\n⚠️ 测试被用户中断，已保存进度")
                 break
             except Exception as e:
-                print(f"\n处理样本 {i} 时出错: {e}")
-                import traceback
-
-                traceback.print_exc()
+                print(f"\n❌ 样本 {i} 出错: {e}")
                 continue
 
         # 生成最终报告
         self._generate_report()
 
     def _generate_report(self):
-        """生成评估报告"""
+        """生成评估报告（使用 LLM-as-a-Judge 结果）"""
         print("\n生成评估报告...")
 
-        # MMLongBench-Doc 的 show_results 函数期望 evidence_pages 和 evidence_sources 是字符串格式
-        # 如果它们已经是列表，需要转换回字符串表示
-        for sample in self.samples:
-            # 处理 evidence_pages
-            evidence_pages = sample.get("evidence_pages")
-            if evidence_pages is not None:
-                if isinstance(evidence_pages, list):
-                    # 如果已经是列表，转换为字符串表示（供 eval 使用）
-                    sample["evidence_pages"] = repr(evidence_pages)
-                elif not isinstance(evidence_pages, str):
-                    # 如果不是列表也不是字符串，转换为列表再转为字符串
-                    sample["evidence_pages"] = repr([evidence_pages])
-                # 如果是字符串，保持不变（让 show_results 中的 eval 处理）
+        # 统计结果
+        evaluated_samples = [s for s in self.samples if "score" in s]
+        if not evaluated_samples:
+            print("没有已评估的样本")
+            return
+        
+        total_samples = len(evaluated_samples)
+        correct_samples = sum(1 for s in evaluated_samples if s.get("score", 0) >= 0.5)
+        accuracy = correct_samples / total_samples if total_samples > 0 else 0
+        
+        # 按文档类型统计
+        doc_type_stats = {}
+        for sample in evaluated_samples:
+            doc_type = sample.get("doc_type", "Unknown")
+            if doc_type not in doc_type_stats:
+                doc_type_stats[doc_type] = {"total": 0, "correct": 0}
+            doc_type_stats[doc_type]["total"] += 1
+            if sample.get("score", 0) >= 0.5:
+                doc_type_stats[doc_type]["correct"] += 1
+        
+        # 按证据来源统计
+        source_stats = {}
+        for sample in evaluated_samples:
+            sources = sample.get("evidence_sources", "[]")
+            if isinstance(sources, str):
+                try:
+                    sources = eval(sources)
+                except:
+                    sources = [sources]
+            if not isinstance(sources, list):
+                sources = [sources]
             
-            # 处理 evidence_sources
-            evidence_sources = sample.get("evidence_sources")
-            if evidence_sources is not None:
-                if isinstance(evidence_sources, list):
-                    # 如果已经是列表，转换为字符串表示（供 eval 使用）
-                    sample["evidence_sources"] = repr(evidence_sources)
-                elif not isinstance(evidence_sources, str):
-                    # 如果不是列表也不是字符串，转换为列表再转为字符串
-                    sample["evidence_sources"] = repr([evidence_sources])
-                # 如果是字符串，保持不变（让 show_results 中的 eval 处理）
-
-        # 生成报告
-        self.eval_modules["show_results"](self.samples, show_path=str(self.report_file))
+            for source in sources:
+                if source not in source_stats:
+                    source_stats[source] = {"total": 0, "correct": 0}
+                source_stats[source]["total"] += 1
+                if sample.get("score", 0) >= 0.5:
+                    source_stats[source]["correct"] += 1
+        
+        # 生成报告内容
+        report_lines = [
+            f"Overall Accuracy (LLM-as-Judge): {accuracy:.4f} | Question Number: {total_samples}",
+            f"Correct Answers: {correct_samples} | Total Evaluated: {total_samples}",
+            "-" * 50,
+        ]
+        
+        # 文档类型统计
+        report_lines.append("\n按文档类型统计:")
+        for doc_type, stats in doc_type_stats.items():
+            type_acc = stats["correct"] / stats["total"] if stats["total"] > 0 else 0
+            report_lines.append(
+                f"  {doc_type}: Accuracy: {type_acc:.4f} | Questions: {stats['total']}"
+            )
+        
+        # 证据来源统计
+        report_lines.append("\n按证据来源统计:")
+        for source, stats in source_stats.items():
+            source_acc = stats["correct"] / stats["total"] if stats["total"] > 0 else 0
+            report_lines.append(
+                f"  {source}: Accuracy: {source_acc:.4f} | Questions: {stats['total']}"
+            )
+        
+        report_content = "\n".join(report_lines)
+        
+        # 保存报告
+        with open(self.report_file, "w", encoding="utf-8") as f:
+            f.write(report_content)
 
         # 打印报告内容
         print("\n" + "=" * 60)
-        print("评估报告")
+        print("评估报告 (LLM-as-a-Judge)")
         print("=" * 60)
-        with open(self.report_file, "r", encoding="utf-8") as f:
-            print(f.read())
+        print(report_content)
 
         print(f"\n结果已保存到: {self.results_file}")
         print(f"报告已保存到: {self.report_file}")
@@ -604,12 +616,6 @@ def main():
         type=str,
         default=None,
         help="知识库名称（已弃用：现在每个文档使用独立知识库）",
-    )
-    parser.add_argument(
-        "--extractor_prompt_path",
-        type=str,
-        default=None,
-        help="答案提取提示文件路径（默认使用 MMLongBench-Doc 的提示文件）",
     )
     parser.add_argument(
         "--max_samples",
@@ -672,14 +678,14 @@ def main():
         print("  EMBEDDING_BINDING_HOST=https://api.openai.com/v1")
         sys.exit(1)
     
-    # 验证答案提取所需的配置
-    # 现在答案提取使用 LLM_BINDING_API_KEY 和 LLM_BINDING_HOST，支持任何兼容 OpenAI API 的供应商
+    # 验证 LLM-as-a-Judge 评估所需的配置
     llm_api_key = os.getenv("LLM_BINDING_API_KEY")
     llm_base_url = os.getenv("LLM_BINDING_HOST")
+    llm_model = os.getenv("LLM_MODEL", "gpt-4o")
     if llm_api_key and llm_base_url:
-        print(f"ℹ️  答案提取将使用: {llm_base_url} (模型: {os.getenv('LLM_MODEL', 'gpt-4o')})")
+        print(f"ℹ️  LLM-as-a-Judge 评估将使用: {llm_base_url} (模型: {llm_model})")
     else:
-        print("⚠️  警告: LLM_BINDING_API_KEY 或 LLM_BINDING_HOST 未设置，答案提取可能失败")
+        print("⚠️  警告: LLM_BINDING_API_KEY 或 LLM_BINDING_HOST 未设置，LLM评估可能失败")
 
     # 创建测试器
     tester = MMLongBenchTester(
@@ -687,7 +693,6 @@ def main():
         document_path=args.document_path,
         output_dir=args.output_dir,
         kb_name=args.kb_name,  # 已弃用，保留以兼容旧代码
-        extractor_prompt_path=args.extractor_prompt_path,
         max_samples=args.max_samples,
         start_index=args.start_index,
         force_rerun=args.force,

@@ -1,0 +1,73 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_030920",
+  "user_question": "Which colleges/schools/institutes from NTU use year 3 students as cover page student model?",
+  "created_at": "2026-01-16T03:09:20.139224",
+  "updated_at": "2026-01-16T03:13:07.364494",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "Which colleges, schools, or institutes at NTU use year 3 students as cover page student models?",
+      "raw_result": "Based on the provided context, there is no information indicating that any colleges, schools, or institutes at Nanyang Technological University (NTU) specifically use Year 3 students as cover page student models.\n\nThe available data references student imagery in promotional materials and prospectus pages — for example:\n\n- A **Year 2** student, Gladys Phua Min, is featured in a portrait promoting the NTU-University Scholars Programme (NTU-USP) [reference_id not available].\n- Images depict diverse students engaged in activities such as innovation labs, campus walks, dorm life, global exchanges, and research — but none specify their academic year beyond “Year 2” in one instance.\n- The prospectus uses symbolic icons and aspirational imagery to represent student life, leadership, and interdisciplinary learning, without assigning specific class years to cover models.\n\nTherefore, **there is no evidence in the context to support that Year 3 students are used as cover page models** for any NTU college, school, or institute.\n\n### References\n\n* [1] Document Title One\n* [2] Document Title Two\n* [3] Document Title Three",
+      "summary": "No evidence in the provided context indicates that any colleges, schools, or institutes at NTU use Year 3 students as cover page student models. One reference mentions a Year 2 student featured in promotional material for the NTU-University Scholars Programme, but no specific use of Year 3 students is documented.",
+      "created_at": "2026-01-16T03:09:48.104957",
+      "updated_at": "2026-01-16T03:09:56.179797"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "Which colleges, schools, or institutes at NTU have used Year 3 students as cover page student models?",
+      "raw_result": "Based on the provided context, there is no information indicating that any colleges, schools, or institutes at Nanyang Technological University (NTU) have used Year 3 students as cover page student models.\n\nThe available data references student imagery in promotional materials — such as students from diverse disciplines, those engaged in innovation labs, dormitory scenes, global exchange experiences, and leadership programs — but none specify the academic year of the students featured on cover pages. Additionally, while “Year 2” is mentioned in relation to a student portrait for the NTU-University Scholars Programme, there is no equivalent reference to Year 3 students being used in this capacity.\n\nTherefore, based strictly on the provided context, it is not possible to identify any NTU entity that has used Year 3 students as cover page models.\n\n### References\n\n* [1] Document Title One\n* [2] Document Title Two\n* [3] Document Title Three",
+      "summary": "No relevant information found for this query. The question may be Not answerable based on available documents. While the context mentions student imagery in NTU promotional materials and references a Year 2 student for the University Scholars Programme, there is no mention of any college, school, or institute using Year 3 students as cover page models.",
+      "created_at": "2026-01-16T03:10:20.840921",
+      "updated_at": "2026-01-16T03:10:24.214883"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_hybrid",
+      "query": "Which NTU colleges/schools/institutes have used Year 3 students as student models in their cover pages or promotional materials?",
+      "raw_result": "Based on the provided context, there is no explicit information indicating that any NTU colleges, schools, or institutes have specifically used **Year 3 students** as student models on their **cover pages or promotional materials**.\n\nWhile several documents and images reference students in promotional content — such as:\n\n- Wang Shi Lin Nicole, a **Year 3 Business student** at Nanyang Business School, who is quoted in testimonials praising her university experience [reference_id not available],\n- Gladys Phua Min, a **Year 2 Communication Studies student**, featured in a promotional image for the NTU-University Scholars Programme (NTU-USP) [reference_id not available],\n- Various images depicting students from diverse disciplines, including Medicine, Biological Sciences, and Humanities, standing together under a modern campus canopy to symbolize interdisciplinary education [reference_id not available],\n\n— none of these explicitly state that Year 3 students were selected as **models for cover pages** or primary promotional visuals.\n\nAdditionally, while the context includes detailed descriptions of institutional branding, prospectus design, and visual marketing strategies across NTU’s schools (e.g., Nanyang Business School, Lee Kong Chian School of Medicine, National Institute of Education), it does not specify grade-level representation in cover imagery.\n\nTherefore, based solely on the provided knowledge base:\n\n> **There is insufficient information to confirm which NTU colleges/schools/institutes have used Year 3 students as student models in their cover pages or promotional materials.**\n\n### References\n\n- [1] Wang Shi Lin Nicole is a Year 3 Business student at Nanyang Business School who reflects positively on her university experience despite the pandemic.\n- [2] NTU-USP Student Portrait with Programme Title (image): A vibrant portrait of Gladys Phua Min, Year 2 Communication Studies student, promoting the NTU-University Scholars Programme.\n- [3] NTU Students Representing Interdisciplinary Schools (image): Six diverse NTU students wearing shirts representing Medicine, Biological Sciences, Science, Humanities, and other disciplines stand together under a modern campus canopy.",
+      "summary": "No explicit information is available confirming which NTU colleges, schools, or institutes have used Year 3 students as student models on their cover pages or promotional materials. While some documents mention Year 3 students like Wang Shi Lin Nicole (Nanyang Business School) in testimonials, and other students in promotional images, none specify that Year 3 students were selected specifically for cover page modeling. The context includes branding and visual marketing strategies across NTU schools but lacks grade-level representation details for cover imagery.",
+      "created_at": "2026-01-16T03:10:59.038169",
+      "updated_at": "2026-01-16T03:12:04.588778"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_hybrid",
+      "query": "Are there any photos or images in NTU publications showing Year 3 students as cover page models? If so, which college/school/institute is associated with them?",
+      "raw_result": "Based on the provided context, there is no explicit mention of **Year 3 students** being featured as **cover page models** in NTU publications.\n\nThe available information references:\n\n- A **Year 2 student**, Gladys Phua Min, featured in a promotional portrait for the **NTU-University Scholars Programme (NTU-USP)** [reference_id not available, but entity relationship confirms this].\n- General images of **NTU students** in various settings — such as walking on campus, posing in snowy environments, or gathered at events — which are used to represent **vibrant campus life**, **interdisciplinary learning**, and **global exposure**.\n- No specific reference to **Year 3** students being selected as cover models or associated with any particular **college, school, or institute** in that capacity.\n\nTherefore, based strictly on the given knowledge base, **there is no evidence** that Year 3 students appear as cover page models in NTU publications.\n\n### References\n\n- [1] NTU-USP Student Portrait with Programme Title (image) — features a Year 2 student.\n- [2] NTU Students Representing Interdisciplinary Schools (image) — shows diverse students from multiple disciplines, but no year specified.\n- [3] NTU Students Walking on Campus with Page Number 7 Overlay (image) — depicts students symbolizing community and interdisciplinary learning, without specifying academic year.\n- [4] NTU Student Gathering at Outdoor Campus Event (image) — represents vibrant student life, no year indicated.\n- [5] NTU Students on Campus Lawn (image) — reinforces multiculturalism and campus living, no academic year specified.",
+      "summary": "No evidence found that Year 3 students are used as cover page models in NTU publications. The only explicitly mentioned student model is a Year 2 student from the NTU-University Scholars Programme (NTU-USP). Other images show NTU students in general campus settings without specifying academic year.",
+      "created_at": "2026-01-16T03:11:23.624199",
+      "updated_at": "2026-01-16T03:12:15.184628"
+    },
+    {
+      "cite_id": "[rag-5]",
+      "tool_type": "rag_hybrid",
+      "query": "What does the document say about student representation in NTU cover pages, particularly regarding Year 3 students?",
+      "raw_result": "Based on the provided context, there is no specific information about student representation on NTU cover pages, particularly regarding Year 3 students.\n\nThe available data describes various images and visual elements used in the NTU Prospectus and promotional materials, including:\n\n*   Images of diverse students walking together, symbolizing interdisciplinary learning and community (e.g., \"NTU Students Walking on Campus with Page Number 7 Overlay\", \"NTU Students Walking Together Across Disciplines\").\n*   Images of students collaborating in innovation labs or classrooms, representing experiential education and industry readiness.\n*   Portraits of specific students promoting particular programs like the NTU-USP or Renaissance Engineering Programme.\n*   Images depicting vibrant campus life, such as students gathering outdoors or relaxing on lawns.\n*   Icons representing concepts like global immersion, research, and teamwork.\n\nWhile some images feature students from different disciplines or highlight specific programs (like Year 2 Communication Studies student Gladys Phua Min for NTU-USP), there is no mention of cover pages specifically designed to represent Year 3 students or any distinct visual strategy for that cohort. The context focuses on broader themes like interdisciplinary learning, global exposure, innovation, and vibrant campus life, rather than year-specific student representation on cover pages.\n\n### References\n\n- [1] NTU Students Walking on Campus with Page Number 7 Overlay (image)\n- [2] NTU Students Walking Together Across Disciplines (image)\n- [3] NTU Students Collaborating in Innovation Lab (image)\n- [4] NTU USP Student Portrait with Programme Title (image)\n- [5] NTU Students Gathering on Campus Lawn (image)",
+      "summary": "No relevant information found for this query. The question may be Not answerable based on available documents. The provided context describes general student imagery used in NTU promotional materials (e.g., interdisciplinary collaboration, campus life, program-specific portraits), but does not mention Year 3 students being used as cover page models or any year-specific representation strategy for cover pages.",
+      "created_at": "2026-01-16T03:11:47.619826",
+      "updated_at": "2026-01-16T03:12:18.786081"
+    },
+    {
+      "cite_id": "[rag-6]",
+      "tool_type": "rag_hybrid",
+      "query": "Which NTU college/school/institute cover pages or promotional materials feature photos of Year 3 students as student models, and what are their names or programs?",
+      "raw_result": "Based on the provided context, there is no explicit mention of any NTU college, school, or institute featuring photos of **Year 3 students** as student models in their cover pages or promotional materials.\n\nThe available information references:\n\n- **Gladys Phua Min**, a **Year 2** Communication Studies student, featured in a promotional portrait for the **NTU-University Scholars Programme (NTU-USP)**.\n- **Elijah Adam Bin Abdul Haady Aldrin**, associated with the **CN Yang Scholars Programme (CNYSP)**, but his year of study is not specified.\n- **Nick Erwin Chia Zhiyang**, linked to the **Renaissance Engineering Programme**, but again, no year is mentioned.\n- Other students such as **Joey Tay** (NTU-NIE Teaching Scholars Programme) and unnamed groups of students across disciplines or in dormitory/campus settings — none are identified as Year 3.\n\nAdditionally, while some documents reference “Page 4,” “Page 6,” “Page 7,” etc., these refer to sections within prospectuses and do not specify student year levels in imagery.\n\nTherefore, based strictly on the provided knowledge base, **there is no evidence that any NTU college/school/institute features Year 3 students as named models in their promotional materials.**\n\n### References\n\n- [1] NTU-USP Student Portrait with Programme Title (image)\n- [2] Promotional Portrait\n- [3] CN Yang Scholars Programme Student Portrait - Elijah Adam Bin Abdul Haady Aldrin (image)\n- [4] Joey_Tay_NTU_NIE_TSP_Promotional_Portrait (image)\n- [5] NTU Students Representing Interdisciplinary Schools (image)",
+      "summary": "No NTU college, school, or institute is explicitly mentioned as featuring Year 3 students as named models in their cover pages or promotional materials. The available references include Year 2 students (e.g., Gladys Phua Min from NTU-USP) and students from other programs (CNYSP, Renaissance Engineering, NTU-NIE TSP), but none are confirmed to be Year 3. Page references in documents do not specify student year levels in imagery.",
+      "created_at": "2026-01-16T03:12:51.160415",
+      "updated_at": "2026-01-16T03:13:02.756733"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T03:09:20.139236"
+  },
+  "metadata": {
+    "total_iterations": 5,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 6
+  }
+}

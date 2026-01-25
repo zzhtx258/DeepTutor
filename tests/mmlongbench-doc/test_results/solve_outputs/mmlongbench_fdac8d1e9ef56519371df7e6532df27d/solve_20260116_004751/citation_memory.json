@@ -1,0 +1,47 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T00:47:51.621495",
+  "updated_at": "2026-01-16T00:48:53.935731",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the primary uses or applications of the Indian remote sensing satellite constellation?",
+      "raw_result": "The **Indian Remote Sensing Satellite Constellation** serves a wide array of critical applications, primarily focused on environmental monitoring, resource management, and disaster response. These satellites are integral to India’s national development and security infrastructure, providing actionable data across multiple sectors.\n\n### Key Applications:\n\n- **Agricultural Monitoring**: The constellation supports **agricultural crops inventory** by collecting satellite-based data to assess crop health, estimate yields, and plan agricultural interventions at regional and national levels.\n\n- **Disaster Management**: It plays a vital role in **disaster management support**, including:\n  - Early detection and monitoring of **forest fires**.\n  - Assessment of **earthquake** damage through analysis of ground deformation patterns.\n  - Risk assessment and mitigation planning for **landslides**.\n  - Mapping of **glacial lakes** to evaluate potential outburst flood risks.\n  - Providing real-time data during emergencies such as floods, typhoons, and oil spills — ISRO has extended this support internationally to countries like **Indonesia, Japan, Pakistan, Myanmar, and Vietnam** in 2015.\n\n- **Water Resource Planning**: The constellation aids in **groundwater prospects mapping**, enabling sustainable water resource planning and management across regions facing water scarcity.\n\n- **Sericulture Development**: Satellite data is applied to support **sericulture development**, helping optimize silk farming through spatial planning and environmental monitoring.\n\n- **Search and Rescue Operations**: It contributes to **satellite-aided search and rescue** missions by locating individuals in distress, particularly in remote or inaccessible areas.\n\nThese applications are enabled through the coordinated efforts of key ISRO centers such as the **National Remote Sensing Centre (NRSC)** in Hyderabad, which handles data acquisition, processing, and dissemination, and the **Regional Remote Sensing Centres (RRSCs)**, which execute region-specific application projects and training programs in geo-spatial technologies.\n\nThe constellation is part of ISRO’s broader **Earth Observation Satellites** program, which includes missions like RISAT-1, RESOURCESAT-2A, SCATSAT, and INSAT-3DR — all designed to enhance India’s capacity for environmental observation and societal benefit.\n\n### References\n\n- [1] Indian Remote Sensing Satellite Constellation\n- [2] National Remote Sensing Centre\n- [3] Regional Remote Sensing Centres\n- [4] Disaster Management Support\n- [5] Earth Observation Satellites",
+      "source": "Indian Remote Sensing Satellite Constellation, National Remote Sensing Centre, Regional Remote Sensing Centres, Disaster Management Support, Earth Observation Satellites",
+      "content": "The Indian Remote Sensing Satellite Constellation supports critical applications including agricultural monitoring (crop inventory and yield estimation), disaster management (forest fires, earthquakes, landslides, glacial lake mapping, and international emergency support), water resource planning (groundwater mapping), sericulture development, and satellite-aided search and rescue operations. These functions are coordinated by ISRO’s National Remote Sensing Centre and Regional Remote Sensing Centres, leveraging satellites like RISAT-1, RESOURCESAT-2A, SCATSAT, and INSAT-3DR for environmental observation and societal benefit.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Indian Remote Sensing Satellite Constellation"
+          },
+          {
+            "reference_id": "[2]",
+            "source": "National Remote Sensing Centre"
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Regional Remote Sensing Centres"
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Disaster Management Support"
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Earth Observation Satellites"
+          }
+        ]
+      },
+      "created_at": "2026-01-16T00:48:31.088769",
+      "updated_at": "2026-01-16T00:48:38.964954"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

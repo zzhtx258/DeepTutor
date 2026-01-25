@@ -55,10 +55,14 @@ solve:
   max_solve_correction_iterations: 3
   enable_citations: true
   save_intermediate_results: true
+  show_cost_statistics: false  # 是否在控制台显示 LLM Cost Statistics
   agents:
     investigate_agent:
-      max_actions_per_round: 2  # 每轮可执行多个查询
-      max_iterations: 5  # 增加迭代次数以提高检索质量
+      max_actions_per_round: 3  # 每轮可执行多个查询，增加覆盖率
+      max_iterations: 6  # 增加迭代次数以提高检索质量
+      retry_on_empty: true  # 如果返回空结果，使用不同查询词重试
+    solve_agent:
+      verify_answer_format: true  # 验证答案格式是否与问题类型匹配
     precision_answer_agent:
       enabled: true
       always_generate: true  # 总是生成简短答案，跳过决策步骤

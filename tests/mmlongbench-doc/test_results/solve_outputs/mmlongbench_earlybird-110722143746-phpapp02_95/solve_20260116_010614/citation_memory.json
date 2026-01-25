@@ -1,0 +1,52 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T01:06:14.266635",
+  "updated_at": "2026-01-16T01:07:20.448722",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "Which charts in the slides compare ONLY the US and Europe without including any other regions?",
+      "raw_result": "Based on the provided context, several charts specifically compare only the United States and Europe, excluding other regions such as China or individual European countries. These charts focus on direct comparative metrics between the two regions.\n\n### Charts Comparing Only the US and Europe:\n\n1. **Comparative VC Fund Data Coverage Chart USA vs Europe (image)**  \n   This 3D bar chart directly contrasts the number of venture capital funds and those with performance data in the USA versus Europe, highlighting data coverage disparities without including any other regions.\n\n2. **European vs US VC Performance Metrics Bar Chart 2004–2010 (image)**  \n   A 3D bar chart that compares key venture capital metrics — entry valuation, capital invested, and exit valuation — exclusively between the USA and Europe from 2004 to 2010.\n\n3. **Midstage VC Deal Comparison Chart US vs Europe 2004–2010 (image)**  \n   This 3D bar chart compares the volume of mid-stage VC deals (> $5M) between the U.S. and Europe over the specified period, using red bars for the U.S. and blue bars for Europe.\n\n4. **Comparative Quartile Distribution of US and European VC Funds Performance (image)**  \n   This chart compares the performance quartile distribution (Top, Q2, Q3, Bottom) of venture capital funds between the USA and Europe, based on benchmarking against Prequin 2010 rankings.\n\n5. **US vs. Europe Post-IPO Performance Chart**  \n   A line chart comparing the indexed post-IPO performance of venture capital-backed companies in the United States and Europe from March 2004 to July 2011.\n\n6. **VC-backed IPO Performance Comparison Chart 2004–2011 (image)**  \n   Another line chart comparing the same post-IPO performance metric, reinforcing findings about European recovery and performance parity or superiority relative to the U.S.\n\n7. **European_vs_USA_VC_Exits_Proportional_Share_Chart_Since_2004 (image)**  \n   A 3D stacked bar chart comparing proportional shares of VC exits across four metrics — exits > $100M, 10x returns (“home runs”), total exits, and an unlabeled fourth category — exclusively between Europe and the USA since 2004.\n\n8. **Earlystage_Venture_Capital_Entry_Valuations_Comparison_USA_Europe_2004_2009 (image)**  \n   A 3D area chart comparing median early-stage entry valuations between the USA and Europe from 2004 to 2009, showing consistently lower European valuations.\n\n9. **Comparative Maturity of VC Teams in Western Europe vs. United States by Fund Generations (image)**  \n   A comparative data table (visualized with maps and numerical ratios) contrasting the maturity of VC teams in Western Europe versus the U.S., measured by fund generations raised.\n\nThese charts are explicitly designed to draw a direct comparison between the U.S. and Europe, often using color-coded visual elements (red for U.S., blue for Europe) and omitting data from other geographic regions like China or sub-regions within Europe unless aggregated into “Europe” as a whole.\n\n### References\n\n- [1] Comparative VC Fund Data Coverage Chart USA vs Europe (image)\n- [2] European vs US VC Performance Metrics Bar Chart 2004–2010 (image)\n- [3] Midstage VC Deal Comparison Chart US vs Europe 2004–2010 (image)\n- [4] Comparative Quartile Distribution of US and European VC Funds Performance (image)\n- [5] US vs. Europe Post-IPO Performance Chart",
+      "source": "Comparative VC Fund Data Coverage Chart USA vs Europe (image), European vs US VC Performance Metrics Bar Chart 2004–2010 (image), Midstage VC Deal Comparison Chart US vs Europe 2004–2010 (image), Comparative Quartile Distribution of US and European VC Funds Performance (image), US vs. Europe Post-IPO Performance Chart",
+      "content": "There are 9 charts in the slides that compare ONLY the US and Europe without including other regions. These include comparisons of VC fund data coverage, performance metrics (2004–2010), mid-stage deals, quartile performance distribution, post-IPO performance, proportional exit shares since 2004, early-stage entry valuations (2004–2009), and VC team maturity by fund generations. All charts use color-coded visuals (red for US, blue for Europe) and exclude data from China or sub-regions unless aggregated into 'Europe'.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Comparative VC Fund Data Coverage Chart USA vs Europe (image)",
+            "content": "This 3D bar chart directly contrasts the number of venture capital funds and those with performance data in the USA versus Europe, highlighting data coverage disparities without including any other regions."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "European vs US VC Performance Metrics Bar Chart 2004–2010 (image)",
+            "content": "A 3D bar chart that compares key venture capital metrics — entry valuation, capital invested, and exit valuation — exclusively between the USA and Europe from 2004 to 2010."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Midstage VC Deal Comparison Chart US vs Europe 2004–2010 (image)",
+            "content": "This 3D bar chart compares the volume of mid-stage VC deals (> $5M) between the U.S. and Europe over the specified period, using red bars for the U.S. and blue bars for Europe."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Comparative Quartile Distribution of US and European VC Funds Performance (image)",
+            "content": "This chart compares the performance quartile distribution (Top, Q2, Q3, Bottom) of venture capital funds between the USA and Europe, based on benchmarking against Prequin 2010 rankings."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "US vs. Europe Post-IPO Performance Chart",
+            "content": "A line chart comparing the indexed post-IPO performance of venture capital-backed companies in the United States and Europe from March 2004 to July 2011."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T01:06:53.793614",
+      "updated_at": "2026-01-16T01:07:11.283433"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

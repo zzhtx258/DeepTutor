@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_011958",
+  "user_question": "What are the examples the slides show \"what does not make you data-driven\"",
+  "created_at": "2026-01-16T01:19:58.002080",
+  "updated_at": "2026-01-16T01:20:50.406775",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the examples listed in the slides for 'what does not make you data-driven'?",
+      "raw_result": "Based on the provided context, here are the examples listed or illustrated that indicate **what does not make an organization truly data-driven**:\n\n### 1. **Overreliance on Reports, Dashboards, and Alerts**\n   - Simply having many dashboards, reports, or alerts does **not** equate to being data-driven.\n   - These tools often summarize past performance (descriptive analytics) without connecting to actionable insights or business outcomes.\n   - Visual metaphors like the *Repetitive Gauge Grid* and *Repetitive Data Visualization Grid* symbolize this superficial abundance of metrics without strategic impact.\n\n### 2. **Data Overload Without Action**\n   - The *Data Overload at Ice Cream Parlor Cartoon* illustrates how excessive data (e.g., 497 ice cream flavors) can lead to decision paralysis — highlighting that more data alone doesn’t drive decisions unless it’s tied to action and outcomes.\n\n### 3. **Ignoring Data in Favor of Authority (HiPPO)**\n   - The *Cartoon on Data-Driven Decision Making vs. Authority Bias* shows a scenario where data supports both options, but the “highest-paid person’s opinion” (HiPPO) overrides evidence — demonstrating that true data-driven culture rejects hierarchy-based decisions in favor of fact-based ones.\n\n### 4. **Having Technology Without Culture or Strategy**\n   - Merely possessing tools like a *Hadoop cluster* or advanced analytics infrastructure does **not** make an organization data-driven.\n   - Without embedding data into decision-making processes, leadership buy-in, or a testing mindset, technology remains underutilized.\n\n### 5. **Lack of Connection Between Analysis and Business Value**\n   - Generating analysis or visualizations without linking them to measurable business impact or recommendations is insufficient.\n   - True data-driven organizations push data through the *Analytics Value Chain* — from data → reporting → analysis → action → value — not stopping at visualization.\n\n### 6. **Failing to Promote Data Literacy or Self-Service**\n   - If only a few analysts have access to data or the ability to interpret it, the organization lacks the *broad data literacy* and *self-service culture* needed for widespread data-driven behavior.\n\n### 7. **Not Aligning Data Initiatives with Goals**\n   - A *goals-first approach* is essential; without clear objectives, data initiatives risk becoming aimless or gamed.\n   - Organizations that don’t tie experiments or metrics to predefined success criteria are not truly data-driven.\n\n---\n\nThese examples collectively emphasize that being data-driven is **not about volume of data or tools**, but about **culture, leadership, action, and measurable impact**.\n\n### References\n\n- [1] Data-Driven Misconception\n- [2] Repetitive Gauge Grid Illustrating Data Overload (image)\n- [3] Data Overload at Ice Cream Parlor Cartoon (image)\n- [4] Cartoon on Data-Driven Decision Making vs. Authority Bias (image)\n- [5] Analytics Paradigm Comparison Table (table)",
+      "summary": "The slides illustrate several examples of what does not make an organization data-driven: (1) Relying on dashboards and reports without connecting them to actionable outcomes; (2) Suffering from data overload that leads to decision paralysis, as shown in the ice cream parlor cartoon; (3) Letting authority (HiPPO) override data-supported decisions; (4) Owning advanced tools like Hadoop without embedding data into culture or strategy; (5) Failing to link analysis to business value or measurable impact; (6) Not promoting broad data literacy or self-service access; and (7) Launching data initiatives without clear goals. True data-driven organizations focus on culture, leadership, action, and measurable results—not just tools or volume of data.",
+      "created_at": "2026-01-16T01:20:33.829171",
+      "updated_at": "2026-01-16T01:20:47.913083"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T01:19:58.002089"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

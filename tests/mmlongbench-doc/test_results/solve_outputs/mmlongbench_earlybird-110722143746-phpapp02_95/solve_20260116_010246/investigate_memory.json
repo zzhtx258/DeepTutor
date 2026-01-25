@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_010246",
+  "user_question": "How many human quotes are provided with source in this document?",
+  "created_at": "2026-01-16T01:02:46.106521",
+  "updated_at": "2026-01-16T01:03:16.441508",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What sections or pages mention human quotes with source attribution?",
+      "raw_result": "Based on the provided context, there is one specific instance where a human quote with source attribution is mentioned:\n\n- **Sven Weber**, President of Silicon Valley Bank Capital, is attributed with a quote that appears in the image titled *\"Man with Outstretched Arms Against Blue Sky - Sven Weber Attribution (image)\"*. The quote is displayed in white sans-serif text in the upper left quadrant of the image and is visually associated with him.\n\nThis is the only explicit reference to a human quote with direct source attribution within the knowledge graph data. No other pages or sections are cited as containing quotes with named attributions.\n\n### References\n\n- [1] Man with Outstretched Arms Against Blue Sky - Sven Weber Attribution (image)",
+      "summary": "There is one human quote with source attribution mentioned in the document: Sven Weber, President of Silicon Valley Bank Capital, is credited with a quote displayed in the image titled 'Man with Outstretched Arms Against Blue Sky - Sven Weber Attribution (image)'. No other quotes with named attributions are cited.",
+      "created_at": "2026-01-16T01:03:07.281505",
+      "updated_at": "2026-01-16T01:03:13.365686"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T01:02:46.106530"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

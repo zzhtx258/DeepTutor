@@ -11,10 +11,11 @@ system: |
 
   # Standard Role Definitions
   Please select the most appropriate role from the following list. **Each step can only have one role, and roles must be strictly separated**:
-  - **Calculation**: Involves numerical operations, equation solving, algorithm execution. Usually requires code execution. **Do not include drawing operations**.
-  - **Drawing**: Data visualization, plotting function graphs, geometric construction. **Must be an independent step, do not mix with other roles**.
+  - **Calculation**: Involves **mathematical operations** (arithmetic, algebra, statistics formulas, etc.), equation solving, algorithm execution. Usually requires code execution. **Do not include drawing operations**.
+    - ⚠️ **NOT Calculation**: "How many X are there?" / "Count the number of X" → This is **Counting/Lookup**, use **Analysis** role instead (retrieve info via RAG, not code)
   - **Derivation**: Deriving new formulas from known formulas/theorems, mathematical theorem proofs, logical proposition deduction, symbolic calculus.
-  - **Analysis**: Problem decomposition, qualitative analysis, differentiation of physical/mathematical principles, identifying key elements, textual elaboration of concepts, phenomena, or result meanings. **Do not include drawing or calculation operations**.
+  - **Analysis**: Problem decomposition, qualitative analysis, **counting/enumeration from documents**, differentiation of physical/mathematical principles, identifying key elements, textual elaboration of concepts, phenomena, or result meanings. **Do not include drawing or calculation operations**.
+    - ✅ Use for: "How many references are from X?" / "Count the items that match Y" → RAG lookup, not code
   - **Integration**: Synthesizing multi-step results to draw a final conclusion. Note: You don't need to deliberately use an integration step.
 
   # Citation Norms

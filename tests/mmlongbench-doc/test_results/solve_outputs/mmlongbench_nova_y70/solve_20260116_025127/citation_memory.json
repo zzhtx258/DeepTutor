@@ -1,0 +1,39 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T02:51:27.105284",
+  "updated_at": "2026-01-16T02:52:11.615972",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the function of the icon on the right-hand side of the white balance icon in pro mode?",
+      "raw_result": "The icon on the right-hand side of the white balance (AWB) icon in Pro Mode is the **Exposure Compensation** control, labeled as **\"EV* 0\"**.\n\nThis setting allows users to manually adjust the brightness of the photo. Increasing the EV value brightens the image (useful in low-light conditions), while decreasing it darkens the image (helpful in overly bright scenes). It provides fine-tuned control over exposure beyond automatic settings.\n\nThis control is accessible via a vertical slider in the PRO camera mode interface and is part of the manual photographic parameters that Pro Mode offers for advanced image capture.\n\n### References\n\n- [1] Smartphone Pro Camera Mode Interface Guide (image)\n- [2] Pro Mode\n- [3] Exposure Compensation\n- [4] PRO Camera Mode\n- [5] EV Exposure Compensation",
+      "source": "Smartphone Pro Camera Mode Interface Guide (image), Exposure Compensation, EV Exposure Compensation",
+      "content": "The icon on the right-hand side of the white balance (AWB) icon in Pro Mode is the Exposure Compensation control, labeled as 'EV* 0'. It allows users to manually adjust the brightness of the photo: increasing EV brightens the image (useful in low light), while decreasing it darkens the image (helpful in bright scenes). This control is accessible via a vertical slider and provides fine-tuned exposure adjustment beyond automatic settings.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Smartphone Pro Camera Mode Interface Guide (image)"
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Exposure Compensation"
+          },
+          {
+            "reference_id": "[5]",
+            "source": "EV Exposure Compensation"
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:51:52.579536",
+      "updated_at": "2026-01-16T02:51:59.290654"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

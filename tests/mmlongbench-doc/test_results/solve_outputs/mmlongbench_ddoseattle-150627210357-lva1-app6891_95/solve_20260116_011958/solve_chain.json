@@ -1,0 +1,45 @@
+{
+  "version": "solve_chain_v1",
+  "task_id": "solve_20260115_162050",
+  "user_question": "What are the examples the slides show \"what does not make you data-driven\"",
+  "created_at": "2026-01-15T16:20:50.407577",
+  "updated_at": "2026-01-15T16:21:13.713681",
+  "solve_chains": [
+    {
+      "step_id": "S1",
+      "step_target": "Analysis：Extract and list the examples from the slides that illustrate what does not make an organization data-driven, based on the provided summary.",
+      "available_cite": [
+        "[rag-1]"
+      ],
+      "tool_calls": [
+        {
+          "tool_type": "none",
+          "query": "The slides show the following examples of what does not make an organization data-driven: (1) Relying on dashboards and reports without connecting them to actionable outcomes; (2) Suffering from data overload that leads to decision paralysis; (3) Letting authority (HiPPO) override data-supported decisions; (4) Owning advanced tools like Hadoop without embedding data into culture or strategy; (5) Failing to link analysis to business value or measurable impact; (6) Not promoting broad data literacy or self-service access; and (7) Launching data initiatives without clear goals.",
+          "cite_id": null,
+          "raw_answer": "The slides show the following examples of what does not make an organization data-driven: (1) Relying on dashboards and reports without connecting them to actionable outcomes; (2) Suffering from data overload that leads to decision paralysis; (3) Letting authority (HiPPO) override data-supported decisions; (4) Owning advanced tools like Hadoop without embedding data into culture or strategy; (5) Failing to link analysis to business value or measurable impact; (6) Not promoting broad data literacy or self-service access; and (7) Launching data initiatives without clear goals.",
+          "summary": "The slides show the following examples of what does not make an organization data-driven: (1) Relying on dashboards and reports without connecting them to actionable outcomes; (2) Suffering from data overload that leads to decision paralysis; (3) Letting authority (HiPPO) override data-supported decisions; (4) Owning advanced tools like Hadoop without embedding data into culture or strategy; (5) Failing to link analysis to business value or measurable impact; (6) Not promoting broad data literacy or self-service access; and (7) Launching data initiatives without clear goals.",
+          "status": "none",
+          "metadata": {
+            "plan_order": 1,
+            "kb_name": "mmlongbench_ddoseattle-150627210357-lva1-app6891_95"
+          },
+          "created_at": "2026-01-15T16:20:59.233278",
+          "updated_at": "2026-01-15T16:20:59.233376",
+          "call_id": "tc_a1dbff77"
+        }
+      ],
+      "step_response": "## S1: Examples of What Does Not Make an Organization Data-Driven\n\nThe slides explicitly outline several common misconceptions and pitfalls that organizations often mistake for being data-driven. These examples serve as cautionary indicators — behaviors or investments that, while seemingly related to data, do not constitute true data-driven culture or practice. Below is a structured extraction and explanation of each example:\n\n### 1. Overreliance on Dashboards and Reports Without Actionable Outcomes\nMerely producing dashboards, reports, or alerts does not equate to being data-driven if these outputs are not tied to decisions, actions, or measurable business outcomes. Data must drive change — not just populate screens [rag-1].\n\n### 2. Data Overload Leading to Decision Paralysis\nAn excess of data without clear prioritization or context can overwhelm teams, resulting in indecision. The slides use the metaphor of an ice cream parlor with too many flavors — where choice becomes paralysis rather than empowerment [rag-1].\n\n### 3. Authority (HiPPO) Overriding Data-Supported Decisions\nWhen decisions are made based on “Highest Paid Person’s Opinion” (HiPPO) rather than evidence from data, the organization is not truly data-driven. Leadership must champion data over intuition or hierarchy [rag-1].\n\n### 4. Owning Advanced Tools Without Cultural Integration\nPossessing sophisticated technologies like Hadoop or AI platforms does not make an organization data-driven if those tools are not embedded into daily workflows, strategy, or decision-making culture. Tools alone are insufficient without adoption and alignment [rag-1].\n\n### 5. Failing to Link Analysis to Business Value\nAnalytics that do not connect to tangible business impact — such as revenue growth, cost reduction, or customer satisfaction — are not driving value. True data-driven organizations measure success through business KPIs, not just analytical outputs [rag-1].\n\n### 6. Lack of Broad Data Literacy and Self-Service Access\nIf only a few specialists can interpret or access data, the organization is not data-driven. Widespread literacy and democratized access enable teams across functions to make informed decisions independently [rag-1].\n\n### 7. Launching Data Initiatives Without Clear Goals\nInitiatives that begin without defined objectives, success metrics, or alignment to strategic priorities are unlikely to deliver value. Data efforts must be goal-oriented and outcome-focused to be meaningful [rag-1].\n\n---\n\nThese seven examples collectively emphasize that being data-driven is not about volume, tools, or visualization — it is about **culture, leadership, action, and measurable results**. Organizations that confuse technology or reporting with true data-driven practice risk investing heavily without achieving transformational impact.",
+      "status": "done",
+      "used_citations": [
+        "[rag-1]"
+      ],
+      "created_at": "2026-01-15T16:20:52.873415",
+      "updated_at": "2026-01-15T16:21:13.711761"
+    }
+  ],
+  "metadata": {
+    "total_steps": 1,
+    "completed_steps": 1,
+    "total_tool_calls": 1
+  }
+}

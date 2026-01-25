@@ -1,0 +1,55 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_022638",
+  "user_question": "What is the paper's full title that proposes the method that has a retrieval granularity of phrase?",
+  "created_at": "2026-01-16T02:26:38.045091",
+  "updated_at": "2026-01-16T02:28:27.631310",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the full title of the paper that proposes a method with retrieval granularity of phrase?",
+      "raw_result": "The paper that proposes a method with retrieval granularity at the **phrase** level is associated with the RAG method **CoG [29]**. According to the provided context, CoG [29] processes **Phrase-level** data and uses Wikipedia as its retrieval source.\n\nHowever, the full title of the paper introducing CoG [29] is **not explicitly stated** in the available knowledge graph or document chunks.\n\nTherefore, based on the current information:\n\n> I do not have enough information to answer.\n\n### References\n\n- [1] The provided context does not contain the full title of the paper introducing CoG [29].",
+      "summary": "The paper proposing a method with phrase-level retrieval granularity is associated with CoG [29], which processes phrase-level data using Wikipedia as its retrieval source. However, the full title of the paper introducing CoG [29] is not explicitly stated in the available information.",
+      "created_at": "2026-01-16T02:27:00.198091",
+      "updated_at": "2026-01-16T02:27:03.797549"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the full title of the paper referenced as CoG [29]?",
+      "raw_result": "The provided context does not include the full title of the paper referenced as **CoG [29]**. While the knowledge graph describes CoG [29] as a RAG method using Wikipedia as a retrieval source, processing Phrase-level data with Pre-training augmentation and Iterative retrieval, it does not specify the paper’s full title.\n\nTherefore, based on the available information, I cannot provide the full title of the paper.\n\n### References\n\n- None of the provided documents or knowledge graph entries contain the full title for CoG [29].",
+      "summary": "No relevant information found for this query. The question may be Not answerable based on available documents.",
+      "created_at": "2026-01-16T02:27:25.550729",
+      "updated_at": "2026-01-16T02:27:27.164992"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the full title of the paper cited as CoG [29] that proposes a method with phrase-level retrieval granularity?",
+      "raw_result": "The full title of the paper cited as **CoG [29]** is not explicitly provided in the available context. While the knowledge graph data describes **CoG [29]** as a Retrieval-Augmented Generation (RAG) method that uses **Wikipedia** as a retrieval source, processes **Phrase-level** data, and applies **Pre-training augmentation** with **Iterative retrieval**, it does not include the paper’s full title.\n\nAdditionally, no document chunks or reference documents are provided in the context to further identify or retrieve the title of this specific paper.\n\nTherefore, based solely on the information available, **the full title of the paper cited as CoG [29] cannot be determined**.\n\n### References\n\n- [1] CoG [29] (as described in Knowledge Graph Data)\n- [2] Summary of RAG Methods Table (table) (as referenced by CoG [29])",
+      "summary": "The full title of the paper cited as CoG [29] is not available in the provided context. The method is described as a Retrieval-Augmented Generation (RAG) approach using Wikipedia, with phrase-level retrieval granularity and pre-training augmentation via iterative retrieval. However, no document or reference explicitly states the paper’s full title.",
+      "created_at": "2026-01-16T02:27:54.072905",
+      "updated_at": "2026-01-16T02:28:01.511609"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the full title of the paper cited as CoG [29] in the references or bibliography section?",
+      "raw_result": "Based on the provided context, there is no information available that specifies the full title of the paper cited as **CoG [29]**. The knowledge graph describes CoG [29] as a RAG method using Wikipedia as a retrieval source, processing phrase-level data with pre-training augmentation and iterative retrieval, but it does not include the full paper title or any bibliographic entry for citation [29].\n\nTherefore, I cannot provide the full title of the paper.\n\n### References\n\n- None",
+      "summary": "No relevant information found for this query. The question may be Not answerable based on available documents.",
+      "created_at": "2026-01-16T02:28:21.870659",
+      "updated_at": "2026-01-16T02:28:23.535357"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T02:26:38.045105"
+  },
+  "metadata": {
+    "total_iterations": 5,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 4
+  }
+}

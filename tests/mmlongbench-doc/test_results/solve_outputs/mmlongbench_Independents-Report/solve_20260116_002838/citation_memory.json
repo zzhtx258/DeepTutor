@@ -1,0 +1,32 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T00:28:38.597140",
+  "updated_at": "2026-01-16T00:29:37.059815",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "Which charts in the report show data exclusively from the 'no lean' group without including any other political groups?",
+      "raw_result": "Based on the provided context, **no chart exclusively displays data from the 'No Lean' group without including other political groups**.\n\nThe available information consistently shows that charts from the Pew Research Center — such as bar charts, stacked bar charts, horizontal bar charts, and line charts — present comparative data across multiple political affiliation categories. These typically include:\n\n- **Total**\n- **Republican**\n- **Democrat**\n- **Independent (overall)**\n- **Lean Rep** (Republican-leaning independents)\n- **Lean Dem** (Democratic-leaning independents)\n- **No Lean** (true independents with no party leaning)\n\nEven when “No Lean” is highlighted or analyzed specifically (e.g., for voter turnout, policy views, or demographic characteristics), it is always presented **alongside or in contrast to** other groups like Lean Rep, Lean Dem, Republicans, or Democrats.\n\nFor example:\n- The **Voter Registration and Turnout by Political Affiliation Group (image)** includes “No Lean” alongside Lean Rep, Lean Dem, Republican, and Democrat.\n- The **Pew Research Center Bar Chart on Public Support for Same-Sex Marriage and Marijuana Legalization** includes “No Lean” as one category among others.\n- The **Pew Research Center Chart on Government Size and Regulation Preferences** also includes “No Lean” within a broader comparison of political affiliations.\n\nAdditionally, some analyses note that “No Lean” has a small sample size (N=93), which sometimes leads to data being marked as N/A or excluded for certain issues — but this does not mean a standalone chart exists for this group alone.\n\n### Conclusion:\nThere are **no charts in the report that show data exclusively from the 'No Lean' group**. All visualizations involving “No Lean” do so within a comparative framework that includes other political affiliation groups.\n\n### References\n\n- [1] PH_2016.06.08_Economy-Final.pdf",
+      "source": "PH_2016.06.08_Economy-Final.pdf",
+      "content": "No chart in the report displays data exclusively from the 'No Lean' group. All charts that include 'No Lean' present it alongside other political affiliation groups such as Republican, Democrat, Lean Rep, and Lean Dem for comparative analysis. Even when 'No Lean' is highlighted, it is never isolated in a standalone chart.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "PH_2016.06.08_Economy-Final.pdf",
+            "content": "Charts from Pew Research Center consistently show comparative data across multiple political affiliation categories including 'No Lean', always presented alongside other groups like Lean Rep, Lean Dem, Republican, and Democrat."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T00:29:17.320983",
+      "updated_at": "2026-01-16T00:29:23.948722"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

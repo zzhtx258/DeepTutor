@@ -1,0 +1,52 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T01:24:12.738106",
+  "updated_at": "2026-01-16T01:25:14.460866",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the things that a data-driven person has, according to the slides?",
+      "raw_result": "Based on the provided context, a data-driven person is characterized not merely by access to tools or dashboards but by specific mindsets, skills, and behaviors that enable them to transform data into actionable insights and value. Here’s what a data-driven person has, according to the conceptual frameworks and visual metaphors presented:\n\n### 1. **A Testing Mindset**\nA data-driven individual embraces experimentation and validation through data. They do not rely on assumptions or hierarchy but instead test hypotheses and learn from outcomes — whether expected or unexpected. This mindset is central to fact-based decision-making and rejecting HiPPO (Highest Paid Person’s Opinion).\n\n### 2. **Fact-Based Decision-Making Skills**\nThey prioritize empirical evidence over intuition or authority. Their decisions are grounded in data analysis, ensuring objectivity and reducing bias. This includes using statistical methods, predictive modeling, and optimization techniques to understand “why” things happen and “what should be done.”\n\n### 3. **Data Literacy**\nThey possess the ability to read, interpret, and work with data effectively. This includes understanding metrics, visualizations, and analytical outputs — not just consuming them but also questioning their validity and relevance. Data literacy enables them to participate meaningfully in data-informed conversations across teams.\n\n### 4. **Storytelling Ability**\nA data-driven person doesn’t just analyze data — they communicate it. They use storytelling to add context to findings, making complex insights understandable and compelling to stakeholders. This bridges the gap between technical analysis and business action.\n\n### 5. **Goals-First Orientation**\nBefore launching experiments or analyses, they define success metrics and goals upfront. This prevents gaming the system or misinterpreting results. A goals-first approach ensures that every analytical effort is aligned with strategic business objectives.\n\n### 6. **Self-Service Capability**\nThey are empowered to access and analyze data independently without waiting for centralized teams. This autonomy accelerates insight generation and fosters a culture where data is treated as a shared, accessible resource rather than a gatekept asset.\n\n### 7. **Inquisitive and Objective Culture**\nThey operate within — and help cultivate — an environment where curiosity is encouraged and claims are challenged with evidence. An inquisitive questioning attitude drives deeper exploration, while objectivity ensures decisions are made based on what the data reveals, not personal agendas.\n\n### 8. **Understanding of the Analytics Value Chain**\nThey recognize that data alone is not enough. They understand the full progression: from raw **Data** → **Reporting** → **Analysis** → **Action** → **Value**. Their role is to ensure that insights lead to real-world impact, not just reports or dashboards.\n\n### 9. **Ability to Demonstrate Value**\nLike the vintage salesman pointing at a product box, a data-driven person must actively market their insights. They connect data-driven actions to tangible business outcomes — showing ROI, forecasting impact, and proving how analytics drive measurable value.\n\n### 10. **Collaborative and Open Sharing Attitude**\nThey believe in breaking down silos and sharing data across teams. An open sharing culture allows richer contexts to emerge, enabling more comprehensive and accurate insights. They contribute to and benefit from collective intelligence.\n\n---\n\nThese attributes collectively define a data-driven person as someone who doesn’t just *use* data — they *think* with data, *communicate* with data, and *act* with data to create meaningful change.\n\n### References\n\n- [1] Data Driven Culture Component Diagram (image)\n- [2] Analytics Paradigm Comparison Table (table)\n- [3] Analytics Value Chain Flowchart (image)\n- [4] Cartoon on Data-Driven Decision Making vs. Authority Bias (image)\n- [5] Vintage Salesman Pointing at Product Box (image)",
+      "source": "Data Driven Culture Component Diagram (image), Analytics Paradigm Comparison Table (table), Analytics Value Chain Flowchart (image), Cartoon on Data-Driven Decision Making vs. Authority Bias (image), Vintage Salesman Pointing at Product Box (image)",
+      "content": "A data-driven person has a testing mindset, fact-based decision-making skills, data literacy, storytelling ability, goals-first orientation, self-service capability, inquisitive and objective culture, understanding of the analytics value chain, ability to demonstrate value, and collaborative sharing attitude. These traits enable them to transform data into actionable insights and business value, not just use tools or dashboards.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Data Driven Culture Component Diagram (image)",
+            "content": "Visual representation of components that define a data-driven culture, including mindset, skills, and behaviors."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Analytics Paradigm Comparison Table (table)",
+            "content": "Compares data-driven approaches with traditional authority-based decision-making, highlighting key differences in methodology and outcomes."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Analytics Value Chain Flowchart (image)",
+            "content": "Illustrates the progression from raw data to reporting, analysis, action, and ultimately business value — a framework data-driven people understand and apply."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Cartoon on Data-Driven Decision Making vs. Authority Bias (image)",
+            "content": "Humorous visual contrasting data-driven choices with decisions based on hierarchy or opinion (HiPPO)."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Vintage Salesman Pointing at Product Box (image)",
+            "content": "Metaphor for how data-driven people must actively communicate and market their insights to show tangible business value."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T01:24:54.244431",
+      "updated_at": "2026-01-16T01:25:04.141797"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

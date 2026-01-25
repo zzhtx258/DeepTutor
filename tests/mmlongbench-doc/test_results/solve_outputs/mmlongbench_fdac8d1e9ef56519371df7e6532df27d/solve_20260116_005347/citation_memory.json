@@ -1,0 +1,62 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T00:53:47.959370",
+  "updated_at": "2026-01-16T00:54:51.197289",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "How many exterior photos of organisations are included in this report?",
+      "raw_result": "Based on the provided context, there are **seven** exterior photos of organizations explicitly mentioned:\n\n1. **Semi-cryogenic Cold Flow Test Facility at IPRC Mahendragiri (image)** – Shows the exterior of a state-of-the-art infrastructure for testing semi-cryogenic engine subsystems.\n2. **IIRS Main Building (image)** – Depicts the exterior of the Indian Institute of Remote Sensing in Dehradun, showcasing its institutional architecture and landscaped surroundings.\n3. **LPSC Bengaluru Campus Exterior with Rocket Models and Fountain (image)** – Features the exterior view of LPSC Bengaluru, including its institutional building, landscaped grounds, fountain, and rocket models.\n4. **Mt. Abu Infrared Observatory Facility (image)** – Shows the exterior of the observatory operated by the Physical Research Laboratory (PRL), including its white building with a dome.\n5. **ISRO Satellite Integration and Test Establishment (ISITE) Building (image)** – Displays the exterior of the ISITE in Bengaluru, a key facility for satellite assembly and testing.\n6. **ITC Building at ISRO Inertial Systems Unit (IISU) (image)** – Shows the Integrated Test Complex (ITC) building of IISU in Thiruvananthapuram, highlighting its modern, functional architecture.\n7. **Semi-Conductor Laboratory Cleanroom Operations (image)** – While primarily showing interior cleanroom operations, it is described as a composite image that visually represents the SCL’s core mission, implying an exterior or campus context as part of Chandigarh’s facility.\n\nThese images collectively represent the exteriors of major ISRO-affiliated centers and research facilities across India.\n\n### References\n\n- [1] Semi-cryogenic Cold Flow Test Facility at IPRC Mahendragiri (image)\n- [2] IIRS Main Building (image)\n- [3] LPSC Bengaluru Campus Exterior with Rocket Models and Fountain (image)\n- [4] Mt. Abu Infrared Observatory Facility (image)\n- [5] ISRO Satellite Integration and Test Establishment (ISITE) Building (image)\n- [6] ITC Building at ISRO Inertial Systems Unit (IISU) (image)\n- [7] Semi-Conductor Laboratory Cleanroom Operations (image)",
+      "source": "Semi-cryogenic Cold Flow Test Facility at IPRC Mahendragiri (image), IIRS Main Building (image), LPSC Bengaluru Campus Exterior with Rocket Models and Fountain (image), Mt. Abu Infrared Observatory Facility (image), ISRO Satellite Integration and Test Establishment (ISITE) Building (image), ITC Building at ISRO Inertial Systems Unit (IISU) (image), Semi-Conductor Laboratory Cleanroom Operations (image)",
+      "content": "The report includes seven exterior photos of organizations, specifically: Semi-cryogenic Cold Flow Test Facility at IPRC Mahendragiri, IIRS Main Building in Dehradun, LPSC Bengaluru Campus with rocket models and fountain, Mt. Abu Infrared Observatory Facility, ISRO Satellite Integration and Test Establishment (ISITE) Building, ITC Building at ISRO Inertial Systems Unit (IISU), and Semi-Conductor Laboratory Cleanroom Operations (noted as a composite image implying exterior/campus context).",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Semi-cryogenic Cold Flow Test Facility at IPRC Mahendragiri (image)",
+            "content": "Shows the exterior of a state-of-the-art infrastructure for testing semi-cryogenic engine subsystems."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "IIRS Main Building (image)",
+            "content": "Depicts the exterior of the Indian Institute of Remote Sensing in Dehradun, showcasing its institutional architecture and landscaped surroundings."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "LPSC Bengaluru Campus Exterior with Rocket Models and Fountain (image)",
+            "content": "Features the exterior view of LPSC Bengaluru, including its institutional building, landscaped grounds, fountain, and rocket models."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Mt. Abu Infrared Observatory Facility (image)",
+            "content": "Shows the exterior of the observatory operated by the Physical Research Laboratory (PRL), including its white building with a dome."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "ISRO Satellite Integration and Test Establishment (ISITE) Building (image)",
+            "content": "Displays the exterior of the ISITE in Bengaluru, a key facility for satellite assembly and testing."
+          },
+          {
+            "reference_id": "[6]",
+            "source": "ITC Building at ISRO Inertial Systems Unit (IISU) (image)",
+            "content": "Shows the Integrated Test Complex (ITC) building of IISU in Thiruvananthapuram, highlighting its modern, functional architecture."
+          },
+          {
+            "reference_id": "[7]",
+            "source": "Semi-Conductor Laboratory Cleanroom Operations (image)",
+            "content": "While primarily showing interior cleanroom operations, it is described as a composite image that visually represents the SCL’s core mission, implying an exterior or campus context as part of Chandigarh’s facility."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T00:54:22.238684",
+      "updated_at": "2026-01-16T00:54:42.331170"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

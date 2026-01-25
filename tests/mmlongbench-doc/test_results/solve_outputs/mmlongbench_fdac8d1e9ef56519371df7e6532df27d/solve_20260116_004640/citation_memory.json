@@ -1,0 +1,37 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T00:46:40.375172",
+  "updated_at": "2026-01-16T00:47:35.671079",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the year of the report?",
+      "raw_result": "The provided context does not explicitly mention a specific “report year” as a standalone document or publication. However, the data and events referenced are primarily centered around **Fiscal Year 2015–16**, which is highlighted as a landmark period for ISRO achievements — including the launch of ASTROSAT, GSAT-6 (with indigenous cryogenic stage), and completion of the IRNSS constellation.\n\nAdditionally, several activities such as the GNSS User Meet 2015, the launch of the SAKAAR app, and RTI compliance reporting occurred during **2015**, further anchoring that year as significant in the context.\n\nThus, while no formal “report year” is stated, the most relevant temporal anchor based on the content is **2015–16**.\n\n### References\n\n- [1] Fiscal Year 2015-16\n- [2] ASTROSAT\n- [3] GSAT-6\n- [4] IRNSS-1G\n- [5] 2015",
+      "source": "Fiscal Year 2015-16, 2015",
+      "content": "The report does not explicitly state a single 'report year,' but the content is centered around Fiscal Year 2015–16, which includes major ISRO achievements such as the launch of ASTROSAT, GSAT-6, and completion of the IRNSS constellation. Key events like the GNSS User Meet 2015 and SAKAAR app launch also anchor the context to 2015.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Fiscal Year 2015-16",
+            "content": "Fiscal Year 2015–16 is highlighted as a landmark period for ISRO achievements."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "2015",
+            "content": "Several activities such as the GNSS User Meet 2015, the launch of the SAKAAR app, and RTI compliance reporting occurred during 2015."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T00:47:09.905591",
+      "updated_at": "2026-01-16T00:47:20.033987"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

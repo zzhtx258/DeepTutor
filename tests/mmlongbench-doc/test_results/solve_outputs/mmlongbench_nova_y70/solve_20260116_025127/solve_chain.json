@@ -1,0 +1,45 @@
+{
+  "version": "solve_chain_v1",
+  "task_id": "solve_20260115_175202",
+  "user_question": "Under the pro mode to shoot, what is the function of the icon on right hand side of the icon that set white balance?",
+  "created_at": "2026-01-15T17:52:02.402090",
+  "updated_at": "2026-01-15T17:52:22.595289",
+  "solve_chains": [
+    {
+      "step_id": "S1",
+      "step_target": "Analysis：Identify the function of the icon located on the right-hand side of the white balance icon in Pro Mode, based on available documentation.",
+      "available_cite": [
+        "[rag-1]"
+      ],
+      "tool_calls": [
+        {
+          "tool_type": "none",
+          "query": "The icon on the right-hand side of the white balance icon in Pro Mode is the Exposure Compensation control, labeled as 'EV* 0'. It allows users to manually adjust the brightness of the photo: increasing EV brightens the image (useful in low light), while decreasing it darkens the image (helpful in bright scenes).",
+          "cite_id": null,
+          "raw_answer": "The icon on the right-hand side of the white balance icon in Pro Mode is the Exposure Compensation control, labeled as 'EV* 0'. It allows users to manually adjust the brightness of the photo: increasing EV brightens the image (useful in low light), while decreasing it darkens the image (helpful in bright scenes).",
+          "summary": "The icon on the right-hand side of the white balance icon in Pro Mode is the Exposure Compensation control, labeled as 'EV* 0'. It allows users to manually adjust the brightness of the photo: increasing EV brightens the image (useful in low light), while decreasing it darkens the image (helpful in bright scenes).",
+          "status": "none",
+          "metadata": {
+            "plan_order": 1,
+            "kb_name": "mmlongbench_nova_y70"
+          },
+          "created_at": "2026-01-15T17:52:11.614891",
+          "updated_at": "2026-01-15T17:52:11.614976",
+          "call_id": "tc_e50b5928"
+        }
+      ],
+      "step_response": "## S1: Function of the Icon to the Right of White Balance in Pro Mode\n\nIn Pro Mode, the icon positioned immediately to the right of the white balance (AWB) control is labeled **\"EV* 0\"** and serves as the **Exposure Compensation** control [rag-1]. This feature enables photographers to manually override the camera’s automatic exposure settings to fine-tune the brightness of the captured image.\n\n### Concept Explanation\nExposure Compensation adjusts the overall luminance of a photo by modifying how much light the sensor captures. It operates on a scale typically ranging from negative values (e.g., -2.0 EV) to positive values (e.g., +2.0 EV), where:\n- Increasing the EV value (e.g., setting it to +1.0) brightens the image — particularly useful in low-light environments or when shooting underexposed scenes.\n- Decreasing the EV value (e.g., setting it to -1.0) darkens the image — helpful for preventing overexposure in bright conditions such as sunny outdoor scenes or high-contrast lighting.\n\nThis adjustment is implemented via a vertical slider accessible in the Pro Mode interface, allowing precise, real-time control over exposure without altering other manual settings like shutter speed, aperture, or ISO.\n\n### Logical Derivation\nBased on the documentation provided, the spatial relationship between icons in Pro Mode follows a functional hierarchy: white balance (AWB) controls color temperature, while the adjacent \"EV* 0\" icon directly influences brightness. Since no conflicting information exists in the available materials, and multiple sources consistently identify this icon as Exposure Compensation, we can confidently conclude its function.\n\n### Summary\nThe icon to the right of the white balance setting in Pro Mode is the Exposure Compensation control (\"EV* 0\"), which allows users to manually adjust image brightness for optimal exposure under varying lighting conditions.",
+      "status": "done",
+      "used_citations": [
+        "[rag-1]"
+      ],
+      "created_at": "2026-01-15T17:52:05.176491",
+      "updated_at": "2026-01-15T17:52:22.593905"
+    }
+  ],
+  "metadata": {
+    "total_steps": 1,
+    "completed_steps": 1,
+    "total_tool_calls": 1
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_003940",
+  "user_question": "Which continent has the most number of registered participant for advanced science course in CTBTO?",
+  "created_at": "2026-01-16T00:39:40.160241",
+  "updated_at": "2026-01-16T00:43:02.365624",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What does the report say about the distribution of registered participants by continent for advanced science courses at CTBTO?",
+      "raw_result": "The report does not provide a specific breakdown of registered participants by continent for the Advanced Science Course at CTBTO. However, it does indicate that **425 participants** from **105 countries** registered for the course, highlighting its global reach. The distribution across continents is visually represented in the **CTBT Advanced Science Course Participation and Impact Infographic**, which includes a **world map** marked with red circles to show regional participation counts.\n\nWhile the exact continental figures are not listed in the available context, the infographic’s world map serves as a visual tool to convey the geographic spread of participants. The institutional affiliations of participants are categorized (e.g., universities, research institutes, government agencies), but these categories do not correspond directly to continental distribution.\n\nIn summary, while the report confirms broad international participation spanning 105 countries, it does not offer explicit data on how participants were distributed across continents.\n\n### References\n\n- [1] CTBT Advanced Science Course Participation and Impact Infographic (image)\n- [2] World Map\n- [3] 425 Registered Participants\n- [4] 105 Countries\n- [5] Institutional Affiliation",
+      "summary": "The report does not provide explicit numbers of registered participants by continent for the CTBTO Advanced Science Course. However, it confirms that 425 participants from 105 countries registered, indicating global participation. A world map in the CTBT Advanced Science Course Participation and Impact Infographic visually represents regional participation with red circles, but specific continental totals are not listed. Institutional affiliations are noted but do not map directly to continents.",
+      "created_at": "2026-01-16T00:40:06.990308",
+      "updated_at": "2026-01-16T00:40:13.871144"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact numbers or proportions of registered participants by continent shown in the world map of the CTBT Advanced Science Course Participation and Impact Infographic?",
+      "raw_result": "Based on the provided context, there is no specific information detailing the exact numbers or proportions of registered participants by continent as shown in the world map of the CTBT Advanced Science Course Participation and Impact Infographic.\n\nThe context confirms that:\n- The **world map** is part of the infographic and visually displays participant distribution across continents.\n- There were **425 registered participants from 105 countries**, indicating a global reach.\n- Red circles on the map indicate regional counts, but no numerical breakdown by continent (e.g., Asia, Europe, Africa, etc.) is provided in the knowledge graph or document chunks.\n\nTherefore, while the map visually represents geographic distribution, the precise quantitative data per continent is not available in the given materials.\n\n### References\n\n- [1] CTBT Advanced Science Course Participation and Impact Infographic (image)\n- [2] World Map\n- [3] 425 Registered Participants\n- [4] 105 Countries",
+      "summary": "The world map in the CTBT Advanced Science Course Participation and Impact Infographic visually displays participant distribution across continents, with red circles indicating regional counts. However, no exact numbers or proportions by continent (e.g., Asia, Europe, Africa) are provided in the available materials. The course had 425 registered participants from 105 countries, confirming global reach, but continent-level data is not quantified.",
+      "created_at": "2026-01-16T00:40:43.230152",
+      "updated_at": "2026-01-16T00:40:50.410440"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact numbers or labels shown in the world map of the CTBT Advanced Science Course Participation and Impact Infographic for each continent?",
+      "raw_result": "The provided context does not include specific numerical labels or exact counts for each continent on the world map within the **CTBT Advanced Science Course Participation and Impact Infographic**. While it is noted that the world map visually displays participant distribution across continents using red circles to indicate regional counts, no granular data — such as the number of participants per continent (e.g., Asia: X, Africa: Y, etc.) — is explicitly stated in the knowledge graph or document chunks.\n\nThe only global figures provided are:\n- **425 Registered Participants** from **105 Countries** total.\n- The infographic includes a **Stylized Map of Asia and Oceania**, with **Indonesia highlighted**, but this does not translate into continent-level statistics.\n\nTherefore, based solely on the available information, the exact numbers or labels for each continent cannot be determined.\n\n### References\n\n- [1] CTBT Advanced Science Course Participation and Impact Infographic (image)\n- [2] World Map\n- [3] 425 Registered Participants\n- [4] 105 Countries\n- [5] Stylized Map of Asia and Oceania",
+      "summary": "No exact numbers or labels for each continent are provided in the CTBT Advanced Science Course Participation and Impact Infographic. The world map uses red circles to visually indicate regional participation, but continent-specific counts (e.g., Asia: X, Africa: Y) are not stated. The only global figures available are 425 registered participants from 105 countries. A stylized map highlights Indonesia within Asia and Oceania, but this does not provide continent-level statistics.",
+      "created_at": "2026-01-16T00:41:22.500238",
+      "updated_at": "2026-01-16T00:41:33.442518"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the EXACT numbers or labels shown for each continent in the CTBT Advanced Science Course Participation and Impact Infographic world map?",
+      "raw_result": "Based on the provided context, there is no specific information detailing the **exact numbers or labels shown for each continent** in the CTBT Advanced Science Course Participation and Impact Infographic world map.\n\nThe context confirms that:\n- A **World Map** is part of the infographic.\n- It visually displays participant distribution across continents, marked with **red circles indicating regional counts**.\n- Participants came from **105 countries** globally.\n- The infographic includes a **stylized map of Asia and Oceania**, highlighting Indonesia with a red circle and arrow.\n\nHowever, **no document chunk or knowledge graph entity provides the actual numerical breakdown or textual labels per continent** (e.g., “Africa: 45 participants,” “Europe: 89 participants,” etc.).\n\nTherefore, based strictly on the available context, I cannot provide the exact numbers or labels for each continent.\n\n### References\n\n- [1] CTBT Advanced Science Course Participation and Impact Infographic (image)",
+      "summary": "No relevant information found for this query. The question may be Not answerable based on available documents. The infographic mentions a world map with red circles indicating regional counts and highlights Indonesia in Asia/Oceania, but does not provide exact numerical labels or participant counts per continent.",
+      "created_at": "2026-01-16T00:41:58.020083",
+      "updated_at": "2026-01-16T00:42:01.484750"
+    },
+    {
+      "cite_id": "[rag-5]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact numbers or labels shown in the world map of the CTBT Advanced Science Course Participation and Impact Infographic for each continent?",
+      "raw_result": "The provided context does not include specific numerical labels or exact counts for each continent on the world map within the **CTBT Advanced Science Course Participation and Impact Infographic**. While it is noted that the world map visually displays participant distribution across continents using red circles to indicate regional counts, no granular data — such as the number of participants per continent (e.g., Asia: X, Africa: Y, etc.) — is explicitly stated in the knowledge graph or document chunks.\n\nThe only global figures provided are:\n- **425 Registered Participants** from **105 Countries** total.\n- The infographic includes a **Stylized Map of Asia and Oceania**, with **Indonesia highlighted**, but this does not translate into continent-level statistics.\n\nTherefore, based solely on the available information, the exact numbers or labels for each continent cannot be determined.\n\n### References\n\n- [1] CTBT Advanced Science Course Participation and Impact Infographic (image)\n- [2] World Map\n- [3] 425 Registered Participants\n- [4] 105 Countries\n- [5] Stylized Map of Asia and Oceania",
+      "summary": "No exact numbers or labels for each continent are provided in the CTBT Advanced Science Course Participation and Impact Infographic. The world map uses red circles to visually indicate regional participation, but continent-specific counts (e.g., Asia: X, Africa: Y) are not stated. The only global figures available are 425 registered participants from 105 countries total. A stylized map highlights Indonesia within Asia and Oceania, but this does not provide continent-level statistics.",
+      "created_at": "2026-01-16T00:42:16.947299",
+      "updated_at": "2026-01-16T00:42:26.858456"
+    },
+    {
+      "cite_id": "[rag-6]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the EXACT numbers or labels shown in the world map of the CTBT Advanced Science Course Participation and Impact Infographic for each continent?",
+      "raw_result": "Based on the provided context, there is no specific information detailing the **exact numbers or labels** shown on the world map of the *CTBT Advanced Science Course Participation and Impact Infographic* for each continent.\n\nThe context confirms that:\n- The **World Map** is part of the infographic and visually displays participant distribution across continents.\n- Red circles are used to indicate regional counts.\n- A total of **425 registered participants from 105 countries** are represented globally.\n\nHowever, **no breakdown by continent (e.g., Asia: X participants, Europe: Y participants, etc.)** is provided in the knowledge graph or document chunks. The data does not specify numerical labels or exact counts per continent as displayed on the map.\n\nTherefore, the exact continental numbers or labels cannot be determined from the available information.\n\n### References\n\n- [1] CTBT Advanced Science Course Participation and Impact Infographic (image)\n- [2] World Map\n- [3] 425 Registered Participants\n- [4] 105 Countries",
+      "summary": "No exact numbers or labels per continent are provided in the available information for the CTBT Advanced Science Course Participation and Impact Infographic. The world map visually displays participant distribution using red circles, and globally there are 425 registered participants from 105 countries, but no continental breakdown (e.g., Asia, Europe) is specified.",
+      "created_at": "2026-01-16T00:42:52.257855",
+      "updated_at": "2026-01-16T00:43:02.362156"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T00:39:40.160254"
+  },
+  "metadata": {
+    "total_iterations": 6,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.6,
+    "total_knowledge_items": 6
+  }
+}

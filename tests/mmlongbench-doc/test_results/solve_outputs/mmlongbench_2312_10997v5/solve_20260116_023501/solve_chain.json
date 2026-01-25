@@ -1,0 +1,45 @@
+{
+  "version": "solve_chain_v1",
+  "task_id": "solve_20260115_173550",
+  "user_question": "Which subsection does the section \"AUGMENTATION PROCESS IN RAG\" include?",
+  "created_at": "2026-01-15T17:35:50.720735",
+  "updated_at": "2026-01-15T17:36:11.461743",
+  "solve_chains": [
+    {
+      "step_id": "S1",
+      "step_target": "Analysis：Identify the subsections included under the section 'AUGMENTATION PROCESS IN RAG' by referencing available knowledge.",
+      "available_cite": [
+        "[rag-1]"
+      ],
+      "tool_calls": [
+        {
+          "tool_type": "none",
+          "query": "The section 'AUGMENTATION PROCESS IN RAG' is not explicitly titled in the document, but its content is covered under Section V, which includes three subsections: Iterative Retrieval, Recursive Retrieval, and Adaptive Retrieval.",
+          "cite_id": null,
+          "raw_answer": "The section 'AUGMENTATION PROCESS IN RAG' is not explicitly titled in the document, but its content is covered under Section V, which includes three subsections: Iterative Retrieval, Recursive Retrieval, and Adaptive Retrieval.",
+          "summary": "The section 'AUGMENTATION PROCESS IN RAG' is not explicitly titled in the document, but its content is covered under Section V, which includes three subsections: Iterative Retrieval, Recursive Retrieval, and Adaptive Retrieval.",
+          "status": "none",
+          "metadata": {
+            "plan_order": 1,
+            "kb_name": "mmlongbench_2312_10997v5"
+          },
+          "created_at": "2026-01-15T17:36:00.934018",
+          "updated_at": "2026-01-15T17:36:00.934090",
+          "call_id": "tc_9b9f9d67"
+        }
+      ],
+      "step_response": "## S1: Identification of Subsections Under \"AUGMENTATION PROCESS IN RAG\"\n\nAlthough the document does not contain an explicitly titled section named **“AUGMENTATION PROCESS IN RAG”**, the content relevant to this concept is comprehensively covered under **Section V**. This section details three distinct augmentation strategies that enhance the Retrieval-Augmented Generation (RAG) framework by dynamically integrating retrieval with generation processes.\n\nThe three subsections included under this conceptual umbrella are:\n\n1. **Iterative Retrieval**: This process alternates between retrieval and generation phases, repeating up to $N$ times to refine the output iteratively. It enables progressive improvement of responses through successive rounds of information gathering and synthesis [rag-1].\n\n2. **Recursive Retrieval**: This method decomposes complex problems into smaller sub-problems, applying iterative refinement at each level. It supports hierarchical reasoning and modular problem-solving within the RAG architecture [rag-1].\n\n3. **Adaptive Retrieval**: In this approach, the Large Language Model (LLM) autonomously determines when and what information to retrieve using special tokens. This introduces a degree of self-regulation and context-awareness into the retrieval mechanism, allowing for more flexible and intelligent augmentation [rag-1].\n\nThese three augmentation processes are also visually represented in the *RAG_Augmentation_Processes_Flowchart* and referenced in *Fig. 5*, providing a schematic overview of how each strategy integrates into the broader RAG pipeline [rag-1].\n\nIn summary, while the exact section title “AUGMENTATION PROCESS IN RAG” does not appear in the document, its functional equivalent is fully articulated in Section V through these three well-defined subsections: Iterative Retrieval, Recursive Retrieval, and Adaptive Retrieval.",
+      "status": "done",
+      "used_citations": [
+        "[rag-1]"
+      ],
+      "created_at": "2026-01-15T17:35:54.652059",
+      "updated_at": "2026-01-15T17:36:11.459949"
+    }
+  ],
+  "metadata": {
+    "total_steps": 1,
+    "completed_steps": 1,
+    "total_tool_calls": 1
+  }
+}

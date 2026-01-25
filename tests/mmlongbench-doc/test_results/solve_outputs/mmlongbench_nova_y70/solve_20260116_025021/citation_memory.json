@@ -1,0 +1,42 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T02:50:21.273404",
+  "updated_at": "2026-01-16T02:51:09.453677",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the function of the icon on the right-hand side of the focus mode selector in pro mode?",
+      "raw_result": "The icon on the right-hand side of the focus mode selector in Pro Mode is the **AF· Button**. This button serves as the interface through which users can access and adjust focus settings within Pro Mode. By interacting with the AF· Button, users can select from different autofocus modes — such as AF-S (Autofocus Single), AF-C (Autofocus Continuous), or MF (Manual Focus) — depending on their photographic needs.\n\nThese focus modes are designed for specific usage scenarios:\n- **AF-S** is ideal for stationary subjects.\n- **AF-C** is optimized for tracking moving subjects.\n- **MF** allows manual focus by tapping directly on the subject of interest, such as a person’s face.\n\nThis functionality enables users to tailor focus behavior to match environmental conditions and subject movement, supporting professional-level photography by offering granular control over image sharpness and composition.\n\n### References\n\n- [1] Pro Mode\n- [2] Focus Mode\n- [3] AF· Button\n- [4] Pro Mode Focus Mode Reference Table (table)\n- [5] Page 28",
+      "source": "Pro Mode, AF· Button, Page 28",
+      "content": "The icon on the right-hand side of the focus mode selector in Pro Mode is the AF· Button. It allows users to access and adjust focus settings, choosing between AF-S for stationary subjects, AF-C for moving subjects, or MF for manual focus by tapping on the subject. This provides precise control over focus behavior for professional photography.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Pro Mode",
+            "content": "The icon on the right-hand side of the focus mode selector in Pro Mode is the AF· Button."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "AF· Button",
+            "content": "This button serves as the interface through which users can access and adjust focus settings within Pro Mode."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Page 28",
+            "content": "These focus modes are designed for specific usage scenarios: AF-S for stationary subjects, AF-C for tracking moving subjects, and MF for manual focus."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:50:48.387555",
+      "updated_at": "2026-01-16T02:50:58.124478"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

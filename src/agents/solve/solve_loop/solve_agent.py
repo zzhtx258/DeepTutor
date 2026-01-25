@@ -30,6 +30,8 @@ class SolveAgent(BaseAgent):
         "code_execution",
         "finish",
     }
+    
+    MAX_PARSE_RETRIES = 3  # JSON解析失败时的最大重试次数
 
     def __init__(self, config: dict[str, Any], api_key: str, base_url: str, token_tracker=None):
         super().__init__(
@@ -67,23 +69,40 @@ class SolveAgent(BaseAgent):
         system_prompt = self._build_system_prompt()
         user_prompt = self._build_user_prompt(context)
 
-        response = await self.call_llm(
-            user_prompt=user_prompt,
-            system_prompt=system_prompt,
-            verbose=verbose,
-            response_format={"type": "json_object"},  # Force JSON
-        )
-
-        tool_plan = self._parse_tool_plan(response)
-        if not tool_plan:
-            # Try to be compatible with old logic, or raise error
-            # For robustness, if JSON parsing fails, raise more specific error
-            self.logger.warning(
-                f"SolveAgent JSON parsing failed or empty, Raw: {response[:200]}..."
+        # 重试机制：解析失败时重试
+        tool_plan = None
+        last_response = None
+        last_error = None
+        
+        for attempt in range(self.MAX_PARSE_RETRIES):
+            response = await self.call_llm(
+                user_prompt=user_prompt,
+                system_prompt=system_prompt,
+                verbose=verbose,
+                response_format={"type": "json_object"},  # Force JSON
             )
-            # If empty list, also treat as exception, because SolveAgent should output at least none or finish
+            last_response = response
+
+            tool_plan = self._parse_tool_plan(response)
+            if tool_plan:
+                break  # 解析成功，退出重试循环
+            
+            # 解析失败，记录并准备重试
+            last_error = f"Attempt {attempt + 1}/{self.MAX_PARSE_RETRIES}: JSON parsing failed"
+            self.logger.warning(
+                f"SolveAgent {last_error}, Raw: {response[:200]}..."
+            )
+            
+            if attempt < self.MAX_PARSE_RETRIES - 1:
+                self.logger.info(f"SolveAgent retrying... ({attempt + 2}/{self.MAX_PARSE_RETRIES})")
+        
+        if not tool_plan:
+            # 所有重试都失败，抛出异常
+            self.logger.error(
+                f"SolveAgent failed after {self.MAX_PARSE_RETRIES} attempts, last response: {last_response[:300] if last_response else 'None'}..."
+            )
             raise ValueError(
-                "SolveAgent did not parse any valid tool_calls structure from LLM output"
+                f"SolveAgent did not parse any valid tool_calls structure from LLM output after {self.MAX_PARSE_RETRIES} attempts"
             )
 
         finish_requested = any(item["type"] == "finish" for item in tool_plan)

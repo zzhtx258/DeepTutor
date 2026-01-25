@@ -197,10 +197,11 @@ class ToolAgent(BaseAgent):
         query = record.query
 
         if tool_type == "rag_naive":
-            result = await rag_search(query=query, kb_name=kb_name, mode="naive")
+            # Force hybrid mode to leverage knowledge graph for better retrieval
+            result = await rag_search(query=query, kb_name=kb_name, mode="hybrid")
             answer = result.get("answer", "")
             source, auto_sources = self._infer_sources(answer)
-            metadata = {"source": source, "auto_sources": auto_sources, "mode": "naive"}
+            metadata = {"source": source, "auto_sources": auto_sources, "mode": "hybrid"}
             return answer, metadata
 
         if tool_type == "rag_hybrid":
@@ -217,11 +218,11 @@ class ToolAgent(BaseAgent):
                     "Tool call rejected (web_search): web_search is disabled in config. "
                     "Falling back to RAG naive search."
                 )
-                # Fallback to RAG naive search when web_search is disabled
-                result = await rag_search(query=query, kb_name=kb_name, mode="naive")
+                # Fallback to RAG hybrid search when web_search is disabled
+                result = await rag_search(query=query, kb_name=kb_name, mode="hybrid")
                 answer = result.get("answer", "")
                 source, auto_sources = self._infer_sources(answer)
-                metadata = {"source": source, "auto_sources": auto_sources, "mode": "naive", "fallback_from": "web_search"}
+                metadata = {"source": source, "auto_sources": auto_sources, "mode": "hybrid", "fallback_from": "web_search"}
                 return answer, metadata
             
             result = web_search(query=query, output_dir=output_dir, verbose=verbose)

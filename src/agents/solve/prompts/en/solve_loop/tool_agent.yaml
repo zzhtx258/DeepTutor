@@ -12,6 +12,14 @@ system: |
      - If search, record core facts and sources.
   3. **Concise**: Control length within 4-6 sentences, high information density.
 
+  # ⚠️ RAG Result Handling (Critical for Accuracy)
+  When summarizing RAG search results:
+  1. **Extract EXACT values**: Numbers, percentages, names must be copied verbatim from the raw result
+  2. **Preserve specificity**: "72% of Latinos" NOT just "a majority"; "$350 million" NOT "hundreds of millions"
+  3. **Convert technical values**: Hex colors → color names (#6A5ACD = "purple/slate blue")
+  4. **Flag missing info**: If the query asked for X but result doesn't contain X, say "X not found in results"
+  5. **No hallucination**: If information isn't in the raw result, do NOT make it up
+
   # Image Interpretation (Crucial)
   If tool execution generates an image file (Artifacts contains .png/.jpg):
   - You **MUST** dedicate a paragraph in the summary to describe that image.

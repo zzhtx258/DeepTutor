@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_004927",
+  "user_question": "What is NARL stand for in this document?",
+  "created_at": "2026-01-16T00:49:27.127423",
+  "updated_at": "2026-01-16T00:49:59.907822",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What does NARL stand for in this document?",
+      "raw_result": "NARL stands for the **National Atmospheric Research Laboratory**.\n\nIt is an institution under India’s Department of Space (DOS), located in Gadanki near Tirupati. NARL conducts research in atmospheric and space sciences, with a core focus on studying the mesosphere, stratosphere, and troposphere using advanced observational tools such as the MST Radar Facility. It operates as one of the key scientific centers supporting India’s broader space program and is organized into seven major research groups covering areas like radar technology, weather and climate, ionospheric research, and data management.\n\n### References\n\n- [1] National Atmospheric Research Laboratory\n- [2] NARL",
+      "summary": "NARL stands for the National Atmospheric Research Laboratory, an institution under India’s Department of Space located in Gadanki near Tirupati. It conducts research in atmospheric and space sciences, focusing on the mesosphere, stratosphere, and troposphere using tools like the MST Radar Facility. It supports India’s space program and is organized into seven research groups covering radar technology, weather and climate, ionospheric research, and data management.",
+      "created_at": "2026-01-16T00:49:50.588615",
+      "updated_at": "2026-01-16T00:49:56.945779"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T00:49:27.127436"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

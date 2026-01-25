@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_003813",
+  "user_question": "Which category has the most increase from 2005 to 2010 for time spent on weedends?",
+  "created_at": "2026-01-16T00:38:13.729172",
+  "updated_at": "2026-01-16T00:39:11.484642",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the complete data/numbers in the table or chart that shows time spent on weekends by category for 2005 and 2010?",
+      "raw_result": "The data comparing how people spent their weekends in 2005 versus 2010 is presented in a comparative infographic titled **“Time Spent On Weekends”**, which uses dual clock-style pie charts to visualize the allocation of weekend time across various activities. The data for each year is broken down as follows:\n\n---\n\n### **Weekend Time Allocation – 2005**\n\n- **With family and friends**: 35%\n- **Watching films**: 20%\n- **Reading**: 10%\n- **Shopping**: 10%\n- **Eating out**: 10%\n- **Travelling**: 5%\n- **Fitness**: 5%\n- **Net surfing**: 3%\n- **Hobbies**: 2%\n\n---\n\n### **Weekend Time Allocation – 2010**\n\n- **With family and friends**: 21%\n- **Watching films**: 22%\n- **Reading**: 10%\n- **Shopping**: 10%\n- **Eating out**: 17%\n- **Travelling**: 6%\n- **Fitness**: 6%\n- **Net surfing**: 4%\n- **Hobbies**: 4%\n\n---\n\n### **Key Observations from the Comparison**\n\n- **Significant Decline**: Time spent “With family and friends” dropped sharply from 35% in 2005 to 21% in 2010.\n- **Notable Increases**:\n  - “Eating out” rose from 10% to 17%.\n  - “Watching films” increased slightly from 20% to 22%.\n  - “Hobbies” doubled from 2% to 4%.\n  - “Fitness”, “Travelling”, and “Net surfing” all saw modest increases.\n- **Stable Activities**: “Reading” and “Shopping” remained unchanged at 10% each.\n\nThis comparison highlights evolving social and leisure behaviors over a five-year period, with a clear shift away from traditional social gatherings toward more individual or commercial leisure activities.\n\n---\n\n### References\n\n- [1] Weekend Time Allocation Comparison 2005 vs 2010 Clock Charts (image)\n- [2] 2005 Weekend Time Allocation\n- [3] 2010 Weekend Time Allocation\n- [4] With Family And Friends\n- [5] Watching Films",
+      "summary": "From 2005 to 2010, the category with the largest increase in time spent on weekends was 'Eating out', rising from 10% to 17% (a 7 percentage point increase). Other notable increases include 'Hobbies' (from 2% to 4%), 'Watching films' (from 20% to 22%), and modest gains in 'Fitness', 'Travelling', and 'Net surfing'. Time spent 'With family and friends' declined sharply from 35% to 21%.",
+      "created_at": "2026-01-16T00:38:59.345522",
+      "updated_at": "2026-01-16T00:39:07.687370"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T00:38:13.729182"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

@@ -23,6 +23,8 @@ from ..utils.json_utils import extract_json_from_text
 
 class InvestigateAgent(BaseAgent):
     """Investigator Agent - Generates queries and calls tools"""
+    
+    MAX_PARSE_RETRIES = 3  # JSON解析失败时的最大重试次数
 
     def __init__(self, config: dict[str, Any], api_key: str, base_url: str, token_tracker=None):
         super().__init__(
@@ -82,21 +84,36 @@ class InvestigateAgent(BaseAgent):
         system_prompt = self._build_system_prompt()
         user_prompt = self._build_user_prompt(context)
 
-        # 3. Call LLM
-        response = await self.call_llm(
-            user_prompt=user_prompt,
-            system_prompt=system_prompt,
-            verbose=verbose,
-            response_format={"type": "json_object"},
-        )
+        # 3. Call LLM with retry mechanism
+        parsed_result = None
+        last_response = None
+        
+        for attempt in range(self.MAX_PARSE_RETRIES):
+            response = await self.call_llm(
+                user_prompt=user_prompt,
+                system_prompt=system_prompt,
+                verbose=verbose,
+                response_format={"type": "json_object"},
+            )
+            last_response = response
 
-        # 4. Parse output (JSON)
-        parsed_result = extract_json_from_text(response)
+            # 4. Parse output (JSON)
+            parsed_result = extract_json_from_text(response)
 
+            if parsed_result and isinstance(parsed_result, dict):
+                break  # 解析成功，退出重试循环
+            
+            # 解析失败，记录并准备重试
+            self.logger.warning(
+                f"InvestigateAgent attempt {attempt + 1}/{self.MAX_PARSE_RETRIES}: Parse failed, raw: {response[:200]}..."
+            )
+            if attempt < self.MAX_PARSE_RETRIES - 1:
+                self.logger.info(f"InvestigateAgent retrying... ({attempt + 2}/{self.MAX_PARSE_RETRIES})")
+        
         if not parsed_result or not isinstance(parsed_result, dict):
-            self.logger.warning("Parse failed: LLM did not return valid JSON")
+            self.logger.error(f"InvestigateAgent failed after {self.MAX_PARSE_RETRIES} attempts")
             return {
-                "reasoning": "Parse failed: invalid JSON",
+                "reasoning": f"Parse failed after {self.MAX_PARSE_RETRIES} attempts: invalid JSON",
                 "should_stop": True,
                 "knowledge_item_ids": [],
                 "actions": [],
@@ -386,8 +403,9 @@ class InvestigateAgent(BaseAgent):
     async def _call_rag_naive(
         self, query: str, kb_name: str, output_dir: str | None
     ) -> dict[str, Any]:
-        """Call RAG Naive"""
-        return await rag_search(query=query, kb_name=kb_name, mode="naive")
+        """Call RAG Naive - now uses hybrid mode for knowledge graph support"""
+        # Force hybrid mode to leverage knowledge graph for better retrieval
+        return await rag_search(query=query, kb_name=kb_name, mode="hybrid")
 
     async def _call_rag_hybrid(
         self, query: str, kb_name: str, output_dir: str | None

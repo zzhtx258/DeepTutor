@@ -1,0 +1,64 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T02:28:56.716271",
+  "updated_at": "2026-01-16T02:30:11.568723",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What paper proposes a method with retrieval granularity at the phrase level and an augmentation stage involving tuning?",
+      "raw_result": "Based on the provided context, no paper explicitly proposes a method that combines **phrase-level retrieval granularity** with an **augmentation stage involving tuning**.\n\nHere’s the breakdown:\n\n- The method **CoG [29]** uses **phrase-level granularity** (as stated in its description and relationship to \"Phrase\").\n- However, CoG [29] is described as using **Pre-training augmentation**, not **Tuning augmentation**.\n- Methods that use **Tuning augmentation** (e.g., EAR [31], Self-Mem [17], CREA-ICL [19], RAST [32], Retrieve-and-Sample [65]) operate at different granularities: **Sentence**, **Multi**, or **Doc** levels — not phrase level.\n\nTherefore, while there are methods that use phrase-level granularity or tuning augmentation individually, **no single method in the provided context combines both**.\n\n### References\n\n- [CoG [29]] CoG [29]\n- [EAR [31]] EAR [31]\n- [Self-Mem [17]] Self-Mem [17]\n- [CREA-ICL [19]] CREA-ICL [19]\n- [RAST [32]] RAST [32]\n- [Retrieve-and-Sample [65]] Retrieve-and-Sample [65]",
+      "source": "CoG [29], EAR [31], Self-Mem [17]",
+      "content": "No paper in the provided context combines phrase-level retrieval granularity with an augmentation stage involving tuning. CoG [29] uses phrase-level granularity but relies on pre-training augmentation, while methods using tuning augmentation (e.g., EAR [31], Self-Mem [17]) operate at sentence, multi, or document levels.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[29]",
+            "source": "CoG [29]",
+            "content": "CoG uses phrase-level granularity but employs pre-training augmentation, not tuning augmentation."
+          },
+          {
+            "reference_id": "[31]",
+            "source": "EAR [31]",
+            "content": "EAR uses tuning augmentation but operates at sentence or higher granularity levels."
+          },
+          {
+            "reference_id": "[17]",
+            "source": "Self-Mem [17]",
+            "content": "Self-Mem uses tuning augmentation but does not operate at phrase-level granularity."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:29:23.688557",
+      "updated_at": "2026-01-16T02:29:32.758267"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "What papers discuss retrieval granularity at the phrase level and augmentation through tuning?",
+      "raw_result": "The only RAG method explicitly documented as using **phrase-level retrieval granularity** and **tuning augmentation** is **CoG [29]**.\n\nAccording to the provided knowledge graph:\n\n- **CoG [29]** uses **Wikipedia** as its retrieval source.\n- It processes data at the **Phrase** level, which is defined as a short textual segment consisting of a group of words forming a meaningful unit.\n- It employs **Tuning augmentation**, meaning the retrieved information is integrated during the model fine-tuning phase to enhance performance.\n\nNo other methods in the dataset are described as combining both phrase-level granularity and tuning augmentation. While other methods use phrase-level granularity (e.g., CoG [29] is the only one listed), or tuning augmentation (many do, such as EAR [31], UPRISE [20], FLARE [24]), none besides CoG [29] combine both specific characteristics.\n\n### References\n\n- [29] CoG [29]",
+      "source": "CoG [29]",
+      "content": "The paper that proposes a method with retrieval granularity at the phrase level and augmentation through tuning is CoG [29]. It uses Wikipedia as its retrieval source, processes text at the phrase level (defined as short meaningful word groups), and integrates retrieved information during model fine-tuning to enhance performance. No other methods in the dataset combine both phrase-level granularity and tuning augmentation.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[29]",
+            "source": "CoG [29]",
+            "content": "CoG [29] uses Wikipedia as its retrieval source, processes data at the Phrase level, and employs Tuning augmentation by integrating retrieved information during the model fine-tuning phase."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:29:55.899133",
+      "updated_at": "2026-01-16T02:30:01.341271"
+    }
+  ],
+  "tool_counters": {
+    "rag": 2
+  }
+}

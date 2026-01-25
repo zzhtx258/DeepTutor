@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_020132",
+  "user_question": "In figure 4, which nodes are retrieved by RAPTOR for both questions?",
+  "created_at": "2026-01-16T02:01:32.327118",
+  "updated_at": "2026-01-16T02:02:15.507504",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "Which nodes are retrieved by RAPTOR for both questions in Figure 4?",
+      "raw_result": "In **Figure 4**, which illustrates RAPTOR’s tree-based retrieval process for two questions about the Cinderella story, the system retrieves different sets of nodes depending on the nature of each question:\n\n- **For Question 1 (“What is the central theme of the story?”)** — a *thematic question* requiring holistic understanding — RAPTOR selects **intermediate nodes 16, 17, 18, and 19**. These nodes represent summarized content from higher layers of the hierarchical tree, enabling RAPTOR to provide broader contextual answers that capture overarching narrative elements.\n\n- **For Question 2 (“How did Cinderella find a happy ending?”)** — a *multi-hop question* requiring synthesis across narrative segments — RAPTOR retrieves **root summary node 25** along with the same **intermediate nodes (16, 17, 18, and 19)**. This combination allows RAPTOR to access both high-level thematic summaries and mid-level contextual abstractions necessary to reconstruct the narrative resolution.\n\nThese selections contrast with those made by the **DPR retriever**, which only retrieves leaf nodes (Layer 0), typically missing the synthesized context provided by intermediate and root nodes. RAPTOR’s ability to adaptively select nodes across multiple layers — from leaf to root — enables it to better match the granularity required by each query type.\n\n### References\n\n- [1] Figure 4\n- [2] RAPTOR_Tree_Retrieval_Diagram_Figure_4 (image)\n- [3] Question 1\n- [4] Question 2\n- [5] Intermediate Nodes",
+      "summary": "In Figure 4, RAPTOR retrieves intermediate nodes 16, 17, 18, and 19 for both questions. For Question 1 (thematic), it selects only these intermediate nodes. For Question 2 (multi-hop), it additionally retrieves root summary node 25. Thus, the common nodes retrieved for both questions are 16, 17, 18, and 19.",
+      "created_at": "2026-01-16T02:02:00.446173",
+      "updated_at": "2026-01-16T02:02:13.227295"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T02:01:32.327123"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

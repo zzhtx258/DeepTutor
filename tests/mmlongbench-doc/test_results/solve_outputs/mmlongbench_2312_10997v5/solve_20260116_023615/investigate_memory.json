@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_023615",
+  "user_question": "Which method integrates knowledge into white-box models via directive fine-tuning?",
+  "created_at": "2026-01-16T02:36:15.238667",
+  "updated_at": "2026-01-16T02:36:57.343726",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What methods integrate knowledge into white-box models via directive fine-tuning?",
+      "raw_result": "The method that integrates knowledge into white-box models via directive fine-tuning is **PKG** (Parametric Knowledge Guiding). \n\nPKG specifically substitutes the retriever module within a model to directly generate relevant documents based on queries. This substitution enables the integration of structured or external knowledge into the model’s architecture, thereby enhancing its performance by aligning retrieval behavior with task-specific instructions. Directive fine-tuning, as applied in PKG, allows for targeted adaptation of model components—particularly the retriever—to better serve domain-specific or instruction-driven tasks.\n\nThis approach contrasts with general fine-tuning by focusing on component-level substitution guided by explicit directives, making it particularly suitable for white-box models where internal structure and modularity can be leveraged for precise knowledge injection.\n\n### References\n\n- [1] PKG integrates knowledge into white-box models via directive fine-tuning by substituting the retriever module to generate relevant documents based on queries.\n- [2] Directive fine-tuning substitutes components like the retriever module to integrate knowledge into white-box models based on specific instructions.",
+      "summary": "The method that integrates knowledge into white-box models via directive fine-tuning is PKG (Parametric Knowledge Guiding). It substitutes the retriever module to directly generate relevant documents based on queries, enabling structured or external knowledge integration. This directive fine-tuning allows targeted adaptation of model components—especially the retriever—to align with task-specific instructions, making it suitable for white-box models where modularity supports precise knowledge injection.",
+      "created_at": "2026-01-16T02:36:43.071981",
+      "updated_at": "2026-01-16T02:36:53.386580"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T02:36:15.238679"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

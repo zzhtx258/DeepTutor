@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_025021",
+  "user_question": "Under the pro mode to shoot, what is the function of the icon on right hand side of the icon that select a focus mode?",
+  "created_at": "2026-01-16T02:50:21.273365",
+  "updated_at": "2026-01-16T02:51:00.958652",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the function of the icon on the right-hand side of the focus mode selector in pro mode?",
+      "raw_result": "The icon on the right-hand side of the focus mode selector in Pro Mode is the **AF· Button**. This button serves as the interface through which users can access and adjust focus settings within Pro Mode. By interacting with the AF· Button, users can select from different autofocus modes — such as AF-S (Autofocus Single), AF-C (Autofocus Continuous), or MF (Manual Focus) — depending on their photographic needs.\n\nThese focus modes are designed for specific usage scenarios:\n- **AF-S** is ideal for stationary subjects.\n- **AF-C** is optimized for tracking moving subjects.\n- **MF** allows manual focus by tapping directly on the subject of interest, such as a person’s face.\n\nThis functionality enables users to tailor focus behavior to match environmental conditions and subject movement, supporting professional-level photography by offering granular control over image sharpness and composition.\n\n### References\n\n- [1] Pro Mode\n- [2] Focus Mode\n- [3] AF· Button\n- [4] Pro Mode Focus Mode Reference Table (table)\n- [5] Page 28",
+      "summary": "The icon on the right-hand side of the focus mode selector in Pro Mode is the AF· Button. It allows users to access and adjust focus settings, choosing between AF-S for stationary subjects, AF-C for moving subjects, or MF for manual focus by tapping on the subject. This provides precise control over focus behavior for professional photography.",
+      "created_at": "2026-01-16T02:50:48.388383",
+      "updated_at": "2026-01-16T02:50:58.124448"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T02:50:21.273372"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

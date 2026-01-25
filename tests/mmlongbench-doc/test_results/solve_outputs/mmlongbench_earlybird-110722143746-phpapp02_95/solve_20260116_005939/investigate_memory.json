@@ -1,0 +1,46 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_005939",
+  "user_question": "How many pages include charts whose horizontal-axis are set as year (like 2024)?",
+  "created_at": "2026-01-16T00:59:39.994577",
+  "updated_at": "2026-01-16T01:02:15.938058",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What charts in the document have a horizontal axis set to year (like 2024)?",
+      "raw_result": "Based on the provided context, several charts in the document use a horizontal axis set to years, typically ranging from 2004 to 2010 or similar periods. These include:\n\n- **Line Chart** titled “Median European investments” and “Median U.S. investments,” which plot data across funding stages from **2004 to 2009** using the horizontal axis to represent time.\n  \n- **Horizontal Bar Chart** illustrating venture-backed exits in Germany, which displays data over the period from **2004 to 2009**, with the horizontal axis marking yearly intervals.\n\n- **3D Isometric Bar Chart** comparing revenue traction for European VC funds (1998, 2000, 2007), where the horizontal axis represents **five-year periods** (Year 1 to Year 5) for each fund vintage — not calendar years, but sequential performance years.\n\n- **Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)** — a line chart that uses the horizontal axis to display yearly data from **2004 to 2010**.\n\n- **Midstage VC Deal Comparison Chart US vs Europe 2004-2010** — a 3D bar chart tracking mid-stage VC deals annually from **2004 to 2010**.\n\n- **European Venture Fund NAV Assembly by Vintage Chart** — a 3D stacked bar chart organizing data by **vintage year from 1997 to 2009**, making the horizontal axis represent calendar years of fund inception.\n\n- **Earlystage Venture Capital Entry Valuations Comparison USA Europe 2004-2009** — a 3D area chart with a horizontal axis spanning **2004 to 2009**.\n\n- **US vs. Europe Post-IPO Performance Chart** — a line chart covering the period from **March 2004 to July 2011**, with the horizontal axis representing time in years.\n\nThese charts consistently use the horizontal axis to represent temporal progression, primarily focused on the 2004–2010 timeframe, aligning with the available data in the knowledge base.\n\n### References\n\n- [1] Median European Investments Line Chart (2004-2009)\n- [2] Germany Venture-Backed Exits Chart 2011\n- [3] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)\n- [4] Midstage VC Deal Comparison Chart US vs Europe 2004-2010\n- [5] European Venture Fund NAV Assembly by Vintage Chart",
+      "summary": "Multiple charts in the document use a horizontal axis set to calendar years, primarily ranging from 2004 to 2010. These include line charts for median investments (2004–2009), venture-backed exits in Germany (2004–2009), average exit capitalization (2004–2010), mid-stage VC deals (2004–2010), European fund NAV by vintage (1997–2009), early-stage valuations (2004–2009), and post-IPO performance (March 2004–July 2011). One 3D bar chart uses sequential performance years (Year 1–5) rather than calendar years. The most relevant charts directly answering the question are those explicitly using calendar years on the horizontal axis.",
+      "created_at": "2026-01-16T01:00:16.913445",
+      "updated_at": "2026-01-16T01:00:31.594605"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "Which pages in the document contain charts that have calendar years (like 2004, 2005, etc.) on the horizontal axis?",
+      "raw_result": "Based on the provided context, several charts feature calendar years on their horizontal axis, and specific page numbers are associated with some of these charts. The following pages contain such charts:\n\n- **Page 23**: This page includes the “Number of Midstage VC Deals Chart,” which compares deal volumes between the U.S. and Europe from 2004 to 2010, using a horizontal axis marked with annual data points.\n\n- **Page 24**: This page contains the “3D Area Chart” comparing median entry valuations for venture capital investments in the USA and Europe from 2004 to 2009. The horizontal axis spans these years.\n\n- **Page 3**: While not explicitly detailing a chart’s axis, this page is referenced as containing context about increasing liquidity events in Europe, supporting the narrative presented in charts that likely include time-series data (e.g., 2004–2010).\n\n- **Page 5**: Similarly, this page is referenced in relation to charts illustrating superior exit multiples in Europe compared to the USA, which typically involve time-series comparisons across calendar years (e.g., 2004–2010).\n\nAdditionally, while not tied to a specific page number in the context, multiple charts explicitly use calendar years (2004–2009 or 2004–2010) on their horizontal axes, including:\n- The “Median European Investments Line Chart (2004–2009)”\n- The “Median US Investments by Funding Stage 2004–2009 Line Chart”\n- The “Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)”\n\nThese charts are integral to analyzing trends over time and are referenced in the surrounding text on various pages.\n\n### References\n\n- [1] Number of Midstage (>$5M) VC Deals\n- [2] Earlystage Venture Capital Entry Valuations Comparison USA Europe 2004 2009\n- [3] Median European Investments Line Chart (2004-2009)\n- [4] Median US Investments by Funding Stage 2004-2009 Line Chart\n- [5] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)",
+      "summary": "At least four pages (pages 3, 5, 23, and 24) contain charts with calendar years (e.g., 2004–2010) on the horizontal axis. Page 23 features the 'Number of Midstage VC Deals Chart' (2004–2010), and page 24 includes a '3D Area Chart' comparing valuations from 2004 to 2009. Pages 3 and 5 are referenced in relation to time-series charts spanning similar years, though specific chart details are not provided for these pages. Additional charts using calendar years include the 'Median European Investments Line Chart (2004–2009)' and 'Average Exit Capitalization Comparison Chart (2004–2010)', but their exact page locations are not specified.",
+      "created_at": "2026-01-16T01:01:08.954058",
+      "updated_at": "2026-01-16T01:01:24.158958"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_hybrid",
+      "query": "What are all the pages in the document that contain charts with calendar years (like 2004–2010) on the horizontal axis?",
+      "raw_result": "Based on the provided context, the following pages contain charts with calendar years (such as 2004–2010) on the horizontal axis:\n\n- **Page 23**: Contains the “Number of Midstage VC Deals Chart,” which compares U.S. and European mid-stage venture capital deals from 2004 to 2010, using a horizontal axis marked with those years.\n  \n- **Page 24**: Features the “3D Area Chart” comparing median entry valuations for venture capital investments in the USA and Europe from 2004 to 2009 — this chart uses a horizontal axis displaying those years.\n\n- **Page 25**: Referenced alongside Page 23 in relation to the “Line Chart” that tracks median European investments from 2004 to 2009 — implying it also contains or references charts with calendar years on the horizontal axis.\n\nAdditionally, while not explicitly assigned to a page number, several charts referenced in the knowledge graph span calendar years such as 2004–2010 or 2004–2009 on their horizontal axes, including:\n\n- The “Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)”\n- The “Median US Investments by Funding Stage 2004-2009 Line Chart”\n- The “Median European Investments Line Chart (2004-2009)”\n\nThese charts are likely embedded within the document sections referenced above (Pages 23, 24, 25), though specific page assignments for all are not fully detailed in the context.\n\n### References\n\n- [1] Number of Midstage VC Deals Chart\n- [2] 3D Area Chart\n- [3] Median European Investments Line Chart (2004-2009)\n- [4] Median US Investments by Funding Stage 2004-2009 Line Chart\n- [5] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010)",
+      "summary": "Pages 23, 24, and 25 contain charts with calendar years (e.g., 2004–2010 or 2004–2009) on the horizontal axis. Page 23 includes the 'Number of Midstage VC Deals Chart' (2004–2010), Page 24 has the '3D Area Chart' (2004–2009), and Page 25 references a 'Line Chart' tracking European investments (2004–2009). Additional charts spanning these years are mentioned but not assigned to specific pages beyond these three.",
+      "created_at": "2026-01-16T01:01:58.837018",
+      "updated_at": "2026-01-16T01:02:11.603861"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T00:59:39.994588"
+  },
+  "metadata": {
+    "total_iterations": 4,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 3
+  }
+}

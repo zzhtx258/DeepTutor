@@ -1,18 +1,17 @@
-Overall Acc: 0.1654794520547945 | Question Number: 100
-Overall F1-score: 0.13913186994553559 | Question Number: 100
------------------------
-Single-page | Accuracy: 0.0947488584474886 | Question Number: 48
-Cross-page | Accuracy: 0.18421052631578946 | Question Number: 38
-Unanswerable | Accuracy: 0.35714285714285715 | Question Number: 14
------------------------
-Evidence Sources: Chart | Accuracy: 0.07692307692307693 | Question Number: 26
-Evidence Sources: Table | Accuracy: 0.21428571428571427 | Question Number: 14
-Evidence Sources: Pure-text (Plain-text) | Accuracy: 0.21656881930854535 | Question Number: 21
-Evidence Sources: Generalized-text (Layout) | Accuracy: 0.2 | Question Number: 15
-Evidence Sources: Figure | Accuracy: 0.034482758620689655 | Question Number: 29
------------------------
-Document Type: Research report / Introduction | Accuracy: 0.20512820512820512 | Question Number: 39
-Document Type: Tutorial/Workshop | Accuracy: 0.1542584871947588 | Question Number: 23
-Document Type: Academic paper | Accuracy: 0.19047619047619047 | Question Number: 21
-Document Type: Guidebook | Accuracy: 0.0625 | Question Number: 16
-Document Type: Brochure | Accuracy: 0.0 | Question Number: 1
+Overall Accuracy (LLM-as-Judge): 0.4500 | Question Number: 100
+Correct Answers: 45 | Total Evaluated: 100
+--------------------------------------------------
+
+按文档类型统计:
+  Research report / Introduction: Accuracy: 0.5128 | Questions: 39
+  Tutorial/Workshop: Accuracy: 0.5294 | Questions: 17
+  Academic paper: Accuracy: 0.2857 | Questions: 21
+  Guidebook: Accuracy: 0.5625 | Questions: 16
+  Brochure: Accuracy: 0.1429 | Questions: 7
+
+按证据来源统计:
+  Chart: Accuracy: 0.4231 | Questions: 26
+  Table: Accuracy: 0.2308 | Questions: 13
+  Pure-text (Plain-text): Accuracy: 0.5455 | Questions: 22
+  Generalized-text (Layout): Accuracy: 0.1667 | Questions: 18
+  Figure: Accuracy: 0.3793 | Questions: 29

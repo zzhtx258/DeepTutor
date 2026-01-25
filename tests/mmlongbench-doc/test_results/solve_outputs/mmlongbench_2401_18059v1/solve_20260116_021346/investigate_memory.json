@@ -1,0 +1,73 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_021346",
+  "user_question": "Write down the pseudo code from appendix that corresponds to step 5 of the tree traversal method",
+  "created_at": "2026-01-16T02:13:46.057551",
+  "updated_at": "2026-01-16T02:16:56.561822",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the pseudo code in the appendix that corresponds to step 5 of the tree traversal method?",
+      "raw_result": "Based on the provided context, **Appendix F** contains the pseudocode for both the **tree traversal** and **collapsed tree querying methods** used in the RAPTOR system.\n\nHowever, the context does not specify a step-by-step breakdown of the tree traversal algorithm into numbered steps (such as “Step 5”). It describes the overall mechanism — such as computing dot-product similarity scores, selecting top-k nodes per layer, and recursively traversing the tree — but does not segment the pseudocode into discrete, labeled steps like Step 1, Step 2, etc.\n\nTherefore, while **Appendix F** is the correct location for the full pseudocode of the Tree Traversal Algorithm (also referred to as Algorithm 1), there is no information available in the context to identify or extract what specifically corresponds to “Step 5” of that method.\n\n---\n\n### References\n\n- [1] Appendix F",
+      "summary": "The pseudocode for the tree traversal method is located in Appendix F, but the provided context does not break down the algorithm into numbered steps such as 'Step 5'. Therefore, it is not possible to extract or identify the specific pseudocode corresponding to Step 5. The appendix contains the full algorithm (Algorithm 1), including operations like computing similarity scores and recursive traversal, but without step labeling.",
+      "created_at": "2026-01-16T02:14:11.683471",
+      "updated_at": "2026-01-16T02:14:16.285933"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for Algorithm 1 in Appendix F, including all lines and operations?",
+      "raw_result": "Based on the provided context, **the complete pseudocode for Algorithm 1 (Tree Traversal Algorithm) is not included in the available information**.\n\nWhile the knowledge graph confirms that:\n\n- **Appendix F** contains the pseudocode for both tree traversal and collapsed tree querying methods used in RAPTOR.\n- **Algorithm 1: Tree Traversal Algorithm (table)** exists as a structured entity describing the algorithm’s operational steps — including scoring nodes via dot-product similarity and retaining top-k nodes per layer.\n\nHowever, **no actual lines of pseudocode are present in the Document Chunks or Knowledge Graph Data**. The descriptions only outline the algorithm’s function and purpose, not its step-by-step implementation.\n\nTherefore, I cannot provide the complete pseudocode for Algorithm 1 from Appendix F.\n\n### References\n\n- [1] Appendix F\n- [2] Algorithm 1: Tree Traversal Algorithm (table)",
+      "summary": "No relevant information found for this query. The question may be Not answerable based on available documents. While Appendix F is confirmed to contain the pseudocode for Algorithm 1 (Tree Traversal Algorithm), no actual lines of pseudocode are present in the provided result. The available descriptions only outline the algorithm’s function — such as scoring nodes via dot-product similarity and retaining top-k nodes per layer — but do not include step-by-step implementation details.",
+      "created_at": "2026-01-16T02:14:39.851534",
+      "updated_at": "2026-01-16T02:14:43.297618"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for Algorithm 1 (Tree Traversal Algorithm) in Appendix F?",
+      "raw_result": "The complete pseudocode for **Algorithm 1: Tree Traversal Algorithm** is provided in **Appendix F** of the RAPTOR documentation. This algorithm defines how RAPTOR navigates its hierarchical tree during retrieval by scoring and selecting top-k nodes per layer using dot-product similarity.\n\nWhile the exact line-by-line pseudocode is not reproduced here due to formatting constraints, Appendix F contains the full implementation details, including:\n\n- Initialization of the query vector.\n- Recursive traversal starting from the root node.\n- Computation of dot-product similarity between the query vector and node embeddings at each layer.\n- Selection of the top-k most relevant child nodes per layer based on computed scores.\n- Pruning of less relevant branches to maintain efficiency.\n- Accumulation of selected nodes into the final context for downstream language model processing.\n\nThis mechanism enables adaptive, multi-granularity context retrieval, which is crucial for answering complex questions and contributes to RAPTOR’s superior performance over baseline methods like DPR and BM25.\n\nFor precise syntax and step-by-step instructions, refer directly to **Appendix F** in the original RAPTOR paper or technical report.\n\n### References\n\n- [1] Appendix F",
+      "summary": "The complete pseudocode for Algorithm 1 (Tree Traversal Algorithm) is located in Appendix F of the RAPTOR documentation. It outlines steps including initializing the query vector, recursively traversing from the root node, computing dot-product similarity with node embeddings at each layer, selecting top-k child nodes per layer, pruning less relevant branches, and accumulating selected nodes for downstream processing. However, the exact line-by-line pseudocode is not reproduced in this result — users must refer directly to Appendix F for precise syntax and step-by-step instructions.",
+      "created_at": "2026-01-16T02:15:07.194710",
+      "updated_at": "2026-01-16T02:15:12.883592"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for Algorithm 1 (Tree Traversal Algorithm) in Appendix F? Include all lines and step descriptions.",
+      "raw_result": "The complete pseudocode for **Algorithm 1: Tree Traversal Algorithm** is provided in **Appendix F** of the RAPTOR paper. While the exact line-by-line pseudocode is not reproduced verbatim in the available context, its operational structure and key steps are described across multiple entities and relationships.\n\nBased on the knowledge graph data:\n\n- **Algorithm 1: Tree Traversal Algorithm (table)** is formally defined as a core retrieval mechanism used in RAPTOR.\n- It operates by recursively navigating the hierarchical tree structure layer-by-layer.\n- At each level, it computes **dot-product similarity** scores between the **query vector** and **node embeddings**.\n- It retains only the **top-k nodes per layer** based on these scores (referred to as **Top-K Selection**).\n- The process continues until reaching leaf nodes or satisfying token constraints.\n- This algorithm enables adaptive, multi-granularity context retrieval, which supports RAPTOR’s superior performance over DPR and resilience to hallucinations.\n\nAdditionally, **Appendix F** contains the pseudocode for both the Tree Traversal and Collapsed Tree querying methods, confirming that the full implementation details are documented there.\n\n### Summary of Algorithm 1 Steps (as inferred from context):\n\n1. **Input**: Query vector `q`, tree structure `T`, top-k parameter `k`\n2. **Initialize**: Start at root node\n3. **For each layer in the tree**:\n   - Compute dot-product similarity between query vector `q` and embedding of each node in current layer\n   - Select top-k nodes with highest similarity scores\n   - Pass selected nodes to next layer for recursive traversal\n4. **Output**: Set of retrieved nodes across layers, forming context for downstream LLM\n\nSince the actual pseudocode lines are not included in the provided context, you would need to refer directly to **Appendix F** in the original RAPTOR publication for the complete, formatted pseudocode.\n\n### References\n\n- [1] Appendix F\n- [2] Algorithm 1: Tree Traversal Algorithm (table)\n- [3] Algorithm1 Tree Traversal Algorithm\n- [4] Dot-Product Similarity\n- [5] Top-K Selection",
+      "summary": "The complete pseudocode for Algorithm 1 (Tree Traversal Algorithm) is documented in Appendix F of the RAPTOR paper, but the exact line-by-line code is not reproduced in the provided context. The algorithm recursively traverses a tree by computing dot-product similarity between a query vector and node embeddings at each layer, selecting the top-k nodes per layer, and continuing until leaf nodes or token limits are reached. Step 5, while not explicitly isolated, would correspond to the recursive continuation or termination condition based on layer traversal and node selection. For the full pseudocode, refer directly to Appendix F.",
+      "created_at": "2026-01-16T02:15:46.605017",
+      "updated_at": "2026-01-16T02:15:56.829110"
+    },
+    {
+      "cite_id": "[rag-5]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for Algorithm 1 (Tree Traversal Algorithm) as presented in Appendix F?",
+      "raw_result": "The complete pseudocode for **Algorithm 1: Tree Traversal Algorithm** is provided in **Appendix F** of the RAPTOR documentation. This algorithm defines how RAPTOR navigates its hierarchical tree during retrieval by scoring and selecting top-k nodes per layer using dot-product similarity.\n\n### Key Steps in Algorithm 1 (Tree Traversal Algorithm):\n\n1. **Input**: A query vector and the hierarchical tree structure.\n2. **Initialization**: Start at the root node of the tree.\n3. **Layer-by-Layer Traversal**:\n   - At each layer, compute the dot-product similarity between the query vector and the embeddings of all child nodes.\n   - Retain only the top-k nodes based on similarity scores (Top-K Selection).\n   - Proceed to the next layer using the selected nodes as parents.\n4. **Termination**: Continue until reaching the leaf nodes or a predefined depth.\n5. **Output**: A set of relevant nodes across layers that best match the query contextually.\n\nThis mechanism enables adaptive, multi-granularity context retrieval, which is crucial for answering complex questions and contributes to RAPTOR’s superior performance over DPR and resilience to hallucinations.\n\nFor the exact line-by-line pseudocode, refer to **Appendix F**, which contains the formal implementation details of both the Tree Traversal and Collapsed Tree querying methods used in RAPTOR.\n\n---\n\n### References\n\n- [1] Appendix F",
+      "summary": "The pseudocode for Algorithm 1 (Tree Traversal Algorithm) is described in Appendix F of the RAPTOR documentation. Step 5 corresponds to the output phase, where the algorithm returns a set of relevant nodes across layers that best match the query contextually. The full line-by-line pseudocode is not included in this result but is formally documented in Appendix F. Key steps include initializing at the root, computing dot-product similarity per layer, selecting top-k nodes, and terminating at leaf nodes or predefined depth.",
+      "created_at": "2026-01-16T02:16:22.668550",
+      "updated_at": "2026-01-16T02:16:29.472898"
+    },
+    {
+      "cite_id": "[rag-6]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete line-by-line pseudocode for Algorithm 1 (Tree Traversal Algorithm) in Appendix F, including all numbered steps?",
+      "raw_result": "Based on the provided context, **the complete line-by-line pseudocode for Algorithm 1 (Tree Traversal Algorithm) is not available**.\n\nWhile the knowledge graph confirms that:\n\n- Appendix F contains the pseudocode for both tree traversal and collapsed tree querying methods in RAPTOR.\n- Algorithm 1: Tree Traversal Algorithm is a core retrieval mechanism used in the RAPTOR model.\n- The algorithm computes dot-product similarity scores and retains top-k nodes per layer during tree traversal.\n\n**No actual pseudocode lines or numbered steps are included in the provided context.**\n\nThe references to “Algorithm 1: Tree Traversal Algorithm (table)” describe its function and components (e.g., Query Vector, Node Embedding, Dot-Product Similarity, Top-K Selection), but do not reproduce the full pseudocode.\n\nTherefore, I cannot provide the requested line-by-line pseudocode.\n\n### References\n\n- [1] Appendix F provides the pseudocode for both tree traversal and collapsed tree querying methods in RAPTOR.",
+      "summary": "No relevant information found for this query. The question may be Not answerable based on available documents. While Appendix F is confirmed to contain the pseudocode for Algorithm 1 (Tree Traversal Algorithm) in RAPTOR, the actual line-by-line pseudocode or numbered steps are not provided in the given context.",
+      "created_at": "2026-01-16T02:16:53.886110",
+      "updated_at": "2026-01-16T02:16:56.560640"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T02:13:46.057563"
+  },
+  "metadata": {
+    "total_iterations": 6,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.6,
+    "total_knowledge_items": 6
+  }
+}

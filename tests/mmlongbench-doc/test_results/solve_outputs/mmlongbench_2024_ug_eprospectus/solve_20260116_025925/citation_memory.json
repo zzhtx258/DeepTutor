@@ -1,0 +1,47 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T02:59:25.015557",
+  "updated_at": "2026-01-16T03:00:15.742170",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the application deadlines or end dates for different groups of applicants mentioned in the brochure?",
+      "raw_result": "Based on the provided context, here are the application deadlines or end dates for different groups of applicants mentioned in the NTU undergraduate admissions materials:\n\n### **Application Deadlines by Qualification Type**\n\n- **Singapore-Cambridge GCE A Level Applicants**:  \n  The application period begins on the date of results release and ends on **19 March 2024**.\n\n- **NUS High School Diploma Applicants**:  \n  The application window runs from **1 December 2023 to 20 January 2024**.\n\n- **Polytechnic Diploma Holders**:  \n  Applicants must submit their applications between **1 February 2024 and 21 February 2024**.\n\n- **International Baccalaureate (IB) Diploma Applicants**:  \n  Applications begin on **1 December 2023**, but no specific end date is provided in the available data.\n\n- **Part-Time B.Eng Program Applicants (for polytechnic diploma holders)**:  \n  The application period is from **3 November 2023 to 15 January 2024**, designed to accommodate working students.\n\n- **Part-Time B.Tech in Computing (SkillsFuture Work-Study Degree)**:  \n  This program is also listed under the same application framework as other part-time degrees, though a specific deadline is not explicitly stated beyond alignment with general part-time program timelines.\n\n---\n\n### **Additional Notes**\n\n- The **Adult Learners Scheme** is referenced as an alternative admission pathway that considers professional experience alongside academic qualifications, but no distinct application deadline is specified — it likely follows the general application periods for relevant qualification types.\n\n- **Scholarship applications** can be submitted concurrently with admission applications, and their deadlines generally align with the respective admission windows.\n\n- All applicants, regardless of nationality or program type, must use accepted payment methods such as VISA, Mastercard, or PayNow to complete their application fees.\n\n---\n\nThese deadlines reflect NTU’s structured approach to admissions, accommodating diverse educational backgrounds while aligning with academic calendars and institutional planning cycles.\n\n### References\n\n- [1] NTU Undergraduate Application Requirements by Qualification Type (table)\n- [2] Application Period\n- [3] Singapore-Cambridge GCE A Level\n- [4] NUS High School Diploma\n- [5] Polytechnic Diploma",
+      "source": "NTU Undergraduate Application Requirements by Qualification Type (table), Application Period, Singapore-Cambridge GCE A Level, NUS High School Diploma, Polytechnic Diploma",
+      "content": "The latest end of application period is for Singapore-Cambridge GCE A Level Applicants, ending on 19 March 2024. Other groups have earlier deadlines: NUS High School Diploma (20 January 2024), Polytechnic Diploma Holders (21 February 2024), and Part-Time B.Eng Program (15 January 2024). IB Diploma Applicants have no specified end date in the provided data. Adult Learners Scheme and scholarship applications align with respective program deadlines.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "NTU Undergraduate Application Requirements by Qualification Type (table)"
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Application Period"
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Singapore-Cambridge GCE A Level"
+          },
+          {
+            "reference_id": "[4]",
+            "source": "NUS High School Diploma"
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Polytechnic Diploma"
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:59:57.479559",
+      "updated_at": "2026-01-16T03:00:05.137212"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "version": "solve_chain_v1",
+  "task_id": "solve_20260115_173657",
+  "user_question": "Which method integrates knowledge into white-box models via directive fine-tuning?",
+  "created_at": "2026-01-15T17:36:57.344693",
+  "updated_at": "2026-01-15T17:37:16.135064",
+  "solve_chains": [
+    {
+      "step_id": "S1",
+      "step_target": "Analysis：Identify the method that integrates knowledge into white-box models via directive fine-tuning based on available knowledge.",
+      "available_cite": [
+        "[rag-1]"
+      ],
+      "tool_calls": [
+        {
+          "tool_type": "none",
+          "query": "PKG (Parametric Knowledge Guiding)",
+          "cite_id": null,
+          "raw_answer": "PKG (Parametric Knowledge Guiding)",
+          "summary": "PKG (Parametric Knowledge Guiding)",
+          "status": "none",
+          "metadata": {
+            "plan_order": 1,
+            "kb_name": "mmlongbench_2312_10997v5"
+          },
+          "created_at": "2026-01-15T17:37:04.143137",
+          "updated_at": "2026-01-15T17:37:04.143214",
+          "call_id": "tc_84b53d03"
+        }
+      ],
+      "step_response": "## S1: Identification of the Method for Integrating Knowledge via Directive Fine-Tuning in White-Box Models\n\nThe method that integrates knowledge into white-box models through directive fine-tuning is **PKG (Parametric Knowledge Guiding)** [rag-1]. This approach operates by substituting the retriever module within a model architecture to directly generate contextually relevant documents based on input queries. By doing so, PKG enables the structured or external knowledge to be injected into the model in a targeted and instruction-aligned manner.\n\nDirective fine-tuning, as implemented in PKG, allows for precise adaptation of specific model components — particularly the retriever — to conform with task-specific directives. This modularity is especially advantageous in white-box models, where internal structures are transparent and accessible, facilitating controlled and interpretable knowledge integration.\n\nIn essence, PKG transforms the retrieval process from a black-box operation into a parametric, trainable component that can be fine-tuned according to explicit instructions, thereby enhancing both performance and interpretability in knowledge-intensive tasks.\n\nThis method is distinct from general fine-tuning or retrieval-augmented generation (RAG) approaches because it explicitly targets the retriever module for parametric adaptation under directive guidance, making it uniquely suited for white-box architectures where component-level control is required [rag-1].\n\n### Summary\nPKG (Parametric Knowledge Guiding) is the identified method that enables knowledge integration into white-box models via directive fine-tuning, primarily through substitution and adaptation of the retriever module to align with task-specific instructions.",
+      "status": "done",
+      "used_citations": [
+        "[rag-1]"
+      ],
+      "created_at": "2026-01-15T17:37:00.165816",
+      "updated_at": "2026-01-15T17:37:16.133187"
+    }
+  ],
+  "metadata": {
+    "total_steps": 1,
+    "completed_steps": 1,
+    "total_tool_calls": 1
+  }
+}

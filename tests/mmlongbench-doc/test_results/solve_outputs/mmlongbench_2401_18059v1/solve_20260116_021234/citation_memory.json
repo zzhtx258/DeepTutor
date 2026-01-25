@@ -1,0 +1,52 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T02:12:34.307480",
+  "updated_at": "2026-01-16T02:13:26.010536",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the clustering algorithm model used in this paper, and what challenges does it face?",
+      "raw_result": "The clustering algorithm used in the RAPTOR system is based on **Gaussian Mixture Models (GMM)**, which employ a probabilistic framework to group text segments according to assumed Gaussian distributions. This method enables **soft clustering**, allowing individual text segments to belong to multiple clusters simultaneously, thereby reflecting their relevance across overlapping thematic areas.\n\nTo determine the optimal number of clusters and balance model complexity with fit, the algorithm utilizes the **Bayesian Information Criterion (BIC)**. After selecting the optimal cluster count, it estimates model parameters using the **Expectation-Maximization (EM) Algorithm**. Additionally, to mitigate challenges posed by high-dimensional vector embeddings, RAPTOR applies **Uniform Manifold Approximation and Projection (UMAP)** for dimensionality reduction before clustering.\n\n### Challenges Faced by the Clustering Algorithm:\n\n1. **High-Dimensional Embeddings**: Text segments are represented as dense vector embeddings, which can be very high-dimensional. This increases computational complexity and can degrade clustering performance without proper preprocessing. The use of UMAP helps address this challenge by reducing dimensionality while preserving semantic relationships.\n\n2. **Semantic Overlap and Ambiguity**: Since soft clustering allows segments to belong to multiple clusters, the algorithm must effectively handle ambiguous or multi-topic content. While this flexibility improves thematic coverage, it also requires careful tuning to avoid over-fragmentation or redundancy.\n\n3. **Computational Cost**: Although RAPTOR’s overall tree-building process scales linearly with document length (as shown in Figure 6), the iterative nature of recursive clustering and summarization can still incur significant computational overhead, especially when processing large corpora or complex texts requiring deeper tree layers.\n\n4. **Token Threshold Constraints**: When local clusters exceed predefined token thresholds during summarization, the system must recursively apply clustering within those clusters to maintain the hierarchical structure. This introduces additional complexity in managing layer depth and ensuring consistent compression efficiency (~72% across datasets, except QASPER at 65%).\n\nDespite these challenges, the clustering mechanism significantly enhances retrieval accuracy compared to contiguous chunking or recency-based encoding, as validated in ablation studies and comparative evaluations against baselines like DPR and BM25.\n\n### References\n\n- [1] Gaussian Mixture Models\n- [2] Bayesian Information Criterion\n- [3] Expectation-Maximization Algorithm\n- [4] Uniform Manifold Approximation and Projection\n- [5] Clustering Algorithm",
+      "source": "Gaussian Mixture Models, Bayesian Information Criterion, Expectation-Maximization Algorithm, Uniform Manifold Approximation and Projection, Clustering Algorithm",
+      "content": "The clustering algorithm in the RAPTOR system is based on Gaussian Mixture Models (GMM), which use a probabilistic framework for soft clustering of text segments. Key challenges include handling high-dimensional embeddings (mitigated by UMAP), managing semantic overlap and ambiguity in multi-topic content, computational cost from recursive clustering, and token threshold constraints that require deeper hierarchical processing. Despite these, the method improves retrieval accuracy over baselines like DPR and BM25.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Gaussian Mixture Models",
+            "content": "The clustering algorithm used in the RAPTOR system is based on Gaussian Mixture Models (GMM), which employ a probabilistic framework to group text segments according to assumed Gaussian distributions."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Bayesian Information Criterion",
+            "content": "To determine the optimal number of clusters and balance model complexity with fit, the algorithm utilizes the Bayesian Information Criterion (BIC)."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Expectation-Maximization Algorithm",
+            "content": "After selecting the optimal cluster count, it estimates model parameters using the Expectation-Maximization (EM) Algorithm."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "Uniform Manifold Approximation and Projection",
+            "content": "To mitigate challenges posed by high-dimensional vector embeddings, RAPTOR applies Uniform Manifold Approximation and Projection (UMAP) for dimensionality reduction before clustering."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Clustering Algorithm",
+            "content": "The clustering mechanism significantly enhances retrieval accuracy compared to contiguous chunking or recency-based encoding, as validated in ablation studies and comparative evaluations against baselines like DPR and BM25."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:13:04.465207",
+      "updated_at": "2026-01-16T02:13:15.974156"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

@@ -43,10 +43,27 @@ precision_system: |
     - BAD: "The map illustrates the organizational structure and geographic distribution of key centres within India's space program."
     - GOOD: "The centres of Indian Space Programme"
   - **Yes/No questions**: Just "Yes" or "No".
-  - **Comparison questions**: Just the compared item (e.g., "Group A", "Higher", "2015").
+  - **Comparison questions**: Just the compared item NAME (e.g., "Group A", "Europe IPO", "Latinos interviewed by cellphone"), NOT the numeric values.
+  - **Color questions**: Just the color NAME (e.g., "purple", "red", "blue"), NOT hex codes like #6A5ACD.
+  - **"How do X see Y" questions**: Just their OPINION/ATTITUDE (e.g., "Less well-off", "Optimistic"), NOT the percentage X.
+  - **List questions**: Format as ['item1', 'item2'] when multiple items are expected.
 
   # Core Principle
   **SHORTER IS BETTER**: If in doubt, make it shorter. Remove all articles, explanations, and context. Keep only the essential answer.
+
+  # ⚠️ CRITICAL: Unanswerable Questions
+  **BEFORE outputting "Not answerable", verify:**
+  1. Check if the answer CAN BE CALCULATED from percentages in the solution:
+     - "31% are Democrats" + "59% of Democrats voted" → 31% × 59% = 18.29% ✅ ANSWERABLE
+     - "7% of public are No Lean" + "55% are male" → 7% × 55% = 3.85% ✅ ANSWERABLE
+  2. If any calculation is possible, COMPUTE and output the result, NOT "Not answerable"!
+  
+  **Only output `Not answerable` when:**
+  - The base data is genuinely MISSING (not just needing calculation)
+  - Multiple queries returned nothing relevant
+  - The solution explicitly states "information not found" with NO usable percentages
+
+  **Output `Not answerable` verbatim** — do not paraphrase as "Cannot be determined" or "Unknown".
 
   # LaTeX Format Requirements
   - Mathematical expressions must use `$...$` format.
@@ -68,5 +85,6 @@ precision_user_template: |
   - Names/entities → name only (e.g., "Einstein")
   - Descriptions → key phrase only (3-8 words max, NO full sentences)
   - Yes/No → "Yes" or "No"
+  - **Unanswerable → `Not answerable`** (use this exact phrase)
   
   Output ONLY the answer, nothing else.

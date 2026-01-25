@@ -1,0 +1,304 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T03:00:32.179382",
+  "updated_at": "2026-01-16T03:06:45.559858",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the top 10 reasons why NTU smart campus is for you?",
+      "raw_result": "Based on the provided context, while there is a clear reference to a section titled **“Top 10 Reasons Why NTU Smart Campus Is For You”** — appearing as both a graphic title card and a listed section in the prospectus — the actual *list of the top 10 reasons* is not detailed in the available knowledge graph or document chunks.\n\nThe context confirms that this section exists to promote the NTU Smart Campus to prospective students and is visually supported by imagery such as the “NTU Smart Campus UG Lounge Interior with Contents Overlay” and the “NTU Smart Campus Top 10 Reasons Title Card.” These materials emphasize themes like:\n\n- **All-In-One Convenience** (via Smart Pass for access and payments)\n- **Green & Sustainable Campus** (eco-friendly infrastructure)\n- **Immersive Learning** (digital tools, flipped classrooms)\n- **Vibrant Campus Life** (student interaction, clubs, events)\n- **Smart Mobility Experience Centre** (real-time shuttle updates)\n- **Open-Plan Layouts & Light-Colored Wood Interiors** (collaborative, natural spaces)\n- **Food and Retail Services** (accessible dining/shopping at North Spine Plaza)\n- **IT Services & NTU Maps** (navigation, connectivity, virtual learning)\n- **Interdisciplinary Collaboration** (students from diverse fields working together)\n- **Global Exposure & Leadership Development** (programs like OGEM, Impactful Leadership)\n\nHowever, these are *features* and *themes* associated with the campus, not an explicit numbered list of “top 10 reasons.”\n\n### Conclusion:\nThe specific “Top 10 Reasons” are not enumerated in the provided context. The information available only confirms the *existence* of such a section and its thematic focus areas. To obtain the full list, you would need to consult the official NTU prospectus or promotional materials where this section is fully detailed.\n\n### References\n\n- [1] NTU Smart Campus Top 10 Reasons Title Card (image)\n- [2] Top 10 Reasons Why NTU Smart Campus Is For You\n- [3] NTU Smart Campus UG Lounge Interior with Contents Overlay (image)\n- [4] NTU Prospectus\n- [5] NTU Smart Campus",
+      "source": "NTU Smart Campus Top 10 Reasons Title Card (image), Top 10 Reasons Why NTU Smart Campus Is For You, NTU Smart Campus UG Lounge Interior with Contents Overlay (image), NTU Prospectus, NTU Smart Campus",
+      "content": "The provided result confirms the existence of a section titled 'Top 10 Reasons Why NTU Smart Campus Is For You' but does not list the actual numbered reasons. It describes associated themes like smart access, sustainability, immersive learning, and campus life — many of which imply human presence (e.g., student interaction, collaborative spaces). However, no specific figure or reason is described in enough detail to determine whether any exclude people. The document mentions visual materials (e.g., title card, lounge interior) but does not specify their content. Therefore, it is not possible to identify which reason — if any — corresponds to a figure without persons.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "NTU Smart Campus Top 10 Reasons Title Card (image)",
+            "content": "Image referenced as part of the promotional section, but no detailed description of its content is provided."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Top 10 Reasons Why NTU Smart Campus Is For You",
+            "content": "Section exists in prospectus/promotional material; actual list of 10 reasons not provided in available context."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "NTU Smart Campus UG Lounge Interior with Contents Overlay (image)",
+            "content": "Visual material mentioned; no details on whether figures include people."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "NTU Prospectus",
+            "content": "Source where full list may be found; not accessible in current context."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "NTU Smart Campus",
+            "content": "General reference to the initiative; no specific details on figures or person inclusion."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T03:01:08.785266",
+      "updated_at": "2026-01-16T03:01:21.336268"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the figures associated with each of the top 10 reasons why NTU Smart Campus is for you, and do they include any people?",
+      "raw_result": "Based on the provided context, there is no explicit list of the “Top 10 Reasons Why NTU Smart Campus Is For You” with corresponding figures or images assigned to each individual reason. The entity “Top 10 Reasons Why NTU Smart Campus Is For You” is referenced as a section title in the prospectus and as part of promotional graphics, but the specific content or numbered list of reasons is not detailed in the available knowledge base.\n\nHowever, several images associated with the NTU Smart Campus are described, and many of them do include people:\n\n- **NTU Smart Campus Collaborative Learning Scene (image)**: Features four diverse students collaborating around a table using laptops and tablets.\n- **Denise Chua and Peers at Impactful Leadership Graduation (image)**: Shows a group photo of Denise Chua and peers celebrating graduation.\n- **NTU Students Collaborating in Innovation Lab (image)**: Depicts seven diverse students working together in a tech-enabled classroom.\n- **NTU Students Gathering on Campus Lawn (image)**: Shows five diverse students relaxing and interacting on a sunny lawn.\n- **NTU Students Walking on Campus with Page Number 7 Overlay (image)**: Features three diverse students walking and conversing.\n- **NTU Student Camaraderie Outdoor Scene (image)**: Shows four diverse students joyfully interacting outdoors.\n- **NTU Students Walking Together Across Disciplines (image)**: Depicts three students from different disciplines walking and laughing together.\n- **NTU Student Athlete Competing in Badminton Match (image)**: Shows a female student athlete competing in badminton.\n\nThese images visually reinforce themes of collaboration, leadership, community, and vibrant campus life — all likely aligned with the broader messaging of the “Top 10 Reasons” section — but none are explicitly tied to a numbered reason within that list.\n\nIn summary:\n- The specific figures for each of the top 10 reasons are not provided in the context.\n- Many of the images associated with the NTU Smart Campus do include people, highlighting student interaction, diversity, and engagement.\n\n### References\n\n- [1] NTU Smart Campus Collaborative Learning Scene (image)\n- [2] Denise Chua and Peers at Impactful Leadership Graduation (image)\n- [3] NTU Students Collaborating in Innovation Lab (image)\n- [4] NTU Students Gathering on Campus Lawn (image)\n- [5] NTU Students Walking on Campus with Page Number 7 Overlay (image)",
+      "source": "NTU Smart Campus Collaborative Learning Scene (image), Denise Chua and Peers at Impactful Leadership Graduation (image), NTU Students Collaborating in Innovation Lab (image), NTU Students Gathering on Campus Lawn (image), NTU Students Walking on Campus with Page Number 7 Overlay (image)",
+      "content": "The specific figures corresponding to each of the top 10 reasons why NTU Smart Campus is for you are not provided in the available information. While several campus images are described — such as collaborative learning scenes, graduation celebrations, innovation labs, and outdoor gatherings — all of them include people. There is no identified figure among these that excludes human presence. Therefore, based on current data, no reason from the top 10 can be confirmed to have a figure without any person.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "NTU Smart Campus Collaborative Learning Scene (image)",
+            "content": "Features four diverse students collaborating around a table using laptops and tablets."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Denise Chua and Peers at Impactful Leadership Graduation (image)",
+            "content": "Shows a group photo of Denise Chua and peers celebrating graduation."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "NTU Students Collaborating in Innovation Lab (image)",
+            "content": "Depicts seven diverse students working together in a tech-enabled classroom."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "NTU Students Gathering on Campus Lawn (image)",
+            "content": "Shows five diverse students relaxing and interacting on a sunny lawn."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "NTU Students Walking on Campus with Page Number 7 Overlay (image)",
+            "content": "Features three diverse students walking and conversing."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T03:01:59.648806",
+      "updated_at": "2026-01-16T03:02:12.106171"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_hybrid",
+      "query": "Which figure corresponds to Reason #1 in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section, and does it include any person?",
+      "raw_result": "Based on the provided context, there is no specific information identifying which figure corresponds to Reason #1 in the “Top 10 Reasons Why NTU Smart Campus Is For You” section.\n\nWhile the context references several images associated with the NTU Smart Campus and the “Top 10 Reasons” section — such as:\n\n- **NTU Smart Campus Top 10 Reasons Title Card (image)** — which introduces the section but does not depict a numbered reason.\n- **NTU Smart Campus UG Lounge Interior with Contents Overlay (image)** — visually linked to the “Top 10 Reasons” section, showing architectural interior but no people.\n- **NTU Smart Campus Collaborative Learning Scene (image)** — depicts four diverse students collaborating around a table, and is associated with the Smart Campus environment described across Pages 19–21, which are referenced in the prospectus alongside the Building Icon used for the “Top 10 Reasons” section.\n\nHowever, none of the provided knowledge graph entities or relationships explicitly assign any image or figure to “Reason #1.” Additionally, while some images like the **Collaborative Learning Scene** do include persons, there is no direct mapping from that image (or any other) to a specific numbered reason in the “Top 10” list.\n\nTherefore, based solely on the available context:\n\n> **It cannot be determined which figure corresponds to Reason #1. There is also no confirmed association between any specific numbered reason and an image containing a person.**\n\n### References\n\n- [1] NTU Smart Campus Top 10 Reasons Title Card (image)\n- [2] NTU Smart Campus UG Lounge Interior with Contents Overlay (image)\n- [3] NTU Smart Campus Collaborative Learning Scene (image)\n- [4] NTU Smart Campus Icon Representation (image)\n- [5] Page 19–21",
+      "source": "NTU Smart Campus Top 10 Reasons Title Card (image), NTU Smart Campus UG Lounge Interior with Contents Overlay (image), NTU Smart Campus Collaborative Learning Scene (image), Page 19–21",
+      "content": "It cannot be determined which figure corresponds to Reason #1 in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section, as no explicit mapping exists between numbered reasons and specific images. While some images (e.g., Collaborative Learning Scene) include people, and others (e.g., UG Lounge Interior) do not, none are confirmed to represent Reason #1. The document references pages 19–21 and several images but does not assign any to a specific reason number.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "NTU Smart Campus Top 10 Reasons Title Card (image)",
+            "content": "Introduces the section but does not depict a numbered reason."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "NTU Smart Campus UG Lounge Interior with Contents Overlay (image)",
+            "content": "Visually linked to the 'Top 10 Reasons' section, showing architectural interior but no people."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "NTU Smart Campus Collaborative Learning Scene (image)",
+            "content": "Depicts four diverse students collaborating around a table, associated with Smart Campus environment described across Pages 19–21."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Page 19–21",
+            "content": "Referenced alongside the Building Icon used for the 'Top 10 Reasons' section, but no direct image-to-reason mapping is provided."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T03:02:59.860411",
+      "updated_at": "2026-01-16T03:03:56.352560"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_hybrid",
+      "query": "Which figure corresponds to Reason #2 in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section, and does it include any person?",
+      "raw_result": "Based on the provided context, there is no explicit information that directly links a specific figure or image to “Reason #2” in the “Top 10 Reasons Why NTU Smart Campus Is For You” section. The context confirms the existence of this section as a promotional title card and references several images associated with the broader NTU Smart Campus theme — such as collaborative learning scenes, sustainability icons, student portraits, and lounge interiors — but none are explicitly labeled or mapped to a numbered reason within that list.\n\nFurthermore, while multiple images referenced in the context do include people — for example:\n\n- **NTU Smart Campus Collaborative Learning Scene (image)**: Features four diverse students collaborating around a table.\n- **Denise Chua and Peers at Impactful Leadership Graduation (image)**: Shows Denise Chua and peers celebrating.\n- **NTU Student Gathering at Outdoor Campus Event (image)**: Depicts diverse students smiling and waving.\n- **NTU Students Walking on Campus with Page Number 7 Overlay (image)**: Shows three students walking together.\n- **NTU Student Camaraderie Outdoor Scene (image)**: Features four diverse students interacting joyfully.\n\n— these are not specifically tied to Reason #2.\n\nTherefore, based solely on the available information, it is not possible to identify which figure corresponds to Reason #2, nor can we confirm whether such a figure includes a person.\n\n### References\n\n- [1] NTU Smart Campus Collaborative Learning Scene (image)\n- [2] Denise Chua and Peers at Impactful Leadership Graduation (image)\n- [3] NTU Student Gathering at Outdoor Campus Event (image)\n- [4] NTU Students Walking on Campus with Page Number 7 Overlay (image)\n- [5] NTU Student Camaraderie Outdoor Scene (image)",
+      "source": "NTU Smart Campus Collaborative Learning Scene (image), Denise Chua and Peers at Impactful Leadership Graduation (image), NTU Student Gathering at Outdoor Campus Event (image), NTU Students Walking on Campus with Page Number 7 Overlay (image), NTU Student Camaraderie Outdoor Scene (image)",
+      "content": "No specific figure is explicitly linked to Reason #2 in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section. While several images referenced in the context include people (e.g., students collaborating, graduating, or walking on campus), none are mapped to numbered reasons. Therefore, it is not possible to determine whether the figure for Reason #2 includes a person based on available information.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "NTU Smart Campus Collaborative Learning Scene (image)",
+            "content": "Features four diverse students collaborating around a table."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Denise Chua and Peers at Impactful Leadership Graduation (image)",
+            "content": "Shows Denise Chua and peers celebrating."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "NTU Student Gathering at Outdoor Campus Event (image)",
+            "content": "Depicts diverse students smiling and waving."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "NTU Students Walking on Campus with Page Number 7 Overlay (image)",
+            "content": "Shows three students walking together."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "NTU Student Camaraderie Outdoor Scene (image)",
+            "content": "Features four diverse students interacting joyfully."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T03:03:24.436038",
+      "updated_at": "2026-01-16T03:04:07.683342"
+    },
+    {
+      "cite_id": "[rag-5]",
+      "tool_type": "rag_hybrid",
+      "query": "Which figure corresponds to Reason #3 in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section, and does it include any person?",
+      "raw_result": "Based on the provided context, there is no specific information identifying which figure corresponds to Reason #3 in the “Top 10 Reasons Why NTU Smart Campus Is For You” section. The context references the section title and its promotional graphic (e.g., “NTU Smart Campus Top 10 Reasons Title Card (image)”), but it does not break down individual reasons or associate them with specific figures or images.\n\nAdditionally, while several images referenced in the context depict people — such as “Denise Chua and Peers at Impactful Leadership Graduation (image)” or “NTU Students Walking on Campus with Page Number 7 Overlay (image)” — none are explicitly linked to Reason #3 of the “Top 10 Reasons” section.\n\nTherefore, based strictly on the available context:\n\n- The figure corresponding to Reason #3 cannot be identified.\n- It is also not possible to determine whether such a figure includes any person.\n\n### References\n\n- [1] NTU Smart Campus Top 10 Reasons Title Card (image)\n- [2] Top 10 Reasons Why NTU Smart Campus Is For You\n- [3] Denise Chua and Peers at Impactful Leadership Graduation (image)\n- [4] NTU Students Walking on Campus with Page Number 7 Overlay (image)",
+      "source": "NTU Smart Campus Top 10 Reasons Title Card (image), Top 10 Reasons Why NTU Smart Campus Is For You, Denise Chua and Peers at Impactful Leadership Graduation (image), NTU Students Walking on Campus with Page Number 7 Overlay (image)",
+      "content": "The figure corresponding to Reason #3 in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section cannot be identified from the available information. It is also not possible to determine whether such a figure includes any person. The context references the section title and some images featuring people, but none are explicitly linked to Reason #3.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "NTU Smart Campus Top 10 Reasons Title Card (image)",
+            "content": "References the promotional graphic for the section but does not break down individual reasons or associate them with specific figures."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Top 10 Reasons Why NTU Smart Campus Is For You",
+            "content": "Mentions the section title but provides no breakdown of individual reasons or associated figures."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Denise Chua and Peers at Impactful Leadership Graduation (image)",
+            "content": "Depicts people but is not linked to Reason #3."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "NTU Students Walking on Campus with Page Number 7 Overlay (image)",
+            "content": "Shows students on campus but is not associated with Reason #3."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T03:03:45.718550",
+      "updated_at": "2026-01-16T03:04:19.139084"
+    },
+    {
+      "cite_id": "[rag-6]",
+      "tool_type": "rag_hybrid",
+      "query": "Which figure corresponds to Reason #1 in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section, and does it include any person?",
+      "raw_result": "Based on the provided context, there is no specific information identifying which figure corresponds to Reason #1 in the “Top 10 Reasons Why NTU Smart Campus Is For You” section.\n\nWhile the context references several images associated with the NTU Smart Campus and the “Top 10 Reasons” section — such as:\n\n- **NTU Smart Campus Top 10 Reasons Title Card (image)** — which introduces the section but does not depict a numbered reason.\n- **NTU Smart Campus UG Lounge Interior with Contents Overlay (image)** — visually linked to the “Top 10 Reasons” section, showing architectural interior but no people.\n- **NTU Smart Campus Collaborative Learning Scene (image)** — depicts four diverse students collaborating around a table, and is associated with the Smart Campus environment described across Pages 19–21, which are referenced in the prospectus alongside the Building Icon used for the “Top 10 Reasons” section.\n\nHowever, none of the provided knowledge graph entities or relationships explicitly assign any image or figure to “Reason #1.” Additionally, while some images like the **Collaborative Learning Scene** do include persons, there is no direct mapping from that image (or any other) to a specific numbered reason in the “Top 10” list.\n\nTherefore, based solely on the available context:\n\n> **It cannot be determined which figure corresponds to Reason #1. There is also no confirmed association between any specific numbered reason and an image containing a person.**\n\n### References\n\n- [1] NTU Smart Campus Top 10 Reasons Title Card (image)\n- [2] NTU Smart Campus UG Lounge Interior with Contents Overlay (image)\n- [3] NTU Smart Campus Collaborative Learning Scene (image)\n- [4] NTU Smart Campus Icon Representation (image)\n- [5] Page 19–21",
+      "source": "NTU Smart Campus Top 10 Reasons Title Card (image), NTU Smart Campus UG Lounge Interior with Contents Overlay (image), NTU Smart Campus Collaborative Learning Scene (image), Page 19–21",
+      "content": "It cannot be determined which figure corresponds to Reason #1 in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section, as no explicit mapping exists between numbered reasons and specific images. While some images (e.g., Collaborative Learning Scene) include people, and others (e.g., UG Lounge Interior) do not, none are confirmed to represent Reason #1. The document references pages 19–21 and several images but does not assign any to a specific reason number.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "NTU Smart Campus Top 10 Reasons Title Card (image)",
+            "content": "Introduces the section but does not depict a numbered reason."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "NTU Smart Campus UG Lounge Interior with Contents Overlay (image)",
+            "content": "Shows architectural interior with no people; visually linked to the 'Top 10 Reasons' section."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "NTU Smart Campus Collaborative Learning Scene (image)",
+            "content": "Depicts four diverse students collaborating; associated with Smart Campus environment described across Pages 19–21."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Page 19–21",
+            "content": "Referenced alongside the Building Icon used for the 'Top 10 Reasons' section; context for image associations."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T03:04:35.581039",
+      "updated_at": "2026-01-16T03:04:49.247947"
+    },
+    {
+      "cite_id": "[rag-7]",
+      "tool_type": "rag_hybrid",
+      "query": "Which figure in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section does not include any person?",
+      "raw_result": "Based on the provided context, there is no specific information available that identifies individual figures or images within the **“Top 10 Reasons Why NTU Smart Campus Is For You”** section and explicitly states which one does *not* include any person.\n\nWhile the context references several images associated with this section — such as:\n\n- **NTU Smart Campus Top 10 Reasons Title Card (image)** — which is a graphic title card featuring bold text and abstract shapes, likely without people.\n- **NTU Smart Campus UG Lounge Interior with Contents Overlay (image)** — which showcases the interior of the lounge but may or may not include people (the description focuses on architecture and overlay, not human presence).\n\n— none of the descriptions definitively confirm the *absence* of persons in any specific figure within that section.\n\nAdditionally, no document chunks are provided to supplement the knowledge graph data with more granular visual analysis of each figure.\n\nTherefore, based strictly on the given context:\n\n> I do not have enough information to answer which figure in the 'Top 10 Reasons Why NTU Smart Campus Is For You' section does not include any person.\n\n### References\n\n- [1] NTU Smart Campus Top 10 Reasons Title Card (image)\n- [2] NTU Smart Campus UG Lounge Interior with Contents Overlay (image)",
+      "source": "",
+      "content": "No relevant information found for this query. The question may be Not answerable based on available documents. While the context mentions two images related to the 'Top 10 Reasons Why NTU Smart Campus Is For You' section — the Title Card and the UG Lounge Interior — neither description confirms the absence of persons in any figure. No visual analysis or explicit statement about human presence is provided.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-16T03:05:18.585255",
+      "updated_at": "2026-01-16T03:05:24.322662"
+    },
+    {
+      "cite_id": "[rag-8]",
+      "tool_type": "rag_hybrid",
+      "query": "Which specific figures are associated with each of the top 10 reasons why NTU Smart Campus is for you, and do any of these figures exclude human presence?",
+      "raw_result": "Based on the provided context, there is no explicit list of “Top 10 Reasons Why NTU Smart Campus Is For You” with corresponding numbered figures or images directly tied to each reason. The entity “Top 10 Reasons Why NTU Smart Campus Is For You” is referenced as a section title in the prospectus and as part of promotional graphics (e.g., “NTU Smart Campus Top 10 Reasons Title Card”), but no document chunks or knowledge graph data break down the ten reasons individually or assign specific figures to each.\n\nHowever, several images and icons are associated with the broader concept of the NTU Smart Campus and its features, which may implicitly support the messaging behind such a top-10 list:\n\n### Figures Associated with NTU Smart Campus Themes (Potentially Supporting the “Top 10 Reasons”):\n\n1. **NTU Smart Campus Top 10 Reasons Title Card (image)** — This is the primary visual anchor for the section, featuring bold text and abstract shapes, but it does not include human presence.\n2. **NTU Smart Campus UG Lounge Interior with Contents Overlay (image)** — Shows the modern interior of the UG Lounge with architectural elements; no humans are visible in this specific image.\n3. **NTU Smart Campus Icon Representation (image)** — A minimalist line-art icon of three stylized buildings; no human presence.\n4. **NTU_Smart_Campus_Sustainability_Icon (image)** — Symbolic icon of a building linked to a leaf; no human presence.\n5. **NTU Smart Campus Digital Interface Icon (image)** — Stylized computer monitor with digital interface elements; no human presence.\n6. **NTU Students Collaborating in Innovation Lab (image)** — Features seven diverse students using laptops and VR gear; includes human presence.\n7. **NTU Smart Campus Collaborative Learning Scene (image)** — Four students collaborating around a table with digital screens; includes human presence.\n8. **NTU Students Walking Together Across Disciplines (image)** — Three students walking and laughing in a corridor; includes human presence.\n9. **NTU Student Empowerment and Community Graphic (image)** — Depicts a joyful, diverse group of students; includes human presence.\n10. **NTU Students Gathering on Campus Lawn (image)** — Five students relaxing on a lawn; includes human presence.\n\n### Figures That Exclude Human Presence:\n\nThe following figures associated with the NTU Smart Campus do **not** include human presence:\n\n- **NTU Smart Campus Top 10 Reasons Title Card (image)**\n- **NTU Smart Campus UG Lounge Interior with Contents Overlay (image)** — While it shows an interior space, no people are depicted.\n- **NTU Smart Campus Icon Representation (image)**\n- **NTU_Smart_Campus_Sustainability_Icon (image)**\n- **NTU Smart Campus Digital Interface Icon (image)**\n\nThese visuals focus on architecture, symbolic representation, or digital interfaces rather than human activity.\n\n### Conclusion:\n\nWhile the context does not provide a direct mapping of figures to each of the “Top 10 Reasons,” several images and icons visually support the themes of the Smart Campus (e.g., sustainability, technology, collaboration, campus life). Among these, at least five figures explicitly exclude human presence, serving instead as conceptual or architectural representations of the campus environment.\n\n### References\n\n- [1] NTU Smart Campus Top 10 Reasons Title Card (image)\n- [2] NTU Smart Campus UG Lounge Interior with Contents Overlay (image)\n- [3] NTU Smart Campus Icon Representation (image)\n- [4] NTU_Smart_Campus_Sustainability_Icon (image)\n- [5] NTU Smart Campus Digital Interface Icon (image)",
+      "source": "NTU Smart Campus Top 10 Reasons Title Card (image), NTU Smart Campus UG Lounge Interior with Contents Overlay (image), NTU Smart Campus Icon Representation (image), NTU_Smart_Campus_Sustainability_Icon (image), NTU Smart Campus Digital Interface Icon (image)",
+      "content": "Among the figures associated with the NTU Smart Campus themes (potentially supporting the 'Top 10 Reasons' section), five do not include human presence: the Top 10 Reasons Title Card, UG Lounge Interior (no people shown), Icon Representation (stylized buildings), Sustainability Icon (building + leaf), and Digital Interface Icon (monitor with interface elements). These focus on architecture, symbols, or technology rather than human activity. While no direct mapping of figures to each of the 10 reasons is provided, these visuals are relevant to the campaign’s messaging.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "NTU Smart Campus Top 10 Reasons Title Card (image)",
+            "content": "Primary visual anchor for the section, featuring bold text and abstract shapes, but no human presence."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "NTU Smart Campus UG Lounge Interior with Contents Overlay (image)",
+            "content": "Shows modern interior of the UG Lounge with architectural elements; no humans visible."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "NTU Smart Campus Icon Representation (image)",
+            "content": "Minimalist line-art icon of three stylized buildings; no human presence."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "NTU_Smart_Campus_Sustainability_Icon (image)",
+            "content": "Symbolic icon of a building linked to a leaf; no human presence."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "NTU Smart Campus Digital Interface Icon (image)",
+            "content": "Stylized computer monitor with digital interface elements; no human presence."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T03:06:14.740634",
+      "updated_at": "2026-01-16T03:06:25.683428"
+    }
+  ],
+  "tool_counters": {
+    "rag": 8
+  }
+}

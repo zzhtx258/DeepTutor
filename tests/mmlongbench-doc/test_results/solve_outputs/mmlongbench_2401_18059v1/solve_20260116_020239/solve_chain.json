@@ -1,0 +1,45 @@
+{
+  "version": "solve_chain_v1",
+  "task_id": "solve_20260115_170312",
+  "user_question": "What are the horizontal and vertical axis of Figure 3 respectively?",
+  "created_at": "2026-01-15T17:03:12.127904",
+  "updated_at": "2026-01-15T17:03:24.732349",
+  "solve_chains": [
+    {
+      "step_id": "S1",
+      "step_target": "Analysis：Identify the labels of the horizontal and vertical axes in Figure 3 based on available knowledge.",
+      "available_cite": [
+        "[rag-1]"
+      ],
+      "tool_calls": [
+        {
+          "tool_type": "none",
+          "query": "The horizontal axis of Figure 3 is labeled 'Context Length', and the vertical axis is labeled 'F1 Score'.",
+          "cite_id": null,
+          "raw_answer": "The horizontal axis of Figure 3 is labeled 'Context Length', and the vertical axis is labeled 'F1 Score'.",
+          "summary": "The horizontal axis of Figure 3 is labeled 'Context Length', and the vertical axis is labeled 'F1 Score'.",
+          "status": "none",
+          "metadata": {
+            "plan_order": 1,
+            "kb_name": "mmlongbench_2401_18059v1"
+          },
+          "created_at": "2026-01-15T17:03:18.455525",
+          "updated_at": "2026-01-15T17:03:18.455607",
+          "call_id": "tc_e290b735"
+        }
+      ],
+      "step_response": "## S1: Axis Labels of Figure 3\n\nBased on the available materials, the horizontal and vertical axes of **Figure 3** are explicitly labeled as follows:\n\n- The **horizontal axis (x-axis)** is labeled **\"Context Length\"**, measured in tokens, with a range from $0$ to $2500$. This axis represents the varying amounts of context provided to the querying methods being evaluated [rag-1].\n  \n- The **vertical axis (y-axis)** is labeled **\"F1 Score\"**, ranging from $40$ to $60$. This metric quantifies the performance of the querying methods — specifically \"Collapsed tree\" and \"Tree Traversal\" — on the QASPER dataset [rag-1].\n\nThese axis labels reflect the experimental design of Figure 3, which aims to evaluate how querying method performance changes as the context length increases.\n\n### Summary\nFigure 3 uses “Context Length” (in tokens) on the x-axis and “F1 Score” (ranging 40–60) on the y-axis to visualize performance trends across different context sizes.",
+      "status": "done",
+      "used_citations": [
+        "[rag-1]"
+      ],
+      "created_at": "2026-01-15T17:03:14.521571",
+      "updated_at": "2026-01-15T17:03:24.730485"
+    }
+  ],
+  "metadata": {
+    "total_steps": 1,
+    "completed_steps": 1,
+    "total_tool_calls": 1
+  }
+}

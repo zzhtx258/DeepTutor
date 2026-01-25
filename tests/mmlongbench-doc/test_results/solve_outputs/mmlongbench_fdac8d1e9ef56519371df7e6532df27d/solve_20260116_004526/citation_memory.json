@@ -1,0 +1,47 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T00:45:26.292483",
+  "updated_at": "2026-01-16T00:46:18.791240",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What does the map in the report show?",
+      "raw_result": "The map in the report, titled **“Map of Indian Space Programme Facilities (image)”**, is a **thematic map** that visually represents the geographical distribution of major space-related research and operational centers across India. It serves as a spatial catalog of institutions under the Indian Space Programme, primarily managed by the Department of Space (DOS) and the Indian Space Research Organisation (ISRO).\n\nKey features of the map include:\n\n- **Geographical Outline**: The country of India is depicted with a solid **magenta-colored fill**, set against a **light beige background** to enhance visual contrast.\n- **Facility Markers**: Each space-related facility — such as laboratories, centers, or institutes — is marked with a **white circular indicator**, precisely positioned to denote its physical location within the country.\n- **Labels**: Around the perimeter of the map, **labels** in bold, uppercase text list the names of cities and their associated facilities, providing clear textual identification for each marked location.\n- **Spatial Context**: The map contextualizes key institutions like the **Physical Research Laboratory (PRL)** in Ahmedabad and the **Indian Institute of Remote Sensing (IIRS)** in Dehradun, linking them to their geographic positions.\n\nOverall, this thematic map provides a comprehensive, minimalist overview of India’s national space infrastructure, illustrating how critical facilities are distributed geographically to support the nation’s space science, technology, and applications missions.\n\n### References\n\n- [1] Map of Indian Space Programme Facilities (image)\n- [2] Thematic Map\n- [3] India\n- [4] White Circular Marker\n- [5] Label",
+      "source": "Map of Indian Space Programme Facilities (image), Thematic Map, India, White Circular Marker, Label",
+      "content": "The map in the report, titled 'Map of Indian Space Programme Facilities', is a thematic map showing the geographical distribution of major space-related research and operational centers across India. It uses a magenta-colored fill for India against a light beige background, with white circular markers indicating facility locations. Labels around the perimeter identify cities and associated institutions like the Physical Research Laboratory in Ahmedabad and the Indian Institute of Remote Sensing in Dehradun. The map provides a spatial overview of India’s national space infrastructure.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Map of Indian Space Programme Facilities (image)"
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Thematic Map"
+          },
+          {
+            "reference_id": "[3]",
+            "source": "India"
+          },
+          {
+            "reference_id": "[4]",
+            "source": "White Circular Marker"
+          },
+          {
+            "reference_id": "[5]",
+            "source": "Label"
+          }
+        ]
+      },
+      "created_at": "2026-01-16T00:45:58.885757",
+      "updated_at": "2026-01-16T00:46:05.996834"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_005507",
+  "user_question": "How many more millions of dollars was the median exit valuation in the USA compared to Europe at the time of the presentation?",
+  "created_at": "2026-01-16T00:55:07.066789",
+  "updated_at": "2026-01-16T00:55:53.297761",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact numbers or values shown in the chart or table comparing median exit valuations for the USA and Europe?",
+      "raw_result": "Based on the provided context, the exact values for median exit valuations for the USA and Europe are as follows:\n\n- **USA**: The average (median) exit valuation is **$388 million**.\n- **Europe**: The average (median) exit valuation is **$304 million**.\n\nThese figures are derived from venture capital performance metrics comparing the two regions between 2004 and 2010. While Europe’s exit valuations are lower than those of the USA, they are achieved with significantly less capital invested — $44 million in Europe versus $79 million in the USA — highlighting Europe’s greater capital efficiency.\n\n### References\n\n- [1] Average Exit Valuation\n- [2] European vs US VC Performance Metrics Bar Chart 2004-2010 (image)\n- [3] Average Capital Invested Prior to Exit\n- [4] Capital Efficiency\n- [5] USA",
+      "summary": "The median exit valuation in the USA was $388 million, compared to $304 million in Europe, making the USA's median exit valuation $84 million higher than Europe's during the 2004–2010 period. Europe achieved these valuations with less capital invested ($44 million vs. $79 million in the USA), indicating greater capital efficiency.",
+      "created_at": "2026-01-16T00:55:36.046683",
+      "updated_at": "2026-01-16T00:55:50.258966"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T00:55:07.066794"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

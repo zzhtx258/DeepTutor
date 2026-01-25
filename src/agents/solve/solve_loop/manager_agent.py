@@ -19,6 +19,8 @@ from ..utils.json_utils import extract_json_from_text
 
 class ManagerAgent(BaseAgent):
     """Manager Agent - Plans solution steps"""
+    
+    MAX_PARSE_RETRIES = 3  # JSON解析失败时的最大重试次数
 
     def __init__(self, config: dict[str, Any], api_key: str, base_url: str, token_tracker=None):
         super().__init__(
@@ -72,17 +74,41 @@ class ManagerAgent(BaseAgent):
         system_prompt = self._build_system_prompt()
         user_prompt = self._build_user_prompt(context)
 
-        # 4. Call LLM (requires JSON format output)
-        response = await self.call_llm(
-            user_prompt=user_prompt,
-            system_prompt=system_prompt,
-            verbose=verbose,
-            stage=stage_label,
-            response_format={"type": "json_object"},  # Force JSON
-        )
-
-        # 5. Parse output and create StepItem
-        steps = self._parse_response(response, investigate_memory)
+        # 4. Call LLM with retry mechanism
+        steps = None
+        last_response = None
+        last_error = None
+        
+        for attempt in range(self.MAX_PARSE_RETRIES):
+            response = await self.call_llm(
+                user_prompt=user_prompt,
+                system_prompt=system_prompt,
+                verbose=verbose,
+                stage=stage_label,
+                response_format={"type": "json_object"},  # Force JSON
+            )
+            last_response = response
+            
+            try:
+                # 5. Parse output and create StepItem
+                steps = self._parse_response(response, investigate_memory)
+                if steps:
+                    break  # 解析成功，退出重试循环
+            except ValueError as e:
+                last_error = str(e)
+                self.logger.warning(
+                    f"ManagerAgent attempt {attempt + 1}/{self.MAX_PARSE_RETRIES}: {last_error}"
+                )
+                if attempt < self.MAX_PARSE_RETRIES - 1:
+                    self.logger.info(f"ManagerAgent retrying... ({attempt + 2}/{self.MAX_PARSE_RETRIES})")
+        
+        if not steps:
+            self.logger.error(
+                f"ManagerAgent failed after {self.MAX_PARSE_RETRIES} attempts, last error: {last_error}"
+            )
+            raise ValueError(
+                f"ManagerAgent failed to parse valid steps after {self.MAX_PARSE_RETRIES} attempts: {last_error}"
+            )
 
         # 6. Add steps to solve_memory
         solve_memory.create_chains(steps)

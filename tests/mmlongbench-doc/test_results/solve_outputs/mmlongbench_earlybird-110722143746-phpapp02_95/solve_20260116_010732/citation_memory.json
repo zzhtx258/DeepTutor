@@ -1,0 +1,52 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T01:07:32.335465",
+  "updated_at": "2026-01-16T01:08:23.758600",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What charts in the slides compare China and Japan?",
+      "raw_result": "Based on the provided context, there are no charts that compare China and Japan.\n\nThe available data and visual artifacts focus on comparisons between **China, Europe, and the USA** across various venture capital metrics such as average exit capitalization, capital efficiency, mid-stage deal volumes, and investment-to-GDP ratios. Japan is not mentioned in any of the entities, relationships, or document chunks.\n\nTherefore, no chart in the provided materials includes Japan for comparison with China.\n\n### References\n\n- [1] Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)\n- [2] Capital Efficiency Comparison Chart for VC Exits in USA, Europe, and China (2004-2010) (image)\n- [3] Midstage VC Deal Comparison Chart US vs Europe 2004-2010 (image)\n- [4] VC_Investments_Proportion_to_GDP_2010_Bubble_Chart (image)\n- [5] European_vs_USA_VC_Exits_Proportional_Share_Chart_Since_2004 (image)",
+      "source": "Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image), Capital Efficiency Comparison Chart for VC Exits in USA, Europe, and China (2004-2010) (image), Midstage VC Deal Comparison Chart US vs Europe 2004-2010 (image), VC_Investments_Proportion_to_GDP_2010_Bubble_Chart (image), European_vs_USA_VC_Exits_Proportional_Share_Chart_Since_2004 (image)",
+      "content": "No chart in the provided slides compares China and Japan. All available charts focus on comparisons between China, Europe, and the USA across venture capital metrics such as exit capitalization, capital efficiency, deal volumes, and investment-to-GDP ratios. Japan is not included in any of these comparisons.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Average Exit Capitalization Comparison Chart for China, Europe, and USA (2004–2010) (image)",
+            "content": "Compares average exit capitalization among China, Europe, and USA from 2004 to 2010."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Capital Efficiency Comparison Chart for VC Exits in USA, Europe, and China (2004-2010) (image)",
+            "content": "Shows capital efficiency of VC exits across USA, Europe, and China during 2004–2010."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Midstage VC Deal Comparison Chart US vs Europe 2004-2010 (image)",
+            "content": "Compares mid-stage VC deal volumes between US and Europe from 2004 to 2010."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "VC_Investments_Proportion_to_GDP_2010_Bubble_Chart (image)",
+            "content": "Displays proportion of VC investments to GDP in 2010, likely including China, Europe, and USA."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "European_vs_USA_VC_Exits_Proportional_Share_Chart_Since_2004 (image)",
+            "content": "Shows proportional share of VC exits between Europe and USA since 2004."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T01:07:59.140894",
+      "updated_at": "2026-01-16T01:08:14.348761"
+    }
+  ],
+  "tool_counters": {
+    "rag": 1
+  }
+}

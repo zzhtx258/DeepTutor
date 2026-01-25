@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "task_id": "investigate_20260116_025127",
+  "user_question": "Under the pro mode to shoot, what is the function of the icon on right hand side of the icon that set white balance?",
+  "created_at": "2026-01-16T02:51:27.105206",
+  "updated_at": "2026-01-16T02:52:02.400945",
+  "knowledge_chain": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the function of the icon on the right-hand side of the white balance icon in pro mode?",
+      "raw_result": "The icon on the right-hand side of the white balance (AWB) icon in Pro Mode is the **Exposure Compensation** control, labeled as **\"EV* 0\"**.\n\nThis setting allows users to manually adjust the brightness of the photo. Increasing the EV value brightens the image (useful in low-light conditions), while decreasing it darkens the image (helpful in overly bright scenes). It provides fine-tuned control over exposure beyond automatic settings.\n\nThis control is accessible via a vertical slider in the PRO camera mode interface and is part of the manual photographic parameters that Pro Mode offers for advanced image capture.\n\n### References\n\n- [1] Smartphone Pro Camera Mode Interface Guide (image)\n- [2] Pro Mode\n- [3] Exposure Compensation\n- [4] PRO Camera Mode\n- [5] EV Exposure Compensation",
+      "summary": "The icon on the right-hand side of the white balance (AWB) icon in Pro Mode is the Exposure Compensation control, labeled as 'EV* 0'. It allows users to manually adjust the brightness of the photo: increasing EV brightens the image (useful in low light), while decreasing it darkens the image (helpful in bright scenes). This control is accessible via a vertical slider and provides fine-tuned exposure adjustment beyond automatic settings.",
+      "created_at": "2026-01-16T02:51:52.580917",
+      "updated_at": "2026-01-16T02:51:59.290627"
+    }
+  ],
+  "reflections": {
+    "remaining_questions": [],
+    "updated_at": "2026-01-16T02:51:27.105217"
+  },
+  "metadata": {
+    "total_iterations": 2,
+    "coverage_rate": 1.0,
+    "avg_confidence": 0.9,
+    "total_knowledge_items": 1
+  }
+}

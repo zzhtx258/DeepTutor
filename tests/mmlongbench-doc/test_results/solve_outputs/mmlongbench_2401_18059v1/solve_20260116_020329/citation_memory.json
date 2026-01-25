@@ -1,0 +1,222 @@
+{
+  "version": "1.1",
+  "created_at": "2026-01-16T02:03:29.252454",
+  "updated_at": "2026-01-16T02:07:44.755835",
+  "citations": [
+    {
+      "cite_id": "[rag-1]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for retrieval methods mentioned in the document?",
+      "raw_result": "The complete pseudocode for the retrieval methods used in the RAPTOR system — specifically **Tree Traversal** and **Collapsed Tree Retrieval** — is formally presented in **Appendix F** of the referenced material. While the full pseudocode is not reproduced verbatim here, its structure and operational logic are described across multiple entities and relationships within the knowledge graph.\n\n---\n\n### 1. **Tree Traversal Algorithm (Algorithm 1)**\n\nThis algorithm navigates the hierarchical RAPTOR tree layer-by-layer, starting from the root node. At each level, it computes dot-product similarity scores between the query vector and node embeddings, then retains the top-k most relevant child nodes for further traversal.\n\n#### Key Steps:\n- **Input**: Query vector, hierarchical tree structure.\n- **Process**:\n  - Start at the root node.\n  - For each layer, compute dot-product similarity between the query vector and all child node embeddings.\n  - Select the top-k child nodes based on similarity scores.\n  - Proceed recursively to the next layer using selected nodes.\n- **Output**: A set of retrieved nodes from different layers, concatenated to form the final context for the LLM.\n\nThis method enables adaptive, multi-granularity retrieval and supports complex reasoning by leveraging summarized content from higher layers.\n\n> *Reference: Algorithm 1: Tree Traversal Algorithm (table), Appendix F*\n\n---\n\n### 2. **Collapsed Tree Algorithm (Algorithm 2)**\n\nThis method flattens the entire hierarchical tree into a single linear list of nodes. It then scores all nodes simultaneously using dot-product similarity with the query vector and selects the top-k nodes that fit within a specified token budget.\n\n#### Key Steps:\n- **Input**: Query vector, flattened tree (all nodes from all layers).\n- **Process**:\n  - Flatten the hierarchical tree into a 1D list of nodes.\n  - Compute dot-product similarity between the query vector and each node’s embedding.\n  - Sort nodes by relevance score.\n  - Select top-k nodes while respecting a maximum token limit.\n- **Output**: A compact, relevance-ranked context for the LLM, drawn from any layer of the tree.\n\nThis approach allows flexible, granularity-aware retrieval and generally outperforms tree traversal in F1 scores across varying context lengths.\n\n> *Reference: CollapsedTreeAlgorithm (table), Appendix F*\n\n---\n\n### Summary of Differences:\n\n| Feature                  | Tree Traversal                             | Collapsed Tree                              |\n|--------------------------|--------------------------------------------|---------------------------------------------|\n| Structure                | Hierarchical, recursive                    | Flattened, flat search                      |\n| Scoring                  | Layer-wise dot-product                     | Global dot-product                          |\n| Selection                | Top-k per layer                            | Top-k overall (within token budget)         |\n| Performance              | Peaks at 2250 tokens                       | Peaks at 2000 tokens                        |\n| Use Case                 | Multi-hop, structured reasoning            | Flexible, holistic context retrieval        |\n\nBoth algorithms are integral to the RAPTOR system and are compared visually in **Figure 3** and **RAPTOR_Tree_vs_Collapsed_Retrieval_Mechanisms_Diagram**, which illustrate how each constructs the retrieved context for downstream language models.\n\n> *References: Figure 3, RAPTOR_Tree_vs_Collapsed_Retrieval_Mechanisms_Diagram (image), Appendix F*\n\n---\n\n### References\n\n- [1] Algorithm 1: Tree Traversal Algorithm (table)\n- [2] CollapsedTreeAlgorithm (table)\n- [3] Appendix F\n- [4] Figure 3 - Performance Comparison of Collapsed Tree vs. Tree Traversal Querying Methods on QASPER Dataset (image)\n- [5] RAPTOR_Tree_vs_Collapsed_Retrieval_Mechanisms_Diagram (image)",
+      "source": "Algorithm 1: Tree Traversal Algorithm (table), CollapsedTreeAlgorithm (table), Appendix F",
+      "content": "Based on the pseudocode descriptions, the Tree Traversal Algorithm (Algorithm 1) involves recursive layer-by-layer processing with per-layer selection, which typically requires more lines of code compared to the Collapsed Tree Algorithm (Algorithm 2), which flattens the tree and performs a single global scoring pass. The document does not provide exact line counts but implies greater structural complexity in Tree Traversal.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Algorithm 1: Tree Traversal Algorithm (table)",
+            "content": "Tree Traversal Algorithm navigates hierarchical tree layer-by-layer, computes dot-product similarity at each level, retains top-k child nodes, and proceeds recursively."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "CollapsedTreeAlgorithm (table)",
+            "content": "Collapsed Tree Algorithm flattens the entire tree into a linear list, scores all nodes globally by dot-product similarity, sorts by relevance, and selects top-k within token budget."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Appendix F",
+            "content": "Formal pseudocode for both retrieval methods is presented in Appendix F, though not reproduced verbatim here."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:04:10.836896",
+      "updated_at": "2026-01-16T02:04:20.818472"
+    },
+    {
+      "cite_id": "[rag-2]",
+      "tool_type": "rag_hybrid",
+      "query": "What are the exact line counts or pseudocode lengths for Algorithm 1 (Tree Traversal) and Algorithm 2 (Collapsed Tree) in the document?",
+      "raw_result": "Based on the provided context, there is no information available regarding the exact line counts or pseudocode lengths for Algorithm 1 (Tree Traversal) and Algorithm 2 (Collapsed Tree).\n\nThe context references these algorithms by name and describes their functions, operational steps, and performance characteristics — for instance:\n\n- Algorithm 1 (Tree Traversal) navigates hierarchical tree structures layer-by-layer, computing dot-product similarity scores and retaining top-k nodes per layer.\n- Algorithm 2 (Collapsed Tree) flattens the entire tree into a 1D list, scores all nodes via dot product with the query vector, and selects top-k nodes within a token budget.\n\nAdditionally, both algorithms are noted to be detailed in Appendix F, which contains their pseudocode. However, the context does not specify the number of lines, character counts, or any quantitative measure of pseudocode length for either algorithm.\n\nTherefore, without access to the actual pseudocode in Appendix F or further documentation specifying line counts, this information cannot be determined from the given knowledge base.\n\n### References\n\n- [1] Appendix F\n- [2] Algorithm 1: Tree Traversal Algorithm (table)\n- [3] CollapsedTreeAlgorithm (table)\n- [4] Algorithm 2\n- [5] Algorithm1 Tree Traversal Algorithm",
+      "source": "",
+      "content": "No relevant information found for this query. The question may be Not answerable based on available documents. The context mentions that pseudocode for Algorithm 1 (Tree Traversal) and Algorithm 2 (Collapsed Tree) is in Appendix F, but does not provide line counts or length metrics for either algorithm.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-16T02:04:49.510723",
+      "updated_at": "2026-01-16T02:04:52.721510"
+    },
+    {
+      "cite_id": "[rag-3]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for Algorithm 1 (Tree Traversal) and Algorithm 2 (Collapsed Tree) in Appendix F?",
+      "raw_result": "The complete pseudocode for **Algorithm 1 (Tree Traversal)** and **Algorithm 2 (Collapsed Tree)** is provided in **Appendix F** of the RAPTOR documentation. While the exact line-by-line pseudocode is not reproduced here due to formatting constraints, the operational logic and structure of both algorithms are clearly defined in the knowledge graph and related entities.\n\n---\n\n### **Algorithm 1: Tree Traversal Algorithm**\n\nThis algorithm navigates the hierarchical tree layer-by-layer, starting from the root node. At each level, it computes the dot-product similarity between the query vector and each node’s embedding, then selects the top-k most relevant nodes to proceed to the next layer. This recursive traversal continues until leaf nodes are reached or a predefined depth is achieved.\n\nKey steps include:\n- Encoding the query into a vector.\n- Computing cosine similarity (via dot product) between the query vector and node embeddings at each layer.\n- Selecting top-k nodes per layer based on relevance scores.\n- Recursively traversing child nodes of selected nodes.\n- Concatenating retrieved context from selected nodes for LLM processing.\n\nThis method enables adaptive, multi-granularity retrieval crucial for answering complex questions and supports RAPTOR’s superior performance over flat retrieval methods like DPR.\n\n---\n\n### **Algorithm 2: Collapsed Tree Algorithm**\n\nAlso known as the **CollapsedTreeAlgorithm**, this method flattens the entire hierarchical tree into a single 1D list of nodes. It then scores all nodes simultaneously against the query vector using dot product, selects the top-k nodes based on relevance, and ensures the total token count does not exceed a predefined `max_tokens` budget.\n\nKey steps include:\n- Flattening the hierarchical tree into a linear list of nodes.\n- Encoding the query into a vector.\n- Computing dot-product similarity scores between the query vector and all node embeddings.\n- Sorting nodes by relevance score.\n- Selecting nodes greedily until the token budget is exhausted.\n- Concatenating selected nodes to form the final retrieved context.\n\nThis approach provides greater flexibility and has been shown to outperform Tree Traversal on datasets like QASPER, particularly when retrieving context up to 2000 tokens.\n\n---\n\nBoth algorithms are designed to leverage RAPTOR’s hierarchical tree structure to improve retrieval performance for multi-hop and thematic questions. Their pseudocode, including variable definitions and control flow, is formally presented in **Appendix F**, which serves as the authoritative source for implementation details.\n\n### References\n\n- [1] Appendix F\n- [2] Algorithm 1: Tree Traversal Algorithm (table)\n- [3] Algorithm 2\n- [4] CollapsedTreeAlgorithm (table)\n- [5] RAPTOR System",
+      "source": "Appendix F, Algorithm 1: Tree Traversal Algorithm (table), Algorithm 2, CollapsedTreeAlgorithm (table), RAPTOR System",
+      "content": "The raw result does not provide the actual line counts for Algorithm 1 (Tree Traversal) or Algorithm 2 (Collapsed Tree). It describes their operational logic and mentions that full pseudocode is in Appendix F, but no line-by-line comparison is given. Therefore, it is not possible to determine which algorithm has more lines based on this information.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Appendix F",
+            "content": "The complete pseudocode for Algorithm 1 and Algorithm 2 is provided in Appendix F of the RAPTOR documentation."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "Algorithm 1: Tree Traversal Algorithm (table)",
+            "content": "Describes the tree traversal method including query encoding, similarity computation, top-k selection, and recursive traversal."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Algorithm 2",
+            "content": "Describes the Collapsed Tree Algorithm, which flattens the tree and scores all nodes simultaneously against the query vector."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "CollapsedTreeAlgorithm (table)",
+            "content": "Details the greedy selection process based on relevance scores and token budget constraints."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "RAPTOR System",
+            "content": "Both algorithms are designed to leverage RAPTOR’s hierarchical tree structure to improve retrieval performance."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:05:27.261095",
+      "updated_at": "2026-01-16T02:05:35.451605"
+    },
+    {
+      "cite_id": "[rag-4]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for Algorithm 1 (Tree Traversal) in Appendix F?",
+      "raw_result": "Based on the provided context, Appendix F contains the pseudocode for both the Tree Traversal and Collapsed Tree querying methods used in RAPTOR. However, the actual pseudocode for Algorithm 1 (Tree Traversal) is not included in the provided knowledge base or document chunks.\n\nThe context confirms that Appendix F is the source of this pseudocode and references it as part of RAPTOR’s retrieval mechanisms. It also describes the algorithm's function — computing dot-product similarity scores and retaining top-k nodes per layer — but does not reproduce the code itself.\n\nTherefore, I cannot provide the complete pseudocode for Algorithm 1 (Tree Traversal) from Appendix F, as it is not available in the given materials.\n\n### References\n\n- [1] Appendix F",
+      "source": "Appendix F",
+      "content": "The complete pseudocode for Algorithm 1 (Tree Traversal) in Appendix F is not available in the provided materials. While Appendix F is confirmed to contain the pseudocode for both Tree Traversal and Collapsed Tree methods used in RAPTOR, the actual code lines are not reproduced here. Therefore, it is not possible to determine which algorithm has more lines based on this result.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Appendix F",
+            "content": "Appendix F contains the pseudocode for both the Tree Traversal and Collapsed Tree querying methods used in RAPTOR, but the actual pseudocode is not included in the provided knowledge base."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:05:57.300287",
+      "updated_at": "2026-01-16T02:06:21.001714"
+    },
+    {
+      "cite_id": "[rag-5]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for Algorithm 2 (Collapsed Tree) in Appendix F?",
+      "raw_result": "Based on the provided context, **Appendix F** contains the pseudocode for both tree traversal and collapsed tree querying methods in RAPTOR. However, the actual pseudocode for **Algorithm 2 (Collapsed Tree)** is not included in the provided document chunks or knowledge graph data.\n\nThe context confirms that:\n- Algorithm 2 is formally designated as the **CollapsedTreeAlgorithm**.\n- It is described in a table (referred to as “CollapsedTreeAlgorithm (table)”) which outlines its operational steps: flattening the tree, scoring nodes via dot product with the query vector, and selecting top-k nodes within a token budget.\n- Appendix F is cited as the source of the pseudocode for this algorithm.\n\nDespite these references, the specific lines of pseudocode are not present in the available materials.\n\nTherefore, I cannot provide the complete pseudocode for Algorithm 2 (Collapsed Tree) from Appendix F based solely on the given context.\n\n### References\n\n- [1] Appendix F\n- [2] CollapsedTreeAlgorithm (table)\n- [3] Algorithm 2\n- [4] CollapsedTreeAlgorithm\n- [5] RAPTOR",
+      "source": "Appendix F, CollapsedTreeAlgorithm (table), Algorithm 2, CollapsedTreeAlgorithm, RAPTOR",
+      "content": "The complete pseudocode for Algorithm 2 (Collapsed Tree) is referenced in Appendix F and described in the CollapsedTreeAlgorithm table, but the actual lines of pseudocode are not included in the available materials. Therefore, it is not possible to determine which algorithm has more lines based on this result.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Appendix F",
+            "content": "Cited as the source of pseudocode for Algorithm 2 (Collapsed Tree), though the actual pseudocode is not present."
+          },
+          {
+            "reference_id": "[2]",
+            "source": "CollapsedTreeAlgorithm (table)",
+            "content": "Describes operational steps of Algorithm 2: flattening the tree, scoring nodes via dot product with query vector, selecting top-k nodes within token budget."
+          },
+          {
+            "reference_id": "[3]",
+            "source": "Algorithm 2",
+            "content": "Formally designated as CollapsedTreeAlgorithm; referenced in context but pseudocode not provided."
+          },
+          {
+            "reference_id": "[4]",
+            "source": "CollapsedTreeAlgorithm",
+            "content": "Same as Algorithm 2; described conceptually but without line-by-line pseudocode."
+          },
+          {
+            "reference_id": "[5]",
+            "source": "RAPTOR",
+            "content": "Framework containing Appendix F and Algorithm 2; context confirms existence but not content of pseudocode."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:06:16.594183",
+      "updated_at": "2026-01-16T02:06:30.461437"
+    },
+    {
+      "cite_id": "[rag-6]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode for Algorithm 1 (Tree Traversal) in Appendix F?",
+      "raw_result": "Based on the provided context, Appendix F contains the pseudocode for both the Tree Traversal and Collapsed Tree querying methods used in RAPTOR. However, the actual pseudocode for Algorithm 1 (Tree Traversal) is not included in the provided knowledge base or document chunks.\n\nThe context confirms that Appendix F is the source of this pseudocode and references it as part of RAPTOR’s retrieval mechanisms. It also describes the algorithm's function — computing dot-product similarity scores and retaining top-k nodes per layer — but does not reproduce the code itself.\n\nTherefore, I cannot provide the complete pseudocode for Algorithm 1 (Tree Traversal) from Appendix F, as it is not available in the given materials.\n\n### References\n\n- [1] Appendix F",
+      "source": "Appendix F",
+      "content": "The complete pseudocode for Algorithm 1 (Tree Traversal) in Appendix F is not available in the provided materials. While Appendix F is confirmed to contain the pseudocode for both Tree Traversal and Collapsed Tree methods used in RAPTOR, the actual code lines are not reproduced here. Therefore, it is not possible to determine which algorithm has more lines based on this result.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Appendix F",
+            "content": "Appendix F contains the pseudocode for both the Tree Traversal and Collapsed Tree querying methods used in RAPTOR, but the actual pseudocode is not included in the provided knowledge base."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:06:42.587622",
+      "updated_at": "2026-01-16T02:06:46.801224"
+    },
+    {
+      "cite_id": "[rag-7]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode text for Algorithm 1 (Tree Traversal) as presented in Appendix F?",
+      "raw_result": "Based on the provided context, Appendix F contains the pseudocode for both the Tree Traversal and Collapsed Tree querying methods used in RAPTOR. However, the actual text of the pseudocode for Algorithm 1 (Tree Traversal) is not included in the knowledge graph data or document chunks.\n\nThe context confirms that Appendix F provides this pseudocode but does not reproduce it verbatim. Therefore, I cannot provide the complete pseudocode text for Algorithm 1 as requested.\n\n### References\n\n- [1] Appendix F",
+      "source": "Appendix F",
+      "content": "The raw result confirms that Appendix F contains the pseudocode for Algorithm 1 (Tree Traversal) and Collapsed Tree querying methods, but does not include the actual text of the pseudocode. Therefore, the complete pseudocode for Algorithm 1 is not available in this result. No comparison of line counts between algorithms can be made from this information.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null,
+        "extracted_sources": [
+          {
+            "reference_id": "[1]",
+            "source": "Appendix F",
+            "content": "Appendix F contains the pseudocode for both the Tree Traversal and Collapsed Tree querying methods used in RAPTOR."
+          }
+        ]
+      },
+      "created_at": "2026-01-16T02:07:09.420285",
+      "updated_at": "2026-01-16T02:07:30.119600"
+    },
+    {
+      "cite_id": "[rag-8]",
+      "tool_type": "rag_hybrid",
+      "query": "What is the complete pseudocode text for Algorithm 2 (Collapsed Tree) as presented in Appendix F?",
+      "raw_result": "Based on the provided context, the complete pseudocode text for Algorithm 2 (Collapsed Tree) is not directly available. While the context confirms that Appendix F contains the pseudocode for both tree traversal and collapsed tree querying methods in RAPTOR, no actual pseudocode text is included in the Knowledge Graph Data or Document Chunks.\n\nThe entity \"Appendix F\" is described as providing the pseudocode for these methods, but the specific lines of code or algorithmic steps are not reproduced in the given materials. Therefore, I cannot provide the complete pseudocode text for Algorithm 2.\n\n### References\n\n- [1] Appendix F",
+      "source": "",
+      "content": "No relevant information found for this query. The question may be Not answerable based on available documents.",
+      "stage": "analysis",
+      "step_id": null,
+      "metadata": {
+        "identifier": null
+      },
+      "created_at": "2026-01-16T02:07:25.878545",
+      "updated_at": "2026-01-16T02:07:31.444706"
+    }
+  ],
+  "tool_counters": {
+    "rag": 8
+  }
+}

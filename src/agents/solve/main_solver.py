@@ -274,8 +274,11 @@ class MainSolver:
             if self.token_tracker:
                 cost_summary = self.token_tracker.get_summary()
                 if cost_summary["total_calls"] > 0:
-                    cost_text = self.token_tracker.format_summary()
-                    self.logger.info(f"\n{cost_text}")
+                    # Check if cost statistics should be shown in console
+                    show_cost = self.config.get("solve", {}).get("show_cost_statistics", True)
+                    if show_cost:
+                        cost_text = self.token_tracker.format_summary()
+                        self.logger.info(f"\n{cost_text}")
 
                     cost_file = os.path.join(output_dir, "cost_report.json")
                     self.token_tracker.save(cost_file)

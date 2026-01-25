@@ -1,0 +1,45 @@
+{
+  "version": "solve_chain_v1",
+  "task_id": "solve_20260115_170215",
+  "user_question": "In figure 4, which nodes are retrieved by RAPTOR for both questions?",
+  "created_at": "2026-01-15T17:02:15.508172",
+  "updated_at": "2026-01-15T17:02:34.868943",
+  "solve_chains": [
+    {
+      "step_id": "S1",
+      "step_target": "Analysis：Identify the nodes retrieved by RAPTOR for both questions in Figure 4 based on the provided summary.",
+      "available_cite": [
+        "[rag-1]"
+      ],
+      "tool_calls": [
+        {
+          "tool_type": "none",
+          "query": "Nodes 16, 17, 18, and 19 are retrieved by RAPTOR for both questions in Figure 4.",
+          "cite_id": null,
+          "raw_answer": "Nodes 16, 17, 18, and 19 are retrieved by RAPTOR for both questions in Figure 4.",
+          "summary": "Nodes 16, 17, 18, and 19 are retrieved by RAPTOR for both questions in Figure 4.",
+          "status": "none",
+          "metadata": {
+            "plan_order": 1,
+            "kb_name": "mmlongbench_2401_18059v1"
+          },
+          "created_at": "2026-01-15T17:02:22.748617",
+          "updated_at": "2026-01-15T17:02:22.748693",
+          "call_id": "tc_13119214"
+        }
+      ],
+      "step_response": "## S1: Identification of Common Nodes Retrieved by RAPTOR in Figure 4\n\nIn the context of RAPTOR’s tree-based retrieval mechanism as illustrated in **Figure 4**, the system dynamically selects nodes based on the semantic and structural demands of each query. For the two distinct questions posed — one thematic (“What is the central theme of the story?”) and one multi-hop — RAPTOR retrieves overlapping intermediate nodes while diverging in higher-level node inclusion.\n\nSpecifically, for **both questions**, RAPTOR retrieves the following intermediate nodes:  \n**Node 16, Node 17, Node 18, and Node 19** [rag-1].\n\nThese nodes represent shared contextual or narrative segments that are relevant to answering either question. However, for the multi-hop question (Question 2), RAPTOR additionally retrieves **root summary node 25**, which provides broader summarization context not required for the thematic question [rag-1]. This divergence highlights RAPTOR’s adaptive retrieval strategy: it minimizes redundancy by selecting only the necessary nodes for each query type, while preserving common ground through shared intermediate nodes.\n\nThus, the set of nodes retrieved for *both* questions is precisely:  \n$$\n\\{16, 17, 18, 19\\}\n$$\n\nThis result is consistent across both the summarized explanation and the raw textual confirmation provided in the available materials [rag-1].\n\n### Summary\nRAPTOR retrieves nodes 16, 17, 18, and 19 for both questions in Figure 4, forming the core shared retrieval set. The additional retrieval of node 25 for the multi-hop question underscores RAPTOR’s ability to scale retrieval depth according to query complexity.",
+      "status": "done",
+      "used_citations": [
+        "[rag-1]"
+      ],
+      "created_at": "2026-01-15T17:02:18.150482",
+      "updated_at": "2026-01-15T17:02:34.867066"
+    }
+  ],
+  "metadata": {
+    "total_steps": 1,
+    "completed_steps": 1,
+    "total_tool_calls": 1
+  }
+}

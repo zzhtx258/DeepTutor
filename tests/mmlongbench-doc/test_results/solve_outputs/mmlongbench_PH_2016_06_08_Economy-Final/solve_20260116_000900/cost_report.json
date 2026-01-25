@@ -1,0 +1,152 @@
+{
+  "summary": {
+    "total_prompt_tokens": 12599,
+    "total_completion_tokens": 892,
+    "total_tokens": 13491,
+    "total_cost_usd": 0.0024250499999999998,
+    "total_calls": 7,
+    "by_agent": {
+      "investigate_agent": {
+        "prompt_tokens": 5487,
+        "completion_tokens": 224,
+        "total_tokens": 5711,
+        "cost_usd": 0.00095745,
+        "calls": 2
+      },
+      "note_agent": {
+        "prompt_tokens": 1361,
+        "completion_tokens": 191,
+        "total_tokens": 1552,
+        "cost_usd": 0.00031874999999999997,
+        "calls": 1
+      },
+      "manager_agent": {
+        "prompt_tokens": 1066,
+        "completion_tokens": 78,
+        "total_tokens": 1144,
+        "cost_usd": 0.00020669999999999998,
+        "calls": 1
+      },
+      "solve_agent": {
+        "prompt_tokens": 1620,
+        "completion_tokens": 108,
+        "total_tokens": 1728,
+        "cost_usd": 0.0003078,
+        "calls": 1
+      },
+      "response_agent": {
+        "prompt_tokens": 1776,
+        "completion_tokens": 289,
+        "total_tokens": 2065,
+        "cost_usd": 0.00043979999999999996,
+        "calls": 1
+      },
+      "precision_answer_agent": {
+        "prompt_tokens": 1289,
+        "completion_tokens": 2,
+        "total_tokens": 1291,
+        "cost_usd": 0.00019454999999999999,
+        "calls": 1
+      }
+    },
+    "by_model": {
+      "qwen3-vl-plus": {
+        "prompt_tokens": 12599,
+        "completion_tokens": 892,
+        "total_tokens": 13491,
+        "cost_usd": 0.0024250499999999998,
+        "calls": 7
+      }
+    },
+    "by_method": {
+      "api": {
+        "prompt_tokens": 12599,
+        "completion_tokens": 892,
+        "total_tokens": 13491,
+        "cost_usd": 0.0024250499999999998,
+        "calls": 7
+      }
+    },
+    "tiktoken_available": true,
+    "litellm_available": false
+  },
+  "records": [
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "qwen3-vl-plus",
+      "prompt_tokens": 2696,
+      "completion_tokens": 152,
+      "total_tokens": 2848,
+      "cost_usd": 0.0004956,
+      "timestamp": "2026-01-16T00:09:06.690768",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "note_agent",
+      "stage": "note_agent",
+      "model": "qwen3-vl-plus",
+      "prompt_tokens": 1361,
+      "completion_tokens": 191,
+      "total_tokens": 1552,
+      "cost_usd": 0.00031874999999999997,
+      "timestamp": "2026-01-16T00:09:38.198002",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "investigate_agent",
+      "stage": "investigate_agent",
+      "model": "qwen3-vl-plus",
+      "prompt_tokens": 2791,
+      "completion_tokens": 72,
+      "total_tokens": 2863,
+      "cost_usd": 0.00046185,
+      "timestamp": "2026-01-16T00:09:41.241547",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "manager_agent",
+      "stage": "Plan",
+      "model": "qwen3-vl-plus",
+      "prompt_tokens": 1066,
+      "completion_tokens": 78,
+      "total_tokens": 1144,
+      "cost_usd": 0.00020669999999999998,
+      "timestamp": "2026-01-16T00:09:44.516585",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "solve_agent",
+      "stage": "solve_agent",
+      "model": "qwen3-vl-plus",
+      "prompt_tokens": 1620,
+      "completion_tokens": 108,
+      "total_tokens": 1728,
+      "cost_usd": 0.0003078,
+      "timestamp": "2026-01-16T00:09:50.998288",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "response_agent",
+      "stage": "response_agent",
+      "model": "qwen3-vl-plus",
+      "prompt_tokens": 1776,
+      "completion_tokens": 289,
+      "total_tokens": 2065,
+      "cost_usd": 0.00043979999999999996,
+      "timestamp": "2026-01-16T00:10:01.398773",
+      "calculation_method": "api"
+    },
+    {
+      "agent_name": "precision_answer_agent",
+      "stage": "precision_answer_agent",
+      "model": "qwen3-vl-plus",
+      "prompt_tokens": 1289,
+      "completion_tokens": 2,
+      "total_tokens": 1291,
+      "cost_usd": 0.00019454999999999999,
+      "timestamp": "2026-01-16T00:10:02.545505",
+      "calculation_method": "api"
+    }
+  ]
+}
