@@ -17,6 +17,11 @@ tools:
   rag_tool:
     kb_base_dir: ./data/knowledge_bases
     default_kb: ai_textbook
+  multi_kb_rag:
+    # Rerank model config is loaded from env: RERANK_MODEL, RERANK_BINDING_HOST, RERANK_BINDING_API_KEY
+    # If RERANK_BINDING_API_KEY not set, will fallback to LLM_BINDING_API_KEY
+    default_top_k_per_kb: 20  # Number of results to retrieve from each KB
+    default_final_top_k: 10  # Final number of results after reranking
   run_code:
     workspace: ./data/user/run_code_workspace
     allowed_roots:

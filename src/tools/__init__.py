@@ -53,6 +53,7 @@ except Exception as e:
     traceback.print_exc()
 
 from .code_executor import run_code, run_code_sync
+from .multi_kb_rag_tool import multi_kb_rag_search, multi_kb_rag_search_sync
 from .query_item_tool import query_numbered_item
 from .rag_tool import rag_search
 from .web_search import web_search
@@ -67,6 +68,8 @@ try:
         "PaperSearchTool",
         "TexChunker",
         "TexDownloader",
+        "multi_kb_rag_search",
+        "multi_kb_rag_search_sync",
         "query_numbered_item",
         "rag_search",
         "read_tex_file",
@@ -78,6 +81,8 @@ except ImportError as e:
     # If import fails (e.g., missing tiktoken), only export basic tools
     print(f"⚠️  Some paper tools import failed: {e}")
     __all__ = [
+        "multi_kb_rag_search",
+        "multi_kb_rag_search_sync",
         "query_numbered_item",
         "rag_search",
         "run_code",

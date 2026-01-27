@@ -217,6 +217,37 @@ def get_embedding_config() -> dict:
     }
 
 
+def get_rerank_config() -> dict:
+    """
+    Return complete environment configuration for rerank models.
+
+    Returns:
+        dict: Dictionary containing the following keys:
+            - model: Rerank model name (e.g., "qwen3-rerank")
+            - api_key: Rerank API key
+            - base_url: Rerank API endpoint URL (full URL including /rerank path)
+
+    Note:
+        If RERANK_BINDING_API_KEY is not set, will fallback to LLM_BINDING_API_KEY.
+        RERANK_BINDING_HOST should be the full rerank API URL.
+    """
+    model = _strip_value(os.getenv("RERANK_MODEL", "qwen3-rerank"))
+
+    # Try rerank-specific config first, fallback to LLM config for API key
+    api_key = _strip_value(os.getenv("RERANK_BINDING_API_KEY"))
+    base_url = _strip_value(os.getenv("RERANK_BINDING_HOST"))
+
+    # Fallback to LLM API key if not specified
+    if not api_key:
+        api_key = _strip_value(os.getenv("LLM_BINDING_API_KEY"))
+
+    return {
+        "model": model,
+        "api_key": api_key,
+        "base_url": base_url,
+    }
+
+
 # ============================================================================
 # YAML Configuration Loading (from config_loader.py)
 # ============================================================================
@@ -349,6 +380,7 @@ __all__ = [
     # Environment variable configuration
     "get_llm_config",
     "get_embedding_config",
+    "get_rerank_config",
     "get_tts_config",
     # Agent parameters
     "get_agent_params",

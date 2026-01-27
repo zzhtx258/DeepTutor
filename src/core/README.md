@@ -184,6 +184,11 @@ TTS_MODEL=sambert-zhichu-v1
 EMBEDDING_BINDING_API_KEY=your_embedding_key
 EMBEDDING_BINDING_HOST=https://api.openai.com/v1
 EMBEDDING_MODEL=text-embedding-3-large
+
+# Rerank Configuration (optional, for multi-KB search)
+RERANK_MODEL=qwen3-rerank
+RERANK_BINDING_HOST=https://dashscope.aliyuncs.com/compatible-mode/v1/rerank  # Full rerank API URL
+RERANK_BINDING_API_KEY=your_rerank_key  # Optional, fallback to LLM_BINDING_API_KEY
 ```
 
 ### YAML Configuration
